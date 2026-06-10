@@ -1,0 +1,226 @@
+[
+  {
+    "id": 259,
+    "description": "Village 1 Splitting by group: Are different groups impacted in different ways? ",
+    "description_slug": "village-1-splitting-by-group-are-differe",
+    "filename": "bookmark-259.png",
+    "storage_path": "bookmarks/example-original_bookmark_259_map_full_1757337345536.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 260,
+    "description": "Village 1 only. Source Groups filter: Are different groups impacted in different ways?",
+    "description_slug": "village-1-only-source-groups-filter-are",
+    "filename": "bookmark-260.png",
+    "storage_path": "bookmarks/example-original_bookmark_260_map_full_1770578148248.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 262,
+    "description": "Looking downstream: What are the consequences of one factors? Are there any unique #s?",
+    "description_slug": "looking-downstream-what-are-the-conseque",
+    "filename": "bookmark-262.png",
+    "storage_path": "bookmarks/example-original_bookmark_262_map_full_1757338219768.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 266,
+    "description": "Main factors map: Top 5 most frequent factors by Factor Frequency",
+    "description_slug": "main-factors-map-top-5-most-frequent-fac",
+    "filename": "bookmark-266.png",
+    "storage_path": "bookmarks/example-original_bookmark_266_map_full_1770578310464.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 267,
+    "description": "Comparing groups - gender: Looking at a heatmap - links mentioned by male and female sorting by source id",
+    "description_slug": "comparing-groups---gender-looking-at-a-h",
+    "filename": "bookmark-267.png",
+    "storage_path": "bookmarks/example-original_bookmark_267_pivot_full_1757341348503.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 270,
+    "description": "Upstream influences on wellbeing, no source tracing",
+    "description_slug": "upstream-influences-on-wellbeing-no-sour",
+    "filename": "bookmark-270.png",
+    "storage_path": "bookmarks/example-original_bookmark_270_map_full_1770658966542.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 272,
+    "description": "Main immediate consequences of Increased Knowledge - interactive map, you can reposition the factors",
+    "description_slug": "main-immediate-consequences-of-increased",
+    "filename": "bookmark-272.png",
+    "storage_path": "bookmarks/example-original_bookmark_272_map_full_1757492114183.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 493,
+    "description": "Soft recode using all top-level labels from human-coded file",
+    "description_slug": "soft-recode-using-all-top-level-labels-f",
+    "filename": "bookmark-493.png",
+    "storage_path": "bookmarks/example-original_bookmark_493_map_full_1759952714944.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 494,
+    "description": "Soft recode same as 493 but recycling losers",
+    "description_slug": "soft-recode-same-as-493-but-recycling-lo",
+    "filename": "bookmark-494.png",
+    "storage_path": "bookmarks/example-original_bookmark_494_map_full_1759952833250.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 534,
+    "description": "Upstream influences on wellbeing; source tracing",
+    "description_slug": "upstream-influences-on-wellbeing-source",
+    "filename": "bookmark-534.png",
+    "storage_path": "bookmarks/example-original_bookmark_534_map_full_1770658997757.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 535,
+    "description": "Factors: significant differences between age groups",
+    "description_slug": "factors-significant-differences-between",
+    "filename": "bookmark-535.png",
+    "storage_path": "bookmarks/example-original_bookmark_535_factors_full_1761597872740.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 595,
+    "description": "for cm4 launch - updated",
+    "description_slug": "for-cm4-launch---updated",
+    "filename": "bookmark-595.png",
+    "storage_path": "bookmarks/example-original_bookmark_595_map_full_1770199533001.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 805,
+    "description": "Focus on farm production, no zooming",
+    "description_slug": "focus-on-farm-production-no-zooming",
+    "filename": "bookmark-805.png",
+    "storage_path": "bookmarks/example-original_bookmark_805_map_full_1764012239445.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 806,
+    "description": "Focus on farm production, zooming to level 1",
+    "description_slug": "focus-on-farm-production-zooming-to-leve",
+    "filename": "bookmark-806.png",
+    "storage_path": "bookmarks/example-original_bookmark_806_map_full_1764012272365.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 980,
+    "description": "Differences between groups shown on map",
+    "description_slug": "differences-between-groups-shown-on-map",
+    "filename": "bookmark-980.png",
+    "storage_path": "bookmarks/example-original_bookmark_980_map_full_1768813565178.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 981,
+    "description": "Source tracing from Increased knowledge to Improved health",
+    "description_slug": "source-tracing-from-increased-knowledge",
+    "filename": "bookmark-981.png",
+    "storage_path": "bookmarks/example-original_bookmark_981_map_full_1768813884218.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 982,
+    "description": "Health behaviour, without zooming",
+    "description_slug": "health-behaviour-without-zooming",
+    "filename": "bookmark-982.png",
+    "storage_path": "bookmarks/example-original_bookmark_982_map_full_1768832857044.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1063,
+    "description": "Factor backgrounds are coloured by causal \"importance\": do they influence many factors which are themselves important?",
+    "description_slug": "factor-backgrounds-are-coloured-by-causa",
+    "filename": "bookmark-1063.png",
+    "storage_path": "bookmarks/example-original_bookmark_1063_map_full_1770044059554.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1124,
+    "description": "Main factors map: Top 5 most frequent factors by Links Frequency",
+    "description_slug": "main-factors-map-top-5-most-frequent-fac",
+    "filename": "bookmark-1124.png",
+    "storage_path": "bookmarks/example-original_bookmark_1124_map_full_1770578375815.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1125,
+    "description": "Source tracing from Increased knowledge to Improved health, but applying the zoom after the tracing. This helps to avoid making false inferences.",
+    "description_slug": "source-tracing-from-increased-knowledge",
+    "filename": "bookmark-1125.png",
+    "storage_path": "bookmarks/example-original_bookmark_1125_map_full_1770578498059.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1126,
+    "description": "Displaying #hypothetical and #doubtful tags",
+    "description_slug": "displaying-hypothetical-and-doubtful-tag",
+    "filename": "bookmark-1126.png",
+    "storage_path": "bookmarks/example-original_bookmark_1126_map_full_1770579008498.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1129,
+    "description": "Path tracing from Increased knowledge to Improved health (no source tracing)",
+    "description_slug": "path-tracing-from-increased-knowledge-to",
+    "filename": "bookmark-1129.png",
+    "storage_path": "bookmarks/example-original_bookmark_1129_map_full_1770655741518.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1143,
+    "description": "Links table sorted by \"bundle\" -- showing that each bundle may contain multiple links",
+    "description_slug": "links-table-sorted-by-bundle----showing",
+    "filename": "bookmark-1143.png",
+    "storage_path": "bookmarks/example-original_bookmark_1143_links_full_1770832532811.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1144,
+    "description": "Map corresponding to bookmark #1143 showing how individual links are bundled together. Numbers on links show source counts.",
+    "description_slug": "map-corresponding-to-bookmark-1143-showi",
+    "filename": "bookmark-1144.png",
+    "storage_path": "bookmarks/example-original_bookmark_1144_map_full_1770832724441.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1145,
+    "description": "Links table, grouped by bundle. Corresponds to #1143 and #1144",
+    "description_slug": "links-table-grouped-by-bundle-correspond",
+    "filename": "bookmark-1145.png",
+    "storage_path": "bookmarks/example-original_bookmark_1145_links_full_1770833218473.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1178,
+    "description": "Using top-level factor labels as groups: Print view",
+    "description_slug": "using-top-level-factor-labels-as-groups",
+    "filename": "bookmark-1178.png",
+    "storage_path": "bookmarks/example-original_bookmark_1178_map_full_1771090026012.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1185,
+    "description": "Narrative evidence: Print view of links with context",
+    "description_slug": "narrative-evidence-print-view-of-links-w",
+    "filename": "bookmark-1185.png",
+    "storage_path": "bookmarks/example-original_bookmark_1185_links-print_full_1771353575934.png",
+    "source": "screenshot"
+  },
+  {
+    "id": 1361,
+    "description": "For variants",
+    "description_slug": "for-variants",
+    "filename": "bookmark-1361.png",
+    "storage_path": "bookmarks/example-original_bookmark_1361_map_full_1774349863320.png",
+    "source": "screenshot"
+  }
+]

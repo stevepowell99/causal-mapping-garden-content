@@ -1,0 +1,5 @@
+---
+date: 2025-08-23
+---
+
+We have tried to demonstrate a semi-automated workflow with which evaluators can capture stakeholders’ emergent views of the *structure* of a problem or program at the same time as capturing their beliefs about the *contributions* made to factors of interest by other factors. We have presented this approach via a proxy application but have since applied it in real-life research. Many challenges remain, from improving the behaviour of the automated interviewer through improving the accuracy of the causal coding process to dealing better with valence (for example distinguishing between “employment”, “employment issues” and “unemployment”). Perhaps most urgently needed are ways to better understand and counter how LLMs may reproduce hegemonic worldviews [@reidVisionEquitableAI2023].

@@ -1,0 +1,25 @@
+# Obsidian config and plugin caches stay local.
+# .smart-env holds Smart Connections embeddings of EVERY note (incl. private
+# ones), so it must never be published. .trash holds deleted notes.
+.obsidian/
+.smart-env/
+.trash/
+.cursor/
+.DS_Store
+desktop.ini
+
+# Heavy media kept local (the garden site builds locally, so this does not
+# affect what is published; it just keeps the repo lean).
+*.mp4
+*.mov
+*.webm
+*.zip
+
+# Quarantined orphan images (delete once verified, then remove this line)
+_orphaned-images/
+
+# Private SECTIONS: any folder whose name contains "!" is kept local.
+# Individual files with "!" in the name are still tracked (non-discoverable,
+# not secret). "!" only negates when it is the first character of a line;
+# mid-pattern it is literal, and the trailing "/" matches directories only.
+*!*/
