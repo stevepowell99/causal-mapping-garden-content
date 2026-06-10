@@ -1,4 +1,4 @@
-ocommit-probe-7731At Causal Map, we call the individual links just "links" and we call the collection of multiple "co-terminal" links, i.e. the set of links starting at X and finishing at Y, a "bundle of links" or a "links bundle" or just a "bundle". In the special case where there is only one link in the bundle, then the link = the bundle.
+At Causal Map, we call the individual links just "links" and we call the collection of multiple "co-terminal" links, i.e. the set of links starting at X and finishing at Y, a "bundle of links" or a "links bundle" or just a "bundle". In the special case where there is only one link in the bundle, then the link = the bundle.
 
 
 
