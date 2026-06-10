@@ -1,11 +1,5 @@
----
-date: 2026-05-31
-tags:
-  - paper
----
 
-
-*By Steve and Gabriele at Causal Map, with Dena at Southern Hemisphere.*
+*By Steve and Gabriele at Causal Map, with Dena at Southern Hemisphere...*
 
 The Love Alliance is a five-year partnership, running from 2021 to 2025, that works to improve the health and rights of key populations affected by HIV, meaning sex workers, people who use drugs, LGBTQ+ people and people living with HIV, across ten countries in Africa and through regional and global advocacy. It is funded by the Dutch Ministry of Foreign Affairs, administered through Aidsfonds, and delivered by a consortium of partner organisations working through advocacy, capacity-strengthening and movement building. Its theory of change is a tidy ladder (Figure 1): strategies at the bottom, then short, medium and long-term outcomes, then goals at the top. Clear, communicable, fundable.
 
