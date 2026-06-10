@@ -41,7 +41,7 @@ The maps were also only one of three lenses. The evaluators set the macro pictur
 Figure 2 is the overall map drawn from the country data. The size of each box and the numbers on it show how often that factor was mentioned; the arrows show claimed influence; darker green factors sit nearer the ends of chains (outcomes), lighter ones are drivers; arrowhead colour shows whether the claimed effect was positive or negative.
 
 ![[800 Case studies/img/map-love-alliance-overall.png]]
-*Figure 2. An overall causal map built from what people said. The largest box, "Love Alliance provides support for advocacy and capacity building", is the most frequently mentioned factor and the dominant driver. Numbers are citation counts.* 
+*Figure 2. An overall causal map built from what people said. The largest box, "Love Alliance provides support for advocacy and capacity building", is the most frequently mentioned factor and the dominant driver. Numbers are citation counts.*  
 
 Read it and a pattern that no ladder would have predicted comes through. The programme's support flows first into local partner organisations, which build the capacity of the communities they serve; that capacity then feeds advocacy, peer support and a stronger movement. The dominant story practitioners told was rarely "we delivered outputs and outcomes followed". It ran closer to "we built each other up, and that was the point". The maps put a number on the backbone of that story: across the whole dataset the single most-cited factor, with 777 citations, was Love Alliance support for advocacy and capacity building, from which two "workhorse" pathways ran, capacity-strengthening and networking. The report built its central conclusion on exactly that.
 
