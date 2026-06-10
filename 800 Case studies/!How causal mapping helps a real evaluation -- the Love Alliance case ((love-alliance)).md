@@ -1,5 +1,6 @@
 
-# How causal mapping helps a real evaluation -- the Love Alliance case
+# How causal mapping helps a real evaluation -- the Love Alliance case.
+
 
 *By Steve and Gabriele at Causal Map, with Dena at Southern Hemisphere...*
 
