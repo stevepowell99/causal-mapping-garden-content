@@ -1,3 +1,8 @@
+<!-- mist:banner:start -->
+> [!warning] Open for collaborative review on mist
+> This note is being edited on mist. Avoid editing it here in Obsidian until the review is finished, or your local changes may be overwritten.
+<!-- mist:banner:end -->
+
 ## Abstract
 
 > This working paper explains our **Minimalist / Barefoot** approach to coding causal claims in text as simple directed links (“X influenced Y”), developed through extensive experience with large-scale practical coding. We write it now because, although our previous work motivates causal mapping in evaluation [@powellCausalMappingEvaluators2024] shows how QuIP-style “stories of change” elicit natively causal narrative evidence [@copestakeAttributingDevelopmentImpact2019], demonstrates ToC validation by comparing empirical maps with programme theory [@powellDoesOurTheory2023], and shows that generative AI can extract links exhaustively with quotes as a low-level assistant [@powellAIassistedCausalMapping2025a; @powellWorkflowCollectingUnderstanding2025], none of these papers is a standalone, reader-facing account of **the coding stance itself**. 
@@ -47,7 +52,7 @@ Charles Ragin (@raginMeasurementCalibrationSetTheoretic2008) and others have don
 
 Most causal mappers have always been quite conscious that modelling people's causal beliefs is not the same as modelling the real world. Sometimes the approach [@axelrodStructureDecisionCognitive1976] is explicitly designed to model someone's thinking. But often it is hard to keep the two worlds separate, what we have called the Janus problem [@powellCausalMappingEvaluators2024, p. x]. Modelling the real world is exciting, and useful. Traditions like Systems Diagrams, Fuzzy Cognitive Maps, Causal Loop Diagrams and Directed Acyclic Graphs all, to varying degrees, treat the diagram as a model of how the world works rather than a record of what people said. Variables, weights, and (sometimes) functional forms slip in, because the diagram itself is doing the modelling. Our claim is weaker. We are recording what people said about causes, with quotes, and leaving the question of how the world really works to a later step.
 
-Using variable-based approaches allows one to code linear or even non-linear causal influences of single or even multiple causes on their effects. One can do the "coding" by simply writing down (using appropriate special syntax) the connections, because one is an expert, and/or one can verify such statements statistically on the basis of observational data. Thus armed, one can make predictions or have sophisticated arguments about counterfactuals. 
+Using variable-based approaches allows one to code linear or even non-linear causal influences of single or even multiple causes on their effects. One can do the "coding" by simply writing down (using appropriate special syntax) the connections, because one is an expert, and/or one can verify such statements statistically on the basis of observational data. Thus armed, one can make predictions or have sophisticated arguments about counterfactuals. {++ ++}
 
 ### The minimalist approach
 
