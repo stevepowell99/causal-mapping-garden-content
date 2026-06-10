@@ -1,8 +1,3 @@
----
-tags:
-  - paper
-  - mapcat_core
----
 ## Abstract
 
 > This working paper explains our **Minimalist / Barefoot** approach to coding causal claims in text as simple directed links (“X influenced Y”), developed through extensive experience with large-scale practical coding. We write it now because, although our previous work motivates causal mapping in evaluation [@powellCausalMappingEvaluators2024] shows how QuIP-style “stories of change” elicit natively causal narrative evidence [@copestakeAttributingDevelopmentImpact2019], demonstrates ToC validation by comparing empirical maps with programme theory [@powellDoesOurTheory2023], and shows that generative AI can extract links exhaustively with quotes as a low-level assistant [@powellAIassistedCausalMapping2025a; @powellWorkflowCollectingUnderstanding2025], none of these papers is a standalone, reader-facing account of **the coding stance itself**. 
