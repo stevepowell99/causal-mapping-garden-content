@@ -1,9 +1,3 @@
----
-date: 2025-12-23
-tags:
-  - dual-column
----
-
 ## Summary 
 [@powellWorkflowCollectingUnderstanding2025]
 
