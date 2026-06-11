@@ -9,6 +9,8 @@
 > Our approach is notable in particular because it rejects variable-based approaches used by most causal mapping traditions, which share many assumptions with rules used to build Systems Diagrams, Fuzzy Cognitive Maps, Causal Loop Diagrams, etc. We give an alternative, more primitive account of what exactly counts as a coded causal claim. We explain what we deliberately do *not* encode such as strength and polarity, and we mention the limits of this approach.
 > **Intended audience:** evaluators, academics and qualitative researchers who want a citeable and teachable causal coding protocol, and AI/NLP readers who want an auditable way to identify and process causal content in text. 
 
+@'@hh
+
 ## Introduction: Why minimalist coding? {#why-minimalist}
 
 ### The variable-based approach
