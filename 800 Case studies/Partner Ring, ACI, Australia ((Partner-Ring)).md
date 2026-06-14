@@ -1,8 +1,8 @@
-<!-- mist:banner:start -->
-> [!warning] Open for collaborative review on mist
-> This note is being edited on mist. Avoid editing it here in Obsidian until the review is finished, or your local changes may be overwritten.
-<!-- mist:banner:end -->
-
+---
+tags: 
+  - case_study
+date: 2023-07-05
+---
 2023-07-05
 ## Summary{.banner}
 
