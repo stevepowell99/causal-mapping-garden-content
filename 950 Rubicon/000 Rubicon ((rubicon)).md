@@ -53,7 +53,7 @@ We claim no determinism and no full reproducibility. AI coding varies between ru
 
 ## Where the detail is
 
-- [[030 Rubicon principles ((rubicon-principles))]] is the long version: what it does, the words it uses, what it refuses, and where it sits in the literature.
+- [[005 Rubicon principles ((rubicon-principles))]] is the long version: what it does, the words it uses, what it refuses, and where it sits in the literature.
 - [[010 Testing rival theories over a corpus ((theory-fit))]] takes several published theories and asks which a body of interviews actually supports, borrowing process tracing's diagnostic tests.
 - [[020 Generating realist mechanisms ((realist-mechanisms))]] is the mirror: start with a corpus and no theory, and try to generate mechanisms that are powerful, plausible and not obvious.
 
