@@ -51,11 +51,15 @@ The walk back is the test. If it breaks anywhere, nothing else about the run cou
 
 We claim no determinism and no full reproducibility. AI coding varies between runs, and machine agreement with human coders is well short of perfect. What survives is auditability: a reader who disagrees can find out exactly where.
 
+## Try it
+
+The page is live on the development deployment: [Rubicon in the Causal Map app](https://dev--causal-map.netlify.app/rubicon.html). It shares the app's login and reads a Causal Map project's documents. Being a development build, expect it to change under you and occasionally to break.
+
 ## Where the detail is
 
 - [[005 Rubicon principles ((rubicon-principles))]] is the long version: what it does, the words it uses, what it refuses, and where it sits in the literature.
-- [[010 Testing rival theories over a corpus ((theory-fit))]] takes several published theories and asks which a body of interviews actually supports, borrowing process tracing's diagnostic tests.
-- [[020 Generating realist mechanisms ((realist-mechanisms))]] is the mirror: start with a corpus and no theory, and try to generate mechanisms that are powerful, plausible and not obvious.
+- [[010 Testing rival theories ((theory-fit))|Testing rival theories over a corpus]] takes several published theories and asks which a body of interviews actually supports, borrowing process tracing's diagnostic tests.
+- [[020 Realist mechanisms ((realist-mechanisms))|Generating realist mechanisms]] is the mirror: start with a corpus and no theory, and try to generate mechanisms that are powerful, plausible and not obvious.
 
 The two papers compose. The second generates candidate explanations; the first tests them on material that played no part in producing them.
 

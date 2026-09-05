@@ -5,9 +5,9 @@ theme: theory-of-change
 ---
 > **Work in progress.** A design sketch rather than a finished study. Nothing here has been run: the workflows are written and validated against the engine, and no result is reported because there is none yet. Parts of the literature search are still owed and are marked where they bite. Comments welcome.
 
-The sibling of [[010 Testing rival theories over a corpus ((theory-fit))|the theory-fit paper]], and its mirror image. That one takes theories somebody else published and asks which the material supports. This one starts with a corpus and no theory, and asks whether a machine can produce mechanisms worth having: powerful, plausible, and not obvious. Realist evaluation is the tradition with the strongest account of what a mechanism is, and the weakest account of where one comes from.
+The sibling of [[010 Testing rival theories ((theory-fit))|the theory-fit paper]], and its mirror image. That one takes theories somebody else published and asks which the material supports. This one starts with a corpus and no theory, and asks whether a machine can produce mechanisms worth having: powerful, plausible, and not obvious. Realist evaluation is the tradition with the strongest account of what a mechanism is, and the weakest account of where one comes from.
 
-See also: [[000 Working Papers ((working-papers))]]; [[010 Testing rival theories over a corpus ((theory-fit))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
+See also: [[000 Working Papers ((working-papers))]]; [[010 Testing rival theories ((theory-fit))|Testing rival theories over a corpus]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
 
 **Intended audience:** evaluators doing realist or theory-based work who have a pile of interviews and need configurations out of it, and who suspect that what a model hands back will be fluent, true and useless.
 
