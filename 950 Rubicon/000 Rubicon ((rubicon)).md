@@ -65,9 +65,11 @@ So the rule is narrow: revise as often as the work needs, and never revise a ver
 
 Marking those points in a workflow is not built yet. The engine can stop at a named step and pick up from it, so the mechanism half exists; nothing yet says "a person is meant to look here".
 
-## Try it
+## Where else to look
 
-The page is live on the development deployment: [Rubicon in the Causal Map app](https://dev--causal-map.netlify.app/rubicon.html). It shares the app's login and reads a Causal Map project's documents. Being a development build, expect it to change under you and occasionally to break.
+- **[The Rubicon site](https://rubicon.causalmap.app)** is the short version of the argument, for somebody meeting it for the first time. Not live yet.
+- **[Rubicon in the Causal Map app](https://dev--causal-map.netlify.app/rubicon.html)**, on the development deployment. It shares the app's login and reads a Causal Map project's documents. Being a development build, expect it to change under you and occasionally to break.
+- **[The Causal Map app](https://app.causalmap.app)** itself, which is where the projects Rubicon reads actually live.
 
 ## Where the detail is
 
