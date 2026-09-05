@@ -60,8 +60,9 @@ The page is live on the development deployment: [Rubicon in the Causal Map app](
 - [[005 Rubicon principles ((rubicon-principles))]] is the long version: what it does, the words it uses, what it refuses, and where it sits in the literature.
 - [[010 Testing rival theories ((theory-fit))|Testing rival theories over a corpus]] takes several published theories and asks which a body of interviews actually supports, borrowing process tracing's diagnostic tests.
 - [[020 Realist mechanisms ((realist-mechanisms))|Generating realist mechanisms]] is the mirror: start with a corpus and no theory, and try to generate mechanisms that are powerful, plausible and not obvious.
+- [[030 Contribution analysis ((contribution))]] starts from the theory of change the programme already wrote down, and asks what the evidence does to each link of it.
 
-The two papers compose. The second generates candidate explanations; the first tests them on material that played no part in producing them.
+The three compose. The realist paper generates candidate explanations, the theory-fit paper tests them on material that played no part in producing them, and the contribution analysis paper does the same job for a theory somebody has already committed to in writing.
 
 ## How this relates to causal mapping
 
