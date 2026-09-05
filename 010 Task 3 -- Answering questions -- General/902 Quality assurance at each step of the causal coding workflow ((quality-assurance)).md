@@ -50,7 +50,7 @@ The steps are not really a simple sequence, and several may be revisited. Only t
 
 ### QA at Step 3: managing the codebook
 
-See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-3-manage-the-codebook|Step 3]] for the mechanics.
+See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-3|Step 3]] for the mechanics.
 
 This step may be revisited multiple times. You might start from a Zero Codebook, simply free-coding whatever you see, and you might later revise that codebook one or more times; or you might start from a more-or-less fixed codebook.
 
@@ -60,7 +60,7 @@ Quality Assurance in this step means asking questions like:
 
 ### QA at Step 4: coding individual links
 
-See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-4-code-the-claims|Step 4]] for the mechanics.
+See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-4|Step 4]] for the mechanics.
 
 The most important moment for quality assurance is at the time when links are originally coded.
 
@@ -70,7 +70,7 @@ A second non-negotiable QA discipline is insisting on a verbatim quote for each 
 
 ### QA at Step 5: checking individual links
 
-See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-5-check-and-enrich-individual-links|Step 5]] for the mechanics.
+See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-5|Step 5]] for the mechanics.
 
 In spite of all this effort, and whether you have been coding with AI or doing it yourself, there will still be some mistakes.
 
@@ -87,7 +87,7 @@ It can also be useful to view the links just from one source to see if they make
 
 ### QA at Step 6: the bundle assessment
 
-See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-6-from-claims-to-bundles|Step 6]] for the mechanics. This step warrants its own paper; see [[910 Assessing quality or robustness of evidence for a causal link based on a bundle of coterminal causal claims ((assessing))]] for the detail.
+See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-6|Step 6]] for the mechanics. This step warrants its own paper; see [[910 Assessing quality or robustness of evidence for a causal link based on a bundle of coterminal causal claims ((assessing))]] for the detail.
 
 This is the core QA move, and you should do it whether or not you use the app's formal feature for it. Look at each bundle, the claims about one link, with their context, metadata and the link-level judgements from Step 5, and weigh whether the evidence is enough to vouch for the connection. You can leave it there, having weighed the bundles by eye. Or you can record the verdict by collapsing the bundle into a single "assessed link": the underlying claims are not deleted, and a switch shows either the assessed links or the unassessed bundles, never both. Some bundles will earn no assessed link, because the evidence is too thin.
 
@@ -106,7 +106,7 @@ Rubrics (at this step but also in steps 7, 8 and 9) can include these three crit
 
 ### QA at Step 7: pathways and the transitivity trap
 
-See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-7-from-bundles-to-pathways|Step 7]] for the mechanics.
+See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-7|Step 7]] for the mechanics.
 
 Even when each link, or each assessed link, is now well grounded, your work is not finished. The question of this step is how to validate claims for the *transitivity* of causation: how do we get from grounded single links to a grounded multi-step pathway?
 
@@ -118,13 +118,13 @@ If you have already run a bundle assessment, there is a QA trade-off in the choi
 
 ### QA at Step 8: value, relative contribution and alternative explanations
 
-See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-8-judge-value-and-relative-contribution|Step 8]] for the mechanics.
+See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-8|Step 8]] for the mechanics.
 
 Judging value and relative contribution, and comparing with alternative explanations, are central (overlapping but distinct) questions in evaluation which have been really extensively covered, not least by John Mayne [-@mayneAssessingRelativeImportance2019]; for that reason we won't deal with them much here, but QuIP has a lot to say about value, and see @powellTheoriesChangeMaking2019. From a QA point of view, the discipline is to compare the influence you care about against rival explanations on the same map, rather than examining it in isolation. See [[118 Counting and comparing influences ((counting-influences))]] for an approach using path/source tracing.
 
 ### QA at Step 9: holistic judgement
 
-See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-9-holistic-judgement|Step 9]] for the mechanics.
+See [[901 A workflow for causal coding with and without AI ((ai-coding))#step-8-holistic|the holistic final judgement in Step 8]] for the mechanics.
 
 Finally, you want to draw a conclusion. You have done some or all of the other steps, checked the individual causal claims, assessed the robustness of co-terminal link bundles, traced paths of influence, compared influences and alternative explanations, and finally you want to at least eyeball all the evidence again and draw a valid conclusion. But "all the evidence" might be a massive corpus. Behind a single map there are still maybe hundreds of causal claims with their associated quotes and context. Does the overall claim still make sense? Can we be sure that the links in all the pathways all belong to the same context?
 
@@ -142,6 +142,8 @@ The opposite design, in which an algorithm rules on causal truth from coded text
 
 The bundle and pathway judgements above are our practical contribution to a question the wider causal pathways field takes seriously: how do you assess the strength of evidence behind a causal claim [@apgarHowWeDefine2025]? Some methods build the test in. Process tracing weighs each link with hoop and smoking-gun tests [@befaniProcessTracingBayesian2017; @collierUnderstandingProcessTracing2011]; contribution analysis builds and tests a contribution story [@mayneMakingCausalClaims2012]. Where a method has no such test built in, a written rubric does the same job, agreed in advance of the evidence, as in the CLARISSA programme's quality-of-evidence rubrics [@marinaapgarPARTICIPATORYAPPROACHEXPLORING2024] and Jewlya Lynn's seafood retrospective [@HUSeafoodRetrospective]. The rubric in Step 6 is exactly this device. None of these removes the final evaluative judgement; they make it transparent and auditable.
 
+We are now building that idea out as its own experiment. [Rubicon](/rubicon/) registers the rubric before the evidence is read, versions it, and records which version was in force for each run, so a reader can see whether a threshold moved before or after the numbers arrived. Working papers there take each of the methods named above in turn: [process tracing over a corpus](/theory-fit/), [generating realist mechanisms](/realist-mechanisms/), [contribution analysis](/contribution/) and [outcome harvesting](/outcome-harvesting/).
+
 ## None of this is causal inference
 
 None of this is causal inference in a statistical sense. It is a disciplined way to assemble evidence, weigh it transparently, and reach conclusions that you can defend.
@@ -149,15 +151,3 @@ None of this is causal inference in a statistical sense. It is a disciplined way
 This all works, we use it every day in our consultancy work at Causal Map Ltd., but it is still also evolving every day, so if you are interested in going on this journey with us, do get in touch.
 
 >Footnote: The same QA problematic and logic applies even when the links are not strictly causal: in social network analysis or other map-based work, you may still want to go from a mass of raw claims to a smaller set of checked or verified links, even though the links are about relationships rather than causation. Causal Map can do this too, and the mechanics described in the workflow paper work in the same way, though our main focus here is specifically on *causal* links.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[901 A workflow for causal coding with and without AI ((ai-coding))]]: the workflow this paper assures
-- [[910 Assessing quality or robustness of evidence for a causal link based on a bundle of coterminal causal claims ((assessing))]]: detail on the bundle assessment step
-- [[005 Minimalist coding for causal mapping ((minimalist))]]: the coding stance
-- [[011 Our approach clearly distinguishes evidence from facts and does not automatically warrant causal inferences ((evidence-not-facts))]]
-- [[The transitivity trap ((transitivity-trap))]]
-- [[700 The most controversial feature of causal maps is transitivity ((transitivity))]]
-- [[050 Just add rigour Three do’s and don’ts ((add-rigour))]]
