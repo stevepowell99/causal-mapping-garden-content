@@ -616,6 +616,18 @@ Not a league table. The outputs, in order of how much we would trust them:
 - **Not a finished literature search.** Three passes on 5 September 2026 settled the process tracing canon, the multi-case question and what is known about model-assisted coding. They reached two of the five theories. The discrepancy, political economy and displacement accounts are still stated from memory and still need sources, and so does the UK evidence on how lonely young adults actually are, a number the paper takes for granted and has never checked.
 - **No synthetic-validation precedent found either way.** Whether anybody has generated documents in which a theory is true by construction, to measure whether a method can discriminate, went unanswered in all three passes. The paper's first novelty claim rests on that being unoccupied, and it has not been shown to be.
 
+## Where the people go
+
+The design above is the most registration-heavy of the three papers, so it is the one where the room to iterate has to be marked rather than assumed.
+
+- **Choosing the five theories** is a judgement about the field, not a technical step, and the paper argues elsewhere that having the authors choose them is a leak no split can close. This is the first place another person belongs.
+- **Reading the first test plan** before it runs. Somebody who knows the material should say which tests ask for evidence nobody would ever produce in an interview.
+- **The design half exists to be iterated on.** Revise the tests against it as often as the work needs. That freedom is bought by the held-out half, which is what makes the iteration safe rather than circular.
+- **Reading the grid together** rather than being handed a verdict. The grid is the artefact precisely so that a group can argue with it.
+- **Overriding a verdict**, recorded beside the machine's version rather than replacing it.
+
+None of that conflicts with registering the tests first, because registration here records ordering rather than forbidding change. What it forbids is revising a version in place. Iterate as much as the work needs, date every version, and let the reader see which side of the evidence each change fell on.
+
 ## Next steps
 
 - Finish the literature search: the three remaining theories, the UK loneliness figures, and the synthetic-validation precedent. The last of those decides whether the paper's main claim survives.

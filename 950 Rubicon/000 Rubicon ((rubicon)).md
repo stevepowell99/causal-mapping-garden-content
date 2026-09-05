@@ -51,6 +51,20 @@ The walk back is the test. If it breaks anywhere, nothing else about the run cou
 
 We claim no determinism and no full reproducibility. AI coding varies between runs, and machine agreement with human coders is well short of perfect. What survives is auditability: a reader who disagrees can find out exactly where.
 
+## Iteration, and the people in it
+
+Registering a standard in advance sounds like a machine that runs once and hands down a verdict. That is not the intention and would not be much use.
+
+Real evaluation iterates. The question turns out not to fit the material, an unexpected distinction forces a new coding column, a first pass comes back obviously wrong. And real evaluation has other people in it: the ones who know the setting and can say which distinctions will not survive contact with it, the ones being described who should get to say whether the description is right, and the group who read the results together and decide what they mean.
+
+Both belong here, and we are trying to mark the places they go rather than leave them to chance: agreeing the question, checking the coding instruction before it runs, reading the first pass and fixing it, substantiation and member checking, sense-making on the results, and overriding a verdict.
+
+**This is in tension with registration and we do not pretend otherwise.** Iterating means changing the standard after seeing something, and registration exists to stop exactly that. The reconciliation is that registration records the *ordering* rather than commanding fixity. Every version is dated and never rewritten, and every run records which version was in force, so a reader can see whether a threshold moved before or after the numbers arrived and judge it accordingly.
+
+So the rule is narrow: revise as often as the work needs, and never revise a version in place. What registration forbids is not change but silent change. A method whose theory is meant to move, as realist evaluation's is, uses the same machinery to show every move that process tracing uses to show that nothing moved.
+
+Marking those points in a workflow is not built yet. The engine can stop at a named step and pick up from it, so the mechanism half exists; nothing yet says "a person is meant to look here".
+
 ## Try it
 
 The page is live on the development deployment: [Rubicon in the Causal Map app](https://dev--causal-map.netlify.app/rubicon.html). It shares the app's login and reads a Causal Map project's documents. Being a development build, expect it to change under you and occasionally to break.
@@ -61,8 +75,9 @@ The page is live on the development deployment: [Rubicon in the Causal Map app](
 - [[010 Testing rival theories ((theory-fit))|Testing rival theories over a corpus]] takes several published theories and asks which a body of interviews actually supports, borrowing process tracing's diagnostic tests.
 - [[020 Realist mechanisms ((realist-mechanisms))|Generating realist mechanisms]] is the mirror: start with a corpus and no theory, and try to generate mechanisms that are powerful, plausible and not obvious.
 - [[030 Contribution analysis ((contribution))]] starts from the theory of change the programme already wrote down, and asks what the evidence does to each link of it.
+- [[040 Outcome harvesting ((outcome-harvesting))]] asks which of the questions commissioners put to a harvest a machine should touch at all, and argues that most of the method belongs to people.
 
-The three compose. The realist paper generates candidate explanations, the theory-fit paper tests them on material that played no part in producing them, and the contribution analysis paper does the same job for a theory somebody has already committed to in writing.
+The first three compose. The realist paper generates candidate explanations, the theory-fit paper tests them on material that played no part in producing them, and the contribution analysis paper does the same job for a theory somebody has already committed to in writing. The outcome harvesting paper sits apart from that chain and asks a different question: given a method that is mostly a conversation between people, which two steps in the middle should a machine touch at all.
 
 ## How this relates to causal mapping
 

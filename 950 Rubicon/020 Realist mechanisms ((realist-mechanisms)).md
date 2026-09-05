@@ -177,6 +177,18 @@ Four gaps, and the first is the one that matters.
 
 One limit is not a gap and should be stated as such. Realist evaluation's data requirement is a way of interviewing that puts the emerging theory to the respondent. A corpus gathered before the theory existed cannot supply that, and no analysis recovers it. Where an evaluation is still running, the better use of all this is the reverse of analysis: produce configurations from the material so far, then take them into the next round of interviews as the propositions to put to people.
 
+## Where the people go
+
+Generation is the most participatory of the three designs, and the paper already insists on one human step: a person writes the final configurations rather than registering the model's output, because the act of rewriting is where a judgement about plausibility enters.
+
+Three more belong, and should be declared in the procedure before generating.
+
+- **Deciding which traditions to generate from.** The variance is only as wide as the list of perspectives somebody chose, so that list is a substantive decision rather than a parameter.
+- **Sense-making on the candidate set**, where a group reads the mechanisms and says which ring true, before anything is scored. That judgement is data about plausibility and should be recorded as such rather than folded silently into a ranking.
+- **Taking configurations back to the people they describe.** Realist evaluation's own data requirement is an interview that puts the emerging theory to the respondent, and a corpus gathered beforehand cannot supply it. Where the evaluation is still running, this is the step that matters most and the one an archive can never replace.
+
+Registration here is a record of movement rather than of fixity. Realist evaluation expects its theory to change, and a configuration that survived an evaluation unaltered was probably never tested, so the version trail from first theory to refined theory is the deliverable rather than an embarrassment.
+
 ## Next steps
 
 - Pick the corpus. The loneliness interviews make the two papers compose, and give the obviousness control a ready-made input in the five published accounts. A live evaluation would be the better test of whether any of this is useful, and would need the fieldwork loop above.

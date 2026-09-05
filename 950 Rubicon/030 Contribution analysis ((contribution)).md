@@ -185,6 +185,17 @@ Then two judgements, and keeping them apart is the point.
 
 The artefact the workflow must produce, beyond either judgement, is the graph: the theory of change drawn with each link carrying what the evidence said, thickness or colour for the weight of support, something distinct for a contradicted link, and something distinct again for a link nobody addressed. That last is the column an evaluator cannot get any other way and the one most easily lost in a picture. Rubicon cannot yet draw it, and that gap is recorded in the repository rather than glossed.
 
+## Where the people go
+
+Contribution analysis is participatory in its own literature and Rubicon's version must not quietly drop that.
+
+- **Agreeing the theory of change** is the first and most consequential participatory step. A theory of change nobody outside the evaluation team recognises produces a link-by-link map of somebody's imagination.
+- **Naming the rival explanations.** These are best drawn from people with a reason to doubt the programme, and an evaluation team on its own reliably writes rivals it can defeat.
+- **Reading the weak-link map together**, which is where this method earns its keep. The map is designed for a room rather than for a report, and the useful conversation is about the links nobody mentioned.
+- **Going back for more evidence**, Mayne's fifth step. A run over an existing corpus stops before it, so the thin links become the questions for the next round of fieldwork rather than a finding.
+
+The tension with registration is sharpest here, because the combination rule has to be fixed in advance and the pull to revise it arrives exactly when a link comes back empty. The answer is not to forbid the revision but to date it: change the rule, say why, and let the reader see that it changed after the numbers were in.
+
 ## What this cannot do
 
 - **No attribution fraction**, ever. See above.
