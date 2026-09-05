@@ -67,6 +67,8 @@ If a theory of change runs A to B to C to D, and the material says a great deal 
 
 Almost every contribution analysis reports as though it did, because the natural summary of a table is a total. So the combination rule has to be written into the rubric in advance, and it has to be closer to a minimum than a mean. Stating it in advance matters more here than anywhere else in this set of papers, because the temptation to switch to averaging arrives precisely when one link comes back empty.
 
+Writing this paper found that Rubicon could not express that rule. A rubric could ask whether every criterion was green, or whether any was red, and could not ask how good the weakest one was, so a chain could only have been scored by the very averaging described above. The engine now takes `combine: worst`, where the weakest criterion decides, and `combine: best`, where the strongest does. It reads the order the author declared the verdicts in, best first, and refuses a rubric that never declared them, since there the order would be an accident of writing. Nesting the two is still not possible, so a chain of branches is written as branch summaries and combined once.
+
 Two qualifications keep that from being crude. A theory of change is rarely a single chain, so a weak link in one branch is not fatal where another branch reaches the same outcome. And a link nobody mentioned is not a link the material contradicts, which is the next problem.
 
 ## Silence is not refutation, and it is not support either
@@ -206,6 +208,6 @@ The tension with registration is sharpest here, because the combination rule has
 ## Next steps
 
 - Write the contribution analysis page in Rubicon's own knowledge base, which is the largest gap in it: the assistant is expected to offer the method and currently knows nothing about it.
-- Settle the combination rule, in writing, before any run: how links combine, and how a branch differs from a chain.
+- Settle the combination rule for the actual theory of change, in writing, before any run. The machinery now exists; which links form a chain and which form substitutable branches is a judgement about the programme and belongs to the people who know it.
 - Build the annotated theory-of-change graph, which all three of these papers now want.
 - Test the whole thing on a live evaluation rather than an archive, so that step five exists.
