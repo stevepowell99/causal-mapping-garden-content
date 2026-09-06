@@ -7,6 +7,18 @@ The third of three. [[010 Testing rival theories ((theory-fit))|One]] takes riva
 
 > **Work in progress.** A design sketch. Nothing here has been run on a real evaluation, and the paper argues for a reading of contribution analysis that its commissioners often do not want.
 
+## In short
+
+Start from the theory of change the programme already wrote down, and ask what the evidence does to each link of it.
+
+- **The theory of change is the workflow.** Each link becomes a proposition with its two ends, and a fan-out puts one coding pass onto each. The repository carries a working example of the shape, `rfa-theory-of-change.yaml`, testing seven propositions against a select committee corpus.
+- **A separate rival pass.** One more coding pass over the same sources names the whole-outcome alternatives, deliberately not as a prong of the link pass, so a rival to the outcome can never be counted as evidence for a link.
+- **Who is speaking is a column.** Coding records the speaker's stake, so a second figure reports how much of the story survives once the people delivering the programme are excluded.
+- **Counting that shows the holes.** Figures group by link, and because the list of links is declared in advance, a link nobody mentioned reads as a nought rather than dropping out of the table.
+- **Two judgements, kept apart.** One per link, giving an annotated theory of change; one overall, against a rubric that states in advance how the links combine. A chain is as strong as its weakest link, so the combination rule is a minimum rather than a mean, and `combine: worst` says so in the rubric.
+- **The artefact.** The theory of change drawn with each link carrying what the evidence said, with a contradicted link and an unaddressed link each looking distinct.
+- **What it refuses.** No attribution fraction, ever. No counterfactual: the rival pass asks what else could explain the outcome and reads what people say about it, which is weaker than a comparison group and stronger than not asking.
+
 See also: [[000 Rubicon ((rubicon))]]; [[005 Rubicon principles ((rubicon-principles))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[203 Task 3 -- Analysing data, Answering questions ((task3-analysing))]].
 
 **Intended audience:** evaluators who have been asked to show that a programme contributed to a change, who have interviews and reports rather than a counterfactual, and who have to satisfy a reader entitled to be sceptical.

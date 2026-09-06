@@ -7,6 +7,16 @@ The fourth of the method papers. Outcome harvesting is the most participatory me
 
 > **Work in progress.** A design sketch, built on three published harvests read for their terms of reference rather than their findings. Nothing here has been run.
 
+## In short
+
+Outcome harvesting is mostly a conversation between people. The question this paper asks is which two steps in the middle a machine should touch at all.
+
+- **We read terms of reference, not method guides.** Three published harvests, Oxfam Novib's global programme evaluation, NIMD's evaluation across Mali, Mozambique, Tunisia and Colombia, and ActionAid Denmark's Tax Justice programme. Nine questions between them, and none asks how much of the change was attributable to the funder.
+- **Two questions go to the machine.** First, do these outcomes form a pattern of progress towards the objectives: classify each outcome against objectives declared in advance, then count by objective, by actor type and by year. Second, which objectives have nothing against them.
+- **The second is the one an evaluator cannot get any other way.** It works only because the objectives are a declared list, so an objective no outcome touches appears as an empty cell rather than vanishing from the table.
+- **Both are ordinary Rubicon.** A `code` step over the outcomes as sources, a `compute` step grouping by a declared column, and a `note` that states its base, because a harvest has no denominator and every figure has to carry that.
+- **Everything else stays with people.** The harvest workshop, the drafting loop, substantiation and sense-making are all human steps, and the workflow's job there is to record that they happened and what they changed.
+
 See also: [[000 Rubicon ((rubicon))]]; [[030 Contribution analysis ((contribution))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
 
 ## What commissioners actually ask a harvest

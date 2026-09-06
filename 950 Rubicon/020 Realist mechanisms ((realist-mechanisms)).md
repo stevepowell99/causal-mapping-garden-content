@@ -5,6 +5,17 @@ theme: theory-of-change
 ---
 > **Work in progress.** A design sketch rather than a finished study. Nothing here has been run: the workflows are written and validated against the engine, and no result is reported because there is none yet. Parts of the literature search are still owed and are marked where they bite. Comments welcome.
 
+## In short
+
+The mirror of the theory-fit paper: start with the corpus and no theory, and try to generate realist mechanisms worth having.
+
+- **Generation is fanned out on purpose.** One prong per tradition (social psychology, economics, stigma and identity, political economy), then per level from the individual to the wider system, then per pole, once for the outcome happening and once for it failing among people who look as though it should have, and once per subset of sources.
+- **An obviousness control that is actually run.** Pass one generates mechanisms from the published theory alone with none of the corpus. Pass two generates from the design half of the corpus, blind to pass one. Anything in both is obvious by construction. What only pass two produces is the non-obvious yield, and it is reported as a fraction rather than asserted.
+- **The coding.** Context, reasoning and outcome are coded in three separate passes, since no single passage carries a whole configuration. The reasoning pass records `prompted_by_interviewer`, because a volunteered account is stronger than an agreed one, and `first_or_second_hand`, because an implementer's account of why participants responded is data about the implementer.
+- **Testing.** Surviving configurations go through the sibling paper's machinery, on material that played no part in producing them.
+- **The playoff.** A general mechanism earns its place by compression: covering many configurations in less text than restating them, and predicting one in a part of the corpus it was not built from.
+- **What is missing.** No result yet. A configuration has no home as an asset, so nobody can query which context passages support which configuration; two versions of a configuration set cannot be diffed; holding material back is a convention nothing enforces; and the unit is a document rather than a person.
+
 The sibling of [[010 Testing rival theories ((theory-fit))|the theory-fit paper]], and its mirror image. That one takes theories somebody else published and asks which the material supports. This one starts with a corpus and no theory, and asks whether a machine can produce mechanisms worth having: powerful, plausible, and not obvious. Realist evaluation is the tradition with the strongest account of what a mechanism is, and the weakest account of where one comes from.
 
 See also: [[000 Working Papers ((working-papers))]]; [[010 Testing rival theories ((theory-fit))|Testing rival theories over a corpus]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].

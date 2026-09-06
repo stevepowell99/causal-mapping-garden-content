@@ -103,7 +103,20 @@ mist:
       highlight: Per-theory verdicts
 ---
 
-> **Work in progress.** A design sketch rather than a finished study. Nothing here has been run: the workflows are written and validated against the engine, and no result is reported because there is none yet. Parts of the literature search are still owed and are marked where they bite. Comments welcome.
+> **Work in progress.** A design sketch rather than a finished study. One theory of the five has now been put through the machinery on the real corpus, and what that produced is under *A first run*, below. The study itself has not been run: there is no held-out half, no synthetic contrast set and no three-arm comparison, so nothing here says yet whether the method can tell theories apart. Parts of the literature search are still owed and are marked where they bite. Comments welcome.
+
+## In short
+
+We take five published explanations of loneliness and ask which of them a body of interviews actually supports.
+
+- **The material.** Fifty interview files from forty-eight people aged 18 to 24, recruited to a quota across four of London's most deprived boroughs and interviewed in 2019. It is coded in the Causal Map app as `lonely-in-london`, with 3,393 causal links, and Rubicon reads the map alongside the documents.
+- **The theories.** Five accounts from different traditions, each written out as a paragraph, each with three variants written before anybody reads an interview, so a result cannot turn on one lucky wording.
+- **The tests.** Each account becomes a set of diagnostic tests in process tracing's four types, straw-in-the-wind, hoop, smoking gun and doubly decisive. Each test states what the material would look like if the account were wrong. The set is registered with a version, a date and a name before the corpus is read.
+- **Discrimination measured before the real corpus.** We generate synthetic interview sets in which one account is true by construction, run the tests over them, and keep only the tests that can tell the accounts apart. A test that fires on every set is dropped rather than reported.
+- **A split corpus.** Tests are written against a design half and run against a held-out half, so the material that produced a test never scores it.
+- **The workflow.** Four steps: sample the frame, one coding prong per test fanned out over the corpus, a count per test, and a judgement against the registered rubric. It validates against the engine.
+- **The output.** A table of which account holds where, not a single winner, because different accounts may be right about different people. Every figure walks back to coded rows, to quotes, to the words in the transcript.
+- **What is missing.** No result yet. Three of the five accounts still need citations, the workflow cannot state that fifty files are forty-eight people, and nothing yet checks that we looked as hard for a rival account as for our own.
 
 A sketch for a study. Take a corpus of interviews and several published theories that claim to explain the phenomena in the interviews. Have Ruby, the assistant in Rubicon, write a fit test for each theory before she has read the material, run every test over every interview, and see which theory the material actually supports. The method leans a little on process tracing.
 
@@ -605,6 +618,20 @@ The rubric is a separate file, registered by name and version before the run, so
 - **Does the material bear on it?** Judged rather than computed. Where the corpus cannot distinguish this account from a rival, the judge says so and refuses a band, because a band gets quoted and the doubt does not.
 
 The artefact the workflow must produce, beyond the verdicts, is the grid: twenty tests by twenty-five units by five theories, every cell filled, every filled cell walking back to a marked passage. That is what an evaluator would want in front of them, and it is a step the workflow needs anyway.
+
+## A first run
+
+Two runs went through on 5 September 2026, against fifty-one interviews with young Londoners, testing Weiss's two types and nothing else. Twenty interviews were drawn at random with a fixed seed, coded for the two patterns, counted, and judged against a standard registered before the coding began, with the weakest criterion deciding. The pair cost 58 pence.
+
+The coding returned 65 passages across the twenty interviews. Sixty-one showed emotional loneliness, three showed social loneliness, and one showed both. Fifteen of the twenty people showed the emotional pattern and three showed the social one. Against that, the standard asked two things: whether each pattern appears at all, and whether at least a quarter of the people read show one of them.
+
+**The two runs returned different verdicts on identical coding.** The first said the theory was not supported and the second said it was. The same 65 passages sat behind both. What moved was a comparison inside the app, which had been matching filter values case-sensitively, so one figure came back as nought and the prevalence criterion failed on a count that was really fifteen. The fix belonged to the engine rather than to the workflow, and it was made between the two runs.
+
+That is worth more to this paper than the verdict is. A theory-fit study rests on the claim that a standard fixed in advance decides the answer, and here a fault nowhere near the standard decided it instead. Nothing in the run's own record would have shown it. Only re-running after an unrelated repair did.
+
+So what has been shown is narrow. The design runs end to end on real material, it produces the grid's smallest possible cell, and the walk from the verdict back to the passages behind it holds. What has not been shown is anything the study is actually for: one theory is not five, twenty interviews read once are not a held-out half, and no synthetic set has yet said whether these tests could tell one account from another.
+
+The 61 against 3 is the open question. Either these young Londoners overwhelmingly describe the loss of a particular person rather than the loss of a wider circle, which would be a finding, or the instruction for one pattern fires on almost anything and the instruction for the other fires on almost nothing, which would be an artefact. The discrimination matrix exists to tell those apart, and it has not been built.
 
 ## What counts as a result
 
