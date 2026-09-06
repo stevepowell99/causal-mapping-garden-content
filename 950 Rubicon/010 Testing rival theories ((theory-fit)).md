@@ -122,7 +122,7 @@ A sketch for a study. Take a corpus of interviews and several published theories
 
 Note this is not a causal mapping study.
 
-See also: [[020 Realist mechanisms ((realist-mechanisms))|Generating realist mechanisms]], the sibling paper, which starts with no theory and generates mechanisms where this one tests theories somebody else published; [[000 Working Papers ((working-papers))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))]]; [[986 Causal mapping of loneliness interviews ((lonely-causal2))]].
+See also: [[020 Realist mechanisms ((realist-mechanisms))|Generating realist mechanisms]], which starts with no theory and generates mechanisms where this one tests theories somebody else published; [[000 Working Papers ((working-papers))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))]]; [[986 Causal mapping of loneliness interviews ((lonely-causal2))]].
 
 **Intended audience:** evaluators and applied researchers who want to know whether a theory of change, a programme logic or a published explanation is borne out by narrative evidence, or vice versa, with the test written down before anybody sees how it comes out.
 
@@ -651,7 +651,7 @@ Not a league table. The outputs, in order of how much we would trust them:
 
 ## Where the people go
 
-The design above is the most registration-heavy of the three papers, so it is the one where the room to iterate has to be marked rather than assumed.
+The design above is the most registration-heavy of these papers, so it is the one where the room to iterate has to be marked rather than assumed.
 
 - **Choosing the five theories** is a judgement about the field, not a technical step, and the paper argues elsewhere that having the authors choose them is a leak no split can close. This is the first place another person belongs.
 - **Reading the first test plan** before it runs. Somebody who knows the material should say which tests ask for evidence nobody would ever produce in an interview.

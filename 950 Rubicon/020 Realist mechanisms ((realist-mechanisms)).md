@@ -12,17 +12,17 @@ The mirror of the theory-fit paper: start with the corpus and no theory, and try
 - **Generation is fanned out on purpose.** One prong per tradition (social psychology, economics, stigma and identity, political economy), then per level from the individual to the wider system, then per pole, once for the outcome happening and once for it failing among people who look as though it should have, and once per subset of sources.
 - **An obviousness control that is actually run.** Pass one generates mechanisms from the published theory alone with none of the corpus. Pass two generates from the design half of the corpus, blind to pass one. Anything in both is obvious by construction. What only pass two produces is the non-obvious yield, and it is reported as a fraction rather than asserted.
 - **The coding.** Context, reasoning and outcome are coded in three separate passes, since no single passage carries a whole configuration. The reasoning pass records `prompted_by_interviewer`, because a volunteered account is stronger than an agreed one, and `first_or_second_hand`, because an implementer's account of why participants responded is data about the implementer.
-- **Testing.** Surviving configurations go through the sibling paper's machinery, on material that played no part in producing them.
+- **Testing.** Surviving configurations go through the theory-fit paper's machinery, on material that played no part in producing them.
 - **The playoff.** A general mechanism earns its place by compression: covering many configurations in less text than restating them, and predicting one in a part of the corpus it was not built from.
 - **What is missing.** No result yet. A configuration has no home as an asset, so nobody can query which context passages support which configuration; two versions of a configuration set cannot be diffed; holding material back is a convention nothing enforces; and the unit is a document rather than a person.
 
-The sibling of [[010 Testing rival theories ((theory-fit))|the theory-fit paper]], and its mirror image. That one takes theories somebody else published and asks which the material supports. This one starts with a corpus and no theory, and asks whether a machine can produce mechanisms worth having: powerful, plausible, and not obvious. Realist evaluation is the tradition with the strongest account of what a mechanism is, and the weakest account of where one comes from.
+The mirror image of [[010 Testing rival theories ((theory-fit))|the theory-fit paper]]. That one takes theories somebody else published and asks which the material supports. This one starts with a corpus and no theory, and asks whether a machine can produce mechanisms worth having: powerful, plausible, and not obvious. Realist evaluation is the tradition with the strongest account of what a mechanism is, and the weakest account of where one comes from.
 
 See also: [[000 Working Papers ((working-papers))]]; [[010 Testing rival theories ((theory-fit))|Testing rival theories over a corpus]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
 
 **Intended audience:** evaluators doing realist or theory-based work who have a pile of interviews and need configurations out of it, and who suspect that what a model hands back will be fluent, true and useless.
 
-**Contribution.** As in the sibling paper, separated into what may be new and what is merely how this is built.
+**Contribution.** As in the theory-fit paper, separated into what may be new and what is merely how this is built.
 
 Possibly new:
 
@@ -107,7 +107,7 @@ Three words that sound like taste. Each can be made checkable, and the third is 
 
 Run the generator twice on different inputs, and subtract.
 
-- **Pass one reads only the published theory**, with none of the corpus: for the loneliness study, the five accounts from the sibling paper, and for a programme evaluation, the theory of change and the programme documents. Ask for the mechanisms this theory would predict in a population like this one. This is what a competent reader could have written without doing any fieldwork.
+- **Pass one reads only the published theory**, with none of the corpus: for the loneliness study, the five accounts from the theory-fit paper, and for a programme evaluation, the theory of change and the programme documents. Ask for the mechanisms this theory would predict in a population like this one. This is what a competent reader could have written without doing any fieldwork.
 - **Pass two reads the design half of the corpus** and generates without seeing pass one.
 - **Then compare.** Anything appearing in both sets is obvious by construction, however well evidenced it turns out to be. What appears only in pass two is the non-obvious yield, and it is the thing the fieldwork bought.
 
@@ -143,7 +143,7 @@ So the deliverable is two-layered: a small set of middle-range theories, each wi
 
 ## How much of the material Ruby may see
 
-The sibling paper answers this cleanly, because testing can be done blind. Generation cannot. Nobody retroduces a mechanism from an empty room, and a paper claiming its mechanisms were produced without looking at anything would be describing a different activity.
+The theory-fit paper answers this cleanly, because testing can be done blind. Generation cannot. Nobody retroduces a mechanism from an empty room, and a paper claiming its mechanisms were produced without looking at anything would be describing a different activity.
 
 So the protection moves. What gets registered in advance is the **procedure** rather than the output: how many candidates, generated from what material, at what levels and in what traditions, ranked by which criteria, with the losers kept. Fix that before generating and the results cannot be produced by trying eleven approaches unrecorded and reporting the one that worked.
 
@@ -170,7 +170,7 @@ The defences, in order of how much they matter.
 
 ## What the workflow looks like
 
-The generation half is a fan-out over traditions and levels, each prong producing candidate configurations from the design half. The testing half is the sibling paper's machinery, unchanged: each configuration becomes a set of tests, each test states what the material would look like if the mechanism were not operating, and the tests run over the held-out half.
+The generation half is a fan-out over traditions and levels, each prong producing candidate configurations from the design half. The testing half is the theory-fit paper's machinery, unchanged: each configuration becomes a set of tests, each test states what the material would look like if the mechanism were not operating, and the tests run over the held-out half.
 
 The three CMO elements are coded separately, one pass each for context features, reasoning and outcomes, each with its own role, because no single passage carries a whole configuration. Two columns are worth their cost in the reasoning pass, and both come from Ruby's own notes.
 
@@ -207,4 +207,4 @@ Registration here is a record of movement rather than of fixity. Realist evaluat
 - Run the obviousness control first. It is the cheapest step, it needs no corpus access beyond the published theory, and if the non-obvious yield is near zero the rest of the study is not worth running.
 - Build the candidate set, forcing variance by tradition, level and pole, and keep the losers.
 - Have a person write the configurations, then register them.
-- Only then test, on the held-out half, using the sibling paper's machinery.
+- Only then test, on the held-out half, using the theory-fit paper's machinery.

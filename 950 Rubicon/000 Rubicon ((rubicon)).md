@@ -79,7 +79,7 @@ Marking those points in a workflow is not built yet. The engine can stop at a na
 - [[030 Contribution analysis ((contribution))]] starts from the theory of change the programme already wrote down, and asks what the evidence does to each link of it.
 - [[040 Outcome harvesting ((outcome-harvesting))]] asks which of the questions commissioners put to a harvest a machine should touch at all, and argues that most of the method belongs to people.
 
-The first three compose. The realist paper generates candidate explanations, the theory-fit paper tests them on material that played no part in producing them, and the contribution analysis paper does the same job for a theory somebody has already committed to in writing. The outcome harvesting paper sits apart from that chain and asks a different question: given a method that is mostly a conversation between people, which two steps in the middle should a machine touch at all.
+Three of them compose. The realist paper generates candidate explanations, the theory-fit paper tests them on material that played no part in producing them, and the contribution analysis paper does the same job for a theory somebody has already committed to in writing. The outcome harvesting paper sits apart from that chain and asks a different question: given a method that is mostly a conversation between people, which two steps in the middle should a machine touch at all.
 
 ## How this relates to causal mapping
 

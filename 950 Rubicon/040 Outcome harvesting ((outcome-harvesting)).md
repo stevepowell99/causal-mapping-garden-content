@@ -3,7 +3,7 @@ tags: paper
 date: 2026-09-05
 theme: theory-of-change
 ---
-The fourth of the method papers. Outcome harvesting is the most participatory method in this set and the one where a machine has least business doing the interesting part. So the question is not how to build a better outcomes table. It is which of the questions commissioners actually put to a harvest can be answered better, and which part of the work should stay in human hands.
+Outcome harvesting is the most participatory of the methods in this chapter and the one where a machine has least business doing the interesting part. So the question is not how to build a better outcomes table. It is which of the questions commissioners actually put to a harvest can be answered better, and which part of the work should stay in human hands.
 
 > **Work in progress.** A design sketch, built on three published harvests read for their terms of reference rather than their findings. Nothing here has been run.
 

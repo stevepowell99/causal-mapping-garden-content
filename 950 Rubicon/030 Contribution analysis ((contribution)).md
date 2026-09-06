@@ -3,7 +3,7 @@ tags: paper
 date: 2026-09-05
 theme: theory-of-change
 ---
-The third of three. [[010 Testing rival theories ((theory-fit))|One]] takes rival published theories and asks which the material supports. [[020 Realist mechanisms ((realist-mechanisms))|Another]] starts with no theory and generates mechanisms. This one starts with the theory the programme already wrote down, and asks what the evidence does to it.
+[[010 Testing rival theories ((theory-fit))|The theory-fit paper]] takes rival published theories and asks which the material supports. [[020 Realist mechanisms ((realist-mechanisms))|The realist paper]] starts with no theory and generates mechanisms. This one starts with the theory the programme already wrote down, and asks what the evidence does to it.
 
 > **Work in progress.** A design sketch. Nothing here has been run on a real evaluation, and the paper argues for a reading of contribution analysis that its commissioners often do not want.
 
@@ -97,7 +97,7 @@ Silence has at least three readings, and the report should say which is being ta
 
 ## Who is speaking matters more here than elsewhere
 
-An implementer's account of why participants responded is the implementer's theory, and it is data about the implementer. In a contribution analysis this bites harder than in the other two papers, because the people most available to interview are the ones with the strongest interest in the contribution story being true.
+An implementer's account of why participants responded is the implementer's theory, and it is data about the implementer. In a contribution analysis this bites harder than in the other papers, because the people most available to interview are the ones with the strongest interest in the contribution story being true.
 
 Two columns earn their cost in every coding pass, both borrowed from the realist workflow.
 
