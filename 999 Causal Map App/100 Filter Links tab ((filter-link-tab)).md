@@ -9,12 +9,34 @@ Do qualitative causal analyses on the selected links by filtering or manipulatin
 ### The Filter System: overview {#filter-system-overview}
 Use filters to narrow down and/or transform the links you want to study. Filters are applied in order, from top to bottom. You can drag and drop them to reorder them.
 
+**Position in the pipeline is part of what a filter does.** Each filter sees only the links handed down to it, so moving one up or down can change the final result even when the set of filters is the same. The clearest case is any filter that counts: [Link Frequency](../link-frequency-filter/) and [Factor Frequency](../factor-frequency-filter/) apply their threshold to the links they receive, so anything above them that removes links (Exclude self-loops, Exclude Tags, a Factor Label filter) changes the counts and therefore changes which links and factors pass. Transform filters (Zoom, Collapse, Combine Opposites and the recoding family) change the labels themselves, so anything below them works on the new labels. Only assume order does not matter when you have checked that nothing downstream counts or relabels.
+
+#### Filter ordering rules {#filter-ordering-rules}
+
+Any order of filters means something, so these are not restrictions on what you can build. They are the two orderings that usually give an answer to a question nobody asked. The app asks about them: it colours the filter pane and puts the question at the top, you can dismiss it, and it appears again the next time you change the chain. MapCat follows the same rules when it builds a chain for you, and will explain either one if you ask.
+
+The order to build in: filters that choose which sources or links you are looking at, then tracing, then Combine Opposites, then the filters that rewrite labels, then the frequency filters, then Exclude self-loops.
+
+**Rule 1. Put tracing at the top of the chain.** [Path tracing](../path-tracing-filter/), source tracing (path tracing with threads turned on), the [Pathways](../pathways-filter/) filter and a [Factor Label](../factor-label-filter/) filter set to more than one step all exist to find causal paths that are really in the data. Put a filter that rewrites factor labels above them ([Zoom](../zoom-filter/), [Collapse](../collapse-filter/), [Combine Opposites](../combine-opposites-filter/), [Remove Brackets](../replace-brackets-filter/), [Soft Relabel](../soft-relabel-filter/), [Soft Recode Plus](../soft-recode-plus/), [Cluster](../clustering-filter/), [Auto Recode](../hierarchical-cluster-filter/)) and it merges factors that were two different things in the coding, so you trace a route through a junction nobody described. Put a frequency filter above them and it removes links the paths are made of, so you find no route where the data has one. Either way you are tracing a map that is no longer the coded data. Trace first, and simplify afterwards for presentation.
+
+**Rule 2. Put the frequency filters at the bottom of the chain.** Link Frequency and Factor Frequency count the links they are given, so they mean something different at every position. Put them after the filters that decide what you are looking at. Take an ego network: filter to the neighbourhood first and then to the most frequent material within it, and you learn what people said most about that factor. The other way round you keep the most popular material in the whole corpus and then cut it down to the ego, which is a different map and usually not the one you wanted. You can put an [Exclude self-loops](../exclude-self-loops-filter/) filter after them.
+
+**Rule 3. Put [Combine Opposites](../combine-opposites-filter/) above the filters that replace labels.** Combine Opposites finds each pair by reading the labels it is given: a numeric tag such as `[~3]` against `[3]`, or a label starting with `~` against the same label without it. [Remove Brackets](../replace-brackets-filter/) deletes the square-bracket tags, and [Collapse](../collapse-filter/), [Soft Relabel](../soft-relabel-filter/), [Soft Recode Plus](../soft-recode-plus/), [Cluster](../clustering-filter/) and [Auto Recode](../hierarchical-cluster-filter/) replace a label with a new one that no longer carries the marker. Put one of those above Combine Opposites and it finds no pairs at all, so the negative and the positive stay on the map as two separate factors and nothing tells you the pairing was lost. Combine the opposites first, then replace labels for presentation. [Zoom](../zoom-filter/) is the exception: it truncates the hierarchy and keeps the marker on whatever it keeps.
+
+More rules will follow. Maintainers: the rules, their wording and the checker are single-sourced in `js/filter-type-flags.js` (`FILTER_ORDER_RULES`, `checkFilterOrder`, `suggestFilterPosition`), which feeds the filter-pane warning, MapCat's prompt and MapCat's default insertion position. Change them there and update this section to match.
+
 - **Default filter**: starts with a Factor Label Filter.  
 - 👉🏼 **Add Filter** <i class="fas fa-plus"></i> (button): insert a filter at the start or between existing ones.  
 - 👉🏼 **Enable/Disable** (toggle on each filter): turn an individual filter on/off.  
 - 👉🏼 **Remove** <i class="fas fa-times"></i> (button): delete a filter.  
 - 👉🏼 **Collapse** (button on each filter): hide/show that filter’s controls.  
 - 👉🏼 **Clear All** <i class="fas fa-times"></i> (button): reset to the default single Factor Label Filter.
+
+This row of controls stays at the top of the pane while the filters below it scroll, so Add Filter and the enabled switch are within reach however long the chain is.
+
+The funnel icon on the **Filter links** tab itself is a second switch for the same **enabled** state: click it to bypass every filter, click again to turn them back on. The icon shows a line through it whenever the filters change nothing, either because the pipeline is off or because every filter in it is off.
+
+<!--- Layout: the scroll sits on #filter-pipeline-container (styles.css), not on .filter-content-scrollable, and tab-manager.js shows #filters-content with display:flex so the column sizing works. Icon toggle: #filter-pipeline-tab-icon-toggle, bound once in updateFilterPipelineEnabledUI (filter-pipeline-ui.js), calls the same setFilterPipelineEnabled as the switch and stops the click reaching the tab button. --->
 
 
 <!---
@@ -95,6 +117,8 @@ For example, after clustering (which may give labels like C11), click a factor o
 - 👉🏼 **Type** (radio buttons): **Top** vs **Minimum**.  
 - 👉🏼 **Count by** (radio buttons): **Sources** vs **Citations**.
 
+**Put this filter at the bottom of the chain** ([rule 2](../filter-ordering-rules/)). It counts the links it is given, so higher up it ranks the whole corpus and the filters below it only trim what survived.
+
 Examples:
 - **Minimum 6 Sources**: Only links mentioned by 6+ sources
 - **Top 6**: Only the 6 most frequent link bundles
@@ -124,7 +148,7 @@ Ideas Garden: [Factor and link frequency](https://garden.causalmap.app/frequency
 </div>
 
 
-Same controls as [Link Frequency](../link-frequency-filter/) but applies to factors instead of links.
+Same controls as [Link Frequency](../link-frequency-filter/) but applies to factors instead of links, and the same rule: it goes at the bottom of the chain ([rule 2](../filter-ordering-rules/)).
 
 Example bookmarks:
 - [Factor importance colouring (top factors)](bookmark=1063)
@@ -161,10 +185,10 @@ Selecting "top 10 factors" shows all factors in the top 10 that are connected to
 </div>
 
 - provides 
-  - a prepopulated dropdown called Field with all the metadata fields plus title and projectname 
-  - another multi-selectzie called Value. Multiple values work as OR: either/any count as a match 
-  - a previous/next button pair to cycle through values of the selected group
-  - Example: Add two Source Groups filters in the pipeline to combine criteria (e.g., first filter Field = gender → Value = women, then another filter Field = region → Value = X) so you see links from women AND from region X.
+    - a prepopulated dropdown called Field with all the metadata fields plus title and projectname 
+    - another multi-selectzie called Value. Multiple values work as OR: either/any count as a match 
+    - a previous/next button pair to cycle through values of the selected group
+    - Example: Add two Source Groups filters in the pipeline to combine criteria (e.g., first filter Field = gender → Value = women, then another filter Field = region → Value = X) so you see links from women AND from region X.
 
 Example bookmarks:
 - [Village 1 — splitting by group](bookmark=259)
@@ -246,7 +270,7 @@ Example bookmarks:
 
 Tips:
 - **Order matters**: This filter runs wherever you place it in the pipeline. If you have [Zoom](../zoom-filter/) above it, then your “focused” factors may be zoomed-out labels (and the dropdown options will reflect that).
-- **Simplify first**: Consider applying formatting/simplification filters before focusing (e.g. [Zoom](../zoom-filter/), [Collapse](../collapse-filter/), [Remove Brackets](../replace-brackets-filter/)).
+- **Simplify first, unless you are using steps**: at one step up and down you are picking a set of factors, so applying [Zoom](../zoom-filter/), [Collapse](../collapse-filter/) or [Remove Brackets](../replace-brackets-filter/) first often makes the labels easier to choose from. At more than one step you are tracing a neighbourhood, so [rule 1](../filter-ordering-rules/) applies and this filter belongs above anything that rewrites labels.
 - **Collapse alternative**: If you want to merge several factors into one *without* changing the neighbours, consider using [Collapse](../collapse-filter/) instead of focusing.
 
 All label/tag filters have three radio buttons below the selectize input called Match: Start (default), Anywhere or Exact to control how search terms match against labels/tags:
@@ -293,8 +317,8 @@ The toggle Source tracing is a more conservative interpretation: when ON, when u
 - **Factor selector** for factors to exclude. By default shows only labels from links currently visible at this stage of the filter pipeline. Use the **Show All** toggle to display all factor labels from the entire project instead.
 - **Matching options**: Start / Anywhere / Exact
 - **Exclude Any** toggle (default OFF):  
-  - OFF = exclude only when **all** selected texts match (AND)  
-  - ON = exclude when **any** selected text matches (OR)
+    - OFF = exclude only when **all** selected texts match (AND)  
+    - ON = exclude when **any** selected text matches (OR)
 
 ### Tags Filter <i class="fas fa-tags"></i> {#link-tags-filter}
 
@@ -318,8 +342,8 @@ Example bookmark:
 
 - Same as Link Tag filter except *exclude* links containing these tags.
 - **Exclude Any** toggle (default OFF):  
-  - OFF = exclude only when **all** selected texts match (AND)  
-  - ON = exclude when **any** selected text matches (OR)
+    - OFF = exclude only when **all** selected texts match (AND)  
+    - ON = exclude when **any** selected text matches (OR)
 
 
 <!---
@@ -332,6 +356,8 @@ The implementation uses a shared `generateMatchRadioButtons()` function for cons
 ### Exclude self-loops Filter <i class="fas fa-undo"></i> {#exclude-self-loops-filter}
 
 You can exclude self-loops from the maps, but that is more of a visual change. This is a real filter as part of the filter pipeline. For example, if you are using a filter like [Link Frequency](../link-frequency-filter/) that might be retaining link bundles which are actually self-loops, so you might get unexpected results if you use the map setting to remove the self-loops. So this filter is a better way. It simply removes all links which are self-loops from the links table.
+
+**Where you put it in the pipeline changes the result.** Like every filter, this one only sees the links passed down from the filters above it, and only the filters below it see what it leaves behind. That matters most for the two frequency filters, because they count the links they are given. A self-loop counts **twice** towards its factor (once going out, once coming in), and it is one more link in a factor's or a bundle's tally. So putting Exclude self-loops **above** a [Link Frequency](../link-frequency-filter/) or [Factor Frequency](../factor-frequency-filter/) filter lowers those counts before the threshold is applied, and factors or links that would have survived on a "top 20" or "at least 3" rule can now drop out. Putting it **below** lets the self-loops count towards the threshold first and then removes them from what you see. Both are reasonable, they answer different questions, so decide which you want rather than treating the position as tidying up.
 
 ### Path Tracing Filter <i class="fas fa-route"></i> {#path-tracing-filter}
 
@@ -367,14 +393,14 @@ Example bookmark:
 ![Order matters: source tracing then zoom (bookmark 1125)](help-images/examples/bookmark_1125.png)
 
 Notes:
-- **Order matters**: this filter runs at its position in the pipeline, so upstream transform filters (e.g. [Zoom](../zoom-filter/), [Collapse](../collapse-filter/), [Combine Opposites](../combine-opposites-filter/)) can change which labels you can select and which paths exist.
+- **Order matters, and this filter belongs at the top** ([rule 1](../filter-ordering-rules/)): the app applies it at its position in the pipeline, so a transform filter above it (e.g. [Zoom](../zoom-filter/), [Collapse](../collapse-filter/), [Combine Opposites](../combine-opposites-filter/)) changes which labels you can select and which paths exist, and a frequency filter above it removes links the paths are made of. Trace first, then simplify for presentation.
 
 - **Empty selectors**:
-  - If put nothing in **From** then all paths from the factors matched by the To box of up to specified length are returned.
-  - If put nothing in **To** then all paths from the factors matched by the From box of up to specified length are returned.
+    - If put nothing in **From** then all paths from the factors matched by the To box of up to specified length are returned.
+    - If put nothing in **To** then all paths from the factors matched by the From box of up to specified length are returned.
 
 - **Non-matching selectors**:
-  - If you **From** or **To** matches nothing, no paths are returned.
+    - If you **From** or **To** matches nothing, no paths are returned.
 
 <!---
 
@@ -396,6 +422,48 @@ Behavior: If fromLabels is specified but matches no factors, return empty (no pa
 
 
 
+### Pathways Filter <i class="fas fa-shoe-prints"></i> {#pathways-filter}
+
+<div class="user-guide-callout">
+<strong>👣 What this does:</strong> Surfaces typical causal stories. Unlike Path Tracing, you do not pick a start or an end. The filter reads the quotes inside each source and finds short passages where one source tells a whole chain of factors close together in its own text, then ranks those chains by how many sources tell them and shows you one at a time.
+</div>
+
+This is an exploratory filter for finding typical pathways. It does not answer a definitive high-stakes evaluation question; it surfaces common stories so you can read and judge them.
+
+How it works: within each source it looks for a **passage**, a set of quotes, one for each step of a chain `f0 → f1 → … → fN`, that all sit within a window of `proximity` characters (from the start of the first quote to the end of the last). That grounds each chain in a piece of more or less contiguous narrative, so "A→B at the start of a long document and B→C near the end" is not counted as one story. It then lists every qualifying chain for every source and ranks the chains by how many sources tell them.
+
+- **Length** (radio buttons 1–6): the number of links N in the chain. Only chains of exactly this length are shown; shorter, more direct routes are not. Self-loops may form a step.
+- **Rank** (‹ / ›): which ranked chain to show. Rank 1 is the most frequent across sources; step right to browse rarer ones. When you step past the last chain the map goes empty, which tells you there are no more.
+- **Proximity** (characters): how close together the quotes of a chain must be in a source's text to count as one passage. Smaller means tighter, more clearly contiguous stories; larger is more permissive.
+- **Successive** (toggle, default off): also require the quotes to appear in chain order in the text (non-decreasing start positions along `f0 → … → fN`), so the source narrates the steps in the right order rather than merely nearby.
+- **Tightest fit only** (toggle, default off): by default the filter counts *every* separate (non-overlapping) passage that tells a chain in each source, and the map keeps the links of all of them, so the chain shows its full citation weight. This is also what gives a useful ranking when you have only one source: every chain is then told by one source, so the chain narrated most often inside that source wins. Turn this on to revert to the older behaviour, which counts and shows only the single tightest passage per source (so each step shows just one citation).
+
+Ranking order: number of sources that tell the chain (most first), then the total number of separate passages that tell it across all sources, then a stable tiebreaker. That passage tally is what ranks the chains on a single-source project, where the source count is always one. The map shows the links of all of the chosen chain's passages (or just the tightest one when **Tightest fit only** is on); sister links inside the same bundles are dropped, because the output is always one chain.
+
+Once you have a chain you like on the map, use [Vignettes](../vignette-card/) to turn it into a short written story: with the chain showing, run a **Typical-source vignette** to have the AI write the narrative from the quotes behind that chain, or a **Whole-map vignette** to describe the chain as a whole. So Pathways finds the typical story and Vignettes writes it up.
+
+Notes:
+- **Quote offsets required**: a link can only join a passage if its quote has a recorded position in the source. Links without offsets do not participate.
+- **Order matters, and this filter belongs at the top** ([rule 1](../filter-ordering-rules/)): the app applies it at its position in the pipeline, so a transform filter above it (e.g. [Zoom](../zoom-filter/), [Collapse](../collapse-filter/)) changes which chains exist. Put it below the filters that choose which sources or links you are looking at, and above anything that rewrites labels or counts.
+- **Heuristic**: on very large or dense sources the search is capped, so the ranking is indicative rather than exhaustive.
+
+<!---
+Engine: webapp/js/filter-engine/pathways.js (pure; no DOM/DataService). Per source it indexes edge link instances with text_start_offset/text_end_offset, DFS-enumerates length-N chains, and findPassage() checks whether a window <= proximity holds one instance per step (ordered when successive). computePathways aggregates by source frequency. Webapp wrapper applyPathwaysFilter in filter-pipeline.js just delegates (no highlight: output is one chain).
+--->
+
+### Recalculate quote positions {#recalculate-offsets}
+
+Found in **Project → Edit project → Quote positions**.
+
+Each coded link has a quote from a source. To know *where* in the source that quote is, the app records a character position (offset) for it. Source-text highlighting uses these positions, and so does the [Pathways filter](../pathways-filter/), to judge whether the steps of a story are close together in the text.
+
+Positions are normally filled in as you read sources, so older projects or ones never opened in text view can have many links without them. **Recalculate quote positions** does the whole project in one pass: it matches each link's quote against its source text and stores the position.
+
+- Use it if the Pathways filter finds little or nothing, or after re-importing or editing source text.
+- A quote that no longer matches its source text is reported as "unmatched" and left unchanged; fix the quote or the source and run it again.
+- Needs edit access to the project.
+- The Pathways filter also runs this automatically, once per project, when it notices many links without positions.
+
 ### Zoom Filter <i class="fas fa-search-plus"></i> {#zoom-filter}
 
 Ideas Garden: [Hierarchical coding (Zoom filter)](https://garden.causalmap.app/zoom-filter)
@@ -407,9 +475,9 @@ Ideas Garden: [Hierarchical coding (Zoom filter)](https://garden.causalmap.app/z
 - 👉🏼 **Hierarchy convention**: Use semicolons `;` to express levels, e.g. `Health; Mental health; Depression`. (A space after `;` is optional.)  
 - 👉🏼 **Zoom level** (radio buttons): None, 1–9.
 - **Examples**:
-  - **Level 1**: `"foo; bar; baz"` becomes `"foo"`
-  - **Level 2**: `"foo; bar; baz"` becomes `"foo; bar"`
-  - **If the label has ≤ N levels**: it stays unchanged at zoom level N (and higher)
+    - **Level 1**: `"foo; bar; baz"` becomes `"foo"`
+    - **Level 2**: `"foo; bar; baz"` becomes `"foo; bar"`
+    - **If the label has ≤ N levels**: it stays unchanged at zoom level N (and higher)
 - **Tip (hierarchy reuse)**: Once you have *any* hierarchical factor (i.e. a label containing `;`), the **Cause** and **Effect** dropdown menus also include implied *parent* labels (e.g. `Health behaviour`) to make it easier to keep higher-level naming consistent.
 - **Tip (find hierarchical factors)**: Search for `;` in factor labels, then zoom out to level 1 for a quick “top-level only” view.
 
@@ -460,7 +528,7 @@ Motivation:
 
 Notes:
 - **Opposites, not sentiment**: `~` marks the opposite pole (e.g. `smoking` vs `~smoking`), not “bad”. Use it even when there’s no valence.
-- **Order matters**: because this is a transform filter, its position in the pipeline affects downstream filters and which labels appear in dropdowns.
+- **Order matters, and this filter belongs above the ones that replace labels** ([rule 3](../filter-ordering-rules/)): it reads the `[~3]`/`[3]` tags and the leading `~` to find each pair, so Remove Brackets (square), Collapse, Soft Relabel, Soft Recode Plus, Cluster or Auto Recode above it leaves nothing to pair, silently. As a transform filter it also changes what the filters below it work on, and which labels appear in their dropdowns.
 - **Map colouring override**: when active, arrowhead colouring switches to Combine‑Opposites colouring (flipped status / flipped share), so the Map Formatting **Link Colour** setting does not apply in the usual way.
 
 Example bookmarks (contrast):
@@ -475,8 +543,8 @@ Example bookmarks (contrast):
 
 **Opposites mode toggles (you can use either or both):**
 - **~ prefix (e.g. `~ foo`)** – Treat `foo` and `~ foo` as opposites (no brackets or numbers).  
-  - Works with hierarchies too: we flip **every** `;`-separated component when comparing opposites. Example: `~Healthy habits; smoking` is the opposite of `Healthy habits; ~smoking`.  **Important**: this “flip every hierarchy component” behavior applies **only** to the **~ prefix** mode (not to the numeric tag mode below).
-  - `~foo` is always rewritten to `foo` (even if `foo` does not appear elsewhere in the current factor list).
+    - Works with hierarchies too: we flip **every** `;`-separated component when comparing opposites. Example: `~Healthy habits; smoking` is the opposite of `Healthy habits; ~smoking`.  **Important**: this “flip every hierarchy component” behavior applies **only** to the **~ prefix** mode (not to the numeric tag mode below).
+    - `~foo` is always rewritten to `foo` (even if `foo` does not appear elsewhere in the current factor list).
 - **[~N] tags** – Treat numeric pairs like `Foo [99]` and `Bar [~99]` as opposites. (Square brackets are optional: `Foo 99` / `Bar ~99`.)
 
 
@@ -499,6 +567,8 @@ rewrite any Bar [~99] filters as Foo [99] and add new columns...
 
 **Strip tags from labels** (default: on) – When enabled, removes `[N]` and `[~N]` tag patterns from labels after combining opposites. This keeps labels clean while preserving the tracking information in the `flipped_cause` and `flipped_effect` columns.
 
+**Hide colours** (default: off) - When enabled, the map stops colouring links and factor borders by flipped status and goes back to its normal colouring, which is sentiment unless you have set a custom link colour. Bundling, link labels and the `>F->` bundle notation are unaffected, so you keep the variant breakdown without the red and blue. Use it when the flipped colours fight with the colouring you want to show.
+
 **Bundling strategy (Separate vs Together):**
 - **Separate** (default) – Treat each flipped/unflipped **variant as its own bundle** (so counts are plain numbers per bundle). This means that you may often see two or even more links between two factors. 
 - **Together** – Put all variants into a **single bundle** (one link between two factors). Optionally show an **embellished per‑variant breakdown** inside the link label (see “Map legend” below).
@@ -512,17 +582,17 @@ rewrite any Bar [~99] filters as Foo [99] and add new columns...
 Notes:
 - The “Link labels” setting only matters when Bundling is **Together** (it is disabled/ignored in **Separate**).
 - “Count” below means whatever your map is currently showing for link labels (e.g. **Sources** or **Citations**).
-- **Colours**: Separate = per-end flipped status (tail=cause, head=effect; blue=no, red=yes). Together = **average** flipped share (tail=cause, head=effect; blue→red).
+- **Colours**: Separate = per-end flipped status (tail=cause, head=effect; blue=no, red=yes). Together = **average** flipped share (tail=cause, head=effect; blue→red). Switch **Hide colours** on to drop both and keep the map's normal colouring.
 - **Separate mode tip**: you can set **Link colour** (Map Formatting) to grey so the default (unflipped) links match maps without combined opposites better.
 
 **1) Separate + Simple**
 - In the map, you’ll often see **multiple parallel links** between the same two factors (one per variant).
 - Each link label is a **plain count** for that variant.
 - Variants correspond to `flipped_cause` / `flipped_effect`:
-  - `foo >--> bar` (unflipped/unflipped)
-  - `foo >-F> bar` (unflipped/flipped)
-  - `foo >F-> bar` (flipped/unflipped)
-  - `foo >FF> bar` (flipped/flipped)
+    - `foo >--> bar` (unflipped/unflipped)
+    - `foo >-F> bar` (unflipped/flipped)
+    - `foo >F-> bar` (flipped/unflipped)
+    - `foo >FF> bar` (flipped/flipped)
 
 You'll see this special `>F->` notation in the Bundle column of the Links Table
 
@@ -536,10 +606,10 @@ You'll see this special `>F->` notation in the Bundle column of the Links Table
 **4) Together + Detailed**
 - You’ll see **a single link** between the two factors.
 - The link label shows a **per‑variant breakdown** using these unicode markers:
-  - `▔n` = neither flipped (`--`)
-  - `╲n` = effect flipped (`-F`)
-  - `╱n` = cause flipped (`F-`)
-  - `▁n` = both flipped (`FF`)
+    - `▔n` = neither flipped (`--`)
+    - `╲n` = effect flipped (`-F`)
+    - `╱n` = cause flipped (`F-`)
+    - `▁n` = both flipped (`FF`)
 - Example: `▔5 ╲2 ╱1` means 5 `--`, 2 `-F`, 1 `F-` (zero variants are omitted).
 
 <!--
@@ -549,6 +619,10 @@ Technical implementation:
   - Separate: one edge per cause/effect/flipSig (flipSig is `--`, `-F`, `F-`, `FF`)
   - Together: one edge per cause/effect, but track per-variant counts for labels/colouring
 - stripTags toggle (default: true) uses stripTags() helper to remove [N] and [~N] patterns after combining
+- hideColours toggle (default: false) is read only through GraphManager.getCombineOppColourFilter(), the single
+  resolver every colour branch (Cytoscape styling, DOT, both legends) goes through. It nulls the edge `oppMode`
+  data key, which is the one gate for CO styling: colours, gradient fill and the tail dot. Bundling, labels and
+  edge geometry keep reading the filter itself, so they are untouched.
 - Together + Detailed label markers: `▔` (uu), `╲` (uf), `╱` (fu), `▁` (ff). Zeros omitted.
 -->
 
@@ -562,11 +636,11 @@ Technical implementation:
 - **Field** - Dropdown of available fields from your filtered data (typically shows custom fields like tribe ID)
 - **Counts** - Choose whether to count **Sources** (unique participants/documents) or **Citations** (links)
 - **Display mode** - Choose how to show the data:
-  - **Tally** - Show counts for each value (e.g., "T1:4 T2:3")
-  - **Percentage** - Show what % of each value's total links appear in this bundle (e.g., "T1:34% T2:22%")
-  - **Chi-square** - Show bundle size, then which values are significantly over-represented (⬆) or under-represented (⬇) (e.g., "45 (T1⬆ T3⬇)")
-  - **Chi-square (with counts)** - Also show the observed count for each significant value (e.g., "45 (T1 4⬆, T3 3⬇)")
-  - **Chi-square (with counts/totals)** - Also show observed/total for each significant value (e.g., "45 (T1 4/5⬆, T3 3/6⬇)")
+    - **Tally** - Show counts for each value (e.g., "T1:4 T2:3")
+    - **Percentage** - Show what % of each value's total links appear in this bundle (e.g., "T1:34% T2:22%")
+    - **Chi-square** - Show bundle size, then which values are significantly over-represented (⬆) or under-represented (⬇) (e.g., "45 (T1⬆ T3⬇)")
+    - **Chi-square (with counts)** - Also show the observed count for each significant value (e.g., "45 (T1 4⬆, T3 3⬇)")
+    - **Chi-square (with counts/totals)** - Also show observed/total for each significant value (e.g., "45 (T1 4/5⬆, T3 3/6⬇)")
 - **Ordinal correction (numeric groups)** - When ON (and group values are numeric-like, including strings like `"12 foobar"`), Chi-square modes use an ordinal trend test and show only the overall total plus **(⬆)** or **(⬇)** (no per-group totals).
 - **Sig level** - Significance threshold for Chi-square / Ordinal trend (default p < .05).
 
@@ -603,11 +677,11 @@ Use this when you want one custom link or source column to drive the map, for ex
 **Controls:**
 - **Label field** - choose which link or source custom column should feed **Custom label**
 - **Label aggregation** - how bundled links should be combined:
-  - **Unique** - distinct values only
-  - **Tally** - counts by value
-  - **All** - list all values
-  - **Average** - numeric columns only
-  - **Sum** - numeric columns only
+    - **Unique** - distinct values only
+    - **Tally** - counts by value
+    - **All** - list all values
+    - **Average** - numeric columns only
+    - **Sum** - numeric columns only
 - **Width field** - choose which link or source custom column should feed **Custom width**
 - **Width aggregation** - numeric bundle summary, typically **Average**, **Sum**, or **Max**
 - **Colour field** - choose which link or source custom column should feed **Custom colour**
@@ -681,7 +755,7 @@ Effect: all factors exactly matching any of the labels in the Old list are relab
 Many use cases:
 - temporarily merge multiple factors into one
 - you are using magnets and you can't really use the formulation you want because you want to maximise similarity with existing labels
-  - eg you are using "floods" as a magnet but you really want it as a hierarchical factor like "environmental problems; floods" but you can t use that as a magnet.
+    - eg you are using "floods" as a magnet but you really want it as a hierarchical factor like "environmental problems; floods" but you can t use that as a magnet.
 
 Keyboard shortcuts (Win/Linux ⇄ macOS):
 
@@ -690,8 +764,8 @@ Keyboard shortcuts (Win/Linux ⇄ macOS):
 - Alt+Arrow Up/Down (mac: Option+Arrow): move the current row up/down
 - Ctrl+Arrow Up/Down (mac: Cmd+Arrow): move the current row up/down
 - Delete current row:
-  - Shift+Delete (mac: Shift+Fn+Backspace) or
-  - Ctrl+Shift+K (mac: Cmd+Shift+K)
+    - Shift+Delete (mac: Shift+Fn+Backspace) or
+    - Ctrl+Shift+K (mac: Cmd+Shift+K)
 
 Potentially, one NEW label might have multiple OLD labels. 
 
@@ -725,10 +799,10 @@ Example bookmarks:
 
 (collapsed by default):
 Optional. Ask AI to propose clear names from your current labels. Insert adds them to your magnets box to review/edit.
-  - **Number of clusters** – Choose how many groups to find for AI suggestions.
-  - **Representatives per cluster** – How many example labels the AI sees for each cluster (8–20; default 8). Consider choosing more than 8 if you want to split clusters into positive/negative variants.
-  - **Labelling prompt** - With the usual buttons to save and recall previous prompts 
-  - **Insert** 
+- **Number of clusters** – Choose how many groups to find for AI suggestions.
+- **Representatives per cluster** – How many example labels the AI sees for each cluster (8–20; default 8). Consider choosing more than 8 if you want to split clusters into positive/negative variants.
+- **Labelling prompt** - With the usual buttons to save and recall previous prompts 
+- **Insert** 
 
 
 ##### **Main panel** 
@@ -789,8 +863,8 @@ Go to the [map formatting](../map-formatting-card/) and select Layout → Meanin
 - Magnets are shown with labels; raw factor labels are dots.
 - Colour indicates the magnet group; magnet dot size represents group size.
 - Meaning Space uses the **Similarity** and **Drop unmatched** settings from your most recent Soft Recode Plus filter:
-  - If **Drop unmatched = ON**: unmatched raw labels are not shown (dot count shrinks as you increase Similarity).
-  - If **Drop unmatched = OFF**: unmatched raw labels are still shown, but they render in **grey**.
+    - If **Drop unmatched = ON**: unmatched raw labels are not shown (dot count shrinks as you increase Similarity).
+    - If **Drop unmatched = OFF**: unmatched raw labels are still shown, but they render in **grey**.
 - You can pan (drag) and zoom (mouse wheel and [zoom controls](../map-controls/)).
 - Double-click on an empty part of the map to zoom in at that point.
 - Tooltips on dots show the original (raw) labels and the magnet label.

@@ -12,9 +12,3 @@ VOSCUR are a Bristol-based charity who support organisations in the voluntary, c
 Causal Map was used to create maps showing, for example, the influences and consequences of access to increased funding.
 
 Request the report from [BSDR](https://bathsdr.org/) (info@bathsdr.org).
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

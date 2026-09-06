@@ -56,9 +56,3 @@ The most extreme case is using generative AI for evaluative decisions without cl
 People often misunderstand algorithms, which can provide explicit and transparent decision-making. The real concern is not so much the use of algorithms but the shift toward the use of machine learning and generative AI, where the decision-making process becomes less and less transparent.
 
 > Using AI in decision-making can be worrying not because it uses algorithms but because it _doesn't_.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

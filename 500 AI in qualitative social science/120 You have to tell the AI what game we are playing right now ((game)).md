@@ -19,9 +19,3 @@ So maybe our conclusion should be: you can't expect LLMs to guess what you are t
 We have this kind of problem often when helping clients write interview instructions for our AI interviewing platform, QualiaInterviews. 
 
 Clients know they could themselves lead the interview well because they have all kinds of background information and expectations, much of it only half-conscious, from the general style of interview they expect, how much this particular interviewee can be pushed, how much warm-up chat they might need or expect, what are the most important research aims, which themes can be skipped, and so on. Clients might get frustrated when the AI fails to have read their minds when leading an interview, but they have to ask themselves: what additional information would even a gifted and experienced human interviewer need if they knew nothing at all about the context, the client or any of the background? I think something similar applies in the case of Normand's very interesting experiment.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

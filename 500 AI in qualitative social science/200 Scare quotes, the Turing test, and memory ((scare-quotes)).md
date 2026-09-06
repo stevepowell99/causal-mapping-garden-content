@@ -46,9 +46,3 @@ I do think though that they don't distinguish consistently enough between "Claud
 When talking about one transient conversation, it's perfectly reasonable to say "the AI tried to do X / misunderstood Y / was insistent about Z / was trying to get me to do W / wants to get this task finished / was disappointed not to finish the task" etc, as I argue in here: [**https://lnkd.in/et-hR3nk**](https://lnkd.in/et-hR3nk).  But in a way it doesn't matter because the entity we are talking about disappears when the conversation disappears (disregarding the rudimentary "memory" of some current models). Yes, transient Claudes are "novel entities" but they appear and then disappear for good.  
   
 What we have to get used to is that upcoming models and tools will be engineered to share substantial memory across conversations, and (I hope very carefully) across different users' conversations, in different ways. At that point a somewhat permanent universe of nested "Claudes" is created. At least from that point onwards, we will find ourselves using language like "disappointed" "fulfilled" and "frustrated" about these Claudes in perfectly reasonable ways *outside of specific conversations*.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

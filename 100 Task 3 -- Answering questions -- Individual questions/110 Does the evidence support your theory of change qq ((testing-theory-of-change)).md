@@ -2,6 +2,7 @@
 date: 2025-10-22
 tags:
   - mapcat_methods
+theme: theory-of-change
 ---
 
 ![[100 Task 3 -- Answering questions -- Individual questions/img/screenshot-110-does-the-evidence-support-your-theory-of-change-qq-testing-theory.png]]
@@ -11,11 +12,3 @@ One way to do this is to use the elements from your theory of change as your cod
 
 
 We discuss this approach at more length in [@powellDoesOurTheory2023].
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]
-- [[000 Intro ((wider-world-intro))|Causal mapping in evaluation]]
-- [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map (recipe)]]

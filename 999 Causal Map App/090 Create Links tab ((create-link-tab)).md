@@ -89,6 +89,28 @@ Each section of coded text, each causal claim, is shown with a highlight.
 For overlapping or identical highlights with multiple links, overlaps are shown with varying color opacity. Clicking on multiple highlights shows a link selector for each section.
 - Multiple highlights shown with varying color opacity
 - Click on overlapping highlights to select specific links
+- When highlights overlap, the link chooser lists each link with its own cause to effect, since overlapping links need not share the same bundle.
+
+Each link's quote is found in the source text even when small things differ, such as straight versus curly quotes, spacing, accents or the kind of character mismatches that come from PDFs.
+
+When the AI codes your text, it sometimes returns a quote that does not quite match the source. Every AI quote is checked against the source before the link is saved:
+
+- If the quote is found, the link is saved and lined up with the exact source wording.
+- If it matches only roughly, the link is still saved but given the `unverified_quote` tag so you can review it.
+- If the quote cannot be found in the source at all, the link is not saved, because the AI may have invented it. The summary at the end of a run tells you how many links were skipped or tagged this way.
+
+To check the rough matches, filter the links by the `unverified_quote` tag.
+
+<!---
+TECH NOTE (quote matching):
+- Canonical matcher is the pure module `js/text-match.js` (`locateQuote(sourceText, selectedText)` returning `{ start, end, confidence }` with confidence `exact` | `canonical` | `fuzzy`, or null). No DOM/app deps, so both the overlay and DataService reuse it (DataService must not import a UI module). For many quotes against one source, use `createQuoteLocator(sourceText).locate(quote)`: identical behaviour, but the source is canonicalised once and cached across all the quotes. DataService (`insertAI`, offset recalc) and the `ai-writeback` edge function use the locator; per-quote `locateQuote` on a long source blew the edge function CPU limit (Supabase 546 WORKER_LIMIT).
+- What matching tolerates: case, whitespace and line breaks, curly versus straight quotes, all dash and space variants, ellipses, ligatures (common in PDF text, e.g. "fi"), accents (composed or decomposed, NFKD fold), and invisible characters (soft hyphens, zero width spaces, BOM). A `dropPunct` pass also tolerates a few dropped/added punctuation chars (e.g. a missing comma); `fuzzy` is a bounded approximate fallback.
+- `causal-overlay.js` `findCanonicalTextPosition` is now a thin wrapper over `locateQuote` (kept for existing call sites and the progressCallback). `calculateSpanPositions` still trusts cached `text_start_offset`/`text_end_offset` and only calls the matcher when they are absent.
+- Offsets on edit: `causal-overlay.js` `_computeOffsetsForSelection(selectedText, sourceId)` resolves absolute offsets via DataService source content; `updateExistingEntry` recomputes when the quote or source changed, `createNewEntry` uses the same helper.
+- AI verify/snap/skip: `DataService.Links.insertAI` fetches the source once, runs `locateQuote` per quote, snaps on exact/canonical (stores verbatim slice + offsets), flags fuzzy by adding the `unverified_quote` tag to the link's `tags`, and drops no-match quotes. It returns `{ insertedCount, unverifiedCount, skippedNoMatch }`; the main run loop in `ai-manager.js` tallies these into the end-of-run summary. The retry flow relies on the console warning from `insertAI` for its report.
+- Find flagged AI links later via the `unverified_quote` tag.
+--->
+
 
 ### Link Editor screen {#causal-overlay}
 
@@ -103,6 +125,7 @@ Opens when you highlight text or click on existing links.
 - 👉🏼 **Quote** (text area): editable evidence text; supports ellipses like `Actual quote [this text is ignored] quote continues...`.
 - 👉🏼 **Chain** (toggle): if on, saving keeps the editor open and uses the previous Effect as the next Cause.
 - 👉🏼 **Plain coding** (toggle): if on, saves a self-loop (Cause = Effect) tagged `#plain_coding` so it counts as “theme present” rather than a causal claim. Plain codings can be hidden with the [Exclude self-loops](../exclude-self-loops-filter/) filter.
+- 👉🏼 **Package** (toggle): if on, the Causes are recorded as claimed to work *together* on the Effect (a causal package, e.g. "you need both oxygen and a spark to make fire"). Each created link gets the same auto-generated code in its `package` column, and a small field appears for the **package type**: pick `AND`, `OR` or `DESPITE`, or type your own. With several Effects, the causes into each Effect form their own package (one code per effect). Filter packaged links later with the Everything filter on `package` (one package, or any non-empty code) or `package_type`; the links table also has bulk package/unpackage buttons for selected rows.
 - 👉🏼 **Tags** (multi-select input): add tags like `#hypothetical` or `check`.
 - 👉🏼 **Favourites** (3 toggle buttons): heart / exclamation / star.
 - 👉🏼 **Custom fields** (collapsed panel): choose a small subset of link custom columns to edit in-place for this overlay. You can also type a new field name here to create it for the project. The selection is remembered per project; untouched custom columns are preserved.

@@ -8,6 +8,7 @@
 - 👉🏼 <i class="fas fa-camera"></i> **Copy image to clipboard** (button): copy a high-quality map image for reports/slides.
 - 👉🏼 <i class="fas fa-clipboard"></i> **Copy legend** (button): copy the map legend text.
 - 👉🏼 **Zoom in/out** (controls): zoom the map view.
+- 👉🏼 <i class="fas fa-expand"></i> **Full screen** (button): expand the map to fill the whole window; click again or press Escape to return. You can still click factors and links to edit them while full screen. The same button appears on the Links, Factors, Projects and Sources tables.
 - 👉🏼 **Double-click** (gesture): zoom in to that point on the background.
 
 ### Map Legend <i class="fas fa-list"></i> {#map-legend}
@@ -16,8 +17,8 @@ Discrete text legend showing:
 - Citation coverage percentage
 - Visual encoding explanations (link sizes, colors, numbers)
 - Applied filters summary
-  - 💡Tip: Click [Copy legend](../map-controls/) to copy this text to clipboard.
-  - You can drag the legend box to reposition it on the map.
+    - 💡Tip: Click [Copy legend](../map-controls/) to copy this text to clipboard.
+    - You can drag the legend box to reposition it on the map.
 
 ### Evidence (shortcut to Links Print View) {#map-evidence}
 - 👉🏼 **Evidence** (button, bottom-right on the map, opposite the legend): switches to the **Links** tab and opens **[Print View](../quotes-widget/)** for the **same filtered links** you see on the map. It applies a preset—**Group by** Bundle and Source, **sort** by citation count (highest first), **Show details** and **Context** on, **page size** 50—and updates the URL so you can bookmark or share that layout. A toast links to Print View help; a short hint may point to the **Print view** toggle.
@@ -42,39 +43,56 @@ Legend format example:
 **Layout and interaction**
 
 - 👉🏼 **Layout** (dropdown): choose how the map is laid out.  
-  - Interactive and most other layouts are good while you are conducting your research (fast + supports the [interactive features](../interactive-features/)).  
-  - Print/Graphviz is best for static images (reports/journal articles). In Graphviz SVG you can still pan/zoom (mouse wheel, double-click, Shift+double-click).
+    - Interactive and most other layouts are good while you are conducting your research (fast + supports the [interactive features](../interactive-features/)).  
+    - Print/Graphviz is best for static images (reports/journal articles). In Graphviz SVG you can still pan/zoom (mouse wheel, double-click, Shift+double-click).
 - 👉🏼 **Groups** (dropdown): layout maps with top-level factors as boxes which group together their "children". Choose how group titles are extracted from factor text: No groups / Level 1 (;) / First colon (:) / Square brackets [] / Round brackets ().
 - 👉🏼 **Direction** (radio group): LR, RL, TB, or BT (for Interactive and Print/Graphviz layouts).
 - 👉🏼 **Link direction** (dropdown): Normal (directed arrows) vs Undirected (dots at both ends).  
-  - In Undirected mode, dots use the same colours as arrowheads (including sentiment colouring). When sentiment is neutral (0), they use **Link Colour**.  
-  - Note: when the [Combine Opposites filter](../combine-opposites-filter/) is active, tail/head can still have different colours.
+    - In Undirected mode, dots use the same colours as arrowheads (including sentiment colouring). When sentiment is neutral (0), they use **Link Colour**.  
+    - Note: when the [Combine Opposites filter](../combine-opposites-filter/) is active, tail/head can still have different colours.
 
 **Factors**
 
 - 👉🏼 **Factor labels** (dropdown): what to show next to each factor (same data as the [Factors Panel](../factors-panel/)).  
-  - Citation count (default) / Source count / Sentiment (mean incoming) / None
-- 👉🏼 **Factor colours** (dropdown): Outcomeness (default) / Influence / Citation count (total, in, or out) / Source count (total, in, or out) / **Label segment** (full label or the same segment patterns as **Groups**) / None
+    - Citation count (default) / Source count / Sentiment (mean incoming) / None
+- 👉🏼 **Factor colours** (dropdown): Outcomeness (default) / Influence / **Sentiment discrepancy** (orange scale: how much the factor's incoming links disagree in sentiment) / Citation count (total, in, or out) / Source count (total, in, or out) / **Label segment** (full label or the same segment patterns as **Groups**) / None
 - 👉🏼 **Factor sizes** (dropdown): Citation count (default) / Source count / None
+- 👉🏼 **Label Width** (slider): how wide a factor label may run before it wraps onto another line. The width is measured in **pixels**, not characters, and runs from 30px at the far left to 800px at the far right on a logarithmic scale, so equal steps make bigger jumps at the top end. The number under the slider is the width it currently means. This is the main control for the shape of the whole map: a **narrow** width wraps labels onto more lines, making factors tall and the map tall and thin; a **wide** width keeps labels on one line, making the map short and wide. So to get a taller map, move this slider **down**, not up. **Tidy** (below) sets this slider for you unless you turn it off.
+
+**Spacing (Print / Graphviz layout)** {#map-spacing}
+
+- 👉🏼 **H-Gap** and **V-Gap** (sliders): one sets the gap between the levels of the map, the other the gap between factors on the same level. Which is which depends on **Direction**, so the two labels swap when you change it: the slider marked with the horizontal arrows always changes horizontal spacing. In LR and RL the levels run left to right; in TB and BT they stack top to bottom.
+
+<!--- The sliders keep a fixed meaning: `dot-node-sep` is Graphviz `ranksep` (between levels) and `dot-rank-sep` is `nodesep` (within a level). Only the visible labels swap, via `GraphManager.syncDotGapLabels()`, driven by `dotAxisModel()` in `webapp/js/dot-autofit.js`. Labels were previously fixed, so on every TB/BT map the "H-Gap ⟷" slider changed vertical spacing. Meanings were left alone so saved bookmarks render unchanged. Note the ids read backwards; they are persisted in bookmarks so were not renamed. --->
+
+- 👉🏼 **Tidy** (tick box, on by default): sets **Label Width**, **H-Gap** and **V-Gap** for you. It aims to make the factor labels as large as they can be on screen while the arrows stay easy to follow, which usually also leaves the map with roughly the same proportions as the pane it sits in.
+    - To change the proportions it fits to, drag the map pane's separator bar so the pane is wider or taller. The map tidies itself again.
+    - To set the spacing yourself, drag any of those three sliders. That unticks Tidy and your settings stay put. Tick it again to hand control back.
+    - Where a map's arrows leave their factors very steeply and bunch into a bundle, Tidy pushes the levels further apart, and it will accept smaller labels to do so. Legibility of the arrows comes first.
+    - Some maps cannot be improved much. A long single chain, or a set of factor pairs with nothing joining them, will not sit well in a pane whatever the spacing.
+
+<!--- Tidy = `dot-keep-tidy`, persisted as `keepTidy` in map settings (default on; a saved `false` wins over the default, and Reset map settings turns it back on). The geometry, the objective and the solver live in `webapp/js/dot-autofit.js`; `GraphManager.autoFitDotLayout()` binds it to the sliders and to Viz, laying out trial layouts with `renderString` WITHOUT painting them, so the visible map changes once at the end. `requestAutoFit()` is debounced and single-flighted; it re-fires on map re-render, on Reset, and from a ResizeObserver on `#graph-container`. Objective is `apparentFontPt` = median node font x zoom-to-fit; constraints are `minCrossGapPt`, `maxEdgeSlope` (the one that sets how far apart levels sit) and the node-shape bounds, all in `DEFAULT_FIT_PARAMS`. Tune constants with `scripts/dot_autofit_harness.mjs` (real captured maps, same solver, viz.js in Node) rather than by eye; `scripts/dot_autofit_fixtures.mjs` builds fixtures. Cost is about a dozen unpainted layouts, trimmed by `_wrapSearchBudget()` from a timed layout. Report maps call the same engine via `ReportBuilder._fitLandscape` at the slide's aspect. Tests: `tests/dot-autofit.test.mjs`. Shipped August 2026. --->
 
 **Links**
 
 - 👉🏼 **Link labels** (dropdown): what to show on each link.  
-  - Citation count (default) / Source count / Sentiment / Label by Group / Unique Sources / All Sources / Unique Tags / Unique Tags (Tally) / All Tags / None
+    - Citation count (default) / Source count / Sentiment / Label by Group / Unique Sources / All Sources / Unique Tags / Unique Tags (Tally) / All Tags / None
 - 👉🏼 **Link widths** (dropdown): Citation count (default) / Source count / None
 - 👉🏼 **Link label font size** (control): change link label font sizes.
 - 👉🏼 **Arrowhead size** (control): scale arrowhead size (Interactive + Print/Graphviz). Default 100% keeps current appearance.
 - 👉🏼 **Link colour** (colour picker): sets the default link line colour (Interactive + Print/Graphviz). When sentiment is neutral (0), this colour is also used for arrowheads and node borders.
 - 👉🏼 **Links highlight** (dropdown): optional extra "halo" highlighting without changing the base colour scheme.  
-  - Off (default)  
-  - Reverse (backwards/same-rank in current layout direction)  
-  - Significant (when Label by Group shows ⬆/⬇)  
-  - Feedback loop (2 / ≤3 / ≤4 factors)  
-  - Feedback loop + reverse (combine the above)
+    - Off (default)  
+    - Reverse (backwards/same-rank in current layout direction)  
+    - Significant (when Label by Group shows ⬆/⬇)  
+    - Feedback loop (2 / ≤3 / ≤4 factors)  
+    - Feedback loop + reverse (combine the above)
 
 **Other**
 
 - 👉🏼 **Show self-loops** (toggle, default on): show/hide A→A links on the map.
+
+> **Why a factor's number can look bigger than its arrows add up to.** A self-loop is a link from a factor back to itself (for example a "plain coding" that just records "this theme is present"). When both factor numbers and link numbers are set to citation count, a self-loop is counted on its factor **twice**: once as a citation going out of it, once as a citation coming into it. But on the map that self-loop is drawn as a single looping arrow with a single number. So if you add up the numbers on a factor's arrows by eye, any factor that has a self-loop comes out higher than you expect. This is normal and correct: it is the standard way graphs count connections (a self-loop adds one to both the factor's "in" tally and its "out" tally). If you do not want self-loops counted this way, turn off **Show self-loops**, or use the [Exclude self-loops filter](../exclude-self-loops-filter/).
 
 
 
@@ -156,9 +174,9 @@ These work for all layouts except Print/Graphviz layout (which is mostly for sta
 
 #### Editing and deleting (multiple) factors
 - Select factor(s) by clicking a factor, shift-click or ctrl-click to add more, or shift+drag/ctrl+drag a box around multiple factors, then:
-  - Move selected factors together
-  - Delete matching factors everywhere or in current view only
-  - Rename matching factors everywhere or in current view only
+    - Move selected factors together
+    - Delete matching factors everywhere or in current view only
+    - Rename matching factors everywhere or in current view only
 
 **What does "everywhere or in current view only" mean?**
 - **everywhere**: all links containing factors with exactly the selected labels will be deleted

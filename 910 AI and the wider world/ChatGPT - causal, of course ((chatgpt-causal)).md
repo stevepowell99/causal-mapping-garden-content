@@ -31,9 +31,3 @@ So, ChatGPT is good at extracting causal information, but does it also have expl
 ChatGPT can't actually draw yet but it knows a range of syntaxes for drawing graphs. So when you paste the code into [Mermaid Live](https://mermaid.live/edit#pako:eNp1kLGOwjAQRH9ltc018AMprgE6qqOMUbSKTWyR2Giz5nRC_DtrByQorrA0M3qza_uGfbIOGxyYLh72PyYCHHJs9Rxhvf6GHbH4jpOQhBTbar9meAVAnHK0pXMs3U-8TtiHwUs3uqsb53bjKQ4hDjCWFJYUlKzFOuKdrwM2qT93Padf7bXFwNP8t1Ev03GYC64SFqkwrnByPFGw-uJbKRsU7yZnsFFpic8GTbwrly-WxO1skMTYCGe3QsqSDn-xf_mF2QbSz5uwOdE4u_sDPEt3zg), it looks like this. Not bad for a robot. (Not sure you could say the sun causes the earth's rotation, though.)
 
 ![](img/screenshot-chatgpt-causal-of-course-3.jpg)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

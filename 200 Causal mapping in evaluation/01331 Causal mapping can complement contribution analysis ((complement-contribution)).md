@@ -1,5 +1,6 @@
 ---
 date: 2025-09-21
+theme: theory-of-change
 ---
 
 
@@ -9,9 +10,3 @@ Causal mapping is strongly related. It is not an evaluation method in its own r
 
 How causal mapping can help with Contribution Analysis:  
 - by helping to assemble all the relevant evidence along some causal pathway or pathways from intervention to outcome. Causal mapping has a strong understanding of chains and transitivity. Contribution Analysis can then focus on what it is best at, namely weighing up different explanations for an outcome and how much our intervention really contributed to it.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

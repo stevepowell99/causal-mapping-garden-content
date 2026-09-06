@@ -29,10 +29,3 @@ Note that if you select the top 10 links or factors, you may not get exactly 10 
 ## Zooming out
 
 Using [[590 Hierarchical coding ((zoom-filter))]] is a great way to bring structure into a complicated list of factors. If you have done that, you can use [[780!!- Transforms Filters -- Zoom]] to simplify your map.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]
-- [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map (recipe)]]

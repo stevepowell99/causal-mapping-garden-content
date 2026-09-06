@@ -29,10 +29,4 @@ number of columns: 2
 
 --- end-multi-column
 
-[See the report here](https://www.ifrc.org/media/13554)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]
+[See the report here](https://www.ifrc.org/evaluation/federation-wide-meta-evaluation-nepal-earthquake-response)

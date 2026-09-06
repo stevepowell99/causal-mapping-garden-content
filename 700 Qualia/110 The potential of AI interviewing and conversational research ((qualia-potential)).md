@@ -28,9 +28,3 @@ When Qualia uses a causal focus, we can using causal mapping (and our own Causal
 
 
 In summary, this kind of semi-automated pipeline opens up ==possibilities for monitoring, evaluation and social research which were unimaginable just three years ago== and are well suited to today’s challenging, complex problems like climate change and political and social polarisation. Previously, only quantitative research claimed to produce generalisable knowledge about social phenomena validly and at scale, by turning meaning into numbers. ==Now perhaps qualitative research will eclipse quantitative research== by bypassing quantification and dealing with meaning directly, in somewhat generalisable ways.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Background on data collection with Qualia ((qualia))|chapter intro]]

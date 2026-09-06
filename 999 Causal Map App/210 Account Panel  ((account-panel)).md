@@ -6,19 +6,19 @@
 
 User account management and project settings.
 
-**Onboarding (first sign-up):** When you sign up, we ask a few questions including whether you want AI options switched on and active right at the start, and what you want to do first in the app. If you choose an AI-first workflow, AI is switched on automatically. If AI is off, there are no AI services at all (except basic MapCat help); you can change this anytime in Account settings. If AI is on, you get 10 free AI credits per month, and the AI switch is turned on by default; you can turn it off later in Account settings.
+**Onboarding (first sign-up):** When you sign up, we ask a few questions including whether you want AI options switched on and active right at the start, and what you want to do first in the app. If you choose an AI-first workflow, AI is switched on automatically. If AI is off, there are no AI services at all (except basic MapCat help); you can change this anytime in Account settings. If AI is on, you get 100 free AI credits per month, and the AI switch is turned on by default; you can turn it off later in Account settings.
 
-**AI coding toggle ("AI options switched on and active"):** Turn on to use AI; turn off and there are no AI services at all (except basic MapCat help). You can change this anytime in Account settings. When you turn it **on**, a warning modal appears: your data is sent to AI providers when you use AI; it is **not** used to train models; OpenAI (GPT) may retain data for up to 30 days for abuse monitoring; Vertex AI and DashScope do not retain data; see our [privacy policy](https://www.causalmap.app/privacy-policy/). Credits when on depend on your plan (Free: 10, Private: 100, Pro: 1000, Team: 2000/month). **Plans without AI** (e.g. Private Manual) can turn on to try with 10 credits/month (free credits do not stack with paid AI plans).
+**AI coding toggle ("AI options switched on and active"):** Turn on to use AI; turn off and there are no AI services at all (except basic MapCat help). You can change this anytime in Account settings. When you turn it **on**, a warning modal appears: your data is sent to AI providers when you use AI; it is **not** used to train models; OpenAI (GPT) may retain data for up to 30 days for abuse monitoring; Vertex AI and DashScope do not retain data; see our [privacy policy](https://www.causalmap.app/privacy-policy/). Credits when on depend on your plan; see [AI credits](../account-panel/). **Plans without AI** (e.g. Private Manual) can turn on to try with the free allowance (free credits do not stack with paid AI plans).
 
 **Where AI runs is a project setting, not a user setting.** Each project has an **AI Processing Region** (Project → Edit project → AI Processing Region) with three options: **EU (Belgium, europe-west1)**, **UK (London, europe-west2)**, or **US (Virginia, us-east5)**. New projects default to EU.
 
 When the region is **EU or UK**, the app guarantees every AI call stays in Europe:
 
-- The model picker is filtered to **Gemini 2.5 Pro** and **Gemini 2.5 Flash** only. Faster models like Gemini 3.5 Flash and Gemini 3.1 Pro are hidden because they route through Google's global endpoint, not a European region.
+- The coding model picker offers the European-resident Geminis only: **Gemini 3.5 Flash** (the coding default), **Gemini 3.6 Flash**, **Gemini 3.5 Flash-Lite**, **Gemini 3.1 Flash-Lite**, **Gemini 3.1 Pro Preview** and **Gemini 2.5 Flash**. Gemini 2.5 runs in a single European region and every Gemini 3 model runs in Google's EU multiregion, so processing stays inside the EU. Models with no European route (GPT-5, Qwen) are hidden.
 - Any AI request that would process data outside Europe is blocked client-side before it leaves the browser. A notification explains which model or region caused the block and how to fix it.
 - Document embeddings (used by RAG and similarity search) automatically route to `europe-west1` (or `europe-west2` for UK), instead of the default `us-central1`.
 
-When the region is **US**, the model picker shows the full list, including Gemini 3.5 Flash, Gemini 3.1 Pro Preview, GPT-5, Qwen and others. These are faster or more capable, but they process your prompts and data outside Europe.
+When the region is **US**, the model picker shows the full list, including GPT-5, Qwen and others. These process your prompts and data outside Europe.
 
 Switching the region for an existing project takes effect immediately — the dropdowns re-render and the gate updates without a reload.
 
@@ -70,7 +70,7 @@ The subscriptions list uses one row per type (private, pro, team) with seat-coun
 <!-- Pricing details:
 - Annual price = 8 × monthly rate
 - Seats dropdown: 1–100
-- Multi-seat discount: total × n^0.9
+- Seats are billed straight per-seat: total = unit × seats (no volume discount; ad-hoc discounts are handled by Lemon Squeezy codes)
 - Price display updates when Add AI is toggled to include AI price
 -->
 
@@ -85,7 +85,7 @@ Type:
 
 Monthly vs Annual.
 
-**AI credits (when you have AI):** Free users who opt in get 10 credits/month. Private AI: 100. Pro AI: 1000. Team: 2000. Credits renew at the start of each month and do not roll over. See [Responses Panel](../responses-panel/) for usage. Plans without AI (e.g. Private Manual) can turn on the AI toggle in Account to try with 10 credits/month. 
+**AI credits (when you have AI):** Free users who opt in get 100 credits/month. Private AI: 1000. Pro AI: 2000. Team, Academic and Corporate: 4000. Credits renew at the start of each month and do not roll over. See [Responses Panel](../responses-panel/) for usage. Plans without AI (e.g. Private Manual) can turn on the AI toggle in Account to try with the free 100 credits/month. These figures are the user-facing copy of `subscription-prices.json`, which is the source of truth; update them together. 
 
 User can purchase multiples of one or more subs to distribute to colleagues. 
 
@@ -99,56 +99,53 @@ Each subscription row has a seat-count dropdown (1–100). After purchase, a mod
 
 
 
---#### Subscriptions Table
+-->
+
+#### Subscriptions Table
 
 
-The Subscriptions card shows a single simple table listing subscriptions where you are manager or subscriber, including manager email, subscriber emails, and other details, with an Edit button (for subscriptions you manage) that opens the subscriber-email modal.
+The Subscriptions card shows a simple table of the subscriptions where you are the manager or a subscriber, with the manager and subscriber emails. If you manage a subscription, an **Edit** button lets you change who has a seat.
 
-**Renewals (Lemon Squeezy):** your renewal dates are synced automatically when you open/refresh the app while signed in. Admins can also manually trigger a sync per subscription from the table.
+**Renewals:** your renewal date updates automatically whenever you open or refresh the app while signed in.
 
-**Expiry reminder emails:** subscription rows sync a few safe contact properties to Loops (`subscriptionEndDate`, `subscriptionStatus`, etc.). Loops date-based automations can then send 7-day, 1-day, and expired reminders. This covers both Lemon Squeezy rows and admin/manual rows because both use `subscriptions_purchased`.
+**Reminder emails:** we email you before a subscription ends, 7 days before, 1 day before, and when it expires.
+
+<!--- Maintainer/tech notes (Subscriptions Table)
+- Renewal dates sync from Lemon Squeezy when you open/refresh the app; admins can force a per-row sync from the table.
+- Reminder emails go via Loops date-based automations, driven by the `end_date` on each `subscriptions_purchased` row (covers both Lemon Squeezy and admin/manual rows). Only a few safe contact properties sync to Loops (`subscriptionEndDate`, `subscriptionStatus`, etc.), never message content.
+--->
+
 
 #### Private projects and subscription expiry {#private-projects-and-subscription-expiry}
 
-**Free plan:** new projects are created **public** by default.
+The paid value is privacy: a **private** project is one that only you, and the people you invite, can see. Keeping a project private needs an active paid plan.
 
-**Paid plans with Private capability** (Private, Pro, Team, etc.): you can create and keep **private** projects (`is_public = false`).
+**On the free plan,** projects are **public**: anyone with the link can view them. You cannot make a project private without a paid plan.
 
-**When that paid plan expires:**
+**On a paid plan that includes private projects** (Private, Pro, Team and similar), you can make projects **private** and work on them privately.
 
-- Existing private projects **stay private**. The app and database **never** auto-set `is_public = true` on a project that was private.
-- Those projects are **archived and locked** (read-only) so collaborators cannot keep editing after expiry.
-- They remain visible to the owner (and collaborators) in the Projects list when **Show archived** is on, but **cannot be opened** while archived.
-- Renew the subscription, then unarchive and unlock to edit again.
+**If your paid plan expires,** your private projects cannot be opened, viewed or edited, until you do one of these:
 
-**Making a project public** is always explicit (toggle + consent modal) and requires an active paid plan. A private project cannot be flipped to public without one.
+- **Renew** your plan: the projects stay private and open normally again, or
+- **Make a project public:** you can do this without a plan, behind a confirmation. After that anyone can view it, and you can open and edit it again.
 
-**Enforcement:** a daily database job (`secure_private_projects_for_expired_subscriptions`, 03:15 UTC) plus a client backstop when the owner loads the app. See [Project privacy and subscription expiry (maintainers)](../project-privacy-and-subscription-expiry-maintainers/).
+Your private projects are never published for you. Turning a project public is always your own explicit choice.
 
-The subscriber-email modal pre-fills the first slot with the current user's email and validates against the purchased seat count, indicating if there are remaining seats or too many emails.
+When you allocate seats, the email box pre-fills your own email in the first slot and tells you how many seats are left, or if you have added too many emails.
 
-
-The admin tab includes a Subscriptions overview table (Tabulator) with header filters, sorting, and server-side pagination. Its **Reminders preview** subtab shows projected 7-day, 1-day, and expiry reminders from `subscriptions_purchased.end_date`; Loops still sends the actual emails.
-
-See also Gating in Technical dletails section below
-
-Lemon Squeezy (LS) integration (first step):
-- A new button appears in the Account tab: "Buy Private (Monthly, no AI) via Lemon Squeezy".
-- On click, it opens the Lemon Squeezy checkout in a new tab for the Private/Monthly/Manual variant.
-- On success, the app records the purchase using the existing subscriptions flow (same as the simulated purchase), so your allocation shows up immediately.
-
-Frontend configuration (override in `webapp/env-config.local.js`):
-```js
-window.ENV = {
-    LEMONSQUEEZY_STORE_DOMAIN: 'causal-map', // your LS store subdomain
-    LS_VARIANT_ID_PRIVATE_MONTHLY_MANUAL: ''   // the variant ID slug or UUID
-}
-```
-
-Notes:
-- Only administrators can click purchase (same gating as the simulated buttons).
-- We reuse the existing email collection modal to allocate the first seat.
-- This is a minimal frontend-only integration (no webhooks yet). Renewals are synced on app load via an Edge Function; admins can manually force a sync for any subscription row.
+<!--- Maintainer/tech notes (private projects, expiry, purchasing)
+- Privacy is gated on `public.project_plan_ok(name)` = `is_public OR user_has_active_paid_plan(owner_id) OR owner-is-admin`. RLS on links/sources/source_chunks/prompts (read and write) and on bookmark writes requires it, so an unpaid owner (and their collaborators) cannot read or edit a private project until it is renewed or made public. The admin-owner clause stops staff being locked out of their own private projects.
+- `read_only` (lock) and `archived` are independent manual flags with no billing meaning. There is no nightly job and no client backstop touching them (both removed June 2026).
+- Toggle direction: making a project private needs a plan (trigger `projects_require_plan_for_private` plus the `toggle_project_public_status` RPC); making it public is always allowed for the owner/editor and is the unpaid owner's way back in.
+- Client: `ProjectManager.isPrivateProjectLockedForCurrentUser` and `handlePrivateProjectLocked` give the owner a Renew / Make-public choice on open; the Projects list shows a locked badge for the owner's private projects when their plan is inactive.
+- Admin Subscriptions overview is a Tabulator table with header filters, sorting and server-side pagination; the Reminders preview subtab projects 7-day/1-day/expiry reminders from `subscriptions_purchased.end_date` (Loops sends the actual emails).
+- Lemon Squeezy purchase flow: an Account-tab button opens the LS checkout (Private/Monthly/Manual variant) in a new tab; on success the app records the purchase via the existing subscriptions flow so the allocation shows immediately. Only admins can purchase (same gating as the simulated buttons); the existing email modal allocates the first seat. Minimal frontend-only integration (no webhooks yet).
+- Frontend config (override in `webapp/env-config.local.js`):
+      window.ENV = {
+        LEMONSQUEEZY_STORE_DOMAIN: 'causal-map', // LS store subdomain
+        LS_VARIANT_ID_PRIVATE_MONTHLY_MANUAL: ''  // variant ID slug or UUID
+      }
+--->
 
 <!--
 Renewal sync (LS → Supabase DB):
@@ -163,6 +160,4 @@ Renewal sync (LS → Supabase DB):
 - Automatic trigger: app boot `loadProjects` calls `DataService.syncMyCustomerSubscriptions()` before computing `getEffectiveSubscriptionStatus()`
 - Throttle: client-side localStorage TTL (currently 6 hours per user per mode) to avoid frequent LS API calls
 - Admin UX: "Your subscriptions" table shows an admin-only "Sync LS" button per row (syncs by that row’s manager email)
--->
-
 -->

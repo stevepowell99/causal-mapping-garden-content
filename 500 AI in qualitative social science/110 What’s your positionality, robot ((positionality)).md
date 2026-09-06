@@ -52,9 +52,3 @@ See how we currently use AI in Causal Map [here](https://www.causalmap.app/ai/).
 This post is based on my recent contribution to the [NLP-CoP](https://merltech.org/nlp-cop/) Ethics & Governance Working Group, along with colleagues [Niamh Barry](https://www.linkedin.com/in/niamh-barry-mel/), [Elizabeth Long](https://www.linkedin.com/in/elizabethannelong/) and [Grace Lyn Higdon](https://www.linkedin.com/in/gracelynhigdon/). 
 
 *This post was originally published by Steve Powell on LinkedIn and has been republished here. [See the original article here](https://www.linkedin.com/pulse/whats-your-positionality-robot-steve-powell-cowlc/)*
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

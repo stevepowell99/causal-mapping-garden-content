@@ -5,17 +5,23 @@ tags:
   - mapcat_core
 table-of-contents: "true"
 ---
+
 ## Summary
 
-> You have a stack of documents or interviews and you want to answer research or evaluation questions rigorously. This is one workflow for getting there: nine steps, from planning through coding to a final judgement. The steps are almost the same whether you code by hand or with AI. This steps presented in this paper match the way we work in the Causal Map app, but the principles should make sense however coding is done. There is a strong focus here on AI-supported coding at scale, as the scale of AI coding requires some additional procedures and checks, but a manual coder follows approximately the same path and can just skip those sections.
+> You have a stack of documents or interviews and you want to answer research or evaluation questions rigorously. This is one workflow for getting there: eight steps, from planning through coding to a final judgement. The steps are almost the same whether you code by hand or with AI. This steps presented in this paper match the way we work in the Causal Map app, but the principles should make sense however coding is done. There is a strong focus here on AI-supported coding at scale, as the scale of AI coding requires some additional procedures and checks, but a manual coder follows approximately the same path and can just skip those sections.
 
 Most subscribers to our App have coded manually, and coding manually is great.  But although there's a lot of documentation, we never really did a step-by-step guide to how to do manual coding. 
+
+
+
+
+
 
 At Causal Map we've also been using AI for causal coding systematically now for nearly four years in a set of really interesting studies, mostly for clients, and often at considerable scale. Plenty of subscribers have been asking to use AI themselves. We've been reluctant frankly because we've been making it up as we go along and there are a *lot* of different things to think about. But now we've introduced One-Click Coding and it's time that we spilled out something of what we have learned on AI coding for the benefit of others. 
 
 So that is two overlapping reasons for this working paper. It is written so that a manual coder can read straight past the AI-only parts (the AI decisions table, and the model, chunk and iteration parts of Step 4) and still have a complete workflow.
 
-The steps can be divided into three Tasks. **Collect** (Steps 1 to 2): decide what questions you want to answer and gather data that can answer them. **Code** (Steps 3 to 5): turn the text into a checked table of many causal claims, each with a quote and a source. **Query** (Steps 6 to 9): weigh that evidence and use it to answer the questions. The pattern is one or more cheap, wide coding passes to capture the evidence, then steadily narrower judgement, so a thousand raw claims might end as a few dozen well-vouched links and a few strong findings.
+The steps can be divided into three Tasks. **Collect** (Steps 1 to 2): decide what questions you want to answer and gather data that can answer them. **Code** (Steps 3 to 5): turn the text into a checked table of many causal claims, each with a quote and a source. **Query** (Steps 6 to 8): weigh that evidence and use it to answer the questions. The pattern is one or more cheap, wide coding passes to capture the evidence, then steadily narrower judgement, so a thousand raw claims might end as a few dozen well-vouched links and a few strong findings.
 
 The companion piece, [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))|Quality assurance at each step]], goes through the same steps and asks how to keep each one rigorous. For step-by-step app instructions in the Causal Map itself, see [[030 AI coding ((simple-ai))]].
 ## About causal mapping
@@ -26,17 +32,17 @@ It is like systems mapping, but instead of modelling how the world works we firs
 
 We code in the **minimalist** style: a link records only that "a source says X influenced Y", with a quote. No polarity, no strength, no fitted curves, no counterfactual the speaker never gave. The case for that is in [[005 Minimalist coding for causal mapping ((minimalist))]].
 
-## The nine steps
+## The eight steps
 
-1. Collect: [Overall planning: questions, methods](#step-1-overall-planning)
-2. Collect: [Gather data](#step-2-data-gathering)
-3. Code: [Prepare and revise the codebook](#step-3-manage-the-codebook)
-4. Code: [Code the claims](#step-4-code-the-claims)
-5. Code: [Check links and iterate](#step-5-check-and-enrich-individual-links)
-6. Query: [From claims to bundles](#step-6-from-claims-to-bundles)
-7. Query: [From bundles to pathways](#step-7-from-bundles-to-pathways)
-8. Query: [Judge value and relative contribution](#step-8-judge-value-and-relative-contribution)
-9. Query: [Holistic final judgement](#step-9-holistic-judgement)
+1. Collect: [Overall planning: questions, methods](#step-1)
+2. Collect: [Gather data](#step-2)
+3. Code: [Prepare and revise the codebook](#step-3)
+4. Code: [Code the claims](#step-4)
+5. Code: [Check links and iterate](#step-5)
+6. Query: [From claims to bundles](#step-6)
+7. Query: [From bundles to pathways](#step-7)
+8. Query: [Judge value, contribution and the final judgement](#step-8)
+
 
 The steps are not a strict sequence. Sometimes you will iterate. You will revisit the early ones as results come in, and only the last is strictly required; most projects use a handful.
 
@@ -92,7 +98,7 @@ flowchart LR
 ```
 
 -->
-## Step 1: Collect
+## Step 1: Collect {#step-1}
 
 Start from the question. Before anything else, write down what you want to be able to say at the end, and to whom. Everything downstream, the data you gather, the labels you allow, the columns you add, the queries you run, follows from that.
 
@@ -102,19 +108,21 @@ It helps to sketch, before you code, the map or table that would answer your que
 
 Treat the question as a first draft. Causal mapping is partly exploratory, so expect to sharpen it once early coding shows you what the sources actually talk about.
 
+Causal Map's AI assistant, MapCat, can help walk you through these decisions, design and iterate on a corresponding coding plan, and then build a report to answer those questions.
+
 ### How this fits the wider field
 
-Causal mapping is rarely the whole evaluation. It is an evidence broker: it gathers and organises causal claims so that established approaches can make the judgement. It belongs in the causal pathways family of methods, alongside contribution analysis [@mayneMakingCausalClaims2012], process tracing [@befaniProcessTracingBayesian2017; @collierUnderstandingProcessTracing2011], Outcome Harvesting [@wilson-grauOutcomeHarvestingPrinciples2018; @brittStrengtheningOutcomeHarvesting2025], realist evaluation [@pawsonRealisticEvaluation1997], QuIP [@copestakeAttributingDevelopmentImpact2019] and Most Significant Change [@daviesMostSignificantChange2005]. Most real evaluations combine several, what Apgar and Aston call bricolage: you pick the methods to fit the question [@apgarHowWeDefine2025; @marinaapgarPARTICIPATORYAPPROACHEXPLORING2024]. The nine steps here map onto the four stages they describe for a causal pathways evaluation: design and questions (Steps 1 to 2), methods and data (Step 2), causal analysis (Steps 3 to 7) and assessing the strength of evidence (Steps 6 to 9).
+Causal mapping is rarely the whole of your research or evaluation project. It is an evidence broker: it gathers and organises causal claims as part of your process of making evaluative judgements which may include other approaches. You can see it as belong within the causal pathways family of methods, or perhaps as a tool which feeds into those methods: contribution analysis [@mayneMakingCausalClaims2012], process tracing [@befaniProcessTracingBayesian2017; @collierUnderstandingProcessTracing2011], Outcome Harvesting [@wilson-grauOutcomeHarvestingPrinciples2018; @brittStrengtheningOutcomeHarvesting2025], realist evaluation [@pawsonRealisticEvaluation1997], QuIP [@copestakeAttributingDevelopmentImpact2019] and Most Significant Change [@daviesMostSignificantChange2005]. Most real evaluations combine several such methods, what Apgar and Aston call bricolage: you pick and combine the methods to fit the question [@apgarHowWeDefine2025; @marinaapgarPARTICIPATORYAPPROACHEXPLORING2024]. The nine steps here map onto the four stages they describe for a causal pathways evaluation: design and questions (Steps 1 to 2), methods and data (Step 2), causal analysis (Steps 3 to 7) and assessing the strength of evidence (Steps 6 to 8).
 
-## Step 2: Gather data
+## Step 2: Gather data {#step-2}
 
-The question decides the data. Work out which sources you need, from whom, and covering what, so the comparisons you care about are possible later. If you will want to compare women and men, or staff and clients, or early and late, those groups have to be in the data and recorded in the source metadata, which Step 5 and the query steps lean on.
+The question decides the data. Work out which sources you need, covering what, so the comparisons you care about are possible later. If you will want to compare women and men, or staff and clients, or early and late, those groups have to be in the data and recorded in the source metadata, which Step 5 and the query steps lean on.
 
 Narrative material works best: ask people what changed and why, and you get causal claims to code. QuIP-style "stories of change" are gathered in exactly this way [@copestakeAttributingDevelopmentImpact2019].
 
-Gathering data is a subject all of its own and we only touch it here; this focus of this paper is coding and analysis.
+Gathering data is a subject all of its own and we only touch it here; this focus of this paper is coding and analysis. See [[Task 1|000 Task 1 -- Introduction ((task1-intro))]].
 
-## Step 3: Prepare and revise the codebook
+## Step 3: Prepare and revise the codebook {#step-3}
 
 This step is the same whether you or an AI does the coding: you decide how tightly the labels are fixed in advance, and you organise and revise them as the work goes on. With AI the choice is an instruction; by hand it is your own discipline, but the trade-offs are identical.
 
@@ -139,19 +147,22 @@ Recoding is how you revise the codebook after a first run, which is why it belon
 
 For organising a large codebook, deciding on a labels-plus-tags system, and bulk rewriting, the recoding paper [[905 Different kinds of coding and recoding ((kinds))]] is the detail; the same tools serve manual and AI coding.
 
-## Step 4: Code the claims
+## Step 4: Code the claims {#step-4}
 
 By hand, coding means reading the text, highlighting each causal claim, and recording it as a link from one factor to another with its quote and source. The decisions that follow (labels, hierarchy, when to add a column) apply just as much to manual coding; the rest of this step is the AI mechanics for doing the same thing at scale. For a hands-on first manual project see [[100 Manually code your first project ((howto-manual-code))]].
 
 With AI, coding means writing an instruction, much like a chatbot prompt, that you paste into the app. It tells the app the context and what labels and columns you want. You do not need to add the text itself; the app does that.
 
-In a hurry, or coding just one short text? Press **One-click**: the app codes with all defaults (holistic, no codebook), chunks long texts for you, and tidies overlapping labels. Often that is enough. The rest of this step is for when you want control.
+In a hurry, or coding just one short text? Press **One-click**: the app codes with all defaults (claim by claim, no codebook), chunks long texts for you, and joins up the resulting fragments afterwards. Or ask **MapCat**, the assistant inside the app, which conducts the set-up conversation for you and reports every choice it makes. Both run the same orchestration machinery, described at [How the app orchestrates an AI run](#how-the-app-orchestrates-an-ai-run) below. Often that is enough. The rest of this step is for when you want control.
 
 The golden rule: test your instruction on a small, varied sample, work out exactly why the output is wrong or thin, change it, and run again, until you are happy. Then scale up.
 
 ### Holistic or claim by claim
 
-Holistic coding asks the model for one connected diagram per chunk. You get a cleaner, joined-up story, best for a single short text, but the model has more freedom over what to include. (Oddly, asking for a diagram yields better-connected networks than asking for a list of links; under the hood we ask for a diagram and convert it.) Claim-by-claim coding asks for every link separately. You get fuller coverage, better for many texts, but the links join up less and you rely on recoding to rejoin chains: if the text says A to B to C to D and the model codes A to B and C to D with slightly different middles, a later recode has to spot that they match.
+> [!warning] Currently not implemented
+> Currently we do not use holistic coding in the app, as we found that although it tells a coherent story, this is at the expense of some of the links not really being causal. We may re-introduce it in the future. Instead we use `join-islands` processing to get the bigger picture.
+
+Holistic coding asks the model for one connected diagram per chunk. You get a cleaner, joined-up story, best for a single short text, but the model has more freedom over what to include. (Oddly, asking for a diagram yields better-connected networks than asking for a list of links; under the hood we ask for a *diagram* and convert it.) Claim-by-claim coding asks for every link separately. You get fuller coverage, better for many texts, but the links join up less and you rely on recoding to rejoin chains: if the text says A to B to C to D and the model codes A to B and C to D with slightly different middles, a later recode has to spot that they match.
 
 <!--span-cols-->
 
@@ -168,7 +179,13 @@ Holistic coding asks the model for one connected diagram per chunk. You get a cl
 
 ### Chunk size and sampling
 
-The more text you give the model at once, the thinner its coding: one page can yield as many links as five. For better recall use smaller chunks, and do not leave the model to decide what counts as important. On a big corpus, sample first: with 1000 pages, code 100, review, code another 300, and if it holds up finish the rest. Make the sample random, or stratified by the groups you care about, so you do not tune to one untypical slice (see [[080 Sources Bar ((sourcesHeader))|selecting random samples]]).
+The more text you give the model at once, the thinner its coding: one page can yield as many links as five. In our experiment series ([[910 AI coding experiments synthesis ((coding-experiments))|synthesised here]]) chunk size mattered more than anything we did to the prompt wording: chunks of 2,000 characters found half as many links again as chunks of 4,000, and a whole 89,000-character document sent in one request returned 6 links where chunked runs returned over 100.
+
+The reason is that models **satisfice**: given a long stretch of text, they report a plausible handful of claims and stop, whatever the instruction says. But small chunks have their own cost: a cause discussed early in a document and its effect discussed pages later never appear in the same chunk, so the coded map arrives fragmented. The app's orchestration counters both problems: **segment accounting** obliges the model to account for every paragraph, so large chunks behave more like small ones, and a **join-islands** pass hunts afterwards for the missing cross-chunk connections, demanding a verified quote for each. Both are described under [How the app orchestrates an AI run](#how-the-app-orchestrates-an-ai-run) below, and MapCat, the app's assistant, will choose these settings for you if you tell it whether you want fine detail or broad strokes.
+
+Even with those remedies the trade-off remains real. In our tests (single runs), a plain run at 16,000 characters kept only around a seventh to a third of the links a 2,000-character run found; adding segment accounting brought that back to roughly half to three quarters, depending on the text, at an eighth of the number of requests. Larger chunks are quicker, cheaper and better at catching connections that span pages; smaller chunks still win on sheer recall. When every link matters, use small chunks.
+
+On a big corpus, sample first: with 1000 pages, code 100, review, code another 300, and if it holds up finish the rest. Make the sample random, or stratified by the groups you care about, so you do not tune to one untypical slice (see [[080 Sources Bar ((sourcesHeader))|selecting random samples]]).
 
 ### Model
 
@@ -208,7 +225,21 @@ Delete links with too little evidence, or where you assumed a cause or effect.
 
 Only the final pass feeds the app.
 
-## Step 5: Check links and iterate
+### How the app orchestrates an AI run
+
+You can use One-click coding without knowing any of this, but if you are going to rely on AI coding it helps to know what happens between pressing the button and seeing the map. The same machinery runs whether you choose the settings yourself or let the app's assistant choose them for you. And the disciplines it applies, exhaustive accounting, verbatim quotes, every decision on the record, are worth borrowing even if you never touch AI at all.
+
+**MapCat, the optional conductor.** MapCat is the chat assistant inside the app. In guided mode it conducts the set-up conversation a methodologist colleague would: what do you want to find out, how fine-grained should the coding be, whether cost or quality matters more, whether factor labels should name the actors or stay in the source's own words, whether to use a hierarchical codebook, and how far to go in joining up the map afterwards. It turns your answers into settings and starts the run. Two guarantees underpin this. Every decision it takes on your behalf appears on a decision card in the chat before anything runs, and the same decisions are recorded exactly in the run logs, so another analyst can see what was done and repeat it. MapCat is an optional layer: everything it sets, you can set by hand in the coding panel. We describe it here because it gathers into one conversation the decisions that any AI coding has to settle, with or without an assistant.
+
+**Segment accounting, the cure for satisficing.** Left to itself, a language model reads a page, reports the three or four most striking causal claims, and stops. Researchers call this satisficing: doing just enough to produce a plausible answer. It is the main reason naive AI coding misses so much, and no amount of pleading in the instruction fixes it. What fixes it is bookkeeping. Before coding, the app splits the text internally into short numbered segments, and tells the model to return a verdict *for every numbered segment*: either the causal claims it found there, or an explicit entry saying why that segment has none, quoting its most causal-sounding phrase as justification. A model that has to account for every segment cannot skim. The rule cuts the other way too: a justified "nothing here" beats an invented claim, so the accounting raises recall without licensing fabrication. With this in place we can give the app chunks of *eight times the size*, several pages at a time, and still find roughly half to three quarters of the links that small chunks would (see [[910 AI coding experiments synthesis ((coding-experiments))|the experiments synthesis]]). This is several times quicker and cheaper, and it reduces the "window effect": the app has more chance to notice links which span larger sections of text.
+
+**Joining the islands.** Coding chunk by chunk has a side effect: the same factor gets slightly different labels in different chunks, and links between distant parts of the text are missed, so the finished map arrives as an archipelago of small unconnected islands. An optional join-islands pass then re-reads the whole text alongside the coded links and a numbered list of the islands, and must return a verdict for every island, the same accounting discipline again: merge a label with one elsewhere that names the same factor, propose a connecting claim with a verbatim quote, or state that the text really does leave that island unconnected. The app then checks every proposed quote mechanically: its fragments must appear word for word in the text, in order, or the link is discarded and the discard is reported. Rounds repeat until one finds nothing new. On one test text, a 28,000-character account of the outbreak of the First World War, the pass took the map from 59 separate islands to 6, with every added link's quote machine-verified.
+
+The pass has two modes, because it embodies a methodological choice. **Merge** consolidates labels and never adds a link, so nothing appears in the map that the coding did not find; choose it when you want strict reproducibility, or when you plan to consolidate labels across the whole project with a recode anyway. **Full** also adds the quote-checked links between islands. The result is far better connected, and every added link carries a verified quote, but these are still the least certain links in the map: a quote can check out while the reading of it is subtly wrong. Full mode suits a presentation map, or a single rich source where you want each account to hang together; merge mode suits work headed for publication. Either way the added links carry a marker recording where they came from, so you can review or exclude them at any point.
+
+**Why we show the workings.** This is our general approach to orchestrating AI, and MapCat simply makes it visible: split the work into small pieces the model must account for one by one, verify mechanically whatever can be verified (quotes above all), report what was dropped as well as what was kept, and record every decision so the run can be repeated. Even the coding instruction is built this way: a minimalist core saying what a causal claim is, plus separate optional layers for hierarchy, opposites, extra columns and the codebook, following [[005 Minimalist coding for causal mapping ((minimalist))]]. Each convention is a choice you make on purpose rather than a default you inherit. A manual coder can follow the same disciplines by hand: account for every page, insist on verbatim quotes, and write down each convention you adopt.
+
+## Step 5: Check links and iterate {#step-5}
 
 However careful the coding, some links will be wrong, so check and enrich them before you analyse. You will often see bundles: several links between the same cause and effect, from different sources or different parts of one source (see [[1160 Bundle of Links -- definition ((bundle))]]).
 
@@ -226,7 +257,7 @@ Do not read these as scores like 1, 2, 3: neutral means "not mentioned", not "me
 You can also score sources rather than links, for example reliability or role. Because every link has a source, those scores reach every link for filtering.
 
 
-## Steps 6 to 9: querying the model
+## Steps 6 to 8: querying the model
 
 ### Your links are a queryable knowledge graph
 
@@ -249,7 +280,7 @@ Many questions answer themselves the moment coding is done, straight off the lin
 - What is [[109 What are the emerging or unexpected factors qq ((unexpected-factors))|surprising or emerging]]?
 - What is the [[192 Properties of the causal map -- What is the overall structure of the network qq ((network-structure))|overall structure]] of the system, and are there [[194 Properties of the causal map -- Are there feedback loops qq ((feedback-loops))|feedback loops]]?
 
-The four steps that follow are for the harder questions that need defensible answers, where you weigh the evidence rather than just count it. Here is where each kind lands.
+The three steps that follow are for the harder questions that need defensible answers, where you weigh the evidence rather than just count it. Here is where each kind lands.
 
 | Question | Where |
 | --- | --- |
@@ -257,9 +288,9 @@ The four steps that follow are for the harder questions that need defensible ans
 | [[116.5 Robustness -- How robust is the evidence for that X influences Y qq ((robustness))|How robust is the evidence that X influences Y?]] | Step 6 |
 | [[116 Path tracing -- How do one or more causes affect one or more effects, including indirect pathways qq ((path-tracing))|Pathways from X to Y, indirect ones included]], without the transitivity trap | Step 7 |
 | [[118 Counting and comparing influences\|Relative contribution]]; rival explanations; [[110 Does the evidence support your theory of change qq ((testing-theory-of-change))\|does the evidence fit the theory of change?]] | Step 8 |
-| A [[103 Vignettes -- What is a typical source and what is their story qq\|typical source's story]]; does the whole thing hold together? | Steps 7 and 9 |
+| A [[103 Vignettes -- What is a typical source and what is their story qq\|typical source's story]]; does the whole thing hold together? | Steps 7 and 8 |
 
-## Step 6: From claims to bundles
+## Step 6: From claims to bundles {#step-6}
 
 A bundle is the set of claims that all say the same X influences Y, from different sources or different parts of one source. Whatever else you do, weighing each bundle as a whole is part of quality assurance: how many sources, how convincing, do they agree or pull apart? Always look at your bundles this way before you build on them. This step has its own paper: [[910 Assessing quality or robustness of evidence for a causal link based on a bundle of coterminal causal claims ((assessing))]], and see also [here](/deferred-judgement).
 
@@ -277,7 +308,7 @@ You can do this by hand, or let the AI take a first pass against your rubric and
 
 Either way, formal or by eye, the move is the same: from a mass of raw claims to a smaller set you are willing to vouch for. A project might go from 1000 raw claims to 30 bundles to 25 assessed links, a much cleaner basis for argument.
 
-## Step 7: From bundles to pathways 
+## Step 7: From bundles to pathways {#step-7}
 
 This step is about queries to answer more specific and sophisticated questions and is potentially also a move to causal inference.
 
@@ -299,7 +330,7 @@ But "A influenced B" and "B influenced C" does not give you "A influenced C": th
 
 If you have assessed your bundles, you can trace on the assessed links (clean counts, no quotes) or the raw ones (quotes, busier map); often you will want both.
 
-## Step 8: Judge value and relative contribution
+## Step 8: Judge value, contribution and the final judgement {#step-8}
 
 ![[screenshot-900-quality-assurance-and-rigour-in-causal-mapping-ensuring-robust-con.jpg]]
 
@@ -311,7 +342,7 @@ and counting the sources with a complete narrative between them:
 
 ![[map-900-counting-influences-path-matrix.jpg]]
 
-## Step 9: Holistic final judgement
+### Holistic final judgement {#step-8-holistic}
 
 Finally, draw the conclusion. You have checked the claims, assessed the bundles, traced the pathways and weighed the alternatives; now look at all the evidence at once and decide. Behind a single map there may still be hundreds of quotes. Does the claim hold up? Do all the links really belong to the same context?
 
@@ -324,16 +355,3 @@ The AI vignette feature helps: it drafts a commentary on a view, drawing on the 
 A common use is a source-by-source commentary on the pathways from an intervention to an outcome, judging how coherent each account is. The AI does only what a patient reader could do with the same quotes, so treat its draft as a starting point and edit it.
 
 Then close the loop: does the evidence answer the question you set in Step 1?
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))]]: the QA companion to this workflow
-- [[005 Minimalist coding for causal mapping ((minimalist))]]: the coding stance behind it
-- [[010 Individual questions -- introduction ((questions-introduction))]]: the full menu of questions you can ask
-- [[030 AI coding ((simple-ai))]]: app docs for the AI Coding panel
-- [[190 AI answers panel  ((answers-panel))]]: app docs for AI Answers
-- [[910 Assessing quality or robustness of evidence for a causal link based on a bundle of coterminal causal claims ((assessing))]]: detail on the bundle step
-- [[050 Just add rigour Three do’s and don’ts ((add-rigour))]]: do's and don'ts for AI text analysis
-- [[100 Manually code your first project ((howto-manual-code))]]: a hands-on first project

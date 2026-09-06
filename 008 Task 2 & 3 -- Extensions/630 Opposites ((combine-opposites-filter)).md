@@ -2,6 +2,7 @@
 date: 2025-09-22
 tags:
   - mapcat_methods
+theme: filters
 ---
 
 
@@ -19,6 +20,10 @@ If you treat those as unrelated labels, you can miss half the evidence when you 
 ## Combining opposites
 
 This section presents a simple, practical approach: keep your map “barebones” (plain links between plain-text labels), and use a convention to mark opposites.
+
+## Where the filter goes in the chain
+
+Put the combining-opposites filter above any filter that replaces labels: removing brackets, collapse, soft relabelling, soft recode, clustering, auto recode. It finds each pair by reading the labels it is given, so once another filter has replaced them the markers are gone and it finds no pairs, quietly. Zoom is the exception, because it truncates the hierarchy and keeps the marker. This is rule 3 on [[Filter ordering - which filter goes where in the chain|filter ordering]], and the app asks a question when a chain breaks it.
 
 ## When to use it
 

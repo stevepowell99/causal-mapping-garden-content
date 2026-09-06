@@ -92,12 +92,3 @@ The ladder tells you where the programme hoped to go. The map shows you the coun
 ## Ready for more
 
 We have tended to describe causal mapping as a preparatory step: we organise the evidence so that someone else can do the evaluation. The companion paper on quality assurance makes the same modest case, and rightly, because the final evaluative judgement belongs to the evaluation team. But look at what the maps did here. They tested the programme's theory of change against the pathways people actually described. They named the main threat to sustainability. They settled the backlash question by going back to the sources. That is evaluative work, done in the open and backed by quotes at every step. So from our side at Causal Map, we know we are ready to take on a bigger part of the evaluation burden: working alongside evaluators rather than standing in for their judgement, but carrying far more of the analysis and sense-making than the words "preparatory step" suggest.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|the case studies chapter]]
-- [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))]]: how to warrant conclusions at each step
-- [[005 Minimalist coding for causal mapping ((minimalist))]]: why we code links simply
-- [[The transitivity trap]]: the main hazard when reading pathways

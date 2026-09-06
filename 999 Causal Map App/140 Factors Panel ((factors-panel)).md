@@ -10,14 +10,14 @@ The Factors panel displays all unique labels from the current filter pipeline.
 
 **Table Features:**
 - Columns include:
-  - **Citation Count** – total number of citations of this factor (as cause or effect)
-  - **Source Count** – number of different sources mentioning this factor
-  - **Citation Count: In** – number of citations of this factor as an effect of something
-  - **Citation Count: Out** – number of citations of this factor as a cause of something
-  - **Outcomeness** – \( \frac{\mathrm{in}}{\mathrm{in}+\mathrm{out}} \) (how much a factor is an outcome vs a cause)
-  - **Influence** – “influence as a cause” score (Katz-style centrality in the causal direction, cause → effect). We shift the numbers so the smallest factor is **0** (makes differences easier to see), but we **don’t** scale to 0..1.
-  - **Source Count: In** – number of sources mentioning this factor as an effect of something
-  - **Source Count: Out** – number of sources mentioning this factor as a cause of something
+    - **Citation Count** – total number of citations of this factor (as cause or effect)
+    - **Source Count** – number of different sources mentioning this factor
+    - **Citation Count: In** – number of citations of this factor as an effect of something
+    - **Citation Count: Out** – number of citations of this factor as a cause of something
+    - **Outcomeness** – \( \frac{\mathrm{in}}{\mathrm{in}+\mathrm{out}} \) (how much a factor is an outcome vs a cause)
+    - **Influence** – “influence as a cause” score (Katz-style centrality in the causal direction, cause → effect). We shift the numbers so the smallest factor is **0** (makes differences easier to see), but we **don’t** scale to 0..1.
+    - **Source Count: In** – number of sources mentioning this factor as an effect of something
+    - **Source Count: Out** – number of sources mentioning this factor as a cause of something
 
 **Why “Importance” can be better than Citation Count: Out:**
 - **Citation Count: Out** just counts how often a factor is used as a cause. If you point to *anything* a lot, you score high.
@@ -33,7 +33,7 @@ The Factors panel displays all unique labels from the current filter pipeline.
 - <i class="fas fa-search"></i> Search/Replace: Find and replace text in factor names
 - <i class="fas fa-compress-arrows-alt"></i> Merge: Combine multiple factors into one
 - Buttons disabled until factors are selected
-  - 💡Tip: Use [Search/replace](../factors-search-replace/) for quick, scoped relabeling.
+    - 💡Tip: Use [Search/replace](../factors-search-replace/) for quick, scoped relabeling.
 
 Find out more about bulk delete and relabel of factors [here](../editing-and-deleting-multiple-factors/).  
 
@@ -58,6 +58,8 @@ Toggle the **Bulk Edit** switch to edit multiple factor labels at once. The tabl
 
 **💡TIP to recode several factors into one:** Simply overwrite all the old factor labels with your desired label.
 
+**💡TIP to translate your factors:** Select all the labels, copy them, paste them into any AI chat (ChatGPT, Claude, etc.) and ask it to translate them, then copy the result back over the labels here. Keep the same number of lines. It's the same idea as the built-in AI answers, just quick and rough. Works for tidying up wording too, not only translation.
+
 
 **How it works:**
 1. Toggle **Bulk Edit** on
@@ -67,8 +69,8 @@ Toggle the **Bulk Edit** switch to edit multiple factor labels at once. The tabl
 5. After saving, the editor refreshes to show the updated labels
 
  Remember, what it shows depends on:
-  - any filters you set (sources, most frequent links, etc) -- just like the map does
-  - any filters or sorting you set in the table itself. The bulk editor is really just a special version of the normal factors table, so it respects pagination etc. If you want to see more factors, set the "Page Size" (default is 10) to a larger number.
+- any filters you set (sources, most frequent links, etc) -- just like the map does
+- any filters or sorting you set in the table itself. The bulk editor is really just a special version of the normal factors table, so it respects pagination etc. If you want to see more factors, set the "Page Size" (default is 10) to a larger number.
 
 <!-- TECH: Changes are only saved when user presses Save button - no live updating -->
 <!-- TECH: Editor content is refreshed when table sort/filter changes, discarding unsaved edits -->
@@ -105,7 +107,7 @@ Ideas Garden: [The factors table (group comparisons + tests)](https://garden.cau
 - **Count type** - Source count (default) or citation count
 - **Display mode** - Counts (default) or % of baseline (cell as a percent of that breakdown group’s total across all factors)
 - **Statistical testing** - Chi-squared analysis to identify significant patterns
-  - See also [Statistical Significance Testing](../statistical-significance-testing/)
+    - See also [Statistical Significance Testing](../statistical-significance-testing/)
 
 ### Statistical Significance Testing {#statistical-significance-testing}
 When you select exactly **one custom column** for breakdown, the factors table includes powerful chi-squared significance testing to identify factors that are preferentially mentioned by different groups.

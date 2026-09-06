@@ -45,9 +45,3 @@ In your answer, you must:
 2. Explain their probable motive.
     
 3. Connect at least **four** of the specific pieces of evidence to your conclusion, explaining how they fit together to tell a single, coherent story.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

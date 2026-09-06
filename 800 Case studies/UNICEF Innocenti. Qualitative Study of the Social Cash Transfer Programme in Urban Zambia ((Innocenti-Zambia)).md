@@ -3,6 +3,7 @@ tags:
   - case_study
   - bath_sdr
 date: 2025-04-16
+theme: quip
 ---
 2025-04-16
 ## Summary{.banner}
@@ -18,9 +19,3 @@ The Social Cash Transfer (SCT) programme in Zambia is a poverty-targeted social 
 ![notion image](img/map-notion-image-18.jpg)
 
 [Check the report here](https://www.unicef.org/innocenti/reports/qualitative-study-social-cash-transfer-programme-urban-zambia)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

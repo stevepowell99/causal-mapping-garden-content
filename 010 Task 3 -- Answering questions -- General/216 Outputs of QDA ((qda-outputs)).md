@@ -27,9 +27,3 @@ QDA logic can also be extended beyond the simple logic of frequencies and occurr
 ### QDA without coding
 
 Coding does not have to be central to qualitative data analysis [@morganQueryBasedAnalysisStrategy2025a; @nguyen-trungNarrativeIntegratedThematicAnalysis2025]. …
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Causal mapping produces models you can query to answer questions ((query-models))|chapter intro]]

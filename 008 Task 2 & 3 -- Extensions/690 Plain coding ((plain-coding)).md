@@ -39,9 +39,3 @@ See the in-app help section on the Link Editor (Plain coding): https://app.causa
 
 - Plain coding marks presence/theme evidence, not mechanism.
 - Keep it separate from real self-causation claims by using the `#plain_coding` tag.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Tasks 2 & 3 --  Extensions -- Introduction ((extensions))|chapter intro]]

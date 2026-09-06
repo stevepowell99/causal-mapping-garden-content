@@ -17,9 +17,3 @@ For example when source X says
 > Thanks to the training we were able to manage the outreach work better
 
 ... it is very tempting to add the intermediate factor to source Y's story too *even if they did not actually mention it*. If you're going to do that, you should document when and how this is allowed and why.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Task 1 -- Introduction ((task1-intro))|chapter intro]]

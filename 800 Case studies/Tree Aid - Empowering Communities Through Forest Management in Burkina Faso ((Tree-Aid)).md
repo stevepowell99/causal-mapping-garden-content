@@ -1,6 +1,7 @@
 ---
 tags: case_study
 date: 2025-12-12
+theme: quip
 ---
 2025-12-12
 11/12/2025
@@ -72,9 +73,3 @@ The evidence strongly suggests that Tree Aid BB6 project has demonstrated signif
 Using the [“soft recoding”](https://guide.causalmap.app/transforms-filters-magnetic-labels/) feature in the Causal Map app allowed us to create ==maps showing different perspectives of stakeholders' stories==. This innovative approach enabled us to compare narratives against the project’s Theory of Change and verify the project's impacts across various domains.
 
 ![notion image](img/map-notion-image-16.jpg)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

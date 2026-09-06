@@ -33,9 +33,3 @@ Two ways to use causal mapping:
 
 > 💡 Tip: add **[conversational AI-led interviews](https://QualiaInterviews.com)** to your bid: see the next page.
 >
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[800 For consultants ((consultants))|chapter intro]]

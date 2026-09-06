@@ -79,9 +79,3 @@ The interviews highlight a wide array of challenges currently facing the USA, wi
 > While some respondents focused on specific figures, like Trump, and their impact on the national and international stage, others highlighted systemic issues such as the neoliberal economic model or the enduring influence of oligarchs.
 
 > Perspectives vary on underlying causes, with some pointing to specific policy decisions and others referencing broader societal trends, such as populism or media influence.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Background on data collection with Qualia ((qualia))|chapter intro]]

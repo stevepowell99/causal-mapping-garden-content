@@ -19,9 +19,3 @@ The article discusses the potential of this approach for evaluation, enabling ra
 
 [This article](https://journals.sagepub.com/doi/10.1177/13563890251328640)
 [Here is the pre-publication version](https://docs.google.com/document/d/1d7J-aTOPnkOH1AQ2DsWZLFjlgaRxk8VG/edit)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

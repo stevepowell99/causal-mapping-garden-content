@@ -12,7 +12,7 @@ Hierarchical coding is one way to bring some order to a whole crowd of factors. 
 
 Tags are just sequences of characters within a factor label to which you have given a special meaning, and which are unique and easy to search for. These can include letters, emojis or phrases. You can do coding without any such tags if you want, but it can help when searching and filtering.
 
-Factor tags are just like [#️⃣ Link hashtags](#%EF%B8%8F%E2%83%A3%20Link%20hashtags%2050a789cc60ad4b1e9cad10b81c68e2a1.md). Confusingly, a link hashtag doesn’t have to actually start with a `#`, and a factor tag can indeed start with a `#`, but we find it easier to keep the names separate like this. 
+Factor tags are just like link hashtags. Confusingly, a link hashtag doesn’t have to actually start with a `#`, and a factor tag can indeed start with a `#`, but we find it easier to keep the names separate like this. 
 
 So a tag is nothing more than any sequence of characters which is repeated in several factor labels. Any sequence of characters will do. For example you could consider the letter “a” to be a tag and display the map showing all the factors which contain the letter “a”. But this wouldn’t be interesting. The trick when using tags is to decide on short, meaningful codes which will not be repeated anywhere else. For example you wouldn’t want to use a pair of tags like “women” and “men” to distinguish factors which are only relevant for one or the other gender because the “wo**men**” factors would also turn up when you search for “**men**”. That is why we have to be careful when creating tags, for example by preceding a sequence of characters with a tag `"#"`.
 

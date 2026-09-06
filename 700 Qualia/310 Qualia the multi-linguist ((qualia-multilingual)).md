@@ -36,9 +36,3 @@ Bearing that in mind:
     - We can provide demonstrations showing how Qualia handles different respondent types and interview scenarios.
     - The AI interviewer can adapt to respondent answers while maintaining your research objectives, combining flexibility with consistency.
     - Using Qualia allows you to conduct more interviews within your budget, significantly increasing sample size and explanatory power.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Background on data collection with Qualia ((qualia))|chapter intro]]

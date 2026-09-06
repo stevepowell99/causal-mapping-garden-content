@@ -69,12 +69,12 @@ Searches only through your coded causal links and their surrounding context (the
 3. Organizes contexts by source, with source metadata (title, custom columns)
 4. For ≤500 links: Sends all contexts directly to AI
 5. For >500 links: Same pattern as SRP — RPC + client-triggered embedding creation, no long-running Edge Function
-   - Client gets query embedding (one call), then calls RPC `find_relevant_link_contexts(project_name, link_ids, query_embedding, top_k, threshold)`
-   - RPC fetches links from DB, builds a **normalized key** per link (see Normalization note below), checks `embeddings`; if any missing (or `embedding IS NULL`) returns `needs_embeddings` + `missing_texts`
-   - Client calls `DataService.createEmbeddingsBatch(missing_texts, ..., { useProvidedKeys: true })` (server-side generation + DB upsert), then retries RPC
-   - RPC runs similarity in Postgres (pgvector), returns `relevant_link_ids` + `similarities` (and may include a `debug` block); no embedding vectors to frontend
-   - Selection is **source-diversified** (round-robin: best link per source first), and avoids identical contexts within a source (exact de-dupe on the normalized key)
-   - Prompt to AI uses full chunk_text (quote + surrounding 3 sentences) built on the client
+    - Client gets query embedding (one call), then calls RPC `find_relevant_link_contexts(project_name, link_ids, query_embedding, top_k, threshold)`
+    - RPC fetches links from DB, builds a **normalized key** per link (see Normalization note below), checks `embeddings`; if any missing (or `embedding IS NULL`) returns `needs_embeddings` + `missing_texts`
+    - Client calls `DataService.createEmbeddingsBatch(missing_texts, ..., { useProvidedKeys: true })` (server-side generation + DB upsert), then retries RPC
+    - RPC runs similarity in Postgres (pgvector), returns `relevant_link_ids` + `similarities` (and may include a `debug` block); no embedding vectors to frontend
+    - Selection is **source-diversified** (round-robin: best link per source first), and avoids identical contexts within a source (exact de-dupe on the normalized key)
+    - Prompt to AI uses full chunk_text (quote + surrounding 3 sentences) built on the client
 6. AI analyzes contexts showing cause → effect relationships
 7. AI is instructed to use the coded factor labels as the vocabulary (wrap labels in backticks like `this`) and to be sceptical about evidence coverage and alternative narratives.
 
@@ -171,9 +171,9 @@ Each subtab now has two modes:
 - All three subtabs use checkbox-pill choosers.
 - Chosen fields are prepended to each row payload as `Field = value`.
 - Default payloads:
-  - **Sources**: `content`
-  - **Links**: `cause`, `effect`
-  - **Factors**: `label`
+    - **Sources**: `content`
+    - **Links**: `cause`, `effect`
+    - **Factors**: `label`
 
 **Safety behavior (Create/Modify mode):**
 - If a run would overwrite a standard (non-custom) column, the app shows one confirmation modal before processing.

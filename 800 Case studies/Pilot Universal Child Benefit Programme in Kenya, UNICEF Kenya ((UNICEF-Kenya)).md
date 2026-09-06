@@ -3,6 +3,7 @@ tags:
   - case_study
   - bath_sdr
 date: 2025-03-10
+theme: quip
 ---
 2025-03-10
 Gabriele Caldas
@@ -13,9 +14,3 @@ In response to the COVID-19 pandemic, the Government of the Republic of Kenya pi
 
 
 [Download the report here](https://www.unicef.org/kenya/media/4321/file/UCB%20report%20Final%202024.pdf.pdf).
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

@@ -4,8 +4,8 @@ There are many dropdown menus throughout the app.
 
 - Most dropdowns allow multiple selections: you can select more than one thing at once
 - Most dropdowns allow you to type and create new entries which are not already in the list. 
-  - Type part of a word and click "Create new..." to add new items
-  - Press Enter to complete selections
+    - Type part of a word and click "Create new..." to add new items
+    - Press Enter to complete selections
 - Pressing Tab always moves you to the next field (doesn't complete selection). See also [Search/replace](../factors-search-replace/) for bulk editing patterns.
 
 

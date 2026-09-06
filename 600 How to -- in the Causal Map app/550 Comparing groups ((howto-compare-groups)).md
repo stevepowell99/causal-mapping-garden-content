@@ -1,5 +1,6 @@
 ---
 date: 2026-04-30
+theme: filters
 ---
 # Comparing groups
 Do men mention X more than women? Do project A respondents talk about different consequences than project B? This page sketches the methods you'll usually use in the Causal Map app, then goes into detail on the quickest one (the Factors table) and on what "significant" means when the app flags a difference.

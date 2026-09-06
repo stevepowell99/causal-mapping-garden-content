@@ -24,9 +24,3 @@ Or we can compare any of these figures with the same figures from a previous tim
 Using numbers and proportions like this in a fundamentally qualitative approach like causal mapping can be very useful but we have to be careful. These are quite fragile indicators which can be easily influenced by other factors (for example, how visible was our intervention?) and can be hard to generalise.  
 
 We should always also consider the evidence itself behind each link by looking at the quotes.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]

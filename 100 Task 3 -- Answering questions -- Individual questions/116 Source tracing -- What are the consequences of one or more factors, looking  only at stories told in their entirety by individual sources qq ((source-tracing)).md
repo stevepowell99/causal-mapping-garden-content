@@ -1,6 +1,7 @@
 ---
 tags:
   - mapcat_methods
+theme: filters
 ---
 Source tracing is more conservative than path tracing and helps us avoid [[The transitivity trap ((transitivity-trap))]].
 

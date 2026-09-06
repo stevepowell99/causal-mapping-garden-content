@@ -22,9 +22,3 @@ number of columns: 2
 ![notion image](img/map-notion-image-6.jpg)
 
 [See the full report here](https://www.ifrc.org/sites/default/files/2023-01/2023_everyone-counts-report-covid_EN.pdf)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

@@ -7,9 +7,3 @@ Causal mapping is easier if we are realist about causation. We can say that narr
 Causal realism invites us to say that things **have the causal power** to affect other things. 
 
 The weird thing is that most physical and natural scientists think about causation  in a realist way, but in the social sciences we tell ourselves not to because it isn't scientific (!).
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[0.01 Intro ((overview-intro))|chapter intro]]

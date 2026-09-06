@@ -3,6 +3,7 @@ tags:
   - case_study
   - bath_sdr
 date: 2025-05-09
+theme: quip
 ---
 2025-05-09
 
@@ -45,9 +46,3 @@ In a blog post written by EIG Insights and World Concern to [Bath SDR](https://b
 
 [Check the summarised version of the report here](https://worldconcern.org/assets/docs/wc_2022-23-report.pdf)
 [See a detailed blog post about the study](https://bathsdr.org/using-quip-to-evaluate-a-holistic-community-development-program/)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

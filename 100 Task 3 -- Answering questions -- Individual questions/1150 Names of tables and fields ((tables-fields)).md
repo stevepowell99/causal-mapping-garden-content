@@ -43,9 +43,3 @@ We can think of a causal map as a database consisting of two tables, the links t
 | filename                      |                                                                                                                                                                                             |
 
 ![[1150- Glossary ((glossary))]]
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]

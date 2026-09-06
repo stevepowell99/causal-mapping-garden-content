@@ -9,9 +9,3 @@ Causal mapping is quite similar. It is not an evaluation method in its own righ
 
 How causal mapping can help with Outcome Harvesting: 
 - causal mapping can input a pile of Outcome Harvesting data and link them all together into the form of a larger web [@brittStrengtheningOutcomeHarvesting2025].
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

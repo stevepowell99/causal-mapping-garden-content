@@ -13,9 +13,3 @@ Chartered Management Institute hired Causal Map to seek their members' views on 
 The reports explored how good modern management and leadership practices can help workplaces to embrace diversity towards the five areas above. Also, the study was able to find areas where there has been less progress and the reasons for that.
 
 Questions answered by the study included: What works in implementing inclusive recruitment and progression practice? What are the challenges in current inclusive practices in the organisation? How can workplaces become more inclusive for different ages?
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

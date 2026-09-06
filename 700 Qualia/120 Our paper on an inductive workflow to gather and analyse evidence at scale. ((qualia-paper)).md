@@ -122,9 +122,3 @@ In summary, this kind of semi-automated pipeline opens up possibilities for moni
 ## Further work
 
 We have tried to demonstrate a semi-automated workflow with which evaluators can capture stakeholders’ emergent views of the _structure_ of a problem or programme at the same time as capturing their beliefs about the _contributions_ made to factors of interest by other factors. We have presented this approach via a proxy application but have since applied it in real-life research. Many challenges remain, from improving the behaviour of the automated interviewer through improving the accuracy of the causal coding process to dealing better with valence (e.g. distinguishing between ‘employment’, ‘employment issues’ and ‘unemployment’). Perhaps, most urgently needed are ways to better understand and counter how LLMs may reproduce hegemonic worldviews ([Head et al., 2023](https://emxpert.net/sageedit/journals/Embox/Index/1328640#bibr32); [Reid, 2023](https://emxpert.net/sageedit/journals/Embox/Index/1328640#bibr51)).
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Background on data collection with Qualia ((qualia))|chapter intro]]

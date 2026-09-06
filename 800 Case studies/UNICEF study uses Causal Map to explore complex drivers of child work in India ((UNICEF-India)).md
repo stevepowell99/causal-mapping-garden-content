@@ -19,9 +19,3 @@ Many respondents made causal connections between education and child work. For e
 The study's results provided clear insights into children's daily lives, leading the research team to recommend a multi-sectoral approach. They proposed changes to both policies and programs to improve school engagement and address the effects of child labour.
 
 For more information on this study, please see [Bath SDR's blog post](https://bathsdr.org/) and check out the briefs and full reports.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

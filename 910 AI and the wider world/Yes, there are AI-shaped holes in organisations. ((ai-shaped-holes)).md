@@ -18,9 +18,3 @@ You can imagine a person-sized AI at Company X emailing a corresponding AI at co
 Whether this means a hard-pressed workforce getting rows and rows of additional workers to solve problems and meet needs more effectively or whether it means 90% of staff being made redundant and replaced by person-sized AIs is not yet clear though I fear it will be the latter. 
 
 To be clear I have no particular enthusiasm for this kind of development because I don't trust capitalism with this technology. But we still have to learn how to think about it and understand it and make use of it as best we can.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

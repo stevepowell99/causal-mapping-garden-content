@@ -22,10 +22,3 @@ If the causal map is more or less neatly hierarchical, then our map will reflect
 We often see that for reports, folks often take the original causal map and get a designer to redraw them anyway to match the report styling etc.   
   
 In the upcoming version 4 of Causal Map, there is a more interactive style of map where it's possible to drag the factors around to put them just where you want them.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]
-- [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map (recipe)]]

@@ -34,9 +34,3 @@ You get an automated report. Or download the transcripts for further analysis. O
 
 --- end-multi-column
 You can set your Qualia interviews to be [fully GDPR-compliant](https://causalmap.app/privacy-policy): no data leaves the EU, not even for AI processing; no data is stored outside our own EU servers and no data is used to train models.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[800 For consultants ((consultants))|chapter intro]]

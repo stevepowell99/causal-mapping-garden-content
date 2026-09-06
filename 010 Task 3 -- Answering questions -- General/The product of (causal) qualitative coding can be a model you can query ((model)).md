@@ -73,9 +73,3 @@ Thinking of qualitative research outputs as models (or theories) that can be que
 - **Bridging paradigms:** It helps bridge the gap between qualitative and quantitative traditions, showing that both can produce structured, interrogable outputs.
 
 In summary, while qualitative researchers may prefer the language of "theory" over "model," the idea is the same: a well-constructed qualitative analysis can produce a framework that is more than just a set of answers—it is a model of the phenomenon, one that can be queried, shared, and built upon.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Causal mapping produces models you can query to answer questions ((query-models))|chapter intro]]

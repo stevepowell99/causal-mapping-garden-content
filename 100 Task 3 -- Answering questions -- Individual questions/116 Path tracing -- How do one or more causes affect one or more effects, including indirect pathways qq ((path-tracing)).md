@@ -1,6 +1,7 @@
 ---
 tags:
   - mapcat_methods
+theme: filters
 ---
 
 **What are the main causal pathways from an intervention to an outcome?** We can trace **chains of influence** from a starting point like an intervention to a key outcome, revealing the step-by-step or branching logic described by the sources. We can even compare the strength of evidence for different pathways. 
@@ -25,18 +26,11 @@ When you have several starting and/or ending factors, the **From × To matrix** 
 
 **Tips for Success💡:**
 
-**🗺️ Simplify your map:** Consider applying other filters beforehand to format and simplify your map before tracing paths.
+**🗺️ Narrow before you trace, simplify after:** filters that choose which sources or links you are looking at belong above the tracing filter. Filters that rewrite labels (zoom, collapse, combining opposites, clustering) and the frequency filters belong below it. See [[Filter ordering - which filter goes where in the chain|filter ordering]].
 
 **⛓️ Avoid the** **[transitivity trap](https://guide.causalmap.app/transitivity-trap/)****:** Be careful when drawing conclusions. The presence of links from A to B and B to C does not automatically mean that all respondents indirectly connect A to C: some may have mentioned only A to B and others only mentioned B to C. To avoid this trap, you can trace individual respondents’ _threads_ within the paths, which filters to show only continuous chains of links from the same source to avoid the transitivity trap issue.
 
-In most cases, we should always trace threads **before** any filter which changes labels: zooming, removing brackets, combining opposites and autoclustering. See [this page](https://guide.causalmap.app/transforms-filters/) for more information.  
+In most cases, we should always trace threads **before** any filter which changes labels: zooming, removing brackets, combining opposites and autoclustering, and before any frequency filter. See [[Filter ordering - which filter goes where in the chain|filter ordering]] for the reasoning.  
   
 
-Remember that [**order matters**](https://guide.causalmap.app/transforms-filters/): the order in which the filters are applied makes a difference.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]
-- [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map (recipe)]]
+Remember that [**order matters**](https://guide.causalmap.app/filter-ordering-rules/): the order in which the filters are applied makes a difference.

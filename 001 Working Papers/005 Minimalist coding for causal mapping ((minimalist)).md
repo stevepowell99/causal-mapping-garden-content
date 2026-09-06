@@ -2,21 +2,122 @@
 tags:
   - paper
   - mapcat_core
+mist:
+  threads:
+    - comment: " SP: bracketed-group citation syntax so the build renders one parenthetical group "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.164Z
+      resolved: true
+    - comment: ' SP: duplicate: the same "four more factual claims" point is already made in the paragraph under the first figure '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.165Z
+      resolved: true
+    - comment: ' SP: duplicate: "more machinery than we want or need" already said two paragraphs up, and the next paragraph makes the over-specification point in full '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.165Z
+      resolved: true
+    - comment: ' SP: author-suppressed form, else it renders "Ragin (Ragin (2008))" '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.165Z
+      resolved: true
+    - comment: " SP: roadmap now matches the paper's actual structure; the promised appendix does not exist, and \"I'll\" clashed with \"we\" everywhere else "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: " SP: the old link target does not exist in the vault; this is the central-bank page it meant "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: " SP: the four-contributions walk-through repeated the abstract almost sentence for sentence; kept the one load-bearing stance and the closing sentence "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: ' SP: unfinished stub; bundles and deferred judgement are already covered under "Contrast: deferred judgement" above '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: ' SP: "thread tracing" was defined twice in two consecutive paragraphs '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: " SP: word-for-word repeat of the Task 3 bullet in the introduction, and the section has just said it "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: " SP: the distinction is made above this section, not below "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: " SP: the section promise now matches what follows (several stubs, not just one extension) "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: ' SP: merged the three one-liners into one stub; they are pipeline filters rather than coding extensions, and FIL-FREQUENCY was repeating the "not effect size" point for the third time '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.166Z
+      resolved: true
+    - comment: ' SP: demoted the opposites, despite and packages headings one level so they sit inside "Other extensions (stubs)" like the rest, and marked them as stubs; no text changed '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.167Z
+      resolved: true
+    - comment: " SP: merged the three school subsections into one paragraph, keeping every citation; the detail is in the 2024 paper this section already points to "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.167Z
+      resolved: true
+    - comment: " SP: this repeated the FIL-PACKAGE stub almost point for point, including a second version of the fire example (accelerant/spark vs oxygen/spark) "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.167Z
+      resolved: true
+    - comment: ' SP: "none of them" contradicted the "two exceptions" admitted at the end of this section '
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.167Z
+      resolved: true
+    - comment: " SP: connects this discussion to the despite extension the paper now carries; adapted from the REWRITE draft "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.167Z
+      resolved: true
+    - comment: " SP: the bare list of citation keys read as unfinished; folded into one sentence, characterisations checked against the bib titles "
+      author: SPD
+      color: "#4DD0E1"
+      created: 2026-07-14T13:41:43.167Z
+      resolved: true
 ---
+
 ## Abstract
 
-> This working paper explains our **Minimalist / Barefoot** approach to coding causal claims in text as simple directed links (“X influenced Y”), developed through extensive experience with large-scale practical coding. We write it now because, although our previous work motivates causal mapping in evaluation [@powellCausalMappingEvaluators2024] shows how QuIP-style “stories of change” elicit natively causal narrative evidence [@copestakeAttributingDevelopmentImpact2019], demonstrates ToC validation by comparing empirical maps with programme theory [@powellDoesOurTheory2023], and shows that generative AI can extract links exhaustively with quotes as a low-level assistant [@powellAIassistedCausalMapping2025a; @powellWorkflowCollectingUnderstanding2025], none of these papers is a standalone, reader-facing account of **the coding stance itself**. 
+
+> This working paper explains our **Minimalist / Barefoot** approach to coding causal claims in text as simple directed links (“X influenced Y”), developed through extensive experience with large-scale practical coding. We write it now because, although our previous work motivates causal mapping in evaluation [@powellCausalMappingEvaluators2024], shows how QuIP-style “stories of change” elicit natively causal narrative evidence [@copestakeAttributingDevelopmentImpact2019], demonstrates ToC validation by comparing empirical maps with programme theory [@powellDoesOurTheory2023], and shows that generative AI can extract links exhaustively with quotes as a low-level assistant [@powellAIassistedCausalMapping2025a; @powellWorkflowCollectingUnderstanding2025], none of these papers is a standalone, reader-facing account of **the coding stance itself**. 
 > Our approach is notable in particular because it rejects variable-based approaches used by most causal mapping traditions, which share many assumptions with rules used to build Systems Diagrams, Fuzzy Cognitive Maps, Causal Loop Diagrams, etc. We give an alternative, more primitive account of what exactly counts as a coded causal claim. We explain what we deliberately do *not* encode such as strength and polarity, and we mention the limits of this approach.
 > **Intended audience:** evaluators, academics and qualitative researchers who want a citeable and teachable causal coding protocol, and AI/NLP readers who want an auditable way to identify and process causal content in text.
 
 ## Introduction: Why minimalist coding? {#why-minimalist}
+
+
 
 ### The variable-based approach
 
 > 1) I was eating less and felt quite lethargic
 > 2) I started to eat adequately and was feeling more lively
 
-To the best of our knowledge, all major approaches to causal mapping (@axelrodStructureDecisionCognitive1976, @edenAnalysisCauseMaps1992, @laukkanenComparativeCausalMapping2016, @mauleCognitiveMappingCausal2003) would most like code (1) as something like `amount eaten` --> `energy level`. And they would treat (2) pretty much the same. 
+To the best of our knowledge, all major approaches to causal mapping [@axelrodStructureDecisionCognitive1976; @edenAnalysisCauseMaps1992; @laukkanenComparativeCausalMapping2016; @mauleCognitiveMappingCausal2003] would most likely code (1) as something like `amount eaten` --> `energy level`. And they would treat (2) pretty much the same. 
 
 
 ![[001 Working Papers/img/map-005-minimalist-coding-for-causal-mapping-minimalist.jpg]]
@@ -42,13 +143,13 @@ Reading multiple texts on the same topic, or different diary entries from the sa
 
 In other words, to use the variable-based approach, we mostly have to go way beyond what the speaker actually meant; so it is not really a form of qualitative data analysis with the aim of modelling sources' beliefs. It's not just coding, it's modelling, with an ambiguity about whether we are trying to model the world or individuals' putative internal models of it. 
 
-(Parenthetically, to actually code what the source said, we would also have to code two more facts: I actually ate less (or more), and: Also, I actually did feel lethargic (or lively)). 
 
-The problem with trying to apply these kinds of sophisticated frameworks is that the application is nearly always *ontologically over-determined*. They give us more machinery than we perhaps want or need.
+
+
 
 We have found that it is often over-specified (and often psychologically implausible) to treat ordinary-language causal claims as if they asserted an explicit functional relationship between well-defined variables. Trying to force that kind of structure on everything turns the “easy 90%” of coding into a harder and more arbitrary task. Of course, one can decide to use a particular non-minimalist, perhaps variable-based representation for a particular modelling purpose; our claim is only that this is usually not a faithful representation of what most speakers actually say or imply, most of the time. For example, if we code "I got really tired because I have Long Covid", we could perhaps treat both endpoints as Boolean variables, but what about "I got really tired because it was really hot", and "I got really tired because it was really cold" -- how are we going to represent “temperature” as a single variable while preserving the speaker’s intended meaning? If what we want to do is model a system, we can pick a solution. But if we want to model *cognition/beliefs/claims as expressed in text*, many “variable semantics” choices are over-committed. 
 
-Charles Ragin (@raginMeasurementCalibrationSetTheoretic2008) and others have done admirable thinking on Boolean values and opposites and have constructed sophisticated tools with somewhat simpler ontological baggage (set membership rather than values-of-variables) which perhaps model sentences like (1) and (2) somewhat better.  But for many purposes we don't need that baggage either to code ordinary-language claims about causation. Let's see how far we can get with the minimal possible formal baggage.
+Charles Ragin [-@raginMeasurementCalibrationSetTheoretic2008] and others have done admirable thinking on Boolean values and opposites and have constructed sophisticated tools with somewhat simpler ontological baggage (set membership rather than values-of-variables) which perhaps model sentences like (1) and (2) somewhat better.  But for many purposes we don't need that baggage either to code ordinary-language claims about causation. Let's see how far we can get with the minimal possible formal baggage.
 
 Most causal mappers have always been quite conscious that modelling people's causal beliefs is not the same as modelling the real world. Sometimes the approach [@axelrodStructureDecisionCognitive1976] is explicitly designed to model someone's thinking. But often it is hard to keep the two worlds separate, what we have called the Janus problem [@powellCausalMappingEvaluators2024, p. x]. Modelling the real world is exciting, and useful. Traditions like Systems Diagrams, Fuzzy Cognitive Maps, Causal Loop Diagrams and Directed Acyclic Graphs all, to varying degrees, treat the diagram as a model of how the world works rather than a record of what people said. Variables, weights, and (sometimes) functional forms slip in, because the diagram itself is doing the modelling. Our claim is weaker. We are recording what people said about causes, with quotes, and leaving the question of how the world really works to a later step.
 
@@ -64,23 +165,23 @@ But using minimalist coding we cannot do that, because our claims are formally w
 
 That is all exciting and useful. It's a surprisingly simple way to make a lot of sense out of a lot of texts which is, with caveats, almost completely automatable.
 
-**I'll start by describing the "minimalist" approach** to coding causal statements used for QuIP and developed originally by James, Fiona and colleagues at Bath SDR and developed and further formalised at Causal Map Ltd in collaboration with Bath SDR. This formalisation lives inside the [Causal Map app](https://app.causalmap.app). Then we will show how we can extend this approach with useful transformations. Finally I will try to answer the question of whether it can help us deal with more complicated constructions like enabling and blocking and whether this could help us with mid-range theory. As an appendix I'll add a more detailed overview of minimalist causal coding.
+**We start by describing the "minimalist" approach** to coding causal statements used for QuIP, developed originally by James, Fiona and colleagues at Bath SDR and further formalised at Causal Map Ltd in collaboration with Bath SDR. This formalisation lives inside the [Causal Map app](https://app.causalmap.app). We then set out the coding principles, position the approach within qualitative research, show how it can be extended with useful transformations, and finally ask how it copes with harder constructions like enabling, blocking and causal packages.
 
 The minimalist approach is notable because it is based in our **joint experience of coding thousands and thousands of stakeholder interviews and other data such as project reports**, mostly from international development and related sectors, as well as coding hundreds of thousands of pages with AI-assisted coding. These have nearly always involved **multiple sources talking about at least partially overlapping subject matter**. So this coding produces individual causal maps for each source, which can then be combined in various ways.
 
 #### Contrast: multiple sources
 
-This is in contract to methods of constructing single-source maps of expert thinking [@axelrodStructureDecisionCognitive1976] or the collective construction of a consensus map [@barbrook-johnsonParticipatorySystemsMapping2022].
+This is in contrast to methods of constructing single-source maps of expert thinking [@axelrodStructureDecisionCognitive1976] or the collective construction of a consensus map [@barbrook-johnsonParticipatorySystemsMapping2022].
 
 #### Contrast: deferred judgement {#deferred-judgement}
 
-Our approach is also different in emphasis from the kind of approach adopted by Jewlya Lynn (-@HUSeafoodRetrospective) and other evaluators (it is perhaps implied in @astonContributionRubrics2019 and in Contribution Analysis more broadly). That approach usually **first gathers all the evidence for any influence of X and Y prior to actual mapping**. So before a link from X to Y is actually formally coded it has already been subject to important evaluative judgement: are these testimonies, from these different sources in this context, enough for us to draw a link, and if so with what other attributes (e.g. this link may optionally also be judged to have strength 3 or relevance 2 or whatever). 
+Our approach is also different in emphasis from the kind of approach adopted by Jewlya Lynn [-@HUSeafoodRetrospective] and other evaluators (it is perhaps implied in @astonContributionRubrics2019 and in Contribution Analysis more broadly). That approach usually **first gathers all the evidence for any influence of X and Y prior to actual mapping**. So before a link from X to Y is actually formally coded it has already been subject to important evaluative judgement: are these testimonies, from these different sources in this context, enough for us to draw a link, and if so with what other attributes (e.g. this link may optionally also be judged to have strength 3 or relevance 2 or whatever). 
 
 Whereas our default approach is to code all causal claims willy-nilly: this often means that we code multiple, not necessarily compatible, claims between X and Y, creating sets of *co-terminal links* (sets with X at one end and Y at the other); we call such a set a *bundle*. Our maps show only a single arrow from X to Y but in the database there are actually multiple parallel claims. We defer judgement until later about the quality, compatibility and relevance of these claims and what they actually contribute to answering research or evaluation questions. We often report raw statistics e.g. about the number of claims before making any such judgement. See [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))]].
 
 #### Tasks
 
-We treat causal mapping as three tasks (@powellCausalMappingEvaluators2024.) 
+We treat causal mapping as three tasks [@powellCausalMappingEvaluators2024].
 
 - Task 1, data gathering, not covered here;
 - Task 2, coding: creating **evidence-with-provenance** (a links table)
@@ -88,7 +189,7 @@ We treat causal mapping as three tasks (@powellCausalMappingEvaluators2024.)
 
 ## Project context (how this paper fits)
 
-A companion formalisation paper [[006 A formalisation of causal mapping]] makes key parts of the method more precise (data structures, constraints, and conservative inference rules), but the focus here is the narrative rationale and practical coding guidance.
+A companion formalisation paper [[006 A formalisation of causal mapping ((formalisation))]] makes key parts of the method more precise (data structures, constraints, and conservative inference rules), but the focus here is the narrative rationale and practical coding guidance.
 
 **Unique contribution (what this paper adds):**
 
@@ -98,12 +199,12 @@ A companion formalisation paper [[006 A formalisation of causal mapping]] makes 
 
 This paper is part of a small set of new working papers
 
-- Companion formal spec: [[006 A formalisation of causal mapping]]
+- Companion formal spec: [[006 A formalisation of causal mapping ((formalisation))]]
 - QDA positioning: [[040 Causal mapping as causal QDA ((causal-qda))]]
-- Practical transforms/diagnostics: [[900 Magnetisation]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus]]; [[015 Combining opposites, sentiment and despite-claims]]; other transforms to come later
-- A worked “AI clerk vs human architect” example: [[Beyond Conversational AI -- Analysing Central Bank speeches]]
+- Practical transforms/diagnostics: [[900 Magnetisation ((magnetisation))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[015 Combining opposites, sentiment ((combining-opposites))]]; other transforms to come later
+- A worked “AI clerk vs human architect” example: [[Assessing change in (cognitive models of) systems over time ((central-bank))|Assessing change in (cognitive models of) systems over time]]
 
-This paper sits alongside (and builds on) four related contributions. First, our evaluator-facing account argues that causal mapping is best treated primarily as a way to assemble and organise **evidence-with-provenance**, keeping the subsequent evaluative judgement about “what is really happening” distinct [@powellCausalMappingEvaluators2024]. We adopt that stance here: a coded link is first and foremost “there is evidence that a source claims X influenced Y”, not a system model with weights or effect sizes. Second, QuIP-style evaluation practice shows how “stories of change” can be elicited in a goal-free / blindfolded style to reduce confirmation bias, yielding narrative data that is natively causal (change plus reasons) and therefore well-suited to parsimonious link coding [@copestakeAttributingDevelopmentImpact2019]. Third, our ToC comparison case study shows how empirical causal maps can be used as a disciplined way to check a programme’s Theory of Change against beneficiaries’ narratives, and to support evidence-based adjustment of “middle-level theory” rather than just project-level reporting [@powellDoesOurTheory2023]. Fourth, our AI-assisted causal mapping work shows that this minimalist stance is also a practical entry point for automation: we can use genAI as a low-level assistant -- because the minimalist coding task is so relatively easy -- while keeping human judgement focused on the few high-leverage decisions (prompt design, verification, and synthesis choices) [@powellAIassistedCausalMapping2025a; @powellWorkflowCollectingUnderstanding2025]. The present paper extracts and clarifies the core “minimalist” coding commitments that make that workflow workable and checkable.
+From the four prior papers already cited in the abstract, we adopt one stance in particular [@powellCausalMappingEvaluators2024]: causal mapping is primarily a way to assemble and organise **evidence-with-provenance**, keeping the subsequent evaluative judgement about “what is really happening” distinct. A coded link is first and foremost “there is evidence that a source claims X influenced Y”, not a system model with weights or effect sizes. The present paper extracts and clarifies the core “minimalist” coding commitments that make that workflow, including its AI-assisted form [@powellAIassistedCausalMapping2025a; @powellWorkflowCollectingUnderstanding2025], workable and checkable.
 
 Our experience has been that the vast majority of causal claims in these kinds of texts are easily and satisfactorily coded in the simplest possible form "X causally influenced Y". Explicit invocation of concepts like enabling/blocking, or necessary and/or sufficient conditions, or linear or even non-linear functions, or packages of causes, or even the strength of a link, are relatively rare. The causes and effects are not conceived of as variables, the causal link is undifferentiated, without even polarity, and if any counterfactual is implied it remains very unclear.
 
@@ -131,15 +232,11 @@ It can be trivially coded minimalist-style as
 
 That's it.
 
-## Deferring judgement about co-terminal links ("bundles")
-
-In Participatory Systems Mapping, 
-
 
 
 ## Causal maps
 
-Crucially, we can then display the coded claims for individuals as a graphical causal map, and we can also display the entire map for all individuals and/or maps filtered in different ways to answer different questions. There is a handful of other applications [@ackermannDecisionExplorerUser1996]   [@laukkanenComparativeCausalMapping2012] for causal mapping which also do this; but as far as we know, only Causal Map also allows direct QDA-style causal coding of texts.
+Crucially, we can then display the coded claims for individuals as a graphical causal map, and we can also display the entire map for all individuals and/or maps filtered in different ways to answer different questions. There is a handful of other applications [@ackermannDecisionExplorerUser1996; @laukkanenComparativeCausalMapping2012]    for causal mapping which also do this; but as far as we know, only Causal Map also allows direct QDA-style causal coding of texts.
 
 ![Top factors map (bookmark #266)](<../600 How to -- in the Causal Map app/img/bookmarks-example-original/screenshot-top-factors-map.png>)
 *Bookmark #266 — a typical first-pass map: top five factors by frequency, with no further encoding of polarity, weight, or function. The numbers are evidence counts (citations on links, source counts on factors), not effect sizes.*
@@ -190,7 +287,7 @@ Most causal claims in the kinds of texts we have dealt with (interviews and publ
 
 Minimalist coding may be reasonably also called **Qualitative Causal Coding** or **Causal QDA coding**. It shares characteristics with some forms of coding within Qualitative Data Analysis (QDA), in particular demonstrating an asymmetry between presence and absence (a specific tag not being applied is not the same as the application of an "oppositely-poled" tag).
 
-We do not code absences unless they are specified within the text (e.g. perhaps "because of the barking dog, the owner did not come out of the house".
+We do not code absences unless they are specified within the text (e.g. perhaps "because of the barking dog, the owner did not come out of the house").
 
 While codes may be counted, the concept of a *proportion* of codes is challenging because the denominator is often unclear.
 
@@ -237,7 +334,7 @@ These are useful for prioritising what to look at, or for filtering (e.g. keepin
 
 It is usually invalid to infer a long causal chain by stitching together links from different sources. A conservative rule is: only treat an indirect pathway \(A \rightarrow B \rightarrow C\) as supported when the *same source* provides each step (“thread tracing”), unless contexts are explicitly aligned.
 
-The canonical failure mode is: source 1 says `A -> B`, source 2 says `B -> C`, and we mistakenly conclude that anyone told a coherent story `A -> B -> C`. In practice we handle this by “thread tracing”: for a given query we loop through sources one at a time, construct the valid paths *within each source*, and then combine only the edges that appear in valid within-source paths.
+The canonical failure mode is: source 1 says `A -> B`, source 2 says `B -> C`, and we mistakenly conclude that anyone told a coherent story `A -> B -> C`. In practice, for a given query we loop through sources one at a time, construct the valid paths *within each source*, and then combine only the edges that appear in valid within-source paths.
 
 ![Path tracing without source tracing (bookmark #1129)](<../600 How to -- in the Causal Map app/img/bookmarks-example-original/screenshot-path-tracing-without-source-tracing.png>)
 *Bookmark #1129 — path tracing from `Increased knowledge` to `Improved health`: every link on a route between them, across all sources. Easy to misread as a story anyone told.*
@@ -259,6 +356,8 @@ This is also why “the same dataset” can yield very different-looking maps wi
 
 So one can think of analysis as a sequence of transforms of the original links table. The final interpretation of the analysis can be understood as a concatenation of the interpretation rules for each transform.
 
+This pipeline also exists outside the app as a standalone open-source package, [`@causalmap/filter-engine`](https://www.npmjs.com/package/@causalmap/filter-engine), which takes a links table in, applies an ordered sequence of these filters (label and tag filters, path tracing, frequency thresholds, combine-opposites, zoom and more), and returns a links table out.
+
 ## Positioning within qualitative research (and likely critiques)
 
 This paper is about a **coding stance** and a corresponding **intermediate representation** (a links table with provenance), not a claim that “coding = analysis”. In standard QDA terms, minimalist causal coding is best understood as a disciplined way to build an auditable evidence base that can later be interpreted, queried, and written up [@milesQualitativeDataAnalysis2014; @saldanaCodingManualQualitative2015]. It is, of course, not the only kind of way to do QDA.
@@ -267,7 +366,7 @@ To reduce avoidable points of attack from mainstream qualitative social science 
 
 1. **We code claims, not causal truth.** A coded link is evidence that a source *claimed* an influence relation. It is not (by itself) a causal inference claim about the world. This keeps the method compatible with both realist and constructivist sensibilities [@lincolnNaturalisticInquiry1985; @charmazConstructingGroundedTheory2014].
 
-2. **We do not treat “counts” as effect sizes.** Counting supports prioritisation and transparency, but it is not a substitute for interpretation; frequency/breadth in a corpus is not magnitude in the world. (This paper makes that distinction explicit below.)
+2. **We do not treat “counts” as effect sizes.** Counting supports prioritisation and transparency, but it is not a substitute for interpretation; frequency/breadth in a corpus is not magnitude in the world. (See "Evidence strength is not causal effect size" above.)
 
 3. **We trade interpretive depth for auditability and scale, on purpose.** We stay close to surface causal language and preserve provenance (quotes + source ids) so that readers can check what is being claimed. This is a pragmatic stance when working with many sources and/or AI assistance; it does not deny that richer interpretive work can be valuable.
 
@@ -299,11 +398,11 @@ Below are common criticisms (often reasonable) and the corresponding guardrails/
 
 # Extensions
 
-There are many extensions one can add on top of minimalist coding. Small extensions can just add convenient functionality; other extensions can upgrade the system to other more fully-fledged kinds of coding like FCM.
+There are many extensions one can add on top of minimalist coding. Small extensions can just add convenient functionality; other extensions can upgrade the system to other more fully-fledged kinds of coding like Fuzzy Cognitive Mapping.
 
 An extension in general consists of syntax rules for how to construct and carry out a transformation, and semantic or interpretation rules for what this transformation means.
 
-This paper will focus on only one extension: **hierarchical coding**, because it is simple, widely useful in practice, and it directly supports a transparent family of “zoom” transforms.
+This paper treats in full only one extension: **hierarchical coding**, because it is simple, widely useful in practice, and it directly supports a transparent family of “zoom” transforms. The other extensions appear only as concise, standalone stubs; fuller treatments are published as separate work-in-progress papers.
 
 ## Some useful extensions
 
@@ -403,25 +502,60 @@ Only use a hierarchy when the right-to-left label is genuinely a refinement of t
 
 ### Other extensions (stubs; treated in subsequent articles)
 
-See [[006 A formalisation of causal mapping]] and [[015 Combining opposites, sentiment and despite-claims]]
+The formal treatment of these is in [[006 A formalisation of causal mapping ((formalisation))]]. Each stub below points to its own work-in-progress paper where one exists.
 
-#### Context filters (FIL-CTX)
+#### Analysis filters (FIL-CTX, FIL-FREQUENCY, FIL-BUNDLE)
 
-Restrict the evidence base by selecting sources (e.g. only women; only a time period; only a subgroup), then carry out the same downstream analysis on the restricted links table.
+Three extensions are ordinary analysis filters in the pipeline sense above, and need no new coding conventions: restricting the evidence base by source metadata, for example only women or only a time period (FIL-CTX); retaining only links meeting an evidence threshold such as `min_source_count=2` (FIL-FREQUENCY); and computing evidence-strength columns such as `Citation_Count` and `Source_Count` for each `Cause -> Effect` pair, for use in map and table views (FIL-BUNDLE).
 
-#### Frequency / evidence-threshold filters (FIL-FREQUENCY)
-
-Retain only links meeting a threshold of evidence strength (e.g. `min_source_count=2`). This is about *evidence volume/breadth in the corpus*, not effect size.
-
-#### Bundling (FIL-BUNDLE)
-
-Compute evidence-strength columns for each `Cause -> Effect` pair (e.g. `Citation_Count`, `Source_Count`) and use those in map/table views.
-
-### Opposites coding (FIL-OPP) (stub)
+#### Opposites coding (FIL-OPP) (stub)
 
 Rather than encoding signed/weighted edges, we can get similar benefits by treating explicit opposites in labels (e.g. `~Employment` vs `Employment`) as a label-level device with simple inference and visualisation rules.
 
-See [[015 Combining opposites, sentiment and despite-claims]]
+See [[015 Combining opposites, sentiment ((combining-opposites))]]
+
+#### Despite coding (FIL-DESPITE) (stub)
+
+Narratives often name an influence that was present and relevant but failed: "the river still rose, despite the flood-prevention work". Coding an ordinary link asserts the opposite of what the speaker meant; coding nothing throws the information away. So we mark such links with a special type, `despite`. A despite link `Z -despite-> E` is read as: the source claims Z happened, E happened (or, in the helping flavour, failed to happen), and Z had some causal power to work against (or for) E, but did not prevail. A despite link is never evidence for an ordinary `Z -> E`. Despite links can be visualised distinctly, filtered, and counted separately or together with ordinary links.
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Helvetica, Arial, sans-serif','fontSize':'15px'}}}%%
+flowchart LR
+  prev("Flood-prevention<br/>work")
+  river("River levels rose")
+  prev -. despite .-> river
+  classDef factor fill:#EAF7F8,stroke:#6DC4C8,stroke-width:2px,color:#1F1F36;
+  classDef outcome fill:#6DC4C8,stroke:#1F1F36,stroke-width:2px,color:#1F1F36;
+  class prev factor
+  class river outcome
+  linkStyle 0 stroke:#FF8FB8,stroke-width:2.5px
+```
+
+See [[016 Despite-claims ((despite-claims))]]
+
+#### Coding packages (FIL-PACKAGE) (stub)
+
+Sometimes a source presents several influences as working *together*: "you need both oxygen and a spark to make fire". Two separate links drop the conjunction; one combined label (`oxygen and a spark`) is no longer parsable. The package extension keeps the individual links and ties them together with two extra pieces of link metadata: a shared arbitrary `package` code, unique to that combination, and a `package_type` naming the connective, usually `AND` or `OR`, with `?` where the speaker grouped the causes in one breath without saying which. (`OR` is looser: alternative sufficient causes arguably need no package at all, so an `OR` package records only that the speaker offered the influences together as alternatives rather than asserting each outright; `?` is the honest default when even that much is unclear.) Despite claims join in naturally: when a narrative names both the failed influence and the influence that overcame it ("the fan failed to cool him down because the sun was too strong"), the despite link and the ordinary link share a package code with type `DESPITE`. A package can also group the effects of one cause ("the programme raised awareness and changed behaviour"): this matters less for analysis, since effect links read separately rarely overstate the claim, but it is often the more natural reading, and it keeps the convention symmetrical: a package groups the links of one joint claim, whichever end the conjunction is on.
+
+The semantics are weak by design: a package records that the speaker presented these influences as working together in the named manner, with no commitment to truth tables, necessity or sufficiency, interaction effects, or completeness. Packaged links remain ordinary links for every other purpose; the code makes the combination filterable (show all packaged links, one package, or one type) and countable without inflating conjunctive claims into independent evidence.
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Helvetica, Arial, sans-serif','fontSize':'15px'}}}%%
+flowchart LR
+  oxy("Oxygen")
+  spark("Spark")
+  fire("Fire")
+  oxy == AND: pk_x7f2 ==> fire
+  spark == AND: pk_x7f2 ==> fire
+  classDef factor fill:#EAF7F8,stroke:#6DC4C8,stroke-width:2px,color:#1F1F36;
+  classDef outcome fill:#6DC4C8,stroke:#1F1F36,stroke-width:2px,color:#1F1F36;
+  class oxy,spark factor
+  class fire outcome
+  linkStyle 0 stroke:#1F1F36,stroke-width:2.5px
+  linkStyle 1 stroke:#1F1F36,stroke-width:2.5px
+```
+
+See [[017 Coding packages of links ((packages))]]
 
 ## AI extensions (optional; stubs)
 
@@ -451,17 +585,9 @@ The “minimalist” stance in this paper is deliberately radical: we code *undi
 
 These extensions can be extremely useful in settings where respondents are explicitly reasoning in those terms, or where the purpose is modelling/simulation. But they also raise the bar: if we write down a signed or weighted link, we are committing not just to “X influenced Y”, but to a stronger claim about *how* X and Y vary and how changes propagate.
 
-### Axelrod-style cognitive mapping (signed causal beliefs)
+### Three traditions, briefly
 
-In the Axelrod tradition, cognitive maps are often treated as representations of beliefs about causal influence among concepts, and they are frequently coded with some notion of **positive/negative influence** in addition to direction [@axelrodAnalysisCognitiveMaps1976; @axelrodStructureDecisionCognitive1976]. This makes it easier to talk about reinforcing/balancing structure and about the direction of change, but it also moves the representation closer to variables-with-values (even if the original text/elicitation was not precise about scales or functional form).
-
-### Eden & Ackermann cause mapping / problem structuring
-
-The Eden/Ackermann “cause maps” tradition (including its software lineage) emphasises causal mapping as a practical tool for structuring messy problems and supporting decision making, often built interactively with respondents and iterated in workshops [@edenAnalysisCauseMaps1992; @ackermannGettingStartedCognitive2004; @ackermannDecisionExplorerUser1996]. Polarity and more explicit causal typing are more natural here because the map is typically negotiated in context (so the group can decide what is meant by “increase/decrease”, and can revise labels until the signed links make sense).
-
-### Comparative causal mapping (standardisation and cross-map comparison)
-
-Comparative approaches focus on how to elicit, standardise, and compare large numbers of maps across people, groups, or time. This tends to bring in more explicit conventions for coding and comparison, and often assumes a more “variable-like” interpretation of factors so that maps can be aligned and analysed at scale [@laukkanenComparativeCauseMapping1994; @laukkanenComparativeCausalMapping2012; @markiczyMethodElicitingComparing1995; @hodgkinsonCausalCognitiveMapping2004].
+In the Axelrod tradition, cognitive maps represent beliefs about causal influence among concepts and are usually coded with **positive/negative influence** as well as direction [@axelrodAnalysisCognitiveMaps1976; @axelrodStructureDecisionCognitive1976]; this makes reinforcing and balancing structure visible, but moves the representation closer to variables-with-values even where the original elicitation was not precise about scales or functional form. In the Eden/Ackermann “cause maps” tradition, maps are built interactively to structure messy problems and support decisions [@edenAnalysisCauseMaps1992; @ackermannGettingStartedCognitive2004; @ackermannDecisionExplorerUser1996]; polarity is more natural there because the map is negotiated in a workshop, where the group can settle what “increase/decrease” means. Comparative causal mapping elicits, standardises and compares many maps across people, groups or time, which again pushes towards a more “variable-like” reading of factors so that maps can be aligned at scale [@laukkanenComparativeCauseMapping1994; @laukkanenComparativeCausalMapping2012; @markiczyMethodElicitingComparing1995; @hodgkinsonCausalCognitiveMapping2004].
 
 ### What it would take to extend our logic to signed links (and why we treat it separately)
 
@@ -474,7 +600,7 @@ At minimum, we would need:
 - A clear semantics for what `+` and `-` *mean* (typically: a monotonic relationship between variables), including what counts as “more/less” for a factor label.
 - Aggregation rules for how to deal with disagreement and contradiction across sources, and for how to visualise those disagreements without creating spurious precision.
 
-Because our target corpora typically do *not* make those commitments explicit (and because we are focused on modelling evidence-with-provenance rather than system dynamics), we do not treat signed links as part of the core method here. Where polarity matters in practice, we prefer to handle it with **label-level devices** (e.g. `~Employment` vs `Employment` combined with the `combine_opposites` transformation.
+Because our target corpora typically do *not* make those commitments explicit (and because we are focused on modelling evidence-with-provenance rather than system dynamics), we do not treat signed links as part of the core method here. Where polarity matters in practice, we prefer to handle it with **label-level devices** (e.g. `~Employment` vs `Employment` combined with the `combine_opposites` transformation).
 
 
 
@@ -507,20 +633,20 @@ This too is primitive and flattening. It does not capture the generative, what-i
 
 ### Causal packages / conjunctions
 
-This is overlaps with the problem of how to code causal packages: claims in which some *combination* of factors is said to be needed for an effect. It's part of realist thinking, but it appears in other approaches too. 
+This overlaps with the problem of how to code causal packages: claims in which some *combination* of factors is said to be needed for an effect. It's part of realist thinking, but it appears in other approaches too. 
 
-For example, “you need an accelerant and a spark to set a fire” is not well represented by coding two separate links (“accelerant causes fire” and “spark causes fire”), because that misses the conjunctive structure. One can code the cause as a single phrase (e.g. “an accelerant and a spark”), but then the phrase is not parsable in a way that lets us relate it to other claims about accelerants or sparks on their own.
 
-In principle one could introduce special syntax for conjunctions, but the moment we do so we are immediately pushed towards stronger, more model-like commitments (e.g. about truth tables, interaction effects, non-linear combination rules), and it is unclear how much such structures would recur with enough regularity in ordinary language corpora to justify that added complexity.
+
+Our answer is the weak-by-design package extension (FIL-PACKAGE, above): the member links stay ordinary links, a shared code records the claimed combination, and the stronger model-like commitments (truth tables, interaction effects, necessity and sufficiency) are exactly what the extension refuses to make. See [[017 Coding packages of links ((packages))]].
 
 
 # Where minimalist coding runs out
 
 Minimalist coding handles maybe 90% of explicit causal claims in the kinds of texts we work with. As discussed above, it may not satisfy researchers who have a specific meta-theory they want to apply, like CMOs, or INUS packages.
 
-The remaining 10% includes a few recognisable types: claims that are really about other claims (enablers and blockers), claims that depend on a combination of factors (causal packages), and claims that pack a sophisticated causal story into a single phrase ("went viral"). 
+The remaining 10% includes a few recognisable types: claims that are really about other claims (enablers and blockers), claims that depend on a combination of factors (causal packages, treated above), and claims that pack a sophisticated causal story into a single phrase ("went viral"). 
 
-We've thought about all three. None of them have led us to add new structure to the coding scheme. Here is why.
+We've thought about all three. Beyond the two weak-by-design markers already described (despite links and package codes), none of them has led us to add new structure to the coding scheme. Here is why.
 
 ## Causation about causation: enablers and blockers as second-order causal claims
 
@@ -553,9 +679,9 @@ One can code:
 
 - Forgetting to take my phrase book --> Not enjoying the holiday
 
-However, our intuition that “going on holiday” should also be part of the story is hard to capture without moving to a second-order encoding. The blocker case is visually similar to the enabler case, but it seems to require adding the idea of a causal power to *stop* something: the blocker destroys or disables the causal power of X to bring about Y.
+However, our intuition that “going on holiday” should also be part of the story is hard to capture without moving to a second-order encoding. The blocker case is visually similar to the enabler case, but it seems to require adding the idea of a causal power to *stop* something: the blocker destroys or disables the causal power of X to bring about Y. In practice we handle the related blocked-outcome case with despite coding (FIL-DESPITE, above), which records a countervailing influence that was present and failed, without committing to a signed edge.
 
-I do not claim we can do much with this at scale; but it is a clear way of stating what seems to be “missing” from purely first-order, undifferentiated links in these edge cases.
+We do not claim we can do much with this at scale; but it is a clear way of stating what seems to be “missing” from purely first-order, undifferentiated links in these edge cases.
 
 
 ## Sophisticated claims as ordinary language
@@ -564,19 +690,9 @@ A more cheerful note. Some sophisticated causal constructions become part of ord
 
 ## What this section adds up to
 
-We could in principle extend minimalist coding to handle enablers, blockers, and packages. We have not. The cost of a richer scheme almost never pays back, because the relevant cases are rare and the analyst can usually handle them adequately in the write-up, where they belong. We would rather log a slightly imperfect minimalist record and write nuance into the prose than build it into the data structure.
+We could in principle extend minimalist coding to handle enablers, blockers, and packages with rich new structure. We have mostly not. The cost of a richer scheme almost never pays back, because the relevant cases are rare and the analyst can usually handle them adequately in the write-up, where they belong. We would rather log a slightly imperfect minimalist record and write nuance into the prose than build it into the data structure. The two exceptions we allow ourselves are weak-by-design markers on otherwise ordinary links: the despite type (FIL-DESPITE) and package codes (FIL-PACKAGE), each described above, and each refusing the stronger commitments that make richer schemes expensive.
 
-See also:
-
-[@powellCausalMappingEvaluators2024]
-
-[@powellAIassistedCausalMapping2025a]
-
-[@brittStrengtheningOutcomeHarvesting2025]
-
-[@powellWorkflowCollectingUnderstanding2025]
-
-[@remnantQualitativeCausalMapping2025]
+See also our related work: the evaluator-facing overview [@powellCausalMappingEvaluators2024], the AI-assisted coding papers [@powellAIassistedCausalMapping2025a; @powellWorkflowCollectingUnderstanding2025], the application to outcome harvesting [@brittStrengtheningOutcomeHarvesting2025], and the handbook chapter on qualitative causal mapping in evaluations [@remnantQualitativeCausalMapping2025].
 
 <!--
 TODO Zotero: all five refs now added to Zotero-cm and keys verified against the bib. Four resolve cleanly:

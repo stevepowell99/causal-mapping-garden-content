@@ -4,6 +4,7 @@
 
 - A small locked indicator at the top-right of `#project-selector-header` shows only when a project is read-only.
 - An archived icon appears only when the project is archived. Archived projects are automatically read-only and only visible to owners, collaborators, and admins (not visible to the public even if marked public).
+- **Versions shortcut** <i class="fas fa-history"></i>: if the current project has any [named versions](../versioning/), a small history button appears just left of the pencil. It opens the same Versions window as the File menu, one click instead of three. Projects with no named versions do not show it.
 - **New Project or Upload Sources** <i class="fas fa-plus"></i>: Opens a modal to create a new project or add sources to the current project. Choose files and/or **Or paste text** (plain text becomes a source file named `pasted-text.txt`), then Continue. A **Show Advanced** switch (default off) skips the [Confirm Upload](../upload-documents/) screen and uses defaults (keep filenames as IDs, no custom columns, no split). When on, the Confirm Upload modal appears for adjusting filenames, adding custom columns, or splitting sources (including delimiter split for pasted text).
 
 
@@ -21,27 +22,27 @@ Quick access to common actions:
 - **Download** <i class="fas fa-download"></i>: Export as XLSX
 - **Versions** <i class="fas fa-history"></i>: Restore and create backups of this Project
 - **Update sources (Excel)** <i class="fas fa-file-excel"></i>: Upload an XLSX to update sources in-place ("round-tripping").
-  - **Tabs**: Must contain a `sources` tab (lowercase). Other tabs are ignored.
-  - **Required** (**case-insensitive headers**): Must include an `id` column. IDs must exist in the current project.
-  - **Columns**: You can include only the columns you want to change. Any missing columns are left unchanged.
-  - **Updates**: `title`, `filename`, `content` (if those columns exist). Any other columns are merged into `metadata.custom_columns`.
+    - **Tabs**: Must contain a `sources` tab (lowercase). Other tabs are ignored.
+    - **Required** (**case-insensitive headers**): Must include an `id` column. IDs must exist in the current project.
+    - **Columns**: You can include only the columns you want to change. Any missing columns are left unchanged.
+    - **Updates**: `title`, `filename`, `content` (if those columns exist). Any other columns are merged into `metadata.custom_columns`.
 - **Manage projects** <i class="fas fa-folder-open"></i>: Opens the [Projects](../projects-panel/) tab as a shortcut
 
 #### **Create new project**{#manage-projects}
 - **Quick upload** <i class="fas fa-plus"></i>: Create a new project or add sources to the current project (same as the green + button in the Files bar)
 - **New Project** <i class="fas fa-plus"></i>: Create an empty Project which you can then import sources into
 - **Import XLSX** <i class="fas fa-file-excel"></i>: Import a complete new Project from Excel ("round-tripping").
-  - **Tabs**: If the XLSX has 1 tab, it is treated as the sources tab (whatever its name). If it has multiple tabs, it must contain `sources` (lowercase); `links` (lowercase) is optional.
-  - **Long source text**: If the XLSX contains a `source_content_chunks` tab (exported by this app when source content exceeds spreadsheet per-cell limits), imports will rehydrate `sources.content` from it.
-  - **Format note**: CausalMap can import many document/file formats elsewhere in the app, but a BathSDR-style QuIP Excel workbook is not supported by this XLSX importer.
-  - **`sources` columns** (**case-insensitive headers**): source id comes from `id` (preferred) or `source_id`; source text comes from `content` (preferred) or `text`. Any other (non-empty) columns are imported as custom columns (into `metadata.custom_columns`).
-  - **`links` columns (optional)**: uses `cause`, `effect`, `sentiment`, `tags`, `source_id`, `selected_text` (and remaps `source_id` based on the old ids from the sources sheet).
-    - Any other non-empty `links` columns are imported into `links.metadata.custom_columns`.
-    - For round-trip consistency, incoming `custom_<name>` headers are normalized to `<name>` before writing `links.metadata.custom_columns`.
+    - **Tabs**: If the XLSX has 1 tab, it is treated as the sources tab (whatever its name). If it has multiple tabs, it must contain `sources` (lowercase); `links` (lowercase) is optional.
+    - **Long source text**: If the XLSX contains a `source_content_chunks` tab (exported by this app when source content exceeds spreadsheet per-cell limits), imports will rehydrate `sources.content` from it.
+    - **Format note**: CausalMap can import many document/file formats elsewhere in the app, but a BathSDR-style QuIP Excel workbook is not supported by this XLSX importer.
+    - **`sources` columns** (**case-insensitive headers**): source id comes from `id` (preferred) or `source_id`; source text comes from `content` (preferred) or `text`. Any other (non-empty) columns are imported as custom columns (into `metadata.custom_columns`).
+    - **`links` columns (optional)**: uses `cause`, `effect`, `sentiment`, `tags`, `source_id`, `selected_text` (and remaps `source_id` based on the old ids from the sources sheet).
+        - Any other non-empty `links` columns are imported into `links.metadata.custom_columns`.
+        - For round-trip consistency, incoming `custom_<name>` headers are normalized to `<name>` before writing `links.metadata.custom_columns`.
 - **Import cm3** <i class="fas fa-upload"></i>: Import a complete new Project downloaded from CausalMap3.
-  - **Tabs**: Requires `links` and `statements` (lowercase). Optional: `sources`, `questions`.
-  - **`statements` columns** (**case-insensitive headers**): requires `source_id` and `text` (optional `statement_id`/`id`, optional `question_id`).
-  - **`links` columns used**: `from_label`, `to_label`, `quote`, `hashtags`, `sentiment`, `statement_id` (used to map links to sources via the statements sheet).
+    - **Tabs**: Requires `links` and `statements` (lowercase). Optional: `sources`, `questions`.
+    - **`statements` columns** (**case-insensitive headers**): requires `source_id` and `text` (optional `statement_id`/`id`, optional `question_id`).
+    - **`links` columns used**: `from_label`, `to_label`, `quote`, `hashtags`, `sentiment`, `statement_id` (used to map links to sources via the statements sheet).
 
 
 
@@ -119,8 +120,8 @@ Manage every aspect of the current project. You can reach this management pane b
 - <strong>Open it</strong>: File → Edit, or the edit icon in the Projects table.
 - <strong>When it appears</strong>: Also opens on project load/change unless you turn it off for this project.
 - <strong>Save vs instant changes</strong>:
-  - Use the <em>Save</em> button to apply changes to <strong>Name</strong>, <strong>Tags</strong>, and <strong>Description</strong>.
-  - <strong>Archived</strong>, <strong>Locked</strong>, <strong>Public</strong>, and <strong>Collaborators</strong> update instantly.
+    - Use the <em>Save</em> button to apply changes to <strong>Name</strong>, <strong>Tags</strong>, and <strong>Description</strong>.
+    - <strong>Archived</strong>, <strong>Locked</strong>, <strong>Public</strong>, and <strong>Collaborators</strong> update instantly.
 </div>
 
 #### Details
@@ -128,16 +129,18 @@ Manage every aspect of the current project. You can reach this management pane b
 - <strong>Tags</strong>: Comma‑separated tags for quick grouping/searching.
 - <strong>Description</strong>: Free‑text notes about the project.
 - <strong>Edit codebook</strong>: Toggle to reveal a text area where you can list factor labels (one per line). These are added to the cause/effect dropdowns in the link editor; existing options are kept.
+    - **AI coding does not read this list on its own.** The codebook here is for coding by hand. To make the AI code to these labels, tick **Project codebook** in the AI Coding panel's Standard prompt builder, or ask MapCat to add the codebook to the coding prompt. You choose how binding it is: **guided**, where the AI uses one of your labels wherever one fits and writes a new label in the same style where none does, or **strict**, where the list is closed and the AI drops any claim it cannot express in your labels. To bring links you have ALREADY coded onto the list instead, use Recode (see AI Coding) with the codebook pasted in.
+    - MapCat can also read the codebook back to you, and add labels to it or replace it, if you would rather not edit the box by hand. <!--- MapCat verb project_codebook (modes read/set/append/use_in_coding); use_in_coding appends the composer's codebook layer (webapp/prompts/codebook_guided.md / codebook_strict.md, shared with scripts/compose_prompt.py) to the end of the coding prompt and saves it as a new prompt-history row. The list itself lives in projects.metadata.codebook and is read by DataService.getCausalOverlayOptions for the link editor dropdowns. --->
 - <strong>AI Processing Region</strong>: Choose where AI processing occurs for GDPR/data residency compliance:
-  - **EU (Belgium - europe-west1)** - Default. Recommended for EU data residency requirements.
-  - **UK (London - europe-west2)** - UK has GDPR adequacy decision, suitable for EU/UK compliance.
-  - **US (Virginia - us-east5)** - US East region.
-  - Setting is saved per-project and auto-saves on change (with confirmation warning).
-  - All subsequent AI coding for this project uses the selected region.
+    - **EU (Belgium - europe-west1)** - Default. Recommended for EU data residency requirements.
+    - **UK (London - europe-west2)** - UK has GDPR adequacy decision, suitable for EU/UK compliance.
+    - **US (Virginia - us-east5)** - US East region.
+    - Setting is saved per-project and auto-saves on change (with confirmation warning).
+    - All subsequent AI coding for this project uses the selected region.
 - <strong>Archived</strong>: Hide the project from the main list and make it read-only. Archived projects are only visible to owners, collaborators, and admins (hidden from public view even if marked public). Applied immediately. Unarchiving restores normal visibility and editability.
 - <strong>Info line</strong>: Created / Modified / Owner, plus counts for links/sources/words, and quick actions:
-  - <em>Versions</em>: Open the versions manager.
-  - <em>Delete embeddings</em>: Remove factor embeddings for this project (advanced).
+    - <em>Versions</em>: Open the versions manager.
+    - <em>Delete embeddings</em>: Remove factor embeddings for this project (advanced).
 - <strong>Show on open</strong>: Toggle "Show this screen when opening this project" at the top to auto‑open or suppress this screen for this project.
 
 <!-- Technical: AI region setting is stored in projects.metadata.ai_region as 'eu'/'uk'/'us' and mapped to Vertex AI regions ('europe-west1'/'europe-west2'/'us-east5') by AIManager._getVertexRegion(). Default is 'eu'. The setting is passed as vertex_region parameter to the vertex-ai edge function. Data retention: Google's zero data retention policy applies; in-memory caching up to 24 hours (can be disabled); prompt logging for abuse monitoring can be disabled with invoiced billing account. All compliant with GDPR when EU/UK regions selected. See https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/multimodal-faqs -->
@@ -146,8 +149,8 @@ Manage every aspect of the current project. You can reach this management pane b
 - <strong>Locked</strong>: Make the project read‑only. Editing is disabled until unlocked. Applied immediately.
 - <strong>Public</strong>: Allow all signed‑in users to view the project (read‑only). Applied immediately.
 - <strong>Collaborators</strong>: See current collaborators, add by email, and choose permission:
-  - <em>Viewer</em>: Read‑only
-  - <em>Editor</em>: Read & write
+    - <em>Viewer</em>: Read‑only
+    - <em>Editor</em>: Read & write
 
 #### Bookmarks
 - If available, view saved “bookmarked” views of your data and open the Bookmark Manager.

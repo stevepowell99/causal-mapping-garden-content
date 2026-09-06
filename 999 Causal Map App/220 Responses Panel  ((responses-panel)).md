@@ -19,16 +19,16 @@ This panel shows a searchable table of AI calls (rows from the `ai_logs` table).
 
 **How to use the table:**
 - **Scope toggle (top-right)**:
-  - **This project**: shows only AI calls from the currently selected project (exact match).
-  - **All projects**: shows AI calls across all projects you have access to.
+    - **This project**: shows only AI calls from the currently selected project (exact match).
+    - **All projects**: shows AI calls across all projects you have access to.
 - **Sort**: click a column header (e.g. **Timestamp**, **Cost**) to sort by that column; click again to reverse the sort.
 - **Filter row (the grey row under the headers)**: type/select a value and the table refreshes automatically.
-  - **Date**: pick a date. If you pick a past date, it filters **from that date up to today**. If you pick today, it filters **today only**.
-  - **Project**: free-text filter (substring match). Most useful when Scope = **All projects**.
-  - **Model**: dropdown.
-  - **Status**: **Success** or **Error**.
-  - **Source**: filter by `source_id`.
-  - **Prompt**: filter by text inside the prompt (substring match).
+    - **Date**: pick a date. If you pick a past date, it filters **from that date up to today**. If you pick today, it filters **today only**.
+    - **Project**: free-text filter (substring match). Most useful when Scope = **All projects**.
+    - **Model**: dropdown.
+    - **Status**: **Success** or **Error**.
+    - **Source**: filter by `source_id`.
+    - **Prompt**: filter by text inside the prompt (substring match).
 - **Clear filters (X button)**: appears only when any filters are active; click it to reset the filters.
 - **Pagination**: use the pager at the bottom to move through pages; use the **page size** dropdown to change rows per page.
 
@@ -40,7 +40,7 @@ This panel shows a searchable table of AI calls (rows from the `ai_logs` table).
 - **Time (s)**: response time.
 - **Chunk / Iter / Batch / Source**: metadata used mainly for chunked/batched runs.
 - **Prompt**: a short preview (hover to see more).
-- **P Tok / C Tok / Cost**: prompt tokens, completion tokens. **Admins** see cost in USD ($). **Non-admins** see **Credits** (1 credit ≈ $0.01; users without paid AI plans get 10 free credits per month; credits renew monthly and do not roll over).
+- **P Tok / C Tok / Cost**: prompt tokens, completion tokens. **Admins** see cost in USD ($). **Non-admins** see **Credits** (users without paid AI plans get 100 free credits per month; credits renew monthly and do not roll over; see [AI credits](../account-panel/)).
 - **User**: the user email associated with the call (when available).
 - **Type**: what feature created the call (see “What kinds of AI work…” above).
 

@@ -49,9 +49,3 @@ Some essential terminology for causal mapping.
 | Statement           | Refers to each individual piece of text to be coded in Causal Map, usually this is a sentence, a paragraph or a few paragraphs. Each statement has an ID like 1, 2, 3 etc.                                                                                                                     |
 | Sigs                | Sigs = significance. Significance level for showing a row is 0.1 and tables with less than 8 items are suppressed. Significance symbols: .=0.1, \*=0.05, \*\*=0.01, \*\*\*=0.001                                                                                                               |
 -->
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[1160 Bundle of Links -- definition ((bundle))|chapter intro]]

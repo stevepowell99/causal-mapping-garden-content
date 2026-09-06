@@ -2,6 +2,7 @@
 tags: 
   - case_study
 date: 2024-09-26
+theme: quip
 ---
 2024-09-26
 Alexandra Priebe (WFP), interviewing Ashley Hollister and Sarang Mangi (DeftEdge)
@@ -44,9 +45,3 @@ Another lesson learned is that having fewer, broader questions and interviewing 
 
 [Check the report here](https://www.wfp.org/publications/evaluation-wfp-contribution-market-systems-south-sudan-and-bangladesh-2018-2022)
 [See more details here](https://www.conftool.pro/ees2024/index.php?page=browseSessions&form_session=579&mode=table)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

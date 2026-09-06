@@ -29,7 +29,7 @@ Select projects with checkboxes, then:
 ### Sharing and Permissions {#sharing-and-permissions}
 - **Email-based collaboration** : add and remove colleagues' email addresses
 - **Locked / Read-only permissions** for viewing without editing
-- **Global sharing** <i class="fas fa-globe"></i> for public read-only access (requires an active paid plan to toggle; see [Private projects and subscription expiry](../private-projects-and-subscription-expiry/))
+- **Global sharing** <i class="fas fa-globe"></i> for public read-only access (free to turn on; keeping a project private instead needs an active paid plan, see [Private projects and subscription expiry](../private-projects-and-subscription-expiry/))
 - **Permission badges** next to project names
 - **Admin only: admin panel** <i class="fas fa-users"></i> for user management
 
@@ -70,6 +70,15 @@ The app automatically backs up your project, so you can restore earlier snapshot
 
 This panel shows a dropdown list of times when you made changes to the mapfile in UTC/GMT. Along with the size of your file which can help you identify which timepoint you want to revert to. It can be easy to forget what time you made alterations to your file, so if you're likely to want to restore a previous map it is best to note the time so that you can easily return to it.
 
+**Named versions.** When you make a manual backup you can give it a name, for example `actor-focused` or `normal`. This is useful when you keep more than one style of coding in the same project.
+
+- Named versions are kept forever; unnamed backups are pruned over time (see below).
+- Names can be reused: the version list shows each entry as date and time plus its name, so the timestamp tells versions in the same line apart.
+- The name box is prefilled with the name of your newest named version, so saving again into the same line is one click. Clear the box to make an unnamed backup, or type a new name to start a new line.
+- Once a project has at least one named version, a shortcut button <i class="fas fa-history"></i> appears in the Projects Bar, just left of the pencil, so you can open Versions with one click instead of going through the File menu.
+- Restoring a named version puts a fresh copy of it at the top of the version list under the same name, so the newest named version always shows which coding line you are working in.
+- Every bookmark records the exact backup that was current when you saved it (making a fresh backup first if needed). Slides in the Reports list and slideshow show the version name as a badge, so a deck can mix slides from different coding styles and you can see which is which. Backups referenced by a bookmark are never pruned while the bookmark exists.
+
 <!---
 
 Note: Version lists are loaded lazily when the Version Management modal opens to reduce page-load requests. They refresh automatically after creating, restoring, or deleting a version.
@@ -77,7 +86,11 @@ Note: Version lists are loaded lazily when the Version Management modal opens to
 - Every 10 minutes, if the user has edit access (owner or editor)
 - Only backs up if changes have been made since the last backup
 - Stores complete project data (project metadata, sources, and links) to Supabase Storage
-- Storage path: `versions/{project_name}/{project_name}_{timestamp}.json`
+- Storage path: `versions/{project_name}/{project_name}_{timestamp}.json`; named versions append `__n_{slug}` before `.json` (slug = sanitised lowercase name, suffix-anchored so legacy files never match) and carry the full display name in the JSON body as `versionName`
+- Retention culling (exponential: all <24h, 1/hour to 1 month, 1/day to 6 months, 1/week after) exempts named files (filename marker alone) and any snapshot referenced by a live bookmark's `version_filename` (read via `DataService.getReferencedVersionFilenames`; cull is skipped entirely if that read fails). Deleting a bookmark makes its snapshot cullable again. Caveat: the reference read runs under the culler's RLS, so bookmarks the culler cannot see do not protect their snapshots
+- There is deliberately NO stored "current version" state: the newest named snapshot IS the current coding line. Restoring a named version appends a fresh same-named snapshot (`trigger: 'post-restore'`) to keep that derivation true; restoring an unnamed version does not
+- Bookmark creation stamps `bookmarks.version_filename` (exact snapshot, snapshotting first only when the change tracker is dirty: `VersionManager.ensureFreshSnapshot`) and `bookmarks.version_name` (newest named version's display name, `getNewestNamedVersionName`)
+- Version writes/restores audit as `version_created` (with `trigger`: manual/auto/pre-restore/post-restore/bookmark) and `version_restored`
 
 **Version Management UI:**
 - **Project Edit Modal**: New "Project Versions" section shows:

@@ -26,9 +26,3 @@ number of columns: 2
 ![notion image](img/map-notion-image-10.jpg)
 
 [See the full report here](https://globalyoungacademy.net/wp-content/uploads/2019/04/GYA-Impact-Analysis-2018_Final.pdf)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

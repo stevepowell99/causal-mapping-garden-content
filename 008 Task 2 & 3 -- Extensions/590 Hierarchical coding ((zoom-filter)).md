@@ -2,6 +2,7 @@
 date: 2025-09-22
 tags:
   - mapcat_methods
+theme: filters
 ---
 
 ## Simplifying large causal maps with hierarchical labels (zooming)

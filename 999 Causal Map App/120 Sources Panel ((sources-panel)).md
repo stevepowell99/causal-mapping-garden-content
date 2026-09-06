@@ -7,16 +7,16 @@
 #### Upload Source Texts <i class="fas fa-upload"></i> {#upload-documents}
 - **New Project or Upload Sources** (green + in the Projects bar): besides files, you can **paste plain text** into **Or paste text**; it is imported like a TXT file as `pasted-text.txt`. You can combine paste with file picks in one step.
 - **Click to select** one or more PDFs, DOCX, RTF, TXT, MD, or XLSX files
-  - **XLSX**: Requires a `statements` tab with `source_id` and `text` columns; other columns become custom columns. Optional `sources` tab for metadata. Adds sources to the current project (no new project created).
+    - **XLSX**: Requires a `statements` tab with `source_id` and `text` columns; other columns become custom columns. Optional `sources` tab for metadata. Adds sources to the current project (no new project created).
 - **Optionally split large documents into multiple sources** using separator patterns
 - **Optionally set custom columns on upload** (applies to all uploaded sources)
-  - Type an existing column name (or a new one) and optionally set a fixed value, e.g. `Country = Zambia`
-  - Leave the value blank to just add the column (no value set during upload)
+    - Type an existing column name (or a new one) and optionally set a fixed value, e.g. `Country = Zambia`
+    - Leave the value blank to just add the column (no value set during upload)
 - **Confirm Upload modal** (shown when "Show Advanced" is on in [New Project or Upload Sources](../project-selector-header/)) lets you adjust filenames→ID mapping, add custom columns, and split sources. When Show Advanced is off (default), uploads use defaults (keep filenames as IDs, no custom columns, no split) and skip this screen.
-  - On completion, the app automatically: 
-    - selects the sources via [Sources Dropdown](../sources-dropdown/) 
-    - switches to the [Create Links](../create-link-tab/) sub-tab and loads the first source's text into it
-    - on the right, switches to Sources panel with and the View & Edit subpanel
+    - On completion, the app automatically: 
+        - selects the sources via [Sources Dropdown](../sources-dropdown/) 
+        - switches to the [Create Links](../create-link-tab/) sub-tab and loads the first source's text into it
+        - on the right, switches to Sources panel with and the View & Edit subpanel
 
 ##### Splitting documents into multiple sources with source separators
 
@@ -63,9 +63,9 @@ This feature helps you split existing source texts into sections. These separato
 - Into the box, type one **regex pattern per line**. The pattern must match the *whole separator line* in your source text, so use `.*` to match the rest of the line. For example, if your text contains lines like `statement_id: 42` or `Question 7: ...`, enter `statement_id:.*` or `Question.*` respectively.
 - Matching lines are styled as **headings** in the text viewer.
 - Each link is assigned to the section it falls under. The matched text (e.g. `statement_id: 42`) becomes the section value, available as a column (e.g. `section_statement_id`) in:
-  - The [Everything Filter](../everything-filter/) — so you can show only links from specific sections
-  - The [Sections Filter](../sections-filter/)
-  - Pivot tables and statistics
+    - The [Everything Filter](../everything-filter/) — so you can show only links from specific sections
+    - The [Sections Filter](../sections-filter/)
+    - Pivot tables and statistics
 - Links before the first separator in a source get the value `Initial Text`.
 
 
@@ -136,12 +136,13 @@ Use this simple customisable table to check your sample according to any [custom
 
 #### Sources Table <i class="fas fa-table"></i> {#sources-table}
 - NEW column **Source Prompt** -  this new column shows the first few characters of any text in this field. It can be edited as usual with the existing pencil icon/ edit button in each row. 
+- **Edit the source text**: the pencil/edit button opens the Edit Source modal, where the **Content** field is now editable along with the title, source prompt and custom fields. Changing the existing text will probably break any links coded beyond the point of the change, because each link remembers where in the text it was coded and those positions shift. Where possible, only add new text at the end. Saving after a text change asks you to confirm first.
 - **Checkbox selection** for analysis pipeline
 - **Row editing** with keyboard navigation
 - **Custom columns** for metadata
 - **Column visibility control**:
-  - Click the small **⋮** in any header to hide that column (or hide selected columns) and quickly show hidden columns again.
-  - **Manage Columns** <i class="fas fa-columns"></i> is the main source-table column manager. It includes a checkbox list for Sources table columns, with **Select all / Select none / All source / No source**, and drag-to-reorder.
+    - Click the small **⋮** in any header to hide that column (or hide selected columns) and quickly show hidden columns again.
+    - **Manage Columns** <i class="fas fa-columns"></i> is the main source-table column manager. It includes a checkbox list for Sources table columns, with **Select all / Select none / All source / No source**, and drag-to-reorder.
 - **Uncoded column** - Shows true/false for sources with no links; filterable to find uncoded sources
 - **Fullscreen mode** available
 
@@ -245,9 +246,9 @@ Custom columns are where you store extra data about each of your sources, e.g. g
 - **Double-click a cell in a custom column to edit it** or via source edit modal
 - **Copy and paste** selections with ctrl-C, ctrl-V.
 - **These columns are available elsewhere in the app, e.g.**
-  - In the [Source Groups filter](../source-groups-filter/)
-  - In the [Everything filter](../everything-filter/)
-  - In the [Sample Check table](../sources-aggregate-tab/)
+    - In the [Source Groups filter](../source-groups-filter/)
+    - In the [Everything filter](../everything-filter/)
+    - In the [Sample Check table](../sources-aggregate-tab/)
 - Link custom columns work the same way in the [Links Table](../link-custom-columns/), but apply to individual causal links rather than sources.
 
 <!---

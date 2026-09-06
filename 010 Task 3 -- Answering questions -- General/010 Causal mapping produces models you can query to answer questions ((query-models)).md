@@ -12,7 +12,7 @@ As explained on the [Causal Mapping website](https://www.causalmap.app/causal-ma
 
 The figure below shows a map from the application Causal Map, showing coded causal statements for a project that provided farmers with agricultural training and advice in order to increase crop yields. The map has been filtered to show only outcomes downstream of the influence factor ‘Agricultural training and advice’. Numbers shown indicate how many times the links were mentioned across all interviews.
 
-![Causal map from the Causal Map App showing text boxes connected from left to right by arrows](<../000 Articles/img/screenshot-causal-map-from-the-causal-map-app-showing-text-boxes-connected-from-l.jpg>)
+![Causal map from the Causal Map App showing text boxes connected from left to right by arrows](<screenshot-causal-map-from-the-causal-map-app-showing-text-boxes-connected-from-l.jpg>)
 
 Source: BDSR, 2021, p 4
 

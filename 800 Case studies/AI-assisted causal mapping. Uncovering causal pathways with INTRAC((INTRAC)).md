@@ -2,6 +2,7 @@
 tags:
   - case_study
 date: 2026-01-08
+theme: theory-of-change
 ---
 2026-01-08
 ## The partner{.banner}
@@ -67,9 +68,3 @@ The project provided INTRAC with a robust, visual evidence base that articulated
 
 — Alastair Spray (Senior Consultant, INTRAC)
 --
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

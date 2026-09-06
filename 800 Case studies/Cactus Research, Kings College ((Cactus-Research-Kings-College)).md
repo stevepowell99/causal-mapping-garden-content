@@ -17,9 +17,3 @@ The findings were able to demonstrate a wealth of evidence for research impact. 
 ![notion image](img/map-notion-image-4.jpg)
 
 [Cactus Communications](https://cactusglobal.com/)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

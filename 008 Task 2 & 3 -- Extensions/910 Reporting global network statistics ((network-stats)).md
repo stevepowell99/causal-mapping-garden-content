@@ -16,9 +16,3 @@ We do not actually provide these map-level statistics yet, e.g. "how connected o
 
 - This extension is currently a placeholder/roadmap note.
 - Users should interpret available factors/links metrics as partial substitutes until global stats are added.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Tasks 2 & 3 --  Extensions -- Introduction ((extensions))|chapter intro]]

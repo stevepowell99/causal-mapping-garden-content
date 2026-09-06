@@ -76,9 +76,3 @@ In terms of how to implement your workflow technically, see this [great contribu
 This post is based on my recent contribution to the [NLP-CoP](https://merltech.org/nlp-cop/) Ethics & Governance Working Group, along with colleagues [Niamh Barry](https://www.linkedin.com/in/niamh-barry-mel/), [Elizabeth Long](https://www.linkedin.com/in/elizabethannelong/) and [Grace Lyn Higdon](https://www.linkedin.com/in/gracelynhigdon/). In the next couple of weeks we’ll look at two more do’s and don’ts.
 
 *This post was originally published by Steve Powell on LinkedIn and has been republished here. [See the original article here](https://www.linkedin.com/pulse/just-add-rigour-three-dos-donts-when-using-ai-text-analysis-powell-kgbbe/?trackingId=57Y19HwlRFm5SY%2FGYvfPLw%3D%3D)*
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

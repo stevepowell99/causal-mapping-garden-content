@@ -114,9 +114,3 @@ Observed (4) is slightly below expected, so it would *not* show as over‑repres
   
 
 That’s it: the map labels update immediately as you tweak the settings.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]

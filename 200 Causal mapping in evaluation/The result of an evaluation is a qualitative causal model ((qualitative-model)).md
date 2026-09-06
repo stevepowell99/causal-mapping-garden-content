@@ -13,9 +13,3 @@ The final product can be more than a report: it can be a kind of model or knowle
 
 
 <!--Jeff M uses Dedoose to repeatedly query the whole database of stories. -->
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

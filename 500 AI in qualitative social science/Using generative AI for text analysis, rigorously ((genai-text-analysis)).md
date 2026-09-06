@@ -143,9 +143,3 @@ Finally, let's reflect that there is never a definitive list to all the factors 
 [Lynn, J., & Preskill, H. (2016). Rethinking Rigor. https://www.fsg.org/resource/rethinking-rigor/](https://www.zotero.org/google-docs/?RyAOac)
 
 **
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

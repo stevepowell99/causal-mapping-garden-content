@@ -13,21 +13,21 @@ Better Evaluation. (2024, July 1). _Causal mapping_. Better Evaluation Knowledge
 
 Britt, H., Powell, S., & Cabral, G. C. (2025). _Strengthening Outcome Harvesting with AI-assisted causal mapping_ (Causal Pathways Initiative: Case Studies). Causal Pathways Initiative. [https://5a867cea-2d96-4383-acf1-7bc3d406cdeb.usrfiles.com/ugd/5a867c_ad000813c80747baa85c7bd5ffaf0442.pdf](https://5a867cea-2d96-4383-acf1-7bc3d406cdeb.usrfiles.com/ugd/5a867c_ad000813c80747baa85c7bd5ffaf0442.pdf)
 
-Ferretti, S., & Powell, S. (forthcoming). _Using AI for interviewing in a challenging context_. [https://docs.google.com/document/d/1crAAYjiKmBGMUa230e6ywf081W9feyZy/edit?usp=sharing&ouid=112812082380437768869&rtpof=true&sd=true](https://docs.google.com/document/d/1crAAYjiKmBGMUa230e6ywf081W9feyZy/edit?usp=sharing&ouid=112812082380437768869&rtpof=true&sd=true)
+Ferretti, S., & Powell, S. (2026). Using AI for interviewing in a challenging context. In K. Bruce, V. Gandhi, & S. Bohni Nielsen (Eds.), _From Algorithms to Evidence: Using GenAI in Evaluation Practice_ (pp. 120–128). Routledge. [https://doi.org/10.4324/9781003799139-12](https://doi.org/10.4324/9781003799139-12)
 
-Friese, S., Nguyen-Trung, K., Powell, S., & Morgan, D. (2025). _Beyond Binary Positions: Making Space for Critical and Reflexive GenAI Integration in Qualitative Research_ (SSRN Scholarly Paper No. 5962174). Social Science Research Network. [https://papers.ssrn.com/abstract=5962174](https://papers.ssrn.com/abstract=5962174)
+Friese, S., Nguyen-Trung, K., Powell, S., & Morgan, D. L. (2026). Beyond Binary Positions: Making Space for Critical and Reflexive GenAI Integration in Qualitative Research. _Qualitative Inquiry_. [https://doi.org/10.1177/10778004261429393](https://doi.org/10.1177/10778004261429393)
 
-Goddard, S. (2023). _Comparing a Fine-Tuned Model to an Engineered Prompt in the Context of Causal Connections in a Passage of Text_ [Master’s Thesis]. University of Bath.
+Goddard, S. (2023). _Comparing a Fine-Tuned Model to an Engineered Prompt in the Context of Causal Connections in a Passage of Text_ [Master's Thesis]. University of Bath.
 
-Powell, S., & Cabral, G. C. (2025). AI-assisted causal mapping: A validation study. _International Journal of Social Research Methodology_. [https://www.tandfonline.com/doi/abs/10.1080/13645579.2025.2591157](https://www.tandfonline.com/doi/abs/10.1080/13645579.2025.2591157)
+Powell, S., & Caldas Cabral, G. (2025). AI-assisted causal mapping: a validation study. _International Journal of Social Research Methodology_, 1–20. [https://doi.org/10.1080/13645579.2025.2591157](https://doi.org/10.1080/13645579.2025.2591157)
 
-Powell, S., Cabral, G. C., & Mishan, H. (2025). A workflow for collecting and understanding stories at scale, supported by artificial intelligence. _Evaluation_. [https://doi.org/10.1177/13563890251328640](https://doi.org/10.1177/13563890251328640)
+Powell, S., Cabral, G. C., & Mishan, H. (2025). A workflow for collecting and understanding stories at scale, supported by artificial intelligence. _Evaluation_, _31_(3), 394–411. [https://doi.org/10.1177/13563890251328640](https://doi.org/10.1177/13563890251328640)
 
 Powell, S., Copestake, J., & Remnant, F. (2024). Causal mapping for evaluators. _Evaluation_, _30_(1), 100–119. [https://doi.org/10.1177/13563890231196601](https://doi.org/10.1177/13563890231196601)
 
 Powell, S., Larquemin, A., Copestake, J., Remnant, F., & Avard, R. (2023). Does our theory match your theory? Theories of change and causal maps in Ghana. In L. Simeone, D. Drabble, N. Morelli, & A. de Götzen (Eds.), _Strategic Thinking, Design and the Theory of Change. A Framework for Designing Impactful and Transformational Social Interventions_. Edward Elgar.
 
-Rassmann, K., Powell, S., Caldas-Cabral, G., & Müllegger, B. (Forthcoming). The role of AI-driven interviewers in evaluating and promoting democratic processes. In _Evaluieren mit Künstlicher Intelligenz. Wie KI zur Wirkung und Förderung der Demokratie beitragen kann_.
+Rassmann, K., Powell, S., Caldas-Cabral, G., & Müllegger, B. (Forthcoming). The role of AI-driven interviewers in evaluating and promoting democratic processes. In M. Weiberg & J. O. Kleist (Eds.), _Evaluieren mit Künstlicher Intelligenz. Wie KI zur Wirkung und Förderung der Demokratie beitragen kann_. transcript Verlag.
 
 Remnant, F., Copestake, J., Powell, S., & Channon, M. (2025). Qualitative Causal Mapping in Evaluations. In A. Kaehne & J. Feather (Eds.), _Handbook of Health Services Evaluation: Theories, Methods and Innovative Practices_ (pp. 207–227). Springer Nature Switzerland. [https://doi.org/10.1007/978-3-031-87869-5_12](https://doi.org/10.1007/978-3-031-87869-5_12)
 
@@ -202,9 +202,3 @@ Zelger, J. (n.d.-a). _GABEK-Netze als Tools zur Unterstützung komplexer Entsche
 Zelger, J. (n.d.-b). _Qualitative Research by the Method GABEK_.
 
 Zhang, W.-R., Chen, S.-S., & Bezdek, J. C. (1989). Pool2: A generic system for cognitive map development and decision analysis. _IEEE Trans. Syst. Man Cybern._, _19_(1), Article 1.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[1140 About ((about))|chapter intro]]

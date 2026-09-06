@@ -23,8 +23,8 @@
 
 ### Chat to the support team {#navbar-support}
 - Click **Chat to the support team** to send us a message.
-  - We get notified and will reply in the same chat window.
-  - If you have a new reply waiting, the chat button turns yellow until you open it.
+    - We get notified and will reply in the same chat window.
+    - If you have a new reply waiting, the chat button turns yellow until you open it.
 
 ### Account / Login {#navbar-account}
 - If you are not logged in, click **Login**.

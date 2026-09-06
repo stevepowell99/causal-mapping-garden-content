@@ -12,9 +12,3 @@ The focus of this study was on sexual and reproductive health (SRH) work, specif
 Request the report from [BSDR](https://bathsdr.org/) (info@bathsdr.org).
 
 ![notion image](img/map-notion-image-8.jpg)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

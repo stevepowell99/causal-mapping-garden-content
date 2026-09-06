@@ -1,6 +1,7 @@
 ---
 tags:
   - mapcat_methods
+theme: filters
 ---
 ![[100 Task 3 -- Answering questions -- Individual questions/img/map-113-focusing-on-specific-factors-what-influences-and-outcomes-are-conn.png]]
 Focus on a particular **element of your project** to understand the **direct and indirect influences leading to a specific factor** and all **outcomes it contributes to**. This helps in exploring the role of the factor as both an outcome and an influence within the causal system. 
@@ -13,10 +14,3 @@ By default we usually filter for the *immediate* causes and effects of one facto
 - Show causes and/or effects more than one step removed.
 - Suppress causes and show only effects, or vice-versa. This idea then overlaps with [[770!!- Transforms Filters -- Tracing paths]]. 
 - Use a more strict algorithm to avoid the [[The transitivity trap ((transitivity-trap))]] as described here: [[Source tracing]].
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]
-- [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map (recipe)]]

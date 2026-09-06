@@ -34,9 +34,3 @@ It would be great to use causal maps to infer, given a bunch of information abou
 There is a much easier way to reason with causal maps which is also vital for evaluators: to reason about **evidence**. 
 
 [[712 We can reason about causal maps using a logic of evidence ((logic-of-evidence))]]
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Causal mapping produces models you can query to answer questions ((query-models))|chapter intro]]

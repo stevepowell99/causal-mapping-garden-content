@@ -1,6 +1,7 @@
 ---
 tags:
   - mapcat_methods
+theme: filters
 ---
 ![[100 Task 3 -- Answering questions -- Individual questions/img/map-108-comparing-groups-what-factors-or-links-were-mentioned-more-by-some.png]]
 We can directly **compare groups** to find factors or links mentioned more by one group than another using a statistical test to find the most surprising differences between groups, taking into account the underlying frequencies. 
@@ -35,10 +36,3 @@ This comparison is agnostic as to whether there are, say, many men or a few men 
 The tests for this are chi-squared tests. If the grouping factor is numerical we add an additional correction for ordinal scale so that the chi-squared test is not weaker than it should be.
 
 [[110 The factors table ((factor-group-tests))]]
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]
-- [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map (recipe)]]

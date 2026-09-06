@@ -1,5 +1,6 @@
 ---
 date: 2022-08-12
+theme: quip
 ---
 ## Aim
 
@@ -141,7 +142,7 @@ Where we have a 1-many relationship between cases and sources (variant 4a) we do
 
 Different approaches and software applications will have different ways to add caseness information to a coding. Basically all we need is a way to assign a case to a piece of coding In Causal Map, our approach involves so-called “Quickfields”, with which columns of data can be created on the fly.
 
-For example, let’s look at the phrase, as part of a meta-evaluation which hopes to provide a combined evaluation of projects X, Y and Z, from an evaluation of project X: “as for project Y, I know their logistics were badly impacted by the flood”. We can code the causal part of the claim as usual but add the quickfield _project:Y_ as a link flag[[1]](#_ftn1) (aka "hashtag") attached to the link.
+For example, let’s look at the phrase, as part of a meta-evaluation which hopes to provide a combined evaluation of projects X, Y and Z, from an evaluation of project X: “as for project Y, I know their logistics were badly impacted by the flood”. We can code the causal part of the claim as usual but add the quickfield _project:Y_ as a link flag[^1] (aka "hashtag") attached to the link.
 
 (In Causal Map, the lack of a space behind the colon is essential to ensure this text will be treated as quickfield information.)
 
@@ -396,7 +397,7 @@ We have elsewhere put forward these ideas:
 
 -         The " **robustness**" or “minimum cut” measure, which gives an overall, independent score for the “resilience” of a traced map: what is the minimum pieces of evidence/quotes which would have to be removed for there to be no connection. The minimum cut measure gives a good idea of how rich or strong the argument is from X to Y, but it is vulnerable to a form of the transitivity trap, in which individual sources or sets of sources mention separate parts of the map but none (or only a few) mention the entire path. Of course in some studies this is inevitable, for example a forestry study where different stakeholder groups each only know about some specific part of a value chain.
 
--         For this reason we also offer this alternative measure: the **“source thread count” of the influence of X on Y** (aka the “traced map from X to Y”) as the number of sources which mention each part of any path from X to Y (regardless of the causal route taken)[[2]](#_ftn2). At the moment in Causal Map, this is now implemented as an add-on to the “tracing paths” function. In contrast to robustness, which is presented as a table, trace_threads adds fields to the factors and links tables which can be used e.g. in interactive or print maps to show the source robustness from X to _any_ Y. Influence can now be traced _up or down_ a map. So we can ask “how many sources mentioned a path to factor Y which began with X” or “how many sources mentioned a path from factor X which ended at Y”. When bundling links, the thread count, the number of threads in each bundle (value=count:threads) can be printed on the links or used to colour or filter them.
+-         For this reason we also offer this alternative measure: the **“source thread count” of the influence of X on Y** (aka the “traced map from X to Y”) as the number of sources which mention each part of any path from X to Y (regardless of the causal route taken)[^2]. At the moment in Causal Map, this is now implemented as an add-on to the “tracing paths” function. In contrast to robustness, which is presented as a table, trace_threads adds fields to the factors and links tables which can be used e.g. in interactive or print maps to show the source robustness from X to _any_ Y. Influence can now be traced _up or down_ a map. So we can ask “how many sources mentioned a path to factor Y which began with X” or “how many sources mentioned a path from factor X which ended at Y”. When bundling links, the thread count, the number of threads in each bundle (value=count:threads) can be printed on the links or used to colour or filter them.
 
 We also note that source robustness is only part of the story:
 
@@ -526,12 +527,6 @@ Wilkinson, Helen, Dione Hills, Alexandra Penn, and Pete Barbrook-Johnson. 2021. 
 
 ---
 
-[[1]](#_ftnref1) We’ve used the word “hashtag” extensively for link flags but it’s a really confusing name.
+[^1]: We’ve used the word “hashtag” extensively for link flags but it’s a really confusing name.
 
-[[2]](#_ftnref2) There could be an alternative measure of “source robustness” of the influence of X on Y: the minimum number of sources whose evidence would have to be removed in order for there to be no evidence for any path from X to Y. While the two are probably related, they are not the same, because in the map X à V à Y, where the two links come from different sources, the actual source robustness is 0 whereas this alternative measure would be 1.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Task 1 -- Introduction ((task1-intro))|chapter intro]]
+[^2]: There could be an alternative measure of “source robustness” of the influence of X on Y: the minimum number of sources whose evidence would have to be removed in order for there to be no evidence for any path from X to Y. While the two are probably related, they are not the same, because in the map X à V à Y, where the two links come from different sources, the actual source robustness is 0 whereas this alternative measure would be 1.

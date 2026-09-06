@@ -1,6 +1,7 @@
 ---
 date: 2026-02-09
-tags: ['filters', mapcat_methods]
+tags: [mapcat_methods]
+theme: filters
 ---
 
 ## Summary
@@ -49,8 +50,12 @@ Use it when you want to avoid the “stitched together across respondents” pro
 
 If you care about coherent pathways *and* you want a cleaner, summarised map:
 
-- first do **source tracing** (to keep within-source chains)
+- first choose which sources or links you are looking at
+- then do the **tracing** (source tracing to keep within-source chains)
 - then apply label-rewrite transforms (e.g. Zoom / Collapse / Combine Opposites) for presentation
+- and put the frequency filters last of all
+
+This is rule 1 on [[Filter ordering - which filter goes where in the chain|filter ordering]], and the app asks a question when a tracing filter comes below something that rewrites labels or counts links. Relabelling first merges factors that were two different things in the coding, and a frequency filter first removes links the paths are made of, so either way you are tracing a map that is no longer the coded data.
 
 ## Formal notes (optional)
 
@@ -64,7 +69,10 @@ Given one or more start factors \(S\), one or more end factors \(T\), and a maxi
 
 The key is: **path tracing is link-based**. It should not “fill in” extra links between surviving factors.
 
-## Transformation and interpretation rules {.banner}### Transformation rule {.rounded}- **Input:** a links table/graph, optional `From` and `To` factors, max path length `K`, and optional source-tracing mode.
+## Transformation and interpretation rules {.banner}
+### Transformation rule {.rounded}
+
+- **Input:** a links table/graph, optional `From` and `To` factors, max path length `K`, and optional source-tracing mode.
 - **Transformation:** retain only links that lie on qualifying directed paths; with source tracing, keep only paths realizable within a single source.
 - **Output:** a links table/map containing traced pathway links only.### Interpretation rule {.rounded}- Path tracing shows plausible reported routes under your constraints.
 - With source tracing on, routes represent within-source narrative coherence rather than stitched cross-source chains.

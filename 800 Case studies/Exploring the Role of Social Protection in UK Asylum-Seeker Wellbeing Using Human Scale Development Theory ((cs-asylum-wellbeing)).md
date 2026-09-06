@@ -1,6 +1,7 @@
 ---
 tags: 
   - case_study
+theme: social-science
 date: 2025-08-28
 ---
 
@@ -27,9 +28,3 @@ Five policy and practice-focused bridging satisfiers are recommended to help mov
 [Access the article here](https://doi.org/10.3390/socsci14080474)
 
 **Reference (APA):** James, M., & Forrester-Jones, R. (2025). Exploring the Role of Social Protection in UK Asylum-Seeker Wellbeing Using Human Scale Development Theory. Social Sciences, 14(8), 474.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

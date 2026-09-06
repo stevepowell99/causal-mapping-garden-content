@@ -34,9 +34,3 @@ Ultimately, she does this so that finally, she can present to herself and probab
 The point of the journey is the journey, and how it changes her and her fellow humans.
 
 The act of her doing that and the way it changed her -- situated as all this is in her professional and personal life -- might even mean something to others. It might go unread, like most such theses. But it might have an echo or produce effects that even surprise all of us, and might even surprise an AI, because the solution space is effectively infinite.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

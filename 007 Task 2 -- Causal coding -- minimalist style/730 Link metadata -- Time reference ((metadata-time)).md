@@ -9,9 +9,3 @@ It is often useful to code a time reference. We often conflate time with hypothe
 - future-hypothetical
 
 For example, if we are to code a whole corpus of reports which also include planning documentation, there might be a lot of causal claims about what is supposed to happen in the future, perhaps interspersed with claims about what actually happened in the past. It will often be important to distinguish these two.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[0.001 Task 2 -- Introduction ((task2-intro))|chapter intro]]

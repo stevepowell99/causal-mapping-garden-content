@@ -6,11 +6,11 @@
 |**How is the causal map assembled?**|||||||
 |Focus on how the world works||Y|Y|Y|?|Y|
 |Focus on how people think|||Y|?|?|Y|
-|Focus on how different (groups of) people think|||Y|-|Y[[1]](#_ftn1)|Y|
+|Focus on how different (groups of) people think|||Y|-|Y[^1]|Y|
 |Make deductions from how people think to how the world works|||Y||Y?|Y?|
 |Maps are a summary of qualitative data analysis of textual causal claims for each link|Y?||?|N|Y|Y|
 |**What is the nature of the links and the factors****?**|||||||
-|Include negative/minus as well as positive/plus links||Y|Y[[2]](#_ftn2)|Y|-|Y|
+|Include negative/minus as well as positive/plus links||Y|Y[^2]|Y|-|Y|
 |Links can have different strengths||Y|-||-|Y|
 |Attempt to calculate resultant strength of multiple links influencing a factor||Y|-||-|-|
 |Attempt to model dynamic changes over time||Y|-||-|-|
@@ -23,9 +23,9 @@
 
 ---
 
-[[1]](#_ftnref1) Individuals, not groups
+[^1]: Individuals, not groups
 
-[[2]](#_ftnref2) Separate maps for enablers and for barriers
+[^2]: Separate maps for enablers and for barriers
 > From [@powellCausalMappingEvaluators2024]
 
   Most evaluators are probably more familiar with related approaches under the term ‘systems mapping’, recently covered by Barbrook-Johnson and Penn (2022). They provide an overview table of relevant methods on pp. 169 ff. – fuzzy cognitive maps (FCM), participatory systems mapping (PSM), Bayesian belief networks (BBN), causal loop diagramming (CLD), systems dynamics (SD) and theory of change (ToC) – which will be briefly mentioned here.
@@ -65,9 +65,3 @@
   Fifth, causal maps do not necessarily specify a clear system boundary. The boundaries of a causal map are usually defined more loosely, partly by data collection but also by the sources themselves. Indeed, some systems proponents would say that the term ‘systems diagram’ simply signals a readiness to use systems approaches [@williamsSystemDiagramsPractical2022].
 
   Finally, causal mapping, especially in management sciences and operations research, has nearly always been at least as interested in process as in the result. There is often a focus on the process of reaching consensus as part of the task of solving a business problem, rather than on the universal accuracy or validity of the final map.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[0.01 Intro ((overview-intro))|chapter intro]]

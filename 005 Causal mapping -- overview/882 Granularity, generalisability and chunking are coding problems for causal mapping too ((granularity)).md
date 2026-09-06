@@ -14,9 +14,3 @@ The example also reveals some potential weaknesses of causal maps. First, there 
 
 
 ![[The transitivity trap ((transitivity-trap))]]
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[0.01 Intro ((overview-intro))|chapter intro]]

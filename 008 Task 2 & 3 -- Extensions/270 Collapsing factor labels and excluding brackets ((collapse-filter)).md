@@ -1,6 +1,7 @@
 ---
 tags: ['transforms-filters', mapcat_methods]
 date: 2025-09-22
+theme: filters
 ---
 This extension is about **using factor labels to unify many “different-looking” factors into one**.
 

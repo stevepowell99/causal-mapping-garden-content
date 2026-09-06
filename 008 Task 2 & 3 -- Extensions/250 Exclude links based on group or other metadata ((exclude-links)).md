@@ -2,6 +2,7 @@
 date: 2025-09-22
 tags:
   - mapcat_methods
+theme: filters
 ---
 
 
@@ -50,9 +51,3 @@ The predicate is usually defined by: (field = f) AND (value ∈ allowed set), wi
 ## See also
 
 - [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map for what you want to show]] for how this filter sits in a real workflow.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Tasks 2 & 3 --  Extensions -- Introduction ((extensions))|chapter intro]]

@@ -44,12 +44,3 @@ We also broke the map down by respondent group. NGO respondents emphasised the b
 ## Food for thought{.banner}
 
 The same evidence base surfaced critical comments: that the network's impact is diffuse and hard to visualise, that engagement with ministries could be stronger, and that the network is too English-centric for some regional stakeholders. The map made these tensions visible alongside the positive pathways rather than burying them.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]
-- [[Cactus Research, Kings College ((Cactus-Research-Kings-College))|Cactus Research, Kings College]]
-- [[Using AI to facilitate feedback on the learning experiences of doctoral students ((DPRP))|Bath DPRP]]
-- [[GYA, Global Young Academy ((GYA))|GYA, Global Young Academy]]

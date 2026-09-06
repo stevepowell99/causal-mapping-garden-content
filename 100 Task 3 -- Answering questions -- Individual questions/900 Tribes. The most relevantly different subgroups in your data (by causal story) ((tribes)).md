@@ -1,6 +1,7 @@
 ---
 tags:
   - mapcat_methods
+theme: filters
 ---
 The **Tribes** filter answers a very specific analysis question:
 
@@ -95,9 +96,3 @@ Imagine 30 sources. Tribes with k=3 might reveal:
 Next steps:
 - use Statistics/Pivot to see whether (say) Tribe C is concentrated in drought-prone regions
 - use Custom Links Label (next post) to label edges by tribe composition and spot where the narratives diverge in the map
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]

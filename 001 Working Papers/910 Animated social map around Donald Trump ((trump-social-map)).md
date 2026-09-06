@@ -57,9 +57,3 @@ Animation follows the Causal Map app’s **Animate filter** behavior documented 
 Common Crawl provides archived web crawl data, not editorial ranking signals. Therefore, terms such as “top” in this workflow refer to **selection rules in processing** (filters/sampling), not publisher-defined headline prominence.
 
 The Trump focus in this workflow is a **URL-proxy filter**, not a full-text entity extraction step. This improves targeting but can still include some non-Trump presidential politics pages and miss some relevant pages whose URLs do not contain these keywords.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Working Papers ((working-papers))|chapter intro]]

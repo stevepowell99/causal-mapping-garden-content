@@ -284,9 +284,3 @@ Overall, these systems can simulate many of the linguistic patterns humans use w
 |**OIG**|Open Generalist Dialogues|High (Advice, How-to)|Teaches Means-End reasoning (Action -> Result)||
 |**Dolly**|Human-generated Q&A|High (Brainstorming, QA)|Reinforces human-like explanatory structures||
 |**CausalTalk**|Social Media Claims|High (Implicit assertions)|Captures "gist" causality in informal discourse||
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[0.001 Task 2 -- Introduction ((task2-intro))|chapter intro]]

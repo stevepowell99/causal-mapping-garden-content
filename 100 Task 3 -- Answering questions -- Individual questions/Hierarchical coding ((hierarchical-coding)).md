@@ -2,6 +2,7 @@
 date: 2025-12-23
 tags:
   - mapcat_methods
+theme: filters
 ---
 
 > **SOURCE NOTES (consolidation):** The hierarchical coding / zooming material is now integrated into [[005 Minimalist coding for causal mapping ((minimalist))]] (section “Hierarchical coding and ‘zooming’ (FIL‑ZOOM)”).  

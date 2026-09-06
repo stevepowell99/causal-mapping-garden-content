@@ -1,9 +1,10 @@
-Hints are small popovers that appear occasionally to help you discover features.
+Hints are small popovers that help you discover features. They never appear on their own timer: you see one only when you ask (the lightbulb button in the navbar), after certain first-time actions, or when MapCat points you at a relevant control.
 
 - Hints are **tied to specific UI elements** (buttons, inputs, panels).
 - Hints are **capability gated** (you won’t see hints for features your plan doesn’t include).
 - When the **Link Editor (causal overlay)** is open, you only see **overlay-specific hints**.
-- Within a session, **overlay hints** and **active-tab hints** are shown in a **deterministic priority sequence** (so you don’t keep seeing the same ones at random).
+- Repeated lightbulb clicks walk the current panel's hints in a **deterministic sequence** (so you don’t keep seeing the same ones at random).
+- **Don’t show** turns hints off permanently; the lightbulb still shows them on demand.
 
 <!--
 TECH NOTES (Hints system)
@@ -18,14 +19,14 @@ TECH NOTES (Hints system)
   - `context`: `overlayOnly` (shown only when `#causal-overlay` is open)
 - UI: Bootstrap Popover, `customClass: 'hint-popover'` (styles in `webapp/css/styles.css`).
 - Placement: Popper.js config in `webapp/js/hints-manager.js` with extra top/bottom offset; overlay footer gets larger vertical spacing.
-- Rule: hints never change app state (no auto-switching tabs/collapses to reveal targets). If target isn't visible, hint is skipped.
+- Rule: hints never change app state (no auto-switching tabs/collapses to reveal targets). If target isn't visible OR is covered by something else (`document.elementFromPoint` at its centre, e.g. an open modal), hint is skipped.
+- No ambient timer: hints show only via the navbar lightbulb (`showNextRandomHint`), event-driven teachable moments (`showHintById`), MapCat (`showHintForQuery`), or arrow-key history. The old random 2-4 minute scheduler was removed July 2026 (it fired hints into modals and mid-task).
 - Deterministic sequencing (per session):
   - When overlay is open: scope `overlay`
-  - When a right-panel tab is open: scope `tab:<tabKey>`
+  - When a right-panel tab is open: scope `tab:<tabKey>` (per-panel walk order in `PANEL_HINT_ORDER`, hints-manager.js)
   - Stored in sessionStorage: `cm_hints_seen:<scope>`
-- Session-wide suppression:
-  - Stored in sessionStorage: `cm_hints_suppress_all` (`'1'` means suppress all hints in this tab session)
-  - Stored in localStorage: `cm_hints_dont_show_count`; after 3 sessions of "Don't show", auto-hints stop until user clicks Hints in navbar
+- Keyboard: Left/Right arrows step back and forward through hint history, but ONLY while a hint popover is open (`hintsManager.isOpen()`), and never when focus is inside a Tabulator. Bare arrows must stay free for grid/map navigation: an app-wide binding fired a hint on every arrow press in a table, and its `force: true` bypassed "Don't show".
+- Suppression: "Don't show" is permanent, stored in localStorage `cm_hints_suppress_all` (`'1'`); a legacy `cm_hints_dont_show_count` >= 1 also counts. Explicit pulls (lightbulb, arrows, teachable moments) pass `force: true` and still work.
 - Admin simulation:
   - Navbar "Hint" button shows a hint using the currently selected capability simulation profile (radio group in the dropdown).
 -->

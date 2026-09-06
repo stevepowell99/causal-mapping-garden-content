@@ -12,19 +12,20 @@ Ideas Garden: [Links Panel](https://garden.causalmap.app/bundles)
 - **Citation Count** – total number of links in each bundle (cause >> effect pair), with muted green → white conditional formatting (darker green = more links in that bundle relative to the current view)
 - **Source Count** – number of different sources contributing links to each bundle, with the same muted green → white conditional formatting
 - **AI run** – short id of the `ai_runs` row for links created by [AI coding](../responses-panel/) (hover for full UUID); empty for manual links or older imports
+- **Package** and **Package type** – standard columns for [coding packages](../coding-packages/): links claimed to work together (e.g. "you need both oxygen and a spark to make fire") share a code in Package, and Package type names the connective (`AND`, `OR`, `DESPITE`). Both are editable inline.
 - Checkbox selection for bulk operations
 - Edit functionality opens causal overlay for link modification
 - Action button to open coding in the Sources pane and scroll to the corresponding highlight <!-- opens textViewer -->
 - <i class="fas fa-times"></i> Clear Table Filters option
-  - 💡Tip: For label changes, prefer [Factors Search/replace](../factors-search-replace/) when working on labels across bundles.
+    - 💡Tip: For label changes, prefer [Factors Search/replace](../factors-search-replace/) when working on labels across bundles.
 
 **Link Editing:**
 - Single link click opens editor popup
 - Multiple link selection opens chooser interface
 - Consistent with coding panel behavior
 - **AI run id after manual save:** the link editor uses a split update path:
-  - **1 cause × 1 effect:** updates that existing row in place (keeps row id; `ai_run_id` remains unless changed elsewhere).
-  - **multi cause/effect (cross-product):** deletes the original row and inserts new rows; those new rows do not carry the original `ai_run_id`.
+    - **1 cause × 1 effect:** updates that existing row in place (keeps row id; `ai_run_id` remains unless changed elsewhere).
+    - **multi cause/effect (cross-product):** deletes the original row and inserts new rows; those new rows do not carry the original `ai_run_id`.
   The original AI call is still traceable in **Responses**.
 
 #### Link Custom Columns {#link-custom-columns}
@@ -35,6 +36,7 @@ This is also the main place to add QDA-style memos while you code. Create one or
 
 - Create/remove column names in **Manage Link Table Columns**.
 - Show/hide Links table columns in the same modal (checkbox list), or from the header **⋮** menu.
+- Invert a text column's header filter to **does not contain** from the header **⋮** menu (**Invert filter**); the column header turns pink while inverted. The choice persists in the URL. The same toggle is on the Sources table (Title, Filename) and the Projects table (Name, Owner). Implemented once in `js/negatable-header-filter.js` (`NegatableHeaderFilters`), shared by the links, sources and projects tables.
 - Create new fields directly from the **Link Editor** custom-fields picker.
 - Edit values in the **Link Editor** or directly in the **Links Table**; this works the same way as editing [source custom columns](../custom-columns/), but on link rows instead of source rows.
 - Use them elsewhere in the app, for example in the [Everything filter](../everything-filter/), links-table grouping/breakdowns, the [Link Editor screen](../causal-overlay/), and map display via the [Map Custom Columns filter](../map-custom-columns-filter/).
@@ -45,6 +47,11 @@ This is also the main place to add QDA-style memos while you code. Create one or
 - Take a screenshot and copy it to clipboard
 - Clear any filters at the top of the table columns
 - Bulk delete any selected rows in the table
+- **Package** <i class="fas fa-boxes-stacked"></i> the selected rows: give them a fresh shared package code. The dialog lists every selected link with its own package type field (`AND`, `OR`, `DESPITE`, or your own), so a package can mix types where that is what the source said. **AND** and **OR** buttons at the top fill every row in one click, which covers most packages. **Unpackage** <i class="fas fa-box-open"></i> clears the codes and types. See [coding packages](../coding-packages/).
+
+#### Coding packages {#coding-packages}
+
+Sometimes a source presents several influences as working *together*: "you need both oxygen and a spark to make fire". Two separate links would drop that; one combined factor label ("oxygen and a spark") would not be parsable. Instead, give the links that belong together a shared code in the **Package** column, and name the connective in **Package type**: `AND` (a claimed conjunction), `OR` (presented as alternatives), or `DESPITE` (a [despite link](https://garden.causalmap.app) packaged with the influence that overcame it, e.g. "the fan failed to cool him down because the sun was too strong"). The code itself is arbitrary; the app mints codes for you, either from the [Link Editor's Package toggle](../causal-overlay/) while coding, or from the bulk Package button here, whose dialog also takes the package type. Both columns stay editable inline afterwards. Filter with the [Everything filter](../everything-filter/) on `package` (one package, or any code) or `package_type`. Full rationale: the Garden working papers "Minimalist coding" and "Coding packages".
 
 ### Row Grouping and Print View {#links-controls-row1}
 
@@ -173,7 +180,7 @@ Ideas Garden: [Assessing quality or robustness of evidence for a causal link](ht
 1. 👉🏼 **(Assessed / Unassessed)** (below Project bar): click to toggle between assessed and unassessed links.
 2. 👉🏼 **(`Assess links`)** (Links sub-tab): opens the bundle assessment card (when the global mode allows editing).
 3. 👉🏼 **(`×`)** (Card header): switches to **Unassessed**, opens **Filter links**, and briefly highlights the Assessment control.
-4. 👉🏼 **(`Bundle selector`)** (Dropdown): chooses which bundle to edit.
+4. 👉🏼 **(`Bundle selector`)** (Dropdown): chooses which bundle to edit. Picking a bundle narrows the links table to just that bundle's unassessed rows so you can focus on it. The default **All bundles** shows every unassessed link; choose it again at any time to return to the full list. Opening **Assess links** starts on **All bundles**, so nothing is hidden until you pick one.
 5. 👉🏼 **(`◀` / `▶`)** (Buttons): move to previous/next bundle.
 6. 👉🏼 **(`Help`)** (Button): opens this section in the help drawer.
 7. 👉🏼 **(`Tags`)** (Input): sets bundle-level assessed tags.

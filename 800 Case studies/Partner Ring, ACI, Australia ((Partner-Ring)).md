@@ -13,9 +13,3 @@ The ACI worked with Causal Map to design the interview instructions for Qualia (
 ![notion image](img/map-notion-image-13.jpg)
 
 [See the full paper here](https://bmjopen.bmj.com/content/14/5/e080495.full)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

@@ -13,9 +13,3 @@ The pedant got what I meant.  Would have done so whether I put 'misunderstood' i
 We can consider the multiple and different but overlapping language games in which we say that a human (or perhaps even a dog) understands or fails to understand something, and then compare them with the new language games in which we (unavoidably, but often in scare quotes) say that an AI understands or fails to understand something. We'd find that these games have family resemblances to one another, enough to explain why we use the word "understand" in all of them. And we can be relaxed about the fact things which are important for its use in one of these games (having a brain! having free will! having kidneys!) are absent from its use in another.
 
 Nothing to see here, move along please.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

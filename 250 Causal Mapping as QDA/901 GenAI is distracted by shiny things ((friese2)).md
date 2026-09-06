@@ -25,9 +25,3 @@ Coding is presented as a necessary evil, some kind of crutch on the way to sense
 I agree with Susanne that GenAI may be bringing about a paradigm shift in qualitative research, also in its relationship to quantitative research. But that paradigm shift can take many forms. [The way we use GenAI to scale causal mapping](https://garden.causalmap.app) is another really different way. Causal mapping happens to be based much more on coding. We would argue that it is therefore more systematic than one which starts by asking "what are the themes here?" 
 
 But there are also surely **hundreds** of other ways to use GenAI in qualitative research, most yet to be discovered.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

@@ -137,9 +137,3 @@ Even if group A has more mentions overall than group B, the `Significant` test a
 - **Transformation:** derive factor mentions from each link endpoint, aggregate by factor label, and optionally aggregate by selected group values.
 - **Output:** a factors table with one row per factor plus counts/ratios (and optional group columns/tests).### Interpretation rule {.rounded}- Factor-table counts are mention/source summaries derived from links.
 - They describe prominence and role (for example cause-side vs effect-side), not causal effect size.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Tasks 2 & 3 --  Extensions -- Introduction ((extensions))|chapter intro]]

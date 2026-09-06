@@ -27,8 +27,8 @@ The documentation you are reading now is embedded in the app via the [Help Syste
 Each section corresponds to a different part of the interface. 
 
 Within the app, you can:
- - click the blue help buttons to find out more about the different parts of the app
- - use the top bar buttons described in [Navbar](../navbar/) (Help, Guide, Bookmark, and Support chat).
+- click the blue help buttons to find out more about the different parts of the app
+- use the top bar buttons described in [Navbar](../navbar/) (Help, Guide, Bookmark, and Support chat).
 
 <!--
 TECH NOTES (support chat)

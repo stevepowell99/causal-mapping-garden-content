@@ -8,10 +8,3 @@ This question asks about **individual perspectives** on mechanisms and outcomes.
 This can help tailor a program approach to address specific concerns or leverage unique knowledge. 
 
 To get this view, filter your map to show only causal claims made by this particular respondent.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Individual questions -- introduction ((questions-introduction))|chapter intro]]
-- [[250 Formatting your map for what you want to show ((howto-map-formatting))|Formatting your map (recipe)]]

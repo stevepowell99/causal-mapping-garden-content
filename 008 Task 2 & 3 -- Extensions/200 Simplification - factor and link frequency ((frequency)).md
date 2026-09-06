@@ -2,6 +2,7 @@
 date: 2025-11-04
 tags:
   - mapcat_methods
+theme: filters
 ---
 
 ## Summary
@@ -15,6 +16,10 @@ It is best thought of as:
 
 1) a **filter** (a selection rule applied to derived counts), plus  
 2) an **interpretation rule** (what “frequency” means and what it does *not* mean).
+
+## Where it goes in the chain: last
+
+A frequency filter counts the links it is given, so it means something different at every position, and the app asks a question when one is not at the bottom (rule 2 on [[Filter ordering - which filter goes where in the chain|filter ordering]]). Put it after the filters that decide what you are looking at. Take an ego network: filter to the neighbourhood first and then to the most frequent material within it, and you learn what people said most about that factor. The other way round you keep the most popular material in the whole corpus and then cut it down to the ego, which is a different map and usually not the one you wanted. Two frequency filters together are fine, and you can put an exclude-self-loops filter after them.
 
 ## Core parameters (plain language)
 

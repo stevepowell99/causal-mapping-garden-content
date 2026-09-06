@@ -10,9 +10,3 @@ Beyond our call to stamp out this practice, we demand that journal editors thoro
 
 
 (Next: some super cool prompts for ChatGPT which can definitely detect thesaurus and dictionary use, 100%.)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

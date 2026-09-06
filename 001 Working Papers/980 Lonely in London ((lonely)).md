@@ -356,9 +356,3 @@ Following review by three AI models, several clarifications and corrections are 
 ·        Nguyen-Trung, & Friese (2025). _On Methodological Incongruence in Applying Generative AI in Qualitative Data Analysis_. [https://doi.org/10.2139/ssrn.5874482](https://doi.org/10.2139/ssrn.5874482).
 
 ·        Powell, & Caldas Cabral (2025). _AI-assisted Causal Mapping: A Validation Study_. Routledge. [https://doi.org/10.1080/13645579.2025.2591157](https://doi.org/10.1080/13645579.2025.2591157).
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Working Papers ((working-papers))|chapter intro]]

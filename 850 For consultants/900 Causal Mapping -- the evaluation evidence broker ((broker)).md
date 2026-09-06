@@ -1,5 +1,6 @@
 ---
 layout: showcase
+theme: theory-of-change
 ---
 
 
@@ -135,9 +136,3 @@ Refine the story based on gaps identified in the evidence base.
 --
 
 [[0.01a Why causal mapping qq ((theses))]]
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[800 For consultants ((consultants))|chapter intro]]

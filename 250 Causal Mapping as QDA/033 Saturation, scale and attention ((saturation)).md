@@ -17,9 +17,3 @@ This has nothing to do with the ability of the language model, it's got to do wi
 Of course it's perfectly possible to give an LLM more information about who we are and what we care about, and ask it to produce results which fit us better, it can do that, up to a point.  But we sometimes still struggle to care. Perhaps because we didn't get our hands dirty enough writing the report, or don't have enough skin in the game. That is not a limitation of the LLMs, or of the angels or aliens. It's a by-product of the fact that we can now get almost free, mostly adequate, sometimes even astounding, results to a completely overwhelming range of questions.
 
 [[300 What is the Point of Us. A Sci-Fi Story for Researchers ((point))]]
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

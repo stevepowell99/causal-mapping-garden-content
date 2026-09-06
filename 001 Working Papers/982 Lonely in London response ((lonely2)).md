@@ -60,9 +60,3 @@ The data is already anonymised and public, but I will add a paragraph on data ha
 
 **Negative-case search claimed as “systematic” (O G C)**  
 The inner paper says “deliberate negative-case search” (3.4) and “we deliberately searched for transcripts” (3.3). It never claims a “systematic pass.” My reflection incorrectly stated that the paper claims a systematic negative-case pass; the reviewers echoed that. I will correct my reflection.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Working Papers ((working-papers))|chapter intro]]

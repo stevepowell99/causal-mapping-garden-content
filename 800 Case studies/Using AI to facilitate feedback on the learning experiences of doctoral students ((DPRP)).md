@@ -1,6 +1,7 @@
 ---
 tags: 
   - case_study
+theme: social-science
 date: 2025-12-12
 ---
 2025-12-12
@@ -31,9 +32,3 @@ number of columns: 2
 [See a summarised report in this presentation](https://drive.google.com/file/d/1YuT5IbIMYlcx-vlvkZfycByc94s6kCX-/view?usp=sharing)
 
 --- end-multi-column
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

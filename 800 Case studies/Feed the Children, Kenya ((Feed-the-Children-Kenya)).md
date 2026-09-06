@@ -13,9 +13,3 @@ This evaluation assessed whether Feed the Children's objectives among the adoles
 
 [See a blog post about the study](https://bathsdr.org/interviewing-adolescent-girls-in-kenya-feed-the-children/)
 [See a presentation about the study](https://www.youtube.com/watch?v=7AAg2fc8CaM)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

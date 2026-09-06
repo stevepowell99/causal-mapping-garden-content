@@ -12,9 +12,3 @@ Diageo have conducted several evaluations into the impact of their raw materials
 Request the report from [BSDR](https://bathsdr.org/) (info@bathsdr.org).
 
 ![notion image](img/map-notion-image-5.jpg)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

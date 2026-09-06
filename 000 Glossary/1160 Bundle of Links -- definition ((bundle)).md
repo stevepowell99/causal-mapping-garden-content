@@ -1,3 +1,33 @@
+---
+public: true
+pagetitle: Causal Map features
+author: Steve Powell, Causal Map Ltd
+date: 21 May 2026
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition-speed: slow
+    incremental: false
+    footer: Causal Map ?? app.causalmap.app ?? garden.causalmap.app
+    width: 1280
+    height: 720
+    fig-cap-location: bottom
+    preview-links: false
+    include-in-header:
+      - ../_shared/preview-bridge.html
+    css:
+      - ../_shared/styles.css
+      - ../fontawesome/css/all.min.css
+      - features-slides.css
+---
+<!-- mist:banner:start -->
+> [!warning] Open for collaborative review on mist
+> This note is being edited on mist. Avoid editing it here in Obsidian until the review is finished, or your local changes may be overwritten.
+<!-- mist:banner:end -->
+
+
+
 At Causal Map, we call the individual links just "links" and we call the collection of multiple "co-terminal" links, i.e. the set of links starting at X and finishing at Y, a "bundle of links" or a "links bundle" or just a "bundle". In the special case where there is only one link in the bundle, then the link = the bundle.
 
 

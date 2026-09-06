@@ -1,6 +1,7 @@
 ---
 tags: 
   - case_study
+theme: social-science
 date: 2024-02-06
 ---
 2024-02-06
@@ -19,9 +20,3 @@ Using a dialectical approach, the dissertation examined the interview material n
 ![notion image](img/screenshot-notion-image-2.jpg)
 
 [See the full thesis here](https://drive.google.com/file/d/13lHR5LYSKBAd3yuCO41rgV1bwud_fK43/view?usp=sharing)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

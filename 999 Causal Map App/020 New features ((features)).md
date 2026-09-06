@@ -21,8 +21,8 @@ The previous version of Causal Map, version 3, was already, as far as we know, t
 
 ### Filtering and analysing {#filtering-and-analysing}
 - Almost all the existing links filters from cm3 are available plus 
-  - the option to include multiple versions of the same links filter, e.g. to narrow down a selection of links by different criteria successively
-  - optional semantic filters like `cluster` and `soft recode` <span class="badge bg-info text-dark" style="margin-left:6px;">Require an AI subscription</span>
+    - the option to include multiple versions of the same links filter, e.g. to narrow down a selection of links by different criteria successively
+    - optional semantic filters like `cluster` and `soft recode` <span class="badge bg-info text-dark" style="margin-left:6px;">Require an AI subscription</span>
 - Analyse data with new pivot tables and graphs
 
 ### Sharing and collaborating {#sharing-and-collaborating}
@@ -35,8 +35,8 @@ The previous version of Causal Map, version 3, was already, as far as we know, t
 
 ### Help system {#help-system-overview}
 - Built-in help system
-  - Help drawer with links to each section
-  - Same contents used for separate Guide with links to each section
+    - Help drawer with links to each section
+    - Same contents used for separate Guide with links to each section
 
 ### AI Coding {#ai-coding-overview}
 - Optional AI-powered state-of-the-art, paragraph by paragraph coding assistance. We call this "Human first, AI next".

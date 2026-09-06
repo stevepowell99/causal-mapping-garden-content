@@ -49,9 +49,3 @@ We have developed a [grammar and vocabulary for causal mapping](https://guide.ca
 - **--**
 
 (1) Actually we use the related model GPT3 via its API, as ChatGPT does not yet have its own API.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

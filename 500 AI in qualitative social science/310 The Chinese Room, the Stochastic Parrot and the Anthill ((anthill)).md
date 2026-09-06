@@ -160,9 +160,3 @@ His neurons don’t understand English; they pass electrochemical signals and fo
   
 
 If “understanding” can emerge from the organised activity of billions of individually mindless parts in a brain, then it’s at least coherent that it could emerge from the organised activity of many individually mindless parts in some other substrate; and if that still feels hard to grasp, that’s exactly why the Chinese Room argument keeps working as an intuition pump, a sleight of hand, that even though it’s wrong.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Intro ((wider-world-intro))|chapter intro]]

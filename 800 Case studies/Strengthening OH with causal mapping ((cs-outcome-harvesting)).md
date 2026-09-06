@@ -109,9 +109,3 @@ AI-assisted causal mapping advanced OH analysis beyond descriptive statistics by
 Causal mapping offers rich, flexible analysis that can be explored in multiple ways to answer diverse evaluation questions.
 
 ---
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

@@ -16,9 +16,3 @@ The CM team used AI to identify each and every causal link in the interviews to 
 
 [Check out the project's page here](https://peoplespeakup.co.uk/creative-home-delivery-service.html)
 [See Causal Map's findings presentation here](https://drive.google.com/file/d/1UsfirwPQB-U9VP4nDL-7hZHBz_Hb114O/view?usp=sharing)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

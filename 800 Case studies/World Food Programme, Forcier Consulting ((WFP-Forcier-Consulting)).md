@@ -11,9 +11,3 @@ The Causal Map App contributed to the evaluation of the World Food Programme (WF
 Data from key informant interviews and focus group discussions with retailers in four countries (Lesotho, Malawi, Mozambique, and Zimbabwe) were coded and mapped out using Causal Map to illustrate trends, anomalies, and possible entry points. The WFP used maps and tables from the app to clearly visualise the research findings in their report.
 
 [See the full report here](https://www.wfp.org/publications/wfp-contribution-market-development-and-food-systems-southern-africa-thematic)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

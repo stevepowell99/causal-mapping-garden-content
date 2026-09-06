@@ -39,9 +39,3 @@ The project provided DuocUC with a visual, evidence-based understanding of the "
 "The type of questions that were asked "what causes what", were equally linked to methodological innovation. The results were able to portray how gender barriers are intertwined in domains ranging from higher STEM education to the performance of new professionals and technicians once they enter the labour market, reaching deeper explanations and social impact.”
 — Javiera Cienfuegos (Senior Researcher, DuocUC)
 --
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

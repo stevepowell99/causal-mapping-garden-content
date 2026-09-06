@@ -21,9 +21,3 @@ Did you spot that they have exactly the same structure? Now it is easier to see 
 
 Yes, causal maps are just concept maps with only one type of connector, and that connector means "... causes....". Whereas concept maps can have any type of connector you like. Historically, causal maps come from concept maps.   
 Laying out causal maps is a challenge! Most folks from the systems tradition like swirly circular layouts which make them look like everything is one big feedback loop. If there is a more linear structure, we recommend showing that linear structure.
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[0.001 Task 2 -- Introduction ((task2-intro))|chapter intro]]

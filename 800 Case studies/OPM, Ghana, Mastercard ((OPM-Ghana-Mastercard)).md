@@ -3,6 +3,7 @@ tags:
   - case_study
   - bath_sdr
 date: 2022-09-19
+theme: quip
 ---
 2022-09-19
 ## Summary{.banner}
@@ -15,9 +16,3 @@ Request the report from [BSDR](https://bathsdr.org/) (info@bathsdr.org).
 ![notion image](img/0a0c7654df3e405a926aed78d74f57c9_MD5.jpg){width=500}
 
 [See the project's page](https://www.opml.co.uk/projects/savings-frontier)
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Some Case Studies ((case-studies))|chapter intro]]

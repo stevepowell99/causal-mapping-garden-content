@@ -76,9 +76,3 @@ Significant changes over time
 ![[001 Working Papers/img/map-910-animated-social-map-of-us-news-trump-2.png]]
 
 _Filename: us-news2. Citation coverage 16% of all sources: 316 citations shown out of 1920. Factors — size: citation count; numbers: citation count; colour: outcomeness; border: avg incoming sentiment (blue=positive, grey=neutral, red=negative). Links — width: citation count; labels: custom links label; arrowheads: effect sentiment (blue=positive, grey=neutral, red=negative); ⬆ increasing over numeric groups; ⬇ decreasing. Filters applied: Sources included: All sources. Factor freq: top 38 by citation count; Link freq: minimum 2 citations; Animate: s_month; Custom link label: s_month, mode=chisq-counts, counts=citations, ordinal. Bookmark [#1208](https://app.causalmap.app/?bookmark=1208) 2026-02-24 08:59_
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[000 Working Papers ((working-papers))|chapter intro]]

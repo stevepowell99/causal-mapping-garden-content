@@ -39,10 +39,10 @@ graph TD
 
 ### Right-hand side (pink tabs) {#right-hand-side}
 - Outputs: these all show the same filtered links from the Links Pipeline but in different formats
-  - [Map](../map-panel/): visual network of links
-  - [Factors](../factors-panel/): editable factor list (toggle available to bypass analysis filters)
-  - [Links](../links-panel/): editable links table (toggle available to bypass analysis filters)
-  - [Pivot Tables](../pivot-panel/): additional analysis and charts
+    - [Map](../map-panel/): visual network of links
+    - [Factors](../factors-panel/): editable factor list (toggle available to bypass analysis filters)
+    - [Links](../links-panel/): editable links table (toggle available to bypass analysis filters)
+    - [Pivot Tables](../pivot-panel/): additional analysis and charts
 
 ### Right-hand side (other tabs) {#right-hand-side}
 The right-hand side also contains other tabs not influenced by the pipeline:

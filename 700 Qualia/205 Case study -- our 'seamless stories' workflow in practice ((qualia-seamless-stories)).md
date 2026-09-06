@@ -64,9 +64,3 @@ After this, we started writing the instructions for Qualia to conduct the interv
 
 </aside>
 --
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Background on data collection with Qualia ((qualia))|chapter intro]]

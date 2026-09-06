@@ -32,9 +32,3 @@ There is less written about qualitative causality within a qualitative causal ne
 But our problem is harder again: to reason with what we call a causal map, where the links are about **beliefs about** or **evidence for** a causal connection.
 
 [[712 We can reason about causal maps using a logic of evidence ((logic-of-evidence))]]
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Causal mapping produces models you can query to answer questions ((query-models))|chapter intro]]

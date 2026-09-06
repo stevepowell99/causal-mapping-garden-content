@@ -61,9 +61,3 @@ Treat “AI increases candour” as a **design variable**: you can dial it up or
 
 
 [^1]: my comment
-
-<!-- xrefs-v1 -->
-
-## Related
-
-- [[010 Background on data collection with Qualia ((qualia))|chapter intro]]
