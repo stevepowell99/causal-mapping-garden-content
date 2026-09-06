@@ -205,7 +205,7 @@ Four gaps in that mapping bite this study, three of them hard.
     Now suppose the searches are uneven. The hypervigilance tests get a careful instruction, worked examples and three passes; the political economy tests get one thin instruction written late in the afternoon. Hypervigilance then wins, and it wins on every criterion at once, because each of its tests looks unique against a rival nobody went looking for. Nothing in the output shows this. The quotes are real, the proportions are correct, the walk back to the source works. The finding is an artefact of attention, and it is invisible in exactly the form a reader would inspect.
 
     Rubicon can already see part of the problem. `align` takes two codings of the same text and reports whether they ran with the same chunk size, the same segment quota and the same coverage, so a comparison of two instructions can say whether the effort behind them matched. What does not exist is the same check across a fan-out of twenty tests, which is how this study is arranged. So for now symmetric effort is enforced by construction, by giving every prong an identical budget over identical text, and it is asserted by nothing. That is a real hole and this study should either close it or report having run with it open.
-- **The unit is hard-coded as one per source.** Our corpus has fifty files from forty-eight people, because two participants have their second interview in a separate file. Every proportion in this study would therefore have a base of fifty rather than forty-eight unless the files are merged first. `unit_from_column` is proposed and not built.
+- **The workflow cannot say what a unit is.** Our corpus has fifty files from forty-eight people, because two participants have their second interview in a separate file, so every proportion in this study has a base of fifty rather than forty-eight unless something says otherwise. The storage half exists: units and their members are many-to-many, two sources can sit under one unit, and a column records which rule put them there. What is missing is any way to say it in a workflow. The rule has to be written into the database by hand, which means the YAML does not carry it, the run does not record it, and a rubric registered against a base of forty-eight is registered against a claim the workflow never made. So this study either merges the two files before it starts, or states the unit rule outside the trail it is meant to demonstrate.
 
 The fourth recorded gap, that nothing marks two pieces of evidence as non-independent, matters less here and more in the single-case work the method came from.
 
@@ -637,7 +637,7 @@ None of that conflicts with registering the tests first, because registration he
 ## Next steps
 
 - Finish the literature search: the three remaining theories, the UK loneliness figures, and the synthetic-validation precedent. The last of those decides whether the paper's main claim survives.
-- Check whether Beach, Camacho and Siewert's Comparative Process Tracing has a peer-reviewed version, since the novelty argument is measured against a 2022 preprint. Two of its three authors run the process tracing workshop at EES 2026 in October, so this can be asked in person.
+- Check whether Beach, Camacho and Siewert's Comparative Process Tracing has a peer-reviewed version, since the novelty argument here is measured against a 2022 preprint.
 - Settle in writing whether fifty interviews are fifty cases or one case with fifty sources, before anything runs.
 - Decide whether to reduce the five theories to a set of propositions that really do exclude one another, which is what Fairfield and Charman's framework asks for, or to keep the five and report the overlap.
 - Write the variants, three per theory, before anybody reads an interview.
@@ -645,9 +645,3 @@ None of that conflicts with registering the tests first, because registration he
 - Fix and date the design and held-out split as a source column on `lonely-in-london`.
 - Build the synthetic contrast sets and run the discrimination matrix. Cheapest step, most likely to change the design, so it goes first.
 - Only then write the test plans, in three arms, and run them over the held-out half.
-
-## Collaboration
-
-This wants a co-author who has done the formal version. Barbara Befani's work on Bayesian updating in process tracing and on measuring confidence in mechanisms [@befaniProcessTracingBayesian2017; @befaniLettingEvidenceSpeak2020] is the direct precedent for the part being left out, and the argument here is that the quantity her method asks an analyst to estimate can instead be measured on synthetic material. That is either a useful shortcut or a category error, and she is the person who would know which.
-
-There is a natural occasion. EES 2026 in Lille carries a pre-conference workshop on process tracing in evaluation on 27 October, and Befani presents in session 507 on 29 October.
