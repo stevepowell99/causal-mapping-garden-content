@@ -208,6 +208,6 @@ The tension with registration is sharpest here, because the combination rule has
 ## Next steps
 
 - Write the contribution analysis page in Rubicon's own knowledge base, which is the largest gap in it: the assistant is expected to offer the method and currently knows nothing about it.
-- Settle the combination rule for the actual theory of change, in writing, before any run. The machinery now exists; which links form a chain and which form substitutable branches is a judgement about the programme and belongs to the people who know it.
+- Settle the combination rule for the actual theory of change, in writing, before any run. The machinery exists; which links form a chain and which form substitutable branches is a judgement about the programme and belongs to the people who know it.
 - Build the annotated theory-of-change graph, which all three of these papers now want.
 - Test the whole thing on a live evaluation rather than an archive, so that step five exists.

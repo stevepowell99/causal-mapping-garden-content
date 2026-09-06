@@ -195,9 +195,9 @@ Rubicon's knowledge base carries five pages on process tracing: the method itsel
 
 Rubicon's rubric is a register of exactly that kind: named, versioned, immutable, dated, with every run recording which version was in force. A judgement carries a field, `standard_fixed_before_the_evidence`, comparing the rubric's freeze time against the run's start. So the pre-registration half of this study needs nothing built.
 
-Four gaps in that mapping are already recorded, and three of them bite this study.
+Four gaps in that mapping bite this study, three of them hard.
 
-- **A negative finding is hard to store, and this method is built on them.** A failed hoop test is the most informative result process tracing produces, and a step that found nothing has for most of Rubicon's life had nowhere to put that. `note` and `judge` now write a search record when there is no quotable evidence, carrying what was looked for, where, and how much was read. Whether that is enough to carry a corpus-wide negative is the first thing this study will find out.
+- **A negative finding is hard to store, and this method is built on them.** A failed hoop test is the most informative result process tracing produces. `note` and `judge` write a search record when there is no quotable evidence, carrying what was looked for, where, and how much was read. Whether that is enough to carry a corpus-wide negative is the first thing this study will find out.
 - **Nothing checks that we looked as hard for the rival as for our own theory.** This is the gap most likely to decide the study without anybody noticing, so it is worth spelling out.
 
     A test only counts for anything because the evidence would have been unlikely if the theory were false. That "if it were false" is always shorthand for "if one of the rivals were true instead". So the strength of every test in the register is set by how well the rivals were searched for, and not by anything about the theory being tested.
@@ -222,7 +222,7 @@ Two features of the corpus bear on the design.
 
 Five, chosen so that they come from different traditions, make different predictions, and are not restatements of one another. Each is stated here in roughly the paragraph Ruby would receive.
 
-Two of the five now carry sources and a verdict on where they currently stand. The other three do not: three literature passes each exhausted their search budget before reaching them, so the citations below for the discrepancy, political economy and displacement accounts are still to be supplied, and a fourth pass is owed. Those three carry the worst date problem, since the corpus is from 2019 and much of the argument about phones and loneliness happened afterwards.
+Two of the five carry sources and a verdict on where they stand. The discrepancy, political economy and displacement accounts do not, and their citations are still to be supplied. Those three also carry the worst date problem, since the corpus is from 2019 and much of the argument about phones and loneliness happened afterwards.
 
 **The hypervigilance loop.** Loneliness is an aversive signal, like hunger, that evolved to push a social animal back towards the group. Where it persists it turns on itself: the lonely person becomes watchful for social threat, reads ambiguous behaviour as rejection, and pulls back or guards themselves in ways that produce the coolness they feared. The mechanism is a loop inside the person rather than a shortage of people.
 
@@ -283,7 +283,7 @@ Two things change when the tests run over fifty accounts rather than one case.
 
 ## Where this sits in the process tracing literature
 
-A search run on 5 September 2026 settled some of this and narrowed what the paper can claim. Three of its five angles came back empty, so the sections on AI methods and on the loneliness theories themselves still rest on a second pass.
+The sources here are secure for the process tracing canon and for the question of taking it past one case. The section on AI methods is thinner than it should be, and three of the five loneliness theories are still stated from memory.
 
 **The four tests are Van Evera's, and Collier is the exposition everyone cites.** Collier restates them on two axes, whether passing is necessary and whether it is sufficient for affirming the hypothesis [@collierUnderstandingProcessTracing2011]. His hoop cell reads: "Passing: Affirms relevance of hypothesis, but does not confirm it. Failing: Eliminates hypothesis." That is the gate this paper departs from. Collier himself calls the typology a useful heuristic that "should not be taken rigidly", so the departure is smaller than it first looks.
 
@@ -594,7 +594,7 @@ steps:
         type: judgement
 ```
 
-That workflow is not a sketch. Extracted from this page and put through `python -m rubicon.cli plan` on 5 September 2026 it validates, and its four steps resolve in order, sample then code then compute then judge, exactly as the repo's own fan-out workflow does. What that proves is narrow and worth having: the design can run. It says nothing about whether the answers would be any good.
+That workflow is not a sketch. Extracted from this page and put through `python -m rubicon.cli plan` it validates, and its four steps resolve in order, sample then code then compute then judge, exactly as the repo's own fan-out workflow does. What that proves is narrow and worth having: the design can run. It says nothing about whether the answers would be any good.
 
 The rubric is a separate file, registered by name and version before the run, so the judgement can record that the standard predates the evidence. Five criteria, four settled by arithmetic over the figures above and one that cannot be.
 
@@ -619,8 +619,8 @@ Not a league table. The outputs, in order of how much we would trust them:
 
 - **No Bayesian arithmetic.** No priors, no posterior odds, no elicited likelihoods. The concept is kept, the numbers are not, and the synthetic contrast sets stand in for the one quantity that would have mattered. Adding the arithmetic is a separate paper, and probably a better one with a co-author who has done it.
 - **No claim about loneliness.** Fifty interviews from four London boroughs in 2019 support no general claim about young people. The study is about whether the method can tell theories apart.
-- **Not a finished literature search.** Three passes on 5 September 2026 settled the process tracing canon, the multi-case question and what is known about model-assisted coding. They reached two of the five theories. The discrepancy, political economy and displacement accounts are still stated from memory and still need sources, and so does the UK evidence on how lonely young adults actually are, a number the paper takes for granted and has never checked.
-- **No synthetic-validation precedent found either way.** Whether anybody has generated documents in which a theory is true by construction, to measure whether a method can discriminate, went unanswered in all three passes. The paper's first novelty claim rests on that being unoccupied, and it has not been shown to be.
+- **Not a finished literature search.** The process tracing canon, the multi-case question and what is known about model-assisted coding are sourced. The discrepancy, political economy and displacement accounts are stated from memory and need sources, and so does the UK evidence on how lonely young adults actually are, a number the paper takes for granted and has never checked.
+- **No synthetic-validation precedent found either way.** Whether anybody has generated documents in which a theory is true by construction, to measure whether a method can discriminate, is unanswered. The paper's first novelty claim rests on that ground being unoccupied, and it has not been shown to be.
 
 ## Where the people go
 
