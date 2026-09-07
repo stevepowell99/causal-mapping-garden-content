@@ -3,6 +3,8 @@ tags: paper
 date: 2026-09-05
 theme: theory-of-change
 ---
+![Rubicon, evaluative methods](img/rubicon-lockup.png)
+
 Rubicon is an experiment in making AI-assisted evaluation checkable. You state a question, argue out a workflow with an assistant before any analysis runs, register it, and only then let it read the documents. The agreement is the product, and every number it reports leads back to a passage somebody can read.
 
 > **Work in progress.** Rubicon is an experimental wing of the Causal Map code base and the working name may not survive. The pages in this chapter are drafts, published early so people can argue with them. Nothing described here has been run on a real evaluation.
@@ -78,6 +80,8 @@ Marking those points in a workflow is not built yet. The engine can stop at a na
 - [[020 Realist mechanisms ((realist-mechanisms))|Generating realist mechanisms]] is the mirror: start with a corpus and no theory, and try to generate mechanisms that are powerful, plausible and not obvious.
 - [[030 Contribution analysis ((contribution))]] starts from the theory of change the programme already wrote down, and asks what the evidence does to each link of it.
 - [[040 Outcome harvesting ((outcome-harvesting))]] asks which of the questions commissioners put to a harvest a machine should touch at all, and argues that most of the method belongs to people.
+- [[045 A draft outcomes table ((outcomes-table))]] is its small companion: the workflow that drafts an outcomes table from interview narratives for a workshop to argue with, and what such a draft leaves out.
+- [[050 Theory-based evaluation ((theory-based))]] steps back to the family the other papers belong to, and reports the first run to produce a theory of change with the evidence hung on it.
 
 Three of them compose. The realist paper generates candidate explanations, the theory-fit paper tests them on material that played no part in producing them, and the contribution analysis paper does the same job for a theory somebody has already committed to in writing. The outcome harvesting paper sits apart from that chain and asks a different question: given a method that is mostly a conversation between people, which two steps in the middle should a machine touch at all.
 
