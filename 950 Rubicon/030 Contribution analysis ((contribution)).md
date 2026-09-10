@@ -5,7 +5,7 @@ theme: theory-of-change
 ---
 [[010 Testing rival theories ((theory-fit))|The theory-fit paper]] takes rival published theories and asks which the material supports. [[020 Realist mechanisms ((realist-mechanisms))|The realist paper]] starts with no theory and generates mechanisms. This one starts with the theory the programme already wrote down, and asks what the evidence does to it.
 
-> **Work in progress.** A design sketch. Nothing here has been run on a real evaluation, and the paper argues for a reading of contribution analysis that its commissioners often do not want.
+> **Work in progress.** A design sketch. It has been attempted once against a real corpus and the run failed; what happened is under *What the attempt cost, and where it stopped*, below. The paper also argues for a reading of contribution analysis that its commissioners often do not want.
 
 ## In short
 
@@ -198,6 +198,22 @@ Then two judgements, and keeping them apart is the point.
 - **Overall**, against a rubric that states in advance how the links combine, how the rival explanations are weighed against the programme's account, and what would have to be true for the story to fail.
 
 The artefact the workflow must produce, beyond either judgement, is the graph: the theory of change drawn with each link carrying what the evidence said, thickness or colour for the weight of support, something distinct for a contradicted link, and something distinct again for a link nobody addressed. That last is the column an evaluator cannot get any other way and the one most easily lost in a picture. Rubicon cannot yet draw it, and that gap is recorded in the repository rather than glossed.
+
+## What the attempt cost, and where it stopped
+
+The design was put to a real corpus on 5 September 2026: 114 written and oral submissions to a select committee inquiry into the proposed UK research funding agency, held in the app as `uk-research-funding-agency`. Six links of the agency's theory of change, three whole-outcome rivals written down before any reading, provenance recorded per passage, and the weakest link deciding.
+
+Ruby produced the right shape on her second turn: sample, code each link, count by proposition, judge the chain, annotate. She raised two objections of her own that this paper makes elsewhere. Link six, that research funded this way produces breakthroughs the existing system would not, cannot be answered from an inquiry held before the agency existed, so witnesses can assert it and nothing can evidence it. And volunteered against elicited cannot be coded for written submissions, which carry no question and answer structure, so it is available for the four oral sessions only.
+
+The run then failed. `contribution-analysis-toc`, one run, $2.90 spent. The coding step read the material and returned 285 rows, and the step kept none of them: every row was refused by the columns it had declared, 97 of them for the same reason, a proposition written as `L1: existing system gap` against a column that declared `L1`. The model had answered the question and labelled its answer in a vocabulary one word wider than the one agreed.
+
+The conversation that followed cost $2.87 more and ran 26 turns across seven threads between 22:38 and 23:29, and never produced a workflow that would run. Its last thread ends where the first did, changing two things and proposing the same repair.
+
+Three things are worth taking from that, and none of them is about contribution analysis.
+
+- **The failure is a coding schema mismatch rather than a limit of the method.** Nothing in the run says the theory of change was hard to test. It says a declared category column and a model's labelling drifted by a prefix, and that the app was right to refuse the rows rather than store 285 of them under values nobody agreed.
+- **The reading a contribution analysis needs is larger than the drafting budget assumes.** Fifteen submissions at this length is 140 to 230 model calls, against a default of 40, so every draft that answers the question is refused for cost and every draft cheap enough to pass reads too little. Whether that number should rise, or belong to the evaluator per question, is set out in `xkTODO contribution analysis needs more than forty calls to draft`.
+- **Twenty-six turns without a runnable workflow is a finding about the loop rather than about her.** A conversation that returns to its own first repair has stopped learning from the refusals, and a refusal that cannot be acted on is the fault the rest of this app is written against.
 
 ## Where the people go
 

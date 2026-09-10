@@ -3,7 +3,7 @@ tags: paper
 date: 2026-09-05
 theme: theory-of-change
 ---
-![Rubicon, evaluative methods](img/rubicon-lockup.png)
+![Rubicon, evaluative methods](950 Rubicon/img/b5aa2529126993bd8f784d99a1855f4e_MD5.jpg)
 
 Rubicon is an experiment in making AI-assisted evaluation checkable. You state a question, argue out a workflow with an assistant before any analysis runs, register it, and only then let it read the documents. The agreement is the product, and every number it reports leads back to a passage somebody can read.
 

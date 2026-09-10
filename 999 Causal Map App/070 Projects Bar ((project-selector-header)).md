@@ -2,6 +2,7 @@
 <strong>🗂️ What you can do here:</strong> Choose which Project (project) you want to work on. Use the File menu for quick actions like creating new Projects, uploading documents, or sharing your work with others.
 </div>
 
+- **Finding a project by typing.** Click the project box and type; the list narrows as you go. The letters do not have to sit next to each other, so `lonlon` finds `lonely-in-london` and `bpea` finds a project with those letters anywhere in its name. The closest match sits at the top, and the letters you typed are marked in each row. Arrow keys move down the list, Enter opens the one you are on, and Escape closes the list and leaves you on the project you had. A long list shows the first 200 matches and says how many more there are, so keep typing to narrow it.
 - A small locked indicator at the top-right of `#project-selector-header` shows only when a project is read-only.
 - An archived icon appears only when the project is archived. Archived projects are automatically read-only and only visible to owners, collaborators, and admins (not visible to the public even if marked public).
 - **Versions shortcut** <i class="fas fa-history"></i>: if the current project has any [named versions](../versioning/), a small history button appears just left of the pencil. It opens the same Versions window as the File menu, one click instead of three. Projects with no named versions do not show it.

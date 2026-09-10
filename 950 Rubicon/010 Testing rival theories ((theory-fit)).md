@@ -621,7 +621,7 @@ The artefact the workflow must produce, beyond the verdicts, is the grid: twenty
 
 ## A first run
 
-Two runs went through on 5 September 2026, against fifty-one interviews with young Londoners, testing Weiss's two types and nothing else. Twenty interviews were drawn at random with a fixed seed, coded for the two patterns, counted, and judged against a standard registered before the coding began, with the weakest criterion deciding. The pair cost 58 pence.
+`weiss-two-type-test` ran twice on 5 September 2026, as runs `adf1c0a9` and `59441b4a`, against the loneliness corpus held in the app as `lonely-in-london-copy`. That project holds fifty-one documents: the fifty interview files, and one newspaper article about lobbying that has no business in a test of Weiss and was left in the frame. Twenty were drawn from all fifty-one at random with a fixed seed, coded for the two patterns, counted, and judged against a standard registered before the coding began, with the weakest criterion deciding. The pair cost 58 pence.
 
 The coding returned 65 passages across the twenty interviews. Sixty-one showed emotional loneliness, three showed social loneliness, and one showed both. Fifteen of the twenty people showed the emotional pattern and three showed the social one. Against that, the standard asked two things: whether each pattern appears at all, and whether at least a quarter of the people read show one of them.
 

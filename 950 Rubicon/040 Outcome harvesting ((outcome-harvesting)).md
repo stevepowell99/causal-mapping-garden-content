@@ -7,6 +7,8 @@ Outcome harvesting is the most participatory of the methods in this chapter and 
 
 > **Work in progress.** A design sketch, built on three published harvests read for their terms of reference rather than their findings. Nothing here has been run.
 
+**What this paper rules out is substitution rather than drafting.** The position below is that a machine cannot do the harvest. That stands. It is a position about deciding what changed, which is people in a room doing the deciding. Drafting a table of candidate outcomes from interview narratives, for those people to argue with, is a different act. The room is also not always available: you cannot talk to everyone about everything for as long as it would take. [[045 A draft outcomes table ((outcomes-table))]] shows the workflow that does the drafting, what one run of it produced, and what a draft table leaves out.
+
 ## In short
 
 Outcome harvesting is mostly a conversation between people. The question this paper asks is which two steps in the middle a machine should touch at all.

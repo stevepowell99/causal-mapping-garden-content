@@ -56,8 +56,10 @@ Controls resolution for all image capture (map copy/download, bookmarks, pivot/t
 #### Subscriptions List
 
 Users without a subscription are either:
-- anonymous (not logged in) (this is disabled at present)
+- anonymous (not logged in)
 - free (logged in)
+
+An anonymous visitor can open and read a project that has been made public. Nothing else is reachable without an account: editing and AI features both need a signed-in account, as do the prompts, model responses and cost records behind a public project.
 
 Subscriptions (via LemonSqueezy) are available in the Account panel. Monthly and Annual plans are recurring subscriptions: a Monthly plan renews and is charged each month until the subscription manager cancels it.
 
