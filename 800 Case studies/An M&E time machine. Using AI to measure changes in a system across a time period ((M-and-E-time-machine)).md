@@ -11,4 +11,4 @@ date: 2023-09-19
 
 A proof of concept study about using AI to collect and analyse data in complex systems.
 
-[See the paper here](https://drive.google.com/file/d/11uma3PuZ91dTBX0otRXp431cID4weTTV/view)
+[See the paper here](https://doi.org/10.6084/m9.figshare.33518512) [@powellMETimeMachine2024]
