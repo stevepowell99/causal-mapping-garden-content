@@ -12,5 +12,3 @@ date: 2023-09-19
 A proof of concept study about using AI to collect and analyse data in complex systems.
 
 [See the paper here](https://doi.org/10.6084/m9.figshare.33518512) [@powellMETimeMachine2024]
-
-[[An M&E time machine -- the 2024 preprint ((time-machine))|Read the full text on the garden]]
