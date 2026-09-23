@@ -1,6 +1,7 @@
-![Two sunflowers whose roots form a causal map](assets/garden-hero.svg){style="width:100%;max-width:560px"}
-
-# <span class="d-block">Causal mapping</span><span class="d-block">A Garden of Ideas</span>
+<div class="home-hero">
+<img src="assets/garden-hero.svg" alt="Two sunflowers whose roots form a causal map">
+<h1><span class="d-block">Causal mapping</span><span class="d-block">A Garden of Ideas</span></h1>
+</div>
 
 
 
