@@ -10,7 +10,7 @@ Before proposing an open standard for qualitative text processing workflows in e
 
 The short answer is that it is not. There is no open standard, and no draft of one, for specifying a qualitative text-processing workflow in evaluation. Several standards hold one of the properties such a thing would need. None holds two.
 
-> **Work in progress.** This is a survey done in September 2026, not a literature review. It says what we looked at and what we could not verify.
+> **Work in progress.** This is a survey done in September 2026 and last checked on 15 September 2026, not a literature review. It says what we looked at and what we could not verify.
 
 ## Three properties, and nothing that has more than one
 
@@ -28,8 +28,8 @@ But the anchoring standard says nothing about what to ask, the decision rule run
 
 Everything the profession itself publishes falls into one of three groups, and none of them is the thing.
 
-- **Ethics and quality principles.** The Program Evaluation Standards, the American Evaluation Association's Guiding Principles, the OECD DAC quality standards, the UNEG norms. Prose, aimed at judgement, silent on analysis procedure.
-- **Reporting checklists.** COREQ, SRQR, ENTREQ, RAMESES, PRISMA. These standardise what you must say you did.
+- **Ethics and quality principles.** The Program Evaluation Standards, the American Evaluation Association's Guiding Principles, the OECD DAC quality standards, the UNEG norms. Prose, aimed at judgement, silent on analysis procedure. The first guidance written for AI belongs here too. The UK Evaluation Society's [AI in evaluation: good practice guidelines for practitioners](https://evaluation.org.uk/new-ai-guidance-launched-for-evaluators/), November 2025, sets out four principles (transparency and competence, human control, risk management, quality assurance), asks for disclosure proportionate to the risk, and gives sample disclosure wording for a report: "This evaluation used artificial intelligence tools to support [specific functions]. All AI-generated outputs were verified through [specific verification methods]." For peer review it asks for "detailed documentation enabling methodological scrutiny, including specific tools used, verification approaches, quality assurance measures". What that documentation should contain, and in what form, it leaves to the evaluator. Montrosse-Moorhead's criteria domains for assessing AI use in evaluation are a framework for judging such use rather than a form for recording it [@montrosse-moorheadEvaluationCriteriaArtificial2023]. We are told that the JCSEE, the AEA and the EES are considering AI in their own standards; we have seen nothing published.
+- **Reporting checklists.** COREQ, SRQR, ENTREQ, RAMESES, PRISMA, and for evaluation itself CHESS, the checklist of evaluation-specific standards, which names the minimum a written evaluation report must contain for its quality to be judged ([Montrosse-Moorhead and Griffith, 2017](https://doi.org/10.1177/1098214017699275)). These standardise what you must say you did.
 - **Data formats and inference engines.** REFI-QDA for coded data, the QCA packages, Bayesian process-tracing tools. Machine-readable, and each of them starts downstream of the step where text becomes data.
 
 The pattern is consistent enough to be worth naming. Every method formalises everything except the single operation that touches the words. Qualitative comparative analysis formalises Boolean minimisation and then describes calibration as an interpretative act. Formal process tracing gives a vocabulary for classifying evidence after the inference has been made, and no procedure for assigning a passage to a class [@ricksProcessTracingResearchDesigns2018]. Outcome Harvesting specifies six steps and leaves who substantiates an outcome, and how many people to ask, to the credibility the use requires [@wilson-grauOutcomeHarvestingPrinciples2018]. The Most Significant Change guide states that selection criteria should not be decided in advance but should emerge through discussion, and offers five incompatible ways of deciding, without naming a default and without requiring anyone to record which was used [@daviesMostSignificantChange2005].
@@ -54,7 +54,7 @@ Two things are worth knowing about, because they are nearer than anything in eva
 
 The **Reproducible Open Coding Kit** is the only standard we found that was designed for process rather than for data [@petersReproducibleOpenCoding2026]. Codes, utterance identifiers and a codebook are written as plain-text conventions inside the source file, so the whole analysis is legible to a person and to a machine, and because it is plain text under version control the coding history can be reconstructed. It is small, academic and unsupported by any commercial software, and it is the right idea.
 
-The **joint position statement on AI in evidence synthesis**, issued in November 2025 by Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental Evidence, is the nearest thing to a testable rule that any body has published [@flemyngPositionStatementArtificial2025]. Its requirement is that "Authors should declare when they have used AI if it makes or suggests judgements", and it names the judgement tasks: eligibility, risk of bias, data extraction, synthesis, certainty assessment. Nothing implements it.
+The **joint position statement on AI in evidence synthesis**, issued on 10 November 2025 by Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental Evidence, is the nearest thing to a testable rule that any body has published [@flemyngPositionStatementArtificial2025]. Its requirement is that "Authors should declare when they have used AI if it makes or suggests judgements", and it names the judgement tasks: eligibility, risk of bias, data extraction, synthesis, certainty assessment. Nothing implements it.
 
 ## Why the question is not academic
 
@@ -72,14 +72,14 @@ Two positions are unoccupied.
 
 The first is the join. Anchoring is solved and says nothing about method; decision rules are expressible and float free of any evidence; run provenance is standardised and reaches files rather than claims. Putting the three together is the whole of the gap.
 
-The second is the domain. The only registered reporting guideline aimed at qualitative work with language models is an extension of COREQ, whose protocol was published in September 2025 with a target of December that year and which had not appeared by September 2026. It is a prose checklist, and it addresses neither traceability nor pre-registration. A specification for evaluation rather than health, executable rather than declarative, would not collide with it.
+The second is the domain. The only registered reporting guideline aimed at qualitative work with language models is an extension of COREQ, whose protocol was published in September 2025 with a target of December that year, and which the EQUATOR Network still listed as under development on 15 September 2026. It is a prose checklist, and it addresses neither traceability nor pre-registration. A specification for evaluation rather than health, executable rather than declarative, would not collide with it.
 
-Rubicon is our attempt at the second, built so that the first is possible. What it does, and the principles behind it, are on the [Rubicon](/rubicon/) page.
+Rubicon is our attempt at the second, built so that the first is possible. What it does is on [rubicon.causalmap.app](https://rubicon.causalmap.app), and the principles behind it are on [[005 Rubicon principles ((rubicon-principles))|the principles page]].
 
 ## What we checked, and what we could not
 
 We searched the evaluation profession's standards bodies and method manuals, the qualitative data and annotation formats, the workflow and provenance standards, the reporting-guideline family indexed by EQUATOR, and the AI transparency and audit instruments including the EU AI Act, the ISO/IEC 42000 series and the national algorithm registers.
 
-Quotations from the REFI-QDA specification, the Magenta Book guide, the Cochrane and partners position statement, and the two studies cited for figures were each read in the original rather than taken from a summary. Where this page says that something does not exist, that is a report of what our search found rather than a proof of absence.
+Quotations from the REFI-QDA specification, the Magenta Book guide, the UK Evaluation Society guidance, the Cochrane and partners position statement, and the two studies cited for figures were each read in the original rather than taken from a summary. Where this page says that something does not exist, that is a report of what our search found rather than a proof of absence.
 
 One claim we wanted to make had to be dropped. The Dutch national algorithm register is the best-specified public register we saw, with a published schema and bulk export, and it is reported to have a large majority of entries with the impact-assessment field left empty. We could not reach the data to check the proportion, so the figure is not quoted here. The point it would have made is worth keeping anyway: a schema alone changes nothing, and a standard nobody has a reason to complete is a standard in name.

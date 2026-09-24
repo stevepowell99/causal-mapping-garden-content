@@ -14,7 +14,7 @@ The mirror of the theory-fit paper: start with the corpus and no theory, and try
 - **The coding.** Context, reasoning and outcome are coded in three separate passes, since no single passage carries a whole configuration. The reasoning pass records `prompted_by_interviewer`, because a volunteered account is stronger than an agreed one, and `first_or_second_hand`, because an implementer's account of why participants responded is data about the implementer.
 - **Testing.** Surviving configurations go through the theory-fit paper's machinery, on material that played no part in producing them.
 - **The playoff.** A general mechanism earns its place by compression: covering many configurations in less text than restating them, and predicting one in a part of the corpus it was not built from.
-- **What is missing.** No result yet. A configuration has no home as an asset, so nobody can query which context passages support which configuration; two versions of a configuration set cannot be diffed; holding material back is a convention nothing enforces; and the unit is a document rather than a person.
+- **What is missing.** No result yet. A configuration can be assembled inside a coding but cannot be accepted as an answer or drawn; two versions of a configuration set cannot be compared; holding material back is a convention nothing enforces; and the unit is a document rather than a person.
 
 The mirror image of [[010 Testing rival theories ((theory-fit))|the theory-fit paper]]. That one takes theories somebody else published and asks which the material supports. This one starts with a corpus and no theory, and asks whether a machine can produce mechanisms worth having: powerful, plausible, and not obvious. Realist evaluation is the tradition with the strongest account of what a mechanism is, and the weakest account of where one comes from.
 
@@ -149,7 +149,7 @@ So the protection moves. What gets registered in advance is the **procedure** ra
 
 Three tiers of access, declared before anything runs.
 
-1. **Published theory and programme documents only.** Used for the obviousness control, and read in full. In Rubicon these are already background sources, never coded and never in a denominator.
+1. **Published theory and programme documents only.** Used for the obviousness control, and read in full. In Rubicon these are background documents, which a sampling step leaves out of whatever is coded and counted.
 2. **The design half of the corpus.** Read freely, and revised against as often as the analyst likes. This is where the mechanisms come from.
 3. **The held-out half.** Never seen during generation, used only to test the configurations and the middle-range theories once they are fixed and dated.
 
@@ -181,7 +181,7 @@ The three CMO elements are coded separately, one pass each for context features,
 
 Four gaps, and the first is the one that matters.
 
-- **A configuration has no home as an asset.** Context, reasoning and outcome are coded separately and come together only inside a judgement's rationale, which reads well and cannot be queried. Nobody can ask which context passages support which configuration without reading prose. Rubicon's own open questions call this composite markup and record it as wanted by more of the work than any other item. This paper is the strongest case for building it.
+- **A configuration is not yet a result in its own right.** Context, reasoning and outcome are coded separately. A coding can assemble them into one composite, so which context passages support which configuration can be read off the coding, but the composite cannot be accepted as the answer to a question or drawn. This paper is the strongest case for making it a result of its own.
 - **Version comparison is manual.** For a method whose deliverable is the trail between versions, there is no report that diffs two versions of a configuration set or runs one workflow against both.
 - **Held-back material is a convention.** Nothing stops a workflow testing a refined theory on the sources that produced it, and nothing in the output shows that is what happened. The runner records which sources an earlier run read, so this could be asserted.
 - **The unit is a source.** A demi-regularity is a pattern across sites or people, and Rubicon counts documents.
@@ -197,8 +197,6 @@ Three more belong, and should be declared in the procedure before generating.
 - **Deciding which traditions to generate from.** The variance is only as wide as the list of perspectives somebody chose, so that list is a substantive decision rather than a parameter.
 - **Sense-making on the candidate set**, where a group reads the mechanisms and says which ring true, before anything is scored. That judgement is data about plausibility and should be recorded as such rather than folded silently into a ranking.
 - **Taking configurations back to the people they describe.** Realist evaluation's own data requirement is an interview that puts the emerging theory to the respondent, and a corpus gathered beforehand cannot supply it. Where the evaluation is still running, this is the step that matters most and the one an archive can never replace.
-
-Registration here is a record of movement rather than of fixity. Realist evaluation expects its theory to change, and a configuration that survived an evaluation unaltered was probably never tested, so the version trail from first theory to refined theory is the deliverable rather than an embarrassment.
 
 ## Next steps
 

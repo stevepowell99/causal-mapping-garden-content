@@ -5,9 +5,7 @@ theme: theory-of-change
 ---
 Outcome harvesting is the most participatory of the methods in this chapter and the one where a machine has least business doing the interesting part. So the question is not how to build a better outcomes table. It is which of the questions commissioners actually put to a harvest can be answered better, and which part of the work should stay in human hands.
 
-> **Work in progress.** A design sketch, built on three published harvests read for their terms of reference rather than their findings. Nothing here has been run.
-
-**What this paper rules out is substitution rather than drafting.** The position below is that a machine cannot do the harvest. That stands. It is a position about deciding what changed, which is people in a room doing the deciding. Drafting a table of candidate outcomes from interview narratives, for those people to argue with, is a different act. The room is also not always available: you cannot talk to everyone about everything for as long as it would take. [[045 A draft outcomes table ((outcomes-table))]] shows the workflow that does the drafting, what one run of it produced, and what a draft table leaves out.
+> **Work in progress.** A design, built on three published harvests read for their terms of reference rather than their findings, and one run of a workflow that drafts an outcomes table. Neither has been used on an evaluation.
 
 ## In short
 
@@ -16,8 +14,8 @@ Outcome harvesting is mostly a conversation between people. The question this pa
 - **We read terms of reference, not method guides.** Three published harvests, Oxfam Novib's global programme evaluation, NIMD's evaluation across Mali, Mozambique, Tunisia and Colombia, and ActionAid Denmark's Tax Justice programme. Nine questions between them, and none asks how much of the change was attributable to the funder.
 - **Two questions go to the machine.** First, do these outcomes form a pattern of progress towards the objectives: classify each outcome against objectives declared in advance, then count by objective, by actor type and by year. Second, which objectives have nothing against them.
 - **The second is the one an evaluator cannot get any other way.** It works only because the objectives are a declared list, so an objective no outcome touches appears as an empty cell rather than vanishing from the table.
-- **Both are ordinary Rubicon.** A `code` step over the outcomes as sources, a `compute` step grouping by a declared column, and a `note` that states its base, because a harvest has no denominator and every figure has to carry that.
 - **Everything else stays with people.** The harvest workshop, the drafting loop, substantiation and sense-making are all human steps, and the workflow's job there is to record that they happened and what they changed.
+- **Drafting is not harvesting.** Where the people cannot all be in a room for as long as the method assumes, a machine can draft a table of candidate outcomes from interview narratives for them to argue with. The last section reports one such draft and what it leaves out.
 
 See also: [[000 Rubicon ((rubicon))]]; [[030 Contribution analysis ((contribution))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
 
@@ -39,7 +37,7 @@ Two things stand out. **None of the nine questions asks how much of the change w
 - **How did we contribute to them?**
 - **Was this method any good here?**
 
-The second and third are analysis questions asked of an outcomes table that already exists. They are also, by the account of Rubicon's own methods notes, the thinnest area of published guidance and the place most harvests disappoint the people who paid for them. That is where this paper aims.
+The second and third are analysis questions asked of an outcomes table that already exists. They are also the thinnest area of published guidance and the place most harvests disappoint the people who paid for them. That is where this paper aims.
 
 ## Refusing is normal practice, and it is written down
 
@@ -127,7 +125,27 @@ Picking two rather than all of them, because the others either belong to the har
 
 **Two: which objectives have nothing against them?** The mirror of the first, and the one an evaluator cannot get any other way. It works only because the objectives are a declared list, so an objective no outcome touches reads as a nought rather than dropping out of the table. This is the machine analogue of ActionAid's gap-filling round, and it should be run *before* the sense-making workshop so the workshop has something to argue with.
 
-Both are ordinary Rubicon: a `code` step over the outcomes as sources, a `compute` step grouping by a declared column, and a `note` that states its base. The declared list of objectives goes in as a fan-out or as a category column with its values fixed in advance, which is what makes the empty cells appear.
+Both are ordinary Rubicon: a coding step over the outcomes as sources, a counting step grouping by a declared column, and a write-up that states its base. The declared list of objectives goes in either as one coding pass per objective or as a category column with its values fixed in advance, which is what makes the empty cells appear.
+
+## Drafting a table for the workshop
+
+The position above stands: deciding what changed, and which changes matter, is a judgement by people who were there. But you cannot always get everyone in a room about everything for as long as it takes, and drafting is a different act from deciding. A room that starts from a blank page spends its first hour remembering things. A room that starts from a few hundred candidate statements pulled out of the transcripts spends its first hour disagreeing, which is the work you wanted from it. Some statements will be activities rather than outcomes, some will be the same outcome twice, some will belong to nobody in the room. Striking those out is the harvest doing its job.
+
+That is a defence rather than an excuse only if the table arrives marked as a draft, with the passages behind every row, and if the drafting decides nothing the room was going to decide: which changes are significant, whose contribution counts, and what the set as a whole says.
+
+**The workflow is three steps**, and nothing in it is specific to outcome harvesting beyond the wording of one instruction. A sampling step takes the sources and records how many it took. A coding step reads them against the method's own definition of an outcome, a change in the behaviour, relationships, activities, policies or practices of an individual, group, community or organisation, and fills the method's own four fields: who changed, what changed, why it matters locally, and how the intervention contributed. A counting step tabulates the rows. Because the four fields are the ones a harvest fills in, a draft can be read straight into the method rather than translated first.
+
+**One run, on 5 September 2026, on the app's own example project** of nineteen household interviews, anonymised, from two provinces, produced 272 outcome rows from all nineteen documents, between four and thirty-two per document, naming 138 distinct actors. Every quotation matched its source document exactly.
+
+What that draft does not carry is most of what the two questions above need.
+
+- **It declares no objectives, so it cannot show a gap.** An objective nothing was harvested against is absent from the table rather than showing as a nought. Adding the list is most of the work of answering the second question.
+- **It states no base.** 272 means 272 statements found by one pass over nineteen documents. It does not mean that 272 outcomes happened.
+- **It counts passages rather than outcomes.** Two rows describing the same change in two interviews are two rows. Deciding whether two accounts are of one event is the room's work.
+- **It cannot tell an outcome from an activity.** Some of the 272 describe a service being delivered, which the method does not count as an outcome.
+- **It grouped by the wrong things.** Its counts split the outcomes by the province and the respondent's sex, which are properties of the interview. A harvest wants them by objective, actor type and year, which are properties of the outcome, and those columns were coded but never counted.
+
+One column in that run was wrong in every row. The workflow asked the model to write down which interview each outcome came from, while showing it one chunk of text at a time. It invented 39 different answers for nineteen documents (`1`, `N/A`, `Document 1` and variations), none of them right, while the record already held the correct document against every quotation. The fault is of a kind worth naming: a field was asked of the model when it was already a fact about the record. It would be expensive to notice on a real evaluation, because the column looks filled.
 
 ## What this cannot do
 
@@ -139,7 +157,6 @@ Both are ordinary Rubicon: a `code` step over the outcomes as sources, a `comput
 
 ## Next steps
 
-- Write the contribution analysis and outcome harvesting pages into Rubicon's own knowledge base, which already carries seven pages on harvesting and none on what commissioners ask of it.
-- Get hold of a real outcomes table with its objectives, and run the two questions above against it.
-- Decide how a harvest's lack of a denominator is expressed in the machinery rather than in prose, so that a figure from a harvested set cannot be reported as though it had a base.
+- Run the two questions against a real outcomes table with its objectives. If you have one you could share, we would like to hear from you.
+- Put a draft table in front of people who know the setting, and record what they struck out. That number is the only real measure of whether drafting helped.
 - Record substantiation as a first-class thing: who nominated whom, what changed, and what did not.
