@@ -6,11 +6,25 @@ theme: theory-of-change
 
 *For evaluators and applied social researchers who use AI in qualitative analysis, or assess work that does.*
 
-## The problem
+## The problem: checking a freestyle AI report with a freestyle AI checker
 
-An evaluator has twenty interview transcripts. They ask an AI to write up the findings, and the report has sentences such as "Two farmers credit the training for their bigger harvest (F3 and F7)", "Only F12 mentions a government pension" and "Nobody in the northern district mentions drought". To check it, they give the report and the transcripts to a second AI, or to a colleague, and ask for every sentence to be verified.
+An evaluator, Jo, has twenty interview transcripts. She asks an AI to write up the findings. The report is sure to have sentences such as 
 
-The checker does what it is asked. It takes each sentence, finds F3 and F7 in the transcripts and confirms that they credit the training. It catches a wrong name or a misquotation. Usually it does not read every transcript for farmers the report left out, so it passes the sentence even though F9 and F15 credit the training too, and it passes "only F12" without checking that three people mention a pension.
+> Some farmers credit the training for their bigger harvest (see farmers F3 and F7)
+
+To check it, Jo gives the report and the transcripts to a second AI, or to a colleague, and ask for every sentence to be verified. The checker does what it is asked. It takes each sentence, finds F3 and F7 in the transcripts and confirms that they credit the training. It might catch a wrong name or a misquotation.  Otherwise it passes the report as "zero errors" and Jo congratulates herself.
+
+Usually it does not read every transcript for farmers the report left out, so it passes the sentence even though maybe F9 and F15 credit the training too. A report full of weak claims like this can pass the accuracy test with 100%.
+
+A stronger version might have been:
+>Two farmers credit the training for their bigger harvest (farmers F3 and F7)".
+
+or we can even make it explicit that the other 22 farmers did not make such a claim:
+>Only two out of 24 farmers credit the training for their bigger harvest (farmers F3 and F7)". 
+
+These claims are stronger because it is clearer how to refute them. But it's more work to refute them, because you have to explicitly plough through all the other transcripts to make sure. People are lazy, and AIs are lazy. 
+
+It's the same with "Nobody in the northern district mentions drought": it's a strong claim, but it's more work to check.
 
 In the terms used to evaluate search engines and classifiers, the check measures **precision**: of the things the report says, how many are right. It does not measure **recall**: of the things in the transcripts that belong in the report, how many the report includes. A report can be precise and still leave out half of what it should have counted.
 
@@ -35,6 +49,8 @@ The table does not guarantee good recall, because whoever places people can stil
 ## One example
 
 From our own work on Rubicon, our AI qualitative-analysis tool. On 15 long interview transcripts, checking every person against every counted claim found 7 of 24 counts wrong in an answer written without coding each person, nearly all too low; a blind review of the same answer found none of the 7. On 18 short transcripts, a blind review of a report with 12 planted errors found all 12, but graded every plain undercount "not substantive" and the wrong inclusions as substantive.
+
+## Punchline
 
 ## What the literature calls it
 
