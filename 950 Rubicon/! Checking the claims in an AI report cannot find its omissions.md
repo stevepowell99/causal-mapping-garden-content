@@ -4,23 +4,29 @@ date: 2026-09-28
 theme: theory-of-change
 ---
 
-*For evaluators and applied social researchers who use AI in qualitative analysis, or assess work that does.*
+*For evaluators and applied social researchers who use AI in qualitative analysis, or use or assess work that does.*
 
 ## The freestyle evaluation promise
 
-There is an elephant in the room for anyone who cares about getting valid, useful and accurate information about social programmes. Call it the freestyle evaluation promise. In the second half of 2026 you can give a frontier AI model (Claude Opus, GPT-6 Sol, Gemini Pro) the evaluation questions from a terms of reference, together with the interviews and reports you have collected. Add answers to a few clarifying questions, perhaps a discussion of a coding strategy, and it returns what looks like an excellent evaluation report: detailed, and often very accurate.
+Anyone who cares about getting valid, useful and accurate information about social programmes will have encountered what we can call the **freestyle evaluation promise**. In the second half of 2026 you can give a frontier AI model (Claude Opus, GPT-6 Sol, Gemini 3.1 Pro) the evaluation questions from a terms of reference, together with the interviews and reports you have collected. Answer a few clarifying questions, perhaps a discussion of a coding strategy, and it returns what looks like an excellent evaluation report: detailed, and often very accurate.
 
-That is the soft version. Its weakness is that you cannot tell what method it used or how it did anything that might be called coding. If you ask, it may well make up an account of what it did. The hard version uses an agent with tools, such as Claude Code, which can run Python in a sandbox and start sub-agents. Here you can agree a coding plan first. The agent then carries out the coding, consolidates the results and writes the report from them, instead of writing something that merely resembles the outcome of a coding task. We would not recommend the soft version. The hard version can produce very convincing results.
+That is the **soft version** of the freestyle route. Its weakness is that you cannot really tell what method it used or how it did anything that might be called coding. If you ask, it may well make up an account of what it did. The **hard version** uses an agent with tools, such as Claude Code, which can run Python in a sandbox and start sub-agents. Here you can agree a coding plan first. The agent then carries out the coding, consolidates the results and writes the report from them, instead of writing something that merely resembles the outcome of a coding task. We would not recommend the soft version except for very simple tasks. The hard version can produce very convincing and somewhat defensible results.
 
-In either case you can hand the report to another AI, or to the same one, to check its accuracy. Checking is much easier than producing. Both versions usually score well, with few important errors. An evaluator, or a commissioner, might feel vindicated: problem solved, since a desk officer can put the material and the request into a chatbot and never engage a professional evaluator.
+## The freestyle checking illusion
 
-The objection is this. These reports are written to produce accurate text, so they pass accuracy checks well. That sounds like a virtue, but it hides a bias. Unless the evaluation question has been specified tightly and the way of answering it agreed in detail (which the hard version allows and the soft version does not), the AI selects the claims it can make that are true and easy to verify. It steers away from questions and sub-questions whose answers are more equivocal or harder to check, and towards the workflow that yields verifiable answers. The report can therefore score very well without answering the questions the commissioner needed answered. The result is a strong skew towards one kind of evaluation workflow, often quite different from the one you would construct if you took seriously the task of operationalising the evaluation questions accurately.
+In either case you can **hand the report to another AI**, or to the same one, to check its accuracy. Checking is much easier than producing. Both versions usually score well, with few important errors. 
+
+## Is the AI gorilla going to destroy professional evaluation?
+
+>Problem solved for a desk officer tasked with commissioning evaluation. They can just put the material and the request into a freestyle chatbot and never engage a professional evaluator ever again.
+
+The one thing which can slow down the gorilla is this: These reports are written to produce accurate text, so they pass accuracy checks well. That sounds like a virtue, but it hides a bias. Unless the evaluation question has been specified tightly and the way of answering it agreed in detail (which the hard version partly allows and the soft version does not), the AI selects the claims it can make that are probably true and hard to falsify. It steers away from questions and sub-questions whose answers are more equivocal or harder to check, and towards the workflow that yields verifiable answers. The report can therefore score very well without exactly answering the questions the commissioner needed answered in the most valid way. The result is a strong skew towards one kind of evaluation workflow, often quite different from the one you would construct if you took seriously the task of operationalising the evaluation questions accurately.
 
 The rest of this page looks at which kinds of finding this favours and what to do about it, starting with an example.
 
 ## The problem: checking an AI evaluation report with a lazy checker
 
-An evaluator, Jo, has 24 interview transcripts. She asks an AI to write up the findings. The report has sentences such as 
+An evaluator, Jo, has 24 interview transcripts. She asks an AI to answer an evaluation question, freestyle. The final report includes sentences such as 
 
 > Some farmers credit the training for their bigger harvest (see farmers F3 and F7)
 
@@ -28,17 +34,17 @@ To check it, Jo gives the report and the transcripts to a second AI, or to a col
 
 Usually it does not read every transcript for farmers the report left out, so it passes the sentence even though maybe F9 and F15 credit the training too. A report full of weak claims like this can pass the accuracy test with 100%.
 
-A stronger version might have been:
+A stronger version might have been to ask for findings like this:
 > Two farmers credit the training for their bigger harvest (farmers F3 and F7)
 
-or we can even make it explicit that the other 22 farmers did not make such a claim:
+or even like this, making it explicit that the other 22 farmers did not make such a claim:
 > Only two out of 24 farmers credit the training for their bigger harvest (farmers F3 and F7)
 
 These claims are stronger because it is clearer how to refute them. But it's more work to refute them, because you have to explicitly plough through all the other transcripts to make sure. People are lazy, and AIs are lazy. 
 
 It's the same with "Nobody in the northern district mentions drainage as a factor affecting harvests": it's a strong claim, but it's more work to check.
 
-There are lots of different overlapping ways of thinking about this problem. In the terms used to evaluate search engines and classifiers, the check measures **precision**: of the things the report says, how many are right. It does not measure **recall**: of the things in the transcripts that belong in the report, how many the report includes. A report can be precise and still leave out half of what it should have counted.
+There are lots of different overlapping ways of thinking about this problem. In the terms used to evaluate search engines and classifiers, the easy check measures **precision**: of the things the report says, how many are right. It does not measure **recall**: of the things in the transcripts that belong in the report, how many the report includes. A report can be precise and still leave out half of what it should have counted.
 
 
 ## What to do about it
