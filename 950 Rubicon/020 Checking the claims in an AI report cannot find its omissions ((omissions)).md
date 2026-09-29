@@ -6,6 +6,16 @@ theme: theory-of-change
 
 *For evaluators and applied social researchers who use AI in qualitative analysis, or use or assess work that does.*
 
+## Summary
+
+- A frontier AI can turn a terms of reference and a pile of transcripts into a convincing evaluation report. A second AI checking it will usually find few errors.
+- That check reads from the report to the transcripts, so it measures **precision** (is what the report says right?) and misses **recall** (did the report include everything that belongs in it?).
+  - It rewards reports that commit to little: "some farmers" passes, "only two of 24" can fail.
+  - Left to itself, the AI drifts towards findings that are easy to verify, which are not always the ones the commissioner needed.
+- Recall is measured the other way round, from each transcript to the findings. That needs explicit coding, in a format that shows for every finding who is in it, who goes against it and who said nothing, so a checker can test a random sample of sources.
+- Causal mapping does this for causal claims: it codes every claim in every passage, answers questions by querying the result, and lets you check recall a chunk at a time.
+- The professional evaluator stays. Somebody has to choose the method, know what it actually did, and vouch for it to the people who will use the evidence.
+
 ## The freestyle evaluation promise
 
 Anyone who cares about getting valid, useful and accurate information about social programmes will have encountered what we can call the **freestyle evaluation promise**. In the second half of 2026 you can give a frontier AI model (Claude Opus, GPT-6 Sol, Gemini 3.1 Pro) the evaluation questions from a terms of reference, together with the interviews and reports you have collected. Answer a few clarifying questions, perhaps a discussion of a coding strategy, and it returns what looks like an excellent evaluation report: detailed, and often very accurate.
@@ -96,7 +106,7 @@ Causal mapping covers only claims about what causes what, which covers a big par
 
 ## So is the gorilla going to win?
 
-No, because even the best-built workflow needs somebody to choose it, to know what it did and to vouch for it. A commissioner who receives a report needs to know which method was actually used, what was read and what was left out, and whether that method fits the question they needed answered. A chatbot can describe a method, and may describe one it never used. Somebody has to [[How hard is evaluation actually ((how-hard-evaluation))|declare that this is the right kind of method]] for this question, know what it did in practice, and put their name to it. As the Rubicon principles have it, [[005 Rubicon principles ((rubicon-principles))#Worth is declared by a person|worth is declared by a person]].
+No, because even the best-built workflow needs somebody to choose it, to know what it did **and to vouch for it**. A commissioner who receives a report needs to know which method was actually used, what was read and what was left out, and whether that method fits the question they needed answered. A chatbot can suggest and describe a method. Somebody has to [[How hard is evaluation actually ((how-hard-evaluation))|declare that this is the right kind of method]] for this question, know what it did in practice, and put their name to it. As the Rubicon principles have it, [[005 Rubicon principles ((rubicon-principles))#Worth is declared by a person|worth is declared by a person]].
 
 That is not only a technical job. Evidence is used by people: a programme team, a board, a funder, a community. Each needs different evidence and trusts different sources. Knowing who needs what evidence, and why they would believe it, comes from relationships and from understanding the setting, built up over time by a person the users of the evaluation can hold to account. The more of the analysis a machine can do, the more the professional's value lies in these parts: choosing and operationalising the questions, vouching for the method, and [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))|taking responsibility for the conclusions]].
 
