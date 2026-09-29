@@ -53,17 +53,17 @@ So Jo's checker gives the weak report full marks. Now suppose Jo asks her AI for
 
 > Only two out of 24 farmers credit the training for their bigger harvest (farmers F3 and F7)
 
-The same checker now has something to catch. If it happens to read F9's transcript it finds a third farmer, and the report loses a mark. **The report that says more does worse**. A check that measures only precision rewards reports that commit to little. 
+The same checker now has something to catch. If it happens to read F9's transcript it finds a third farmer, and the report loses a mark. **The report that says more does worse**. A check that measures only precision rewards mostly bland reports that commit to little. 
 
 And without adding some serious additional machinery, an AI checker (or a lazy human) is still substantially less good at actually finding omissions than it is at checking what has been reported.  This is compounded with larger corpora (more, longer documents) because thorough checking is expensive, and our usual tricks for dealing with larger corpora like RAG don't help us as much. It's effort, and AIs and humans don't like making that effort.
 
-On top of that, in our experience AI checkers treat a wrongly named farmer as a serious error and a missing one as a minor slip. So even when an undercount is caught, it barely counts.
+On top of that, in our experience, freestyle AI checkers treat a wrongly named farmer as a serious error and a missing one as a minor slip. So even when an undercount is caught, it counts less.
 
 And this is not really about AI checking AI. Jo's colleague would do exactly the same: read the report and look up each claim. **The trouble is the direction of the check. Any check that starts from the report and looks for support in the transcripts measures precision well but recall poorly, whoever does it**.
 
 ## Making recall measurable
 
-To measure recall you have to work the other way round: start from each transcript and ask which findings that farmer belongs in. Does F9 credit the training? Does F15? Done for every farmer and every finding, and that needs plain old-fashioned explicit coding. It's hard to instruct a consumer chatbot to do this for you well. You can ask it to make sure every finding has a small report in a standard format, something like this:
+To measure recall you have to work the other way round: start from each transcript and ask which findings that farmer belongs in. Does F9 credit the training? Does F15? Done for every farmer and every finding, and that needs plain old-fashioned explicit coding. It's hard to instruct a consumer chatbot, or even a tool like Claude Code, to do this for you well. You can ask it to make sure every finding has a small report in a standard format, something like this:
 
 > Credits the training for a bigger harvest: F3, F7, F9 and F15 say so. F12's account goes against it: the harvest fell despite the training. F20 says it only of the neighbours. The other 18 do not mention it.
 
