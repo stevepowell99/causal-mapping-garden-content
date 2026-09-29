@@ -6,6 +6,18 @@ theme: theory-of-change
 
 *For evaluators and applied social researchers who use AI in qualitative analysis, or assess work that does.*
 
+## The freestyle evaluation promise
+
+There is an elephant in the room for anyone who cares about getting valid, useful and accurate information about social programmes. Call it the freestyle evaluation promise. In the second half of 2026 you can give a frontier AI model (Claude Opus, GPT-6 Sol, Gemini Pro) the evaluation questions from a terms of reference, together with the interviews and reports you have collected. Add answers to a few clarifying questions, perhaps a discussion of a coding strategy, and it returns what looks like an excellent evaluation report: detailed, and often very accurate.
+
+That is the soft version. Its weakness is that you cannot tell what method it used or how it did anything that might be called coding. If you ask, it may well make up an account of what it did. The hard version uses an agent with tools, such as Claude Code, which can run Python in a sandbox and start sub-agents. Here you can agree a coding plan first. The agent then carries out the coding, consolidates the results and writes the report from them, instead of writing something that merely resembles the outcome of a coding task. We would not recommend the soft version. The hard version can produce very convincing results.
+
+In either case you can hand the report to another AI, or to the same one, to check its accuracy. Checking is much easier than producing. Both versions usually score well, with few important errors. An evaluator, or a commissioner, might feel vindicated: problem solved, since a desk officer can put the material and the request into a chatbot and never engage a professional evaluator.
+
+The objection is this. These reports are written to produce accurate text, so they pass accuracy checks well. That sounds like a virtue, but it hides a bias. Unless the evaluation question has been specified tightly and the way of answering it agreed in detail (which the hard version allows and the soft version does not), the AI selects the claims it can make that are true and easy to verify. It steers away from questions and sub-questions whose answers are more equivocal or harder to check, and towards the workflow that yields verifiable answers. The report can therefore score very well without answering the questions the commissioner needed answered. The result is a strong skew towards one kind of evaluation workflow, often quite different from the one you would construct if you took seriously the task of operationalising the evaluation questions accurately.
+
+The rest of this page looks at which kinds of finding this favours and what to do about it, starting with an example.
+
 ## The problem: checking an AI evaluation report with a lazy checker
 
 An evaluator, Jo, has 24 interview transcripts. She asks an AI to write up the findings. The report has sentences such as 
