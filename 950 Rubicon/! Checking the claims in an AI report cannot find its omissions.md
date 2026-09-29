@@ -70,13 +70,17 @@ To measure recall you have to work the other way round: start from each transcri
 Every count in the report then has to come from a format like this, so "only" and "nobody" become statements about the format, and anyone can check them; it makes laziness in checking a bit harder to defend. 
 The format does not guarantee good recall: whoever filled it in can still miss F9. What it does is make the misses findable without ploughing through every transcript. The checker picks four transcripts at random, reads each one in full, places each of those farmers on every finding without looking at the format, and compares. If one placement in ten is missed in the sample, expect roughly the same across all 24. Auditors do the same with a sample of invoices.
 
-To go beyond this, to produce your report, and then to check it, you have to move away from just dumping your source texts into a chatbot and playing with the prompt. You might want to move to a more systematic coding tool -- but then of course you lose the amazing flexibility of frontier models to dream up a freestyle method to produce a perfect-looking report with good precision (but dodgy recall). 
+**To go beyond this**, for analysis and checking, you have to move away from just dumping your source texts into a chatbot and playing with the prompt. You might want to move to a more systematic coding tool -- but then of course you lose the amazing flexibility of frontier models to dream up a freestyle method to produce a perfect-looking report with good precision (but dodgy recall). 
 
-## One example
+## Sparse and dense tasks
 
-We ran into this in our own work on Rubicon, our AI qualitative-analysis tool. On one project with 15 long interview transcripts, we checked every person against every count in an answer that had been written freestyle, without coding each person. Seven of its 24 counts were wrong, nearly all too low. An AI blind review of the same answer, reading it claim by claim, found none of the seven.
+In this kind of task we can distinguish between sparse and dense text coding tasks. A dense task is one in which there are multiple possible hits in a small amount of text whereas with a sparse one you have to search through pages to find even one possible hit. Dense tasks can be expensive to do, but it can be easier to write the codebook. Sparse tasks seem cheaper but that might be because you are skipping loads of text which might in fact contain a hit. 
 
-On another project, with 18 short transcripts, we planted 12 errors in a report and gave it to the same kind of blind review. The transcripts were short enough to read in full, and the reviewer did, so it found all 12. But it graded every plain undercount "not substantive", and every wrongly named person as substantive.
+## Why causal mapping is a good fit
+
+
+
+
 
 ## Punchline
 
