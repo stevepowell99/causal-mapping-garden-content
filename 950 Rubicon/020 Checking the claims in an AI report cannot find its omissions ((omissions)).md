@@ -12,9 +12,9 @@ theme: theory-of-change
 - That check reads from the report to the transcripts, so it measures **precision** (is what the report says right?) and misses **recall** (did the report include everything that belongs in it?).
   - It rewards reports that commit to little: "some farmers" passes, "only two of 24" can fail.
   - Left to itself, the AI drifts towards findings that are easy to verify, which are not always the ones the commissioner needed.
-- Recall is measured the other way round, from each transcript to the findings. That needs explicit coding, in a format that shows for every finding who is in it, who goes against it and who said nothing, so a checker can test a random sample of sources.
-- Causal mapping does this for causal claims: it codes every claim in every passage, answers questions by querying the result, and lets you check recall a chunk at a time.
-- The professional evaluator stays. Somebody has to choose the method, know what it actually did, and vouch for it to the people who will use the evidence.
+- **Recall** is measured the other way round, from each transcript to the findings. That needs explicit coding of *all* the relevant material, in a format that shows for every finding who is in it, who goes against it and who said nothing, so a checker can test a random sample of sources.
+- Causal mapping does this kind of exhaustive coding for causal claims: it codes every claim in every passage, answers questions by querying the result, and lets you check recall a chunk at a time. And it means you only have to do one lot of coding which can then help answer many of your evaluation questions. 
+- The professional evaluator stays. Somebody has to choose the method with a view to who is going to use it and why, know what it did in order to be able to check it, and vouch for it to its users.
 
 ## The freestyle evaluation promise
 
@@ -113,6 +113,8 @@ That is not only a technical job. Evidence is used by people: a programme team, 
 ## Punchline
 
 A freestyle AI report can pass an accuracy check with full marks and still not answer the question. Checking it by reading the report tells you how much of what it says is right. It cannot tell you what the report left out. Worse, it rewards the report that commits to least: a vague report looks accurate and a committed one looks careless. Recall is measured the other way round, from the transcripts towards the findings. That needs findings built on explicit coding of the whole corpus, in a format that shows for each count who is in it, who goes against it and who said nothing, so that a checker can sample the sources and compare. Causal mapping does this for causal claims: it codes every claim in every passage, answers questions by querying the links, and checks recall chunk by chunk. [[000 Rubicon ((rubicon))|Rubicon]] is our attempt to do the same for evaluation questions of any kind, with each question broken into steps somebody else could check and every count [[005 Rubicon principles ((rubicon-principles))#Say what you did not read|stated out of what was read]]. Whatever the tool, somebody still has to choose the method, know what it did and vouch for it to the people who will use the findings. That stays the evaluator's job.
+
+------
 
 ## What the literature calls it
 
