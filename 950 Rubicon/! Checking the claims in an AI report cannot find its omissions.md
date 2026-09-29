@@ -84,7 +84,7 @@ The finding then comes from a query rather than from the model's reading of the 
 
 Recall becomes measurable a chunk at a time. The AI reads one short chunk of text per request, never the whole corpus, so each piece of its work is small enough for a person to recode by hand and compare. [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))|Precision and recall]] are the two things we check at the coding step, on a small, varied sample, before the whole corpus is coded. Our [[910 AI coding experiments synthesis ((coding-experiments))|coding experiments]] show why chunking matters. Given a whole 89,000-character document in one request, a model returned 6 links where chunked runs returned 114: over a large context, extraction behaves like drawing a sample. The bias described at the top of this page showed up in miniature too. The most expensive model we tested made few errors but missed over half the real content, because it avoided faint or debatable claims rather than selecting better. What lifted recall was an accounting contract: every numbered segment of a chunk had to yield its claims or an argued "none". That builds the check from the transcripts towards the findings into the coding itself.
 
-Causal mapping covers only claims about what causes what, and much of a terms of reference asks other things. For those the same discipline has to be built question by question.
+Causal mapping covers only claims about what causes what, which covers a big part of many terms of reference but not all. For those the same discipline has to be built question by question.
 
 ## Punchline
 
