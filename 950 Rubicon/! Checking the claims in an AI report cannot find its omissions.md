@@ -63,7 +63,7 @@ On top of that, in our experience, freestyle AI checkers treat a wrongly named f
 
 And this is not really about AI checking AI. Jo's colleague would do exactly the same: read the report and look up each claim. **The trouble is the direction of the check. Any check that starts from the report and looks for support in the transcripts measures precision well but recall poorly, whoever does it**.
 
-![Checking from each claim in the report to its support measures precision; checking from each transcript to the findings measures recall. A claim-by-claim check opens only the transcripts the report names.](img/omissions-direction-of-check.svg)
+[image not found: img/omissions-direction-of-check.svg]
 
 ## Making recall measurable
 
@@ -80,7 +80,7 @@ The format does not guarantee good recall: whoever filled it in can still miss F
 
 In this kind of task we can distinguish between sparse and dense text coding tasks. A dense task is one in which there are multiple possible hits in a small amount of text whereas with a sparse one you have to search through pages to find even one possible hit. Dense tasks can be expensive to do, but it can be easier to write the codebook. Sparse tasks seem cheaper but that might be because you are skipping loads of text which might in fact contain a hit. 
 
-![Sixteen passages. A sparse question has 2 hits among them; a dense task, coding every causal claim, has 12.](img/omissions-sparse-dense.svg)
+[image not found: img/omissions-sparse-dense.svg]
 
 ## Why causal mapping is a good fit
 
@@ -88,7 +88,7 @@ Causal mapping turns a sparse question into a dense task. Jo's question, who cre
 
 The finding then comes from a query rather than from the model's reading of the question. "Who credits the training for a bigger harvest?" becomes "which sources mention a chain from `Training` to `Bigger harvest`?" The answer lists every such source with its quotes, which is the standard format from the previous section, produced by the coding instead of written on request. A farmer whose harvest fell despite the training appears as a contrary link ([[016 Despite-claims ((despite-claims))|despite-claims]]). "The other 18 do not mention it" is a statement about the links table: we [[0130.1c A minimalist approach to coding does not code absences ((minimalist-absences))|do not code absences]], so it says only that those farmers did not make the claim. The model never chose which findings to report, so it could not drift towards the easy ones. The analyst chooses the questions. The [[030 Causal mapping is an interesting QDA approach which is very suitable for scaling with AI ((causal-mapping-qda-ai))|AI does one narrow extraction job]].
 
-![A links table with one row per claim: source, cause, effect and quote. A query picks out the rows from Training to Bigger harvest, and the answer is a map whose arrow carries F3, F7, F9 and F15 with their quotes.](img/omissions-query.svg)
+[image not found: img/omissions-query.svg]
 
 Recall becomes measurable a chunk at a time. The AI reads one short chunk of text per request, never the whole corpus, so each piece of its work is small enough for a person to recode by hand and compare. [[902 Quality assurance at each step of the causal coding workflow ((quality-assurance))|Precision and recall]] are the two things we check at the coding step, on a small, varied sample, before the whole corpus is coded. Our [[910 AI coding experiments synthesis ((coding-experiments))|coding experiments]] show why chunking matters. Given a whole 89,000-character document in one request, a model returned 6 links where chunked runs returned 114: over a large context, extraction behaves like drawing a sample. The bias described at the top of this page showed up in miniature too. The most expensive model we tested made few errors but missed over half the real content, because it avoided faint or debatable claims rather than selecting better. What lifted recall was an accounting contract: every numbered segment of a chunk had to yield its claims or an argued "none". That builds the check from the transcripts towards the findings into the coding itself.
 
