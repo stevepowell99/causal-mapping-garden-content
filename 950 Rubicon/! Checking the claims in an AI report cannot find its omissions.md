@@ -6,51 +6,64 @@ theme: theory-of-change
 
 *For evaluators and applied social researchers who use AI in qualitative analysis, or assess work that does.*
 
-## The problem: checking a freestyle AI report with a freestyle AI checker
+## The problem: checking an AI evaluation report with a lazy checker
 
-An evaluator, Jo, has twenty interview transcripts. She asks an AI to write up the findings. The report is sure to have sentences such as 
+An evaluator, Jo, has 24 interview transcripts. She asks an AI to write up the findings. The report has sentences such as 
 
 > Some farmers credit the training for their bigger harvest (see farmers F3 and F7)
 
-To check it, Jo gives the report and the transcripts to a second AI, or to a colleague, and ask for every sentence to be verified. The checker does what it is asked. It takes each sentence, finds F3 and F7 in the transcripts and confirms that they credit the training. It might catch a wrong name or a misquotation.  Otherwise it passes the report as "zero errors" and Jo congratulates herself.
+To check it, Jo gives the report and the transcripts to a second AI, or to a colleague, and asks for every sentence to be verified. The checker does what it is asked. It takes each sentence, finds F3 and F7 in the transcripts and confirms that they credit the training. It might catch a wrong name or a misquotation. Otherwise it passes the report as "zero errors" and Jo congratulates herself.
 
 Usually it does not read every transcript for farmers the report left out, so it passes the sentence even though maybe F9 and F15 credit the training too. A report full of weak claims like this can pass the accuracy test with 100%.
 
 A stronger version might have been:
->Two farmers credit the training for their bigger harvest (farmers F3 and F7)".
+> Two farmers credit the training for their bigger harvest (farmers F3 and F7)
 
 or we can even make it explicit that the other 22 farmers did not make such a claim:
->Only two out of 24 farmers credit the training for their bigger harvest (farmers F3 and F7)". 
+> Only two out of 24 farmers credit the training for their bigger harvest (farmers F3 and F7)
 
 These claims are stronger because it is clearer how to refute them. But it's more work to refute them, because you have to explicitly plough through all the other transcripts to make sure. People are lazy, and AIs are lazy. 
 
-It's the same with "Nobody in the northern district mentions drought": it's a strong claim, but it's more work to check.
+It's the same with "Nobody in the northern district mentions drainage as a factor affecting harvests": it's a strong claim, but it's more work to check.
 
-In the terms used to evaluate search engines and classifiers, the check measures **precision**: of the things the report says, how many are right. It does not measure **recall**: of the things in the transcripts that belong in the report, how many the report includes. A report can be precise and still leave out half of what it should have counted.
+There are lots of different overlapping ways of thinking about this problem. In the terms used to evaluate search engines and classifiers, the check measures **precision**: of the things the report says, how many are right. It does not measure **recall**: of the things in the transcripts that belong in the report, how many the report includes. A report can be precise and still leave out half of what it should have counted.
 
-Missed recall comes in two layers. One is people missing from a finding the report does make, which turns counts into undercounts and makes "only" and "nobody" false. The other is findings the report never makes at all. This page is mostly about the first; the second needs a comparison with another reading of the same material.
 
-## Why it matters
+## What to do about it
 
-A precision-only check rewards reports that commit to little. "Several farmers, including F3 and F7, credit the training" cannot be caught out on recall, because it never said how many. A report that names every farmer who credits the training, and gives the count, can be caught out on every one it misses. The more complete and checkable a report tries to be, the worse it can look.
+So Jo's checker gives the weak report full marks. Now suppose Jo asks her AI for strong claims instead, and gets
 
-The checkers we have used also grade an undercount as minor and a wrongly named person as serious, so the recall misses they do find count for less.
+> Only two out of 24 farmers credit the training for their bigger harvest (farmers F3 and F7)
 
-An evaluator checking one AI with another is only one version of this. The fault lies in the direction of the check, whoever makes it: any check that starts from the report and looks for support in the transcripts measures precision, whether the checker is a model or a person.
+The same checker now has something to catch. If it happens to read F9's transcript it finds a third farmer, and the report loses a mark. **The report that says more does worse**. A check that measures only precision rewards reports that commit to little. 
+
+And without adding some serious additional machinery, an AI checker (or a lazy human) is still substantially less good at actually finding omissions than it is at checking what has been reported.  This is compounded with larger corpora (more, longer documents) because thorough checking is expensive, and our usual tricks for dealing with larger corpora like RAG don't help us as much. It's effort, and AIs and humans don't like making that effort.
+
+On top of that, in our experience AI checkers treat a wrongly named farmer as a serious error and a missing one as a minor slip. So even when an undercount is caught, it barely counts.
+
+And this is not really about AI checking AI. Jo's colleague would do exactly the same: read the report and look up each claim. **The trouble is the direction of the check. Any check that starts from the report and looks for support in the transcripts measures precision well but recall poorly, whoever does it**.
 
 ## Making recall measurable
 
-Recall can be measured only by working the other way: start from each transcript and ask which findings that person belongs in. Done for every person, that is explicit coding, with every case placed on every finding.
+To measure recall you have to work the other way round: start from each transcript and ask which findings that farmer belongs in. Does F9 credit the training? Does F15? Done for every farmer and every finding, and that needs plain old-fashioned explicit coding. 
 
-We call a report built on that an X-ray. Every finding carries a table of who says it, whose account goes against it, who says it only of other people, and who does not speak to it. Every count comes from the table, and "only" and "nobody" become statements about the table that anyone can check.
+Every finding has a small table behind it, something like this:
 
-The table does not guarantee good recall, because whoever places people can still miss one. What it does is make the misses findable. A checker can read a random handful of whole transcripts, place each of those people on every finding without looking at the table, compare the two, and project the rate of misses to the whole set, the way auditors project errors from a sample of invoices.
+> Credits the training for a bigger harvest: F3, F7, F9 and F15 say so. F12's account goes against it: the harvest fell despite the training. F20 says it only of the neighbours. The other 18 do not mention it.
+
+Every count in the report comes from a table like this, so "only" and "nobody" become statements about the table, and anyone can check them.
+
+The table does not guarantee good recall: whoever filled it in can still miss F9. What it does is make the misses findable without ploughing through every transcript. The checker picks four transcripts at random, reads each one in full, places each of those farmers on every finding without looking at the table, and compares. If one placement in ten is missed in the sample, expect roughly the same across all 24. Auditors do the same with a sample of invoices.
 
 ## One example
 
-From our own work on Rubicon, our AI qualitative-analysis tool. On 15 long interview transcripts, checking every person against every counted claim found 7 of 24 counts wrong in an answer written without coding each person, nearly all too low; a blind review of the same answer found none of the 7. On 18 short transcripts, a blind review of a report with 12 planted errors found all 12, but graded every plain undercount "not substantive" and the wrong inclusions as substantive.
+We ran into this in our own work on Rubicon, our AI qualitative-analysis tool. On one project with 15 long interview transcripts, we checked every person against every count in an answer that had been written freestyle, without coding each person. Seven of its 24 counts were wrong, nearly all too low. An AI blind review of the same answer, reading it claim by claim, found none of the seven.
+
+On another project, with 18 short transcripts, we planted 12 errors in a report and gave it to the same kind of blind review. The transcripts were short enough to read in full, and the reviewer did, so it found all 12. But it graded every plain undercount "not substantive", and every wrongly named person as substantive.
 
 ## Punchline
+
+Checking an AI report by reading the report tells you how much of what it says is right. It cannot tell you what it left out. A vague report looks accurate and a committed one looks careless, until you measure recall. Measuring recall means reading from the transcripts towards the report, and a report built as an X-ray lets you do that on a sample.
 
 ## What the literature calls it
 
