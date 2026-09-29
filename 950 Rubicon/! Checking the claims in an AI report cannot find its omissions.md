@@ -45,15 +45,14 @@ And this is not really about AI checking AI. Jo's colleague would do exactly the
 
 ## Making recall measurable
 
-To measure recall you have to work the other way round: start from each transcript and ask which findings that farmer belongs in. Does F9 credit the training? Does F15? Done for every farmer and every finding, and that needs plain old-fashioned explicit coding. 
-
-Every finding has a small table behind it, something like this:
+To measure recall you have to work the other way round: start from each transcript and ask which findings that farmer belongs in. Does F9 credit the training? Does F15? Done for every farmer and every finding, and that needs plain old-fashioned explicit coding. It's hard to instruct a consumer chatbot to do this for you well. You can ask it to make sure every finding has a small report in a standard format, something like this:
 
 > Credits the training for a bigger harvest: F3, F7, F9 and F15 say so. F12's account goes against it: the harvest fell despite the training. F20 says it only of the neighbours. The other 18 do not mention it.
 
-Every count in the report comes from a table like this, so "only" and "nobody" become statements about the table, and anyone can check them.
+Every count in the report then has to come from a format like this, so "only" and "nobody" become statements about the format, and anyone can check them; it makes laziness in checking a bit harder to defend. 
+The format does not guarantee good recall: whoever filled it in can still miss F9. What it does is make the misses findable without ploughing through every transcript. The checker picks four transcripts at random, reads each one in full, places each of those farmers on every finding without looking at the format, and compares. If one placement in ten is missed in the sample, expect roughly the same across all 24. Auditors do the same with a sample of invoices.
 
-The table does not guarantee good recall: whoever filled it in can still miss F9. What it does is make the misses findable without ploughing through every transcript. The checker picks four transcripts at random, reads each one in full, places each of those farmers on every finding without looking at the table, and compares. If one placement in ten is missed in the sample, expect roughly the same across all 24. Auditors do the same with a sample of invoices.
+To go beyond this, to produce your report, and then to check it, you have to move away from just dumping your source texts into a chatbot and playing with the prompt. You might want to move to a more systematic coding tool -- but then of course you lose the amazing flexibility of frontier models to dream up a freestyle method to produce a perfect-looking report with good precision (but dodgy recall). 
 
 ## One example
 
