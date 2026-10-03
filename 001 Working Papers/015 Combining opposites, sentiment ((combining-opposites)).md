@@ -160,6 +160,7 @@ Once opposites are marked (and optionally combined via an explicit transform), w
 - **Querying**: searching for `Y` can intentionally retrieve both `Y` and `~Y` evidence (depending on whether you search pre- or post-transform).
 - **Aggregation without collapse**: you can summarise evidence under a canonical label `Y` while still distinguishing which claims involved the opposite sense via flip flags.
 - **Visualisation**: you can render a map from the transformed links table and style links differently depending on whether the cause and/or effect endpoint was flipped, so viewers can see “this includes opposite-evidence” rather than mistaking it for ordinary evidence.
+- **Consolidation**: when many labels are later merged into a shorter list, a marked pair survives every step that reads labels, while two poles named only in words (`Employment`, `Unemployment`) sit so close in meaning that a person, a model or a similarity tool can merge them by accident. See [[903 Consolidating overlapping labels into a shorter list ((consolidating-labels))]].
 
 This “links table → transforms → map/table view” pattern is the same general idea as a filter pipeline (implemented in many tools; the Causal Map app is one).
 

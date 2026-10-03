@@ -39,7 +39,7 @@ The same test as for hierarchical labels generally, applied one level down. Writ
 
 The group label should describe a change or an event, in the same register as the labels it replaces. `Irrigation practices` is a heading. `Started irrigating` is a factor.
 
-Groups should not mix desirability by accident. Where some of the second levels describe an improvement and others describe the same thing getting worse, either separate them or mark the polarity explicitly with [opposites coding](https://guide.causalmap.app/xopposites#xopposites) and a `~`. Merging them quietly loses the finding.
+Groups should not mix desirability by accident. Where some of the second levels describe an improvement and others describe the same thing getting worse, either separate them or mark the polarity explicitly with [[015 Combining opposites, sentiment ((combining-opposites))|opposites coding]] and a `~`. Merging them quietly loses the finding. The general rules for consolidating labels, these included, are on [[903 Consolidating overlapping labels into a shorter list ((consolidating-labels))]].
 
 ## Sentiment as an input, on the effect side only
 

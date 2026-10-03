@@ -145,7 +145,7 @@ Recoding is how you revise the codebook after a first run, which is why it belon
 - **Links or factors recode**: clean up label by label. By hand, edit in the Links or Factors table, use search and replace, or use Bulk Edit; with AI, use AI Answers.
 - **Soft recode**: cluster or magnetise labels into a smaller set.
 
-For organising a large codebook, deciding on a labels-plus-tags system, and bulk rewriting, the recoding paper [[905 Different kinds of coding and recoding ((kinds))]] is the detail; the same tools serve manual and AI coding.
+For organising a large codebook, deciding on a labels-plus-tags system, and bulk rewriting, the recoding paper [[905 Different kinds of coding and recoding ((kinds))]] is the detail; the same tools serve manual and AI coding. Whatever the tool, the principles of consolidating well (how many groups, what a name must do, keeping opposites apart, leaving a label alone) are on [[903 Consolidating overlapping labels into a shorter list ((consolidating-labels))]].
 
 ## Step 4: Code the claims {#step-4}
 
@@ -202,7 +202,7 @@ Decide how labels should read: close to the text (in vivo) or more abstract ("ta
 - **Tags**: bracketed text on a label, such as `patients (before surgery)`, to build labels from parts.
 - **Hierarchical labels** with a separator, which let you zoom out later (see [[590 Hierarchical coding ((zoom-filter))]]).
 
-For coding opposites and sentiment, see [[200 !Opposites and sentiment in AI coding ((opposites-sentiment))]].
+For coding opposites and sentiment, see [[015 Combining opposites, sentiment ((combining-opposites))]].
 
 ### Custom columns
 

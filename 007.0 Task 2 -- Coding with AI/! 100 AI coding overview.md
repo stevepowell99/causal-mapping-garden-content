@@ -50,7 +50,7 @@ Here are some things you need to think about when AI coding.
 - *In vivo* (close to the text) or *abstract* (e.g. "talk like a social scientist").
 - *Tags* for variants: `patients (before surgery)`, `patients (after surgery)`.
 - *Hierarchical* labels work even with free coding.
-- *Opposites* and *sentiment*: code both directions or use a sentiment column. See [[200 !Opposites and sentiment in AI coding ((opposites-sentiment))]].
+- *Opposites* and *sentiment*: code both directions or use a sentiment column. See [[015 Combining opposites, sentiment ((combining-opposites))]].
 
 **[Custom columns](#custom-columns)**
 - Sentiment, significance, certainty, translation, and so on.
@@ -233,7 +233,7 @@ There's often more to a coding task than just labels. *Tags* are short bits of t
 ### Label style: Opposites 
 
 
-See [[200 !Opposites and sentiment in AI coding ((opposites-sentiment))]] and [[630 Opposites ((combine-opposites-filter))]].
+See [[015 Combining opposites, sentiment ((combining-opposites))]] and [[630 Opposites ((combine-opposites-filter))]].
 
 ### Label style: Hierarchical
 

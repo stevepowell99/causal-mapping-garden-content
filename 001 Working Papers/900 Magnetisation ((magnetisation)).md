@@ -62,7 +62,7 @@ Each label (raw label and magnet) is represented as an **embedding**: a numerica
 Two practical notes that matter for “soft recoding”:
 
 - Embeddings are not “definitions”; they are empirical similarity machines trained on large corpora. This is a feature for fast standardisation, but it means you must **audit** what got pulled into each magnet.
-- Some meanings that humans treat as opposites can have high cosine similarity (because they occur in similar contexts). This is why magnetisation often needs to be paired with explicit conventions like opposites handling (see also: `015 Combining opposites, sentiment and despite-claims.md`).
+- Some meanings that humans treat as opposites can have high cosine similarity (because they occur in similar contexts). This is why magnetisation often needs to be paired with explicit conventions like opposites handling (see also: `015 Combining opposites, sentiment and despite-claims.md`, and on keeping opposites apart when consolidating labels, [[903 Consolidating overlapping labels into a shorter list ((consolidating-labels))]]).
 
 #### 3.2 Assignment rule
 

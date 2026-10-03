@@ -3,7 +3,7 @@ tags:
   - mapcat_methods
 ---
 
-Assuming you're not coded with a fixed codebook, and assuming you're coding multiple sources or you've got texts which are longer than your selected chunk size, so you are breaking them up into multiple chunks, then you can expect to end up with very many labels, many of which overlap in meaning. 
+Assuming you're not coded with a fixed codebook, and assuming you're coding multiple sources or you've got texts which are longer than your selected chunk size, so you are breaking them up into multiple chunks, then you can expect to end up with very many labels, many of which overlap in meaning. Why that happens, and the principles for consolidating them into a shorter list, are on [[903 Consolidating overlapping labels into a shorter list ((consolidating-labels))]]; this page is about which tool to use.
 
 You can address this either with 
 - soft recoding or magnetic relabelling
