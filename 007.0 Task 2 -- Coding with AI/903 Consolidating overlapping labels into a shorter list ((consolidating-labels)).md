@@ -55,6 +55,14 @@ Give each group a name, a one-sentence definition, what does not count (the near
 
 Grouping by vector similarity is fast and repeatable, and good at proposing candidates. It cannot tell opposites apart, and it cannot know that two words are the same thing in one context and different things in another. So let it propose, and have a person or a model name the groups and check them against the rules above, poles first.
 
+## When labels can have levels
+
+Everything above assumes a flat list, where consolidating means replacing many labels with fewer. Labels with levels, written as "general; specific", open up many more approaches, most of which lose less detail. They are covered on their own pages:
+
+- Putting labels under a broader parent and reading the map at whichever level a question needs, with the rules for when a parent is legitimate: [[590 Hierarchical coding ((zoom-filter))]].
+- Fixing the top level with a codebook, leaving the second level in people's own words, and then grouping the second level within each top-level factor: [[595 Grouping the second level ((second-level-clusters))]].
+- Groupings that cut across a hierarchy, kept as tags inside the label: [[300 Factor label tags -- coding factor metadata within its label ((label-tags))]].
+
 ## Related pages
 
-Where consolidation sits in a whole coding workflow: [[901 A workflow for causal coding with and without AI ((ai-coding))]]. Grouping only the detail of hierarchical labels: [[595 Grouping the second level ((second-level-clusters))]]. Applying these rules with particular tools: [[905 Different kinds of coding and recoding ((kinds))]].
+Where consolidation sits in a whole coding workflow: [[901 A workflow for causal coding with and without AI ((ai-coding))]]. Applying these rules with particular tools: [[905 Different kinds of coding and recoding ((kinds))]].
