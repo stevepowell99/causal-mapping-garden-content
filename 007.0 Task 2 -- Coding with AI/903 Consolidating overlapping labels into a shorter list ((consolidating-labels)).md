@@ -55,6 +55,6 @@ Give each group a name, a one-sentence definition, what does not count (the near
 
 Grouping by vector similarity is fast and repeatable, and good at proposing candidates. It cannot tell opposites apart, and it cannot know that two words are the same thing in one context and different things in another. So let it propose, and have a person or a model name the groups and check them against the rules above, poles first.
 
-## In the Causal Map app
+## Related pages
 
-Revise codebook suggests at most the number of labels you ask for, and lists the labels it left alone with a reason for each; Recode then assigns against the list. The magnets filter ([[900 Magnetisation ((magnetisation))]]) assigns by similarity, so check its results for opposites. Which tool to use when: [[905 Different kinds of coding and recoding ((kinds))]]. Where consolidation sits in the whole workflow: [[901 A workflow for causal coding with and without AI ((ai-coding))]]. Grouping only the detail of hierarchical labels: [[595 Grouping the second level ((second-level-clusters))]].
+Where consolidation sits in a whole coding workflow: [[901 A workflow for causal coding with and without AI ((ai-coding))]]. Grouping only the detail of hierarchical labels: [[595 Grouping the second level ((second-level-clusters))]]. Applying these rules with particular tools: [[905 Different kinds of coding and recoding ((kinds))]].
