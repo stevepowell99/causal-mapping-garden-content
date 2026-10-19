@@ -3,45 +3,43 @@ tags: paper
 date: 2026-09-06
 theme: theory-of-change
 ---
-The family the other method papers belong to. Contribution analysis, realist evaluation and process tracing all state a theory in advance and then put it to the material. Commissioners ask for that in general terms far more often than they ask for any one of them by name. This paper is about what comes back at the end, and it reports a run.
+Theory-based evaluation is the family that the other method papers in this chapter belong to. Contribution analysis, realist evaluation and process tracing each state a theory in advance and then test it against the material. Commissioners ask for this in general terms far more often than they ask for any one of these methods by name. This paper is about the form the result takes, and reports one run.
 
-> **Work in progress.** Rubicon's theory-of-change step has run on the app's own example project, and not yet on an evaluation. Every figure below is from that run. Comments welcome.
+> **Work in progress.** We have run Rubicon's theory-of-change step on the app's own example project but not yet on an evaluation. Every figure below comes from that run. Comments welcome.
 
-## In short
+## Summary
 
-An evaluator who wrote a theory of change as a diagram wants the answer back as one.
+An evaluator who drew a theory of change as a diagram wants the answer as a diagram too.
 
-- **Theory-based evaluation is the family and the papers here are its members.** [[030 Contribution analysis ((contribution))]] starts from the theory the programme committed to. [[020 Realist mechanisms ((realist-mechanisms))]] generates one where nobody has written it yet. [[010 Testing rival theories ((theory-fit))]] adjudicates between several. All three do the same thing first: write the theory down, then read.
-- **Testing a theory produces a table, and a table is not the theory.** One coding pass per link comes back as counts keyed by link, without the branch structure the evaluator drew in the first place.
-- **A `theory` step puts the links back in their places.** It invents nothing: the structure comes from the list of links the workflow declares, the numbers from the counting step and the verdicts from the judging step.
-- **The run.** Eight links, nineteen household interviews, 590 coded passages, and two branches of the theory converging on wellbeing, which the table could not show.
-- **What it does not do.** There is no held-out half here and no synthetic contrast set, and a per-link verdict appears only where a rubric criterion was named after a link.
+- **The papers in this chapter are members of the family.** [[030 Contribution analysis ((contribution))]] starts from the theory the programme committed to, and [[020 Realist mechanisms ((realist-mechanisms))]] builds one where none has been written yet. [[010 Testing rival theories ((theory-fit))]] decides between several. In each, the evaluator writes the theory down before reading the material.
+- **Testing a theory produces a table.** Coding once per link gives counts listed by link, and the branch structure the evaluator drew is lost.
+- **A `theory` step puts the links back into the diagram.** The step adds no content of its own. The structure comes from the list of links declared in the workflow, the numbers from the counting step and the verdicts from the judging step.
+- **The run.** Eight links and nineteen household interviews gave 590 coded passages. In the diagram, two branches of the theory converge on wellbeing; the table did not show this.
+- **Limits.** We did not hold out half the material or build a synthetic contrast set. The step gives a verdict for a link only where a rubric criterion was named after that link.
 
-See also: [[000 Pilots, not passengers -- reconstructible reporting in evaluation ((rubicon))]]; [[005 Rubicon principles ((rubicon-principles))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
+See also: [[000 Pilots, not passengers -- reconstructible reporting in evaluation ((rubicon))]]; [[005 Principles for reconstructible analysis in the age of AI ((principles))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
 
-**Intended audience:** evaluators who have been asked for a theory-based evaluation without being told which one, who have a theory of change and a pile of documents, and who must show the result to the people who drew the theory.
+**Intended audience:** evaluators asked for a theory-based evaluation without being told which kind. They have a theory of change and a set of documents, and have to show the result to the people who drew the theory.
 
-## What commissioners are asking for when they ask for this
+## What commissioners ask for
 
-Terms of reference say "theory-based" far more often than they say "contribution analysis" or "realist evaluation", and usually without saying which. That vagueness is not carelessness. What the commissioner wants is the family resemblance rather than any member's apparatus. There is a theory about how this was supposed to work. Somebody wrote it down. The question is what the evidence does to it.
+Terms of reference ask for a "theory-based" evaluation far more often than for "contribution analysis" or "realist evaluation", and usually do not say which kind. Commissioners who leave the method open are not being careless. They want what the methods have in common, and are not concerned with the apparatus of any one of them. There is a theory about how the programme was supposed to work. Somebody wrote it down. They want it tested against the evidence.
 
-Three of the members are in this chapter. They differ in where the theory comes from.
+This chapter covers three members of the family. They differ in where the theory comes from.
 
-- **Somebody already committed to it in writing.** That is contribution analysis. The theory of change is the programme's own. Arguing with it is part of the job.
-- **Nobody has written it yet.** That is realist evaluation's retroduction. The theory has to be generated from the material before anything can be put to it.
-- **Several people have written rival ones.** That is the process tracing case. The job is adjudication rather than confirmation.
+- **The programme has already committed to a theory in writing.** This is contribution analysis. The theory of change is the programme's own, and arguing with it is part of the evaluator's job.
+- **The theory has not been written yet.** This is retroduction in realist evaluation: the evaluator generates the theory from the material before testing anything against it.
+- **Several people have written rival theories.** This is the process-tracing case, where the job is to decide between them.
 
-What they share is the ordering, and the ordering is the whole of the discipline. The theory is fixed, dated and named before the reading starts, so a reader can tell a proposition that survived contact with the evidence from one written afterwards to fit it. The machinery for making that ordering visible is the same whichever member is being run, which is why Rubicon's assistant builds a workflow out of general parts instead of picking a named method off a menu.
+All three fix the theory before anyone reads the material. That order of work is the discipline. The evaluator names and dates the theory first, so that a reader can tell a proposition that held up against the evidence from one written afterwards to fit it. Recording that order works the same way whichever method is used, so Rubicon's assistant builds each workflow from general parts and does not pick a named method from a menu.
 
-They share a deliverable too. The product is not a verdict. It is the theory of change with what the evidence said hung on each link of it, so a programme manager can see which parts of their own account the material bears out and which parts it never touched.
+They also share a deliverable: the theory of change, with the evidence on each link attached to that link. A programme manager can then see which parts of their own account the material supports and which parts it does not mention at all.
 
-## The table and the diagram are not the same result
+## The table and the diagram
 
-Put eight propositions to nineteen documents and the result arrives as a table: one row per link, with how many passages bore on it, how many supported it, how many contradicted it. That is the truthful form of the finding. It is the wrong form for the person who has to read it.
+Test eight propositions against nineteen documents and you get a table, one row per link, giving the number of passages relevant to the link, the number supporting it and the number contradicting it. The table is accurate. But the theory was drawn as a diagram, and the workshop that discusses the result will be looking at that diagram.
 
-An evaluator wrote the theory as a diagram. A programme committed to it as a diagram. The workshop that argues about the result will argue in front of a diagram. A table keyed by link cannot show that two branches converge, that one arm of the theory rests on a great deal of material while the other rests on almost none, or that a whole limb went unexamined. Those are findings about the theory rather than about any of its links, and they only exist once the links are back in their places.
-
-So what was missing is not a picture of the same information. It is information the table never held.
+A table listed by link cannot show where two branches converge. Nor can it show that one branch has a great deal of material behind it while another has almost none, or was never examined at all. These are findings about the theory as a whole. We can only see them once the links are back in the diagram, which therefore contains information the table did not.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'fontFamily':'Helvetica, Arial, sans-serif','fontSize':'15px'}}}%%
@@ -67,49 +65,51 @@ flowchart TD
   class map out
 ```
 
-The theory of change goes in twice: once to say what to look for, once to say where to put what was found.
+The theory of change is used twice: first to define what to look for, then to place what was found.
 
-## What the step does, and what it refuses
+## What the theory step does
 
-Asked to test a theory of change, Rubicon's assistant writes each link with a `from` and a `to` beside its proposition, so the graph is already in the workflow. The `theory` step reads that list, the counts and any verdicts, and files the assembled graph as a result of its own. It calls no model and cites nothing of its own. Every number on it came from a result it was handed, so the walk from a link to the passages behind it is the walk that already existed: link to figure, figure to coded row, row to quote, quote to the words in the document. The list of links is written once, in the workflow, so the copy that gets drawn is the copy that was coded.
+When asked to test a theory of change, Rubicon's assistant writes a `from` and a `to` beside each link's proposition, so the graph is already in the workflow. The `theory` step reads that list, the counts and any verdicts, and saves the assembled graph as a separate result. It does not call a model or cite anything itself. Every number on the graph comes from an earlier result, so a reader traces a link back to its passages by the route that already existed: from link to figure, figure to coded row, row to quote, and quote to the words in the document. Because the list of links is written once, in the workflow, the diagram shows exactly the links that were coded.
 
-It refuses three drawings that would be wrong in a way the reader cannot see.
+The step refuses to draw in three cases where the diagram would be wrong in ways a reader could not see.
 
-- **A link with one end missing.** A theory of change is a graph, and an arrow pointing nowhere is not a weaker version of an arrow.
+- **A link with one end missing.** A theory of change is a graph, and an arrow that points nowhere does not count as an arrow.
 - **A list of links that does not exist**, or a step that did not test one link per pass.
-- **A theory with nothing hung on it.** Given neither a table nor a judgement, what would be drawn is the workflow read back rather than a result.
+- **A theory with no results attached.** With neither a table nor a judgement, the diagram would only repeat the workflow.
 
-The distinction it works hardest to keep is between absent and nought. A figure that never covered a link is not a link the material ignored, so an uncounted link is stored as empty, with a flag saying which of the two it is. That distinction is the first casualty of any drawing, and an evaluator cannot recover it from anywhere else.
+The step distinguishes absent from nought. If no figure covered a link, that does not mean the material has nothing on it. So the step stores an uncounted link as empty, with a flag saying which of the two cases applies. This is the distinction a drawing is most likely to lose. An evaluator cannot recover it from anywhere else.
 
-The drawing then has to keep three findings apart: supported, contradicted, and addressed by nobody. Why the third matters, and why it usually means unexamined rather than unsupported, is set out in [[030 Contribution analysis ((contribution))|the contribution analysis paper]]. A diagram that shows a faint arrow and a contradicted arrow alike loses it without anybody noticing, because both look like bad news and they are opposite findings. A fourth reading, "counted, not judged", marks a link the run counted under a figure name the drawing does not recognise: the drawing may say it cannot tell what the material concluded, and it may not say nobody looked.
+The diagram also has to keep three findings apart: supported, contradicted, and addressed by nobody. For why the third matters, and why it usually means that nobody examined the link (which is different from finding it unsupported), see [[030 Contribution analysis ((contribution))|the contribution analysis paper]]. If a diagram draws a faint arrow and a contradicted arrow the same way, the difference disappears without anyone noticing: both look like bad news, but they are opposite findings. A fourth reading, "counted, not judged", is for a link the run counted under a figure name the step does not recognise. The diagram may then report that it cannot tell what the material concluded. It may not report that nobody looked.
 
 ## The run
 
-The workflow was run on 6 September 2026 against the app's own example project: nineteen household interview transcripts, anonymised, from two provinces. The theory of change runs from training through farming and health knowledge to wellbeing, in eight links.
+We ran the workflow on 6 September 2026 against the app's own example project: nineteen anonymised household interview transcripts from two provinces. The theory of change has eight links, from training through farming and health knowledge to wellbeing.
 
-The coding went over all eight links in all nineteen documents and produced **590 coded passages**, each quoting a passage that was then located in its document: 588 matched exactly and two matched with a gap. All nineteen documents are quoted somewhere in the result. The coding cost $4.05; the run reported here reused it and cost nothing.
+The coding covered all eight links in all nineteen documents and produced **590 coded passages**. Each quotation was then located in its document; 588 matched exactly and two matched with a gap. Every one of the nineteen documents is quoted somewhere in the result. The coding cost $4.05. The run reported here reused it and cost nothing.
 
-Per link, the count of supporting passages runs from 56 on each of the two training links to 100 on "better health practices lead to improved family health". The two health links are the best evidenced of the eight, at 94 and 100 against 73 for the next highest. All eight links were counted and none came back empty.
+Per link, the count of supporting passages ranges from 56 on each of the two training links to 100 on "better health practices lead to improved family health". The two health links are the best evidenced of the eight, at 94 and 100, against 73 for the next highest. All eight links were counted, and none came back empty.
 
-The graph the step assembled has eight factors and eight annotated links, and **two branches converge on wellbeing**: one through better nutrition, one through improved family health. That convergence is what a table keyed by link could never show, and it changes how the result should be read, because a weak link in one branch is not fatal where the other reaches the same outcome.
+The assembled graph has eight factors and eight annotated links, and **two branches converge on wellbeing**, one through better nutrition and one through improved family health. A table listed by link could not have shown this. It affects how we read the result: a weak link in one branch matters less when the other branch reaches the same outcome.
 
-The judgement is one verdict for the whole theory, fully supported, against a rubric with a single criterion: that all eight links have at least two supporting sources. 572 supporting passages clear that without effort, so the verdict is close to uninformative. What does the work here is the annotation, link by link, with the rubric a coarse gate in front of it.
+The judgement gave one verdict for the whole theory, fully supported, against a rubric with a single criterion: that all eight links have at least two supporting sources. With 572 supporting passages that is easily met, so the verdict adds almost no information. The useful result is the link-by-link annotation; the rubric is only a coarse first check.
 
-Two cautions from the run, which generalise.
+The run raised two problems that apply more widely.
 
-- **A figure's name can misdescribe it.** The per-link figure was called `supporting-sources-count` and counted passages rather than sources: its eight values sum to 572 over a corpus of nineteen documents. The arithmetic is right and the name is wrong. Whoever writes the workflow names the figures, and an annotated diagram puts that name next to the arrow it describes, which is the likeliest place anybody will notice.
-- **A drawing can report a negative it never earned.** The first version of the drawing decided a link's colour by looking for four particular figure names. This workflow used none of them, so every count read as zero and the diagram drew all eight links as addressed by nobody, over 572 supporting passages. Saying nobody looked at a link the run counted is worse than saying nothing, because a programme manager would act on it. A counted link is now held as addressed whatever its figures are called.
+- **A figure's name can be wrong.** The per-link figure was called `supporting-sources-count`, but it counted passages: its eight values sum to 572 over a corpus of nineteen documents. Whoever writes the workflow names the figures. An annotated diagram prints each name next to its arrow, which is where a reader is most likely to spot a wrong one.
+- **A diagram can report a negative finding the evidence does not support.** In the first version, the step chose a link's colour by looking for four particular figure names. This workflow did not use any of them, so every count read as zero and the diagram drew all eight links as addressed by nobody, despite 572 supporting passages. Telling a programme manager that nobody looked at a link the run did count is worse than telling them nothing, because they would act on it. The step now treats a counted link as addressed, whatever its figures are called.
 
-## What this does not do
+## Limitations
 
-- **There is no held-out half here and no synthetic contrast set.** A theory was put to a corpus and the result reported. Nothing establishes that the same machinery would have found a different answer had the theory been wrong.
-- **A per-link verdict only appears where a rubric criterion was named after a link**, which is the only correspondence the record holds. Here the rubric had one criterion covering the whole theory, so every link's colour comes from the counts alone.
-- **The counts are of passages rather than of people or documents**, unless a workflow says otherwise.
-- **Nothing here judges worth.** A theory of change every link of which is well evidenced can still be a theory about something not worth doing. That is a judgement for a rubric somebody registered and put their name to.
-- **One run, on an example project.** No evaluation has used this.
+- **We did not hold out half the corpus or build a synthetic contrast set.** We tested a theory against a corpus and reported the result. We have not shown that the same workflow would have given a different answer if the theory had been wrong.
+- **The step gives a per-link verdict only where a rubric criterion was named after a link**, because the record does not connect criteria to links in any other way. Here the rubric had a single criterion covering the whole theory, so the colour of each link comes from the counts alone.
+- **The counts are of passages.** A workflow has to say so if it wants counts of people or documents.
+- **The step does not judge worth.** A theory of change can be well evidenced on every link and still describe something not worth doing. Judging that needs a rubric that somebody has registered and put their name to.
+- **We have one run, on an example project.** The step has not yet been used in an evaluation.
 
 ## Next steps
 
-- Run it on a real theory of change, with a rubric whose criteria are named after the links, so the per-link verdicts appear and the annotation says what was judged rather than only what was counted.
-- Put a contradicted link and an unaddressed link into the same run on purpose, so the three findings are seen apart rather than asserted to be.
-- Put the whole-outcome rival pass from [[030 Contribution analysis ((contribution))]] on the same picture. A theory whose every link is supported is still consistent with the programme having contributed nothing.
+- Run the step on a real theory of change, with rubric criteria named after the links, so that per-link verdicts appear and the annotation shows what was judged as well as what was counted.
+- Include a contradicted link and an unaddressed link in the same run on purpose, to check that the diagram does keep the three findings apart.
+- Show the whole-outcome rival pass from [[030 Contribution analysis ((contribution))]] on the same diagram. A theory with every link supported is still consistent with the programme having contributed nothing.
+
+*This page was drafted with the assistance of Claude, an AI model from Anthropic; the arguments and judgements are our own.*

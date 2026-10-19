@@ -3,39 +3,37 @@ tags: paper
 date: 2026-09-05
 theme: theory-of-change
 ---
-[[010 Testing rival theories ((theory-fit))|The theory-fit paper]] takes rival published theories and asks which the material supports. [[020 Realist mechanisms ((realist-mechanisms))|The realist paper]] starts with no theory and generates mechanisms. This one starts with the theory the programme already wrote down, and asks what the evidence does to it.
+[[010 Testing rival theories ((theory-fit))|The theory-fit paper]] is about rival published theories and which of them the material supports. [[020 Realist mechanisms ((realist-mechanisms))|The realist paper]] begins without a theory and generates mechanisms. Here we begin with the theory of change the programme has already written down, and check each of its links against the evidence.
 
-> **Work in progress.** A design, tried twice on a select committee's evidence about a proposed research funding agency. The first run failed. The second produced an annotated theory of change, and a reviewer checked its write-up against every document. Both are under *Two runs on a select committee's evidence*.
+> **Work in progress.** A design, which we have tried twice on the evidence a select committee took about a proposed research funding agency. The first run failed. The second produced an annotated theory of change; a reviewer then checked its write-up against every document. Both are described under *Two runs on a select committee's evidence*.
 
 ## In short
 
-Start from the theory of change the programme already wrote down, and ask what the evidence does to each link of it.
+We code the evidence against each link of the programme's own theory of change.
 
-- **The theory of change is the workflow.** Each link becomes a proposition with its two ends, and one coding pass goes to each.
-- **A separate rival pass.** One more coding pass over the same sources names the whole-outcome alternatives. It is not a prong of the link pass, so a rival to the outcome can never be counted as evidence for a link.
-- **Who is speaking is a column.** Coding records the speaker's stake, so a second figure reports how much of the story survives once the people delivering the programme are excluded.
-- **Counting that shows the holes.** The list of links is declared in advance, so a link nobody mentioned reads as a nought rather than dropping out of the table.
-- **Two judgements, kept apart.** One per link, giving an annotated theory of change; one overall, against a rubric that states in advance how the links combine. A chain is as strong as its weakest link, so the combination rule is a minimum rather than a mean.
-- **What it refuses.** No attribution fraction, ever. No counterfactual: the rival pass asks what else could explain the outcome and reads what people say about it, which is weaker than a comparison group and stronger than not asking.
-- **What the second run showed.** Five of six links came back well supported, including the one that most deserved doubt. A reviewer who read all 114 documents found 18 of the write-up's 24 checkable sentences sound and six wrong.
+- **The theory of change becomes the workflow.** We write each link as a proposition with its two ends, and code each link in a pass of its own.
+- **A separate pass for rivals.** In one more coding pass over the same sources we code alternative explanations of the whole outcome. Because that pass is kept apart from the link passes, a rival to the outcome can never be counted as evidence for a link.
+- **Who is speaking is a column.** We code each speaker's stake, so that we can compute a second figure that leaves out the people who deliver the programme.
+- **Unmentioned links are counted.** We declare the list of links in advance, so a link nobody mentioned appears in the table with a count of nought.
+- **Two separate judgements.** We judge each link, which gives the annotated theory of change, and then the whole, against a rubric that says in advance how the links combine. A chain is only as strong as its weakest link, so the overall verdict is the lowest of the link verdicts.
+- **What it does not do.** It does not give an attribution fraction or a counterfactual. In place of a comparison group, the rival pass records what people say about other explanations of the outcome, which is weaker evidence but better than not asking.
+- **The second run.** Five of the six links came back well supported, among them the one we had most reason to doubt. A reviewer who read all 114 documents found that 18 of the write-up's 24 checkable sentences were correct and six were wrong.
 
 See also: [[000 Pilots, not passengers -- reconstructible reporting in evaluation ((rubicon))]]; [[008 Theory-based evaluation ((theory-based))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[203 Task 3 -- Analysing data, Answering questions ((task3-analysing))]].
 
-**Intended audience:** evaluators who have been asked to show that a programme contributed to a change, who have interviews and reports rather than a counterfactual, and who have to satisfy a reader entitled to be sceptical.
+**Intended audience:** evaluators who have been asked to show that a programme contributed to a change, who have interviews and reports but no counterfactual, and whose readers are entitled to be sceptical.
 
-## What evaluations actually want contribution analysis to answer
+## What commissioners ask contribution analysis to answer
 
-Worth being blunt about, because the gap between what commissioners ask and what the method delivers is where most contribution analyses go wrong.
+Commissioners usually put five questions to a contribution analysis as though they were one. Most contribution analyses that go wrong do so where the question asked differs from what the method can deliver.
 
-Five questions arrive dressed as one.
+- **"Did our programme cause this change?"** The question as asked. Contribution analysis answers a narrower one: given the evidence, and given whatever else was going on, is there a credible account that the programme made a difference? Mayne himself writes of reduced uncertainty and plausible association.
+- **"How much of the change was ours?"** Contribution analysis does not produce an attribution fraction, by design, and cannot be made to. An evaluation that reports one has stopped doing contribution analysis. Tell the commissioner so in writing at inception, or they will still be expecting a fraction when the report arrives.
+- **"Would it have happened anyway?"** This is what the first question usually means underneath. A sceptical reader will press it. The only way to answer it is to treat the rival explanations as seriously as the programme's own account. Evaluators skimp on that step more often than any other.
+- **"What should we fix?"** Of the five, this is the one contribution analysis answers best. Commissioners ask it least often. Once the theory of change is broken into links, with the evidence for and against each set beside it, you can see where the programme's own account is thin. A programme manager can use that more than any overall verdict.
+- **"Give us something that will survive audit."** A fair request, met by the record of the work: what was claimed, on what evidence, who decided, and whether they decided before or after seeing the results.
 
-- **"Did our programme cause this change?"** The question as asked. Contribution analysis answers a narrower one: is there a credible account, given the evidence and given what else was going on, that the programme made a difference. Mayne's own language is reduced uncertainty and plausible association.
-- **"How much of the change was ours?"** Refused, and the refusal is the method's design rather than a shortcoming. Contribution analysis produces no attribution fraction and cannot be made to. An evaluation that reports one has stopped doing contribution analysis. Say this at inception, in writing, because it is the expectation that curdles at the end.
-- **"Would it have happened anyway?"** The real question underneath the first, and the one a sceptical reader will press. It is answerable only by taking the rival explanations as seriously as the programme's own account, which is the step most often skimped.
-- **"What should we fix?"** The question contribution analysis answers best and is asked to answer least. A theory of change broken into links, each carrying the evidence for and against it, is a map of where the programme's own account is thin. That is more use to a programme manager than any overall verdict.
-- **"Give us something that will survive audit."** Legitimate, and it is about the trail rather than the finding: what was claimed, on what evidence, decided by whom, and when relative to seeing the results.
-
-So the useful reframing, and the one this paper builds on: **the product of a contribution analysis is not a verdict but an annotated theory of change**, showing for each link whether the material supports it, contradicts it, or never mentions it, alongside a separate account of what else could explain the outcome. The contribution story is the wrapper. The map is the thing.
+In this paper we treat the main product of a contribution analysis as **an annotated theory of change**. It shows, for each link, whether the material supports it, contradicts it or never mentions it. We add a separate account of what else could explain the outcome. The contribution story is written around that map.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'fontFamily':'Helvetica, Arial, sans-serif','fontSize':'15px'}}}%%
@@ -62,53 +60,53 @@ flowchart TD
   class weak,story out
 ```
 
-## Two kinds of rival, and the one that gets skipped
+## Two kinds of rival explanation
 
-Contribution analysis carries two different things called rivals, and evaluations conflate them constantly.
+Contribution analysis uses the word "rival" for two different things, and evaluators routinely confuse them.
 
-- **A rival to a link.** The training did not raise referral accuracy; the new form did, and it arrived the same quarter. This is local, and the evidence that settles it is local too.
+- **A rival to a link.** The training did not raise referral accuracy; the new form did, and it arrived the same quarter. The rival concerns one link, and so does the evidence that would settle it.
 - **A rival to the whole outcome.** The change would have happened anyway, or another agency's programme did it, or the outcome is a measurement artefact of how the indicator was defined, or the sites that improved were the ones already improving.
 
-Teams test the first kind, because each link invites its own alternative, and then write a contribution story as though the second kind had been dealt with. It has not. A theory of change every one of whose links is well evidenced is still consistent with the programme having contributed nothing, if the same forces that produced the outcome would have produced those intermediate steps too.
+Teams test the first kind, because each link suggests its own alternative. Then they write the contribution story as though they had dealt with the second kind as well. They have not. Every link in a theory of change can be well evidenced while the programme contributed nothing, if whatever produced the outcome would have produced the intermediate steps too.
 
-So the whole-outcome rivals get their own coding pass, written down before the material is read, searched with the same effort over the same text. This is the same discipline the theory-fit paper argues for, and here it is the difference between a contribution story and a press release.
+We therefore write down the rivals to the whole outcome before reading the material, and give them a coding pass of their own, over the same text and with the same effort as the links. We argue for the same practice in the theory-fit paper. Without it, a contribution story is not much better than a press release.
 
-## A chain is as strong as its weakest link, and reports average instead
+## Combining the links
 
-If a theory of change runs A to B to C to D, and the material says a great deal about A to B and D, and nothing at all about B to C, the story fails at B to C. It does not score three out of four.
+Take a theory of change from A to B to C to D. The material has a great deal about A to B and D, and nothing at all about B to C. The story fails at B to C; it does not score three out of four.
 
-Almost every contribution analysis reports as though it did, because the natural summary of a table is a total. So the combination rule has to be written into the rubric in advance, and it has to be closer to a minimum than a mean. Stating it in advance matters more here than anywhere else in this set of papers, because the temptation to switch to averaging arrives precisely when one link comes back empty.
+Almost every contribution analysis reports as though it did, because the obvious way to summarise a table is to add it up. So we write the combination rule into the rubric in advance, and make it close to a minimum. Fixing the rule beforehand matters more here than anywhere else in these papers. An evaluator is most tempted to switch to averaging at exactly the moment one link comes back empty.
 
-In a Rubicon rubric the rule is `combine: worst`: the weakest criterion decides, read against the order in which the author declared the verdicts, best first. A rubric that never declared its verdicts is refused, since there the order would be an accident of writing. The rule cannot be nested, so a theory with several branches is written as one summary per branch and combined once.
+In a Rubicon rubric the rule is `combine: worst`. The overall verdict is that of the weakest criterion, judged by the order in which the author declared the verdicts, best first. Rubicon refuses a rubric that does not declare its verdicts, because the order would then be an accident of how the rubric happened to be written. The rule cannot be nested, so for a theory with several branches we write one summary per branch and combine them once.
 
-Two qualifications keep that from being crude. A theory of change is rarely a single chain, so a weak link in one branch is not fatal where another branch reaches the same outcome. And a link nobody mentioned is not a link the material contradicts, which is the next problem.
+We qualify the rule in two ways. A theory of change is rarely a single chain, and where another branch reaches the same outcome, a weak link in one branch need not sink the story. Also, a link nobody mentioned has not been contradicted, which brings us to silence.
 
-## Silence is not refutation, and it is not support either
+## Links nobody mentions
 
-Three outcomes per link, and the third is the one an evaluator cannot get any other way.
+Each link has one of three outcomes. The third is the one an evaluator cannot get any other way.
 
 - **Supported**, with passages behind it.
 - **Contradicted**, with passages behind it.
-- **Never mentioned.** No passage bears on it at all.
+- **Never mentioned.** No passage has any bearing on it.
 
-The third only means anything because the workflow knows the full list of links in advance, so a proposition the material never touched reads as a nought in the table rather than dropping out of it. Build the table from what was found and the untouched links disappear, which is exactly the failure the method exists to prevent.
+The third outcome is possible only because we give the workflow the full list of links in advance. A proposition that no passage touches then appears in the table with a count of nought. If the table were built from what the coding found, the unmentioned links would vanish from it, and the method is designed to prevent exactly that.
 
-Silence has at least three readings, and the report should say which is being taken. The link is so obvious nobody remarks on it. Nobody was asked. Or it did not happen. The first two are facts about the corpus and the interview schedule; only the third is a finding about the programme. Where the corpus was gathered before the theory of change was written, which is the usual case for this kind of analysis, the safer default is that silence is uninformative and the link is unexamined rather than unsupported.
+Silence about a link can be read in at least three ways, and the evaluator should say in the report which reading they take: the link is so obvious that nobody remarks on it; nobody was asked about it; or it did not happen. The first two are facts about the corpus and the interview schedule. Only the third is a finding about the programme. In this kind of analysis the corpus was usually gathered before the theory of change was written, and in that case the safer default is to treat silence as uninformative and record the link as unexamined (which is not the same as unsupported).
 
-## Who is speaking matters more here than elsewhere
+## Who is speaking
 
-An implementer's account of why participants responded is the implementer's theory, and it is data about the implementer. In a contribution analysis this bites harder than in the other papers, because the people most available to interview are the ones with the strongest interest in the contribution story being true.
+When an implementer explains why participants responded, the explanation is the implementer's theory. It tells us about the implementer. This matters more in contribution analysis than in the other methods in these papers. The people easiest to interview are those with the most interest in the contribution story being true.
 
-Two columns earn their cost in every coding pass, both borrowed from the realist workflow.
+We add two columns to every coding pass, both borrowed from the realist workflow.
 
-- **First or second hand.** A programme officer reporting what a farmer felt is not the farmer.
-- **Prompted or volunteered.** A respondent who raised a link unbidden is stronger evidence than one who agreed when it was put to them. In a corpus somebody else gathered, this is the only way to tell an interview that tested the theory from one that led the witness.
+- **First or second hand.** A programme officer's report of what a farmer felt is second-hand evidence about the farmer.
+- **Prompted or volunteered.** A respondent who raised a link without being asked is stronger evidence than one who agreed when it was put to them. With a corpus somebody else gathered, this column is the only way to tell an interview that tested the theory from one that led the witness.
 
-And a third that is specific to this method: **the speaker's relation to the programme**, so a figure can be recomputed over people with nothing to gain. Where the contribution story rests only on people paid by the programme, that is the finding.
+A third column is specific to this method: **the speaker's relation to the programme**, so that we can recompute a figure using only people with nothing to gain. If the only support for the contribution story comes from people the programme pays, we report that as the finding.
 
 ## The workflow
 
-The theory of change is written into the workflow as a list of links, each with its two ends, and one coding pass goes to each link. Here is the coding step for two links of a theory about convening researchers and civil servants.
+We write the theory of change into the workflow as a list of links, each with its two ends, and code each link in its own pass. This is the coding step for two links of a theory about convening researchers and civil servants.
 
 ```yaml
   - id: test_link
@@ -183,49 +181,51 @@ The theory of change is written into the workflow as a list of links, each with 
         type: quotes
 ```
 
-The counting step gathers the prongs by role, so grouping by item gives a row per link, and the full list of links is known in advance, which is what lets a never-mentioned link read as a nought. A second figure computed with `where: {speaker_stake: {not: delivers_the_programme}}` says how much of the story survives without the people paid to tell it.
+The counting step collects the prongs by role, so grouping by item gives one row per link. Because the full list of links is declared in advance, a link nobody mentioned still gets its row, with a count of nought. We compute a second figure with `where: {speaker_stake: {not: delivers_the_programme}}`. It shows how much support is left once the people paid to deliver the programme are taken out.
 
-The rival pass is an ordinary coding step over the same sources, with the whole-outcome alternatives named in its instruction and a result of its own. It is not a prong of the link pass, on purpose: these are rivals to the outcome rather than to any one link, and mixing them would let a rival be counted as evidence about a link.
+The rival pass is an ordinary coding step over the same sources. Its instruction names the alternative explanations of the whole outcome. It has its own result. We keep it out of the link pass on purpose. These are rivals to the outcome, and to no one link in particular; if the two passes were mixed, a rival could be counted as evidence about a link.
 
-Then two judgements, and keeping them apart is the point.
+Two judgements follow, made separately.
 
-- **Per link**, against a rubric with the three outcomes above, so the output is the annotated theory of change.
+- **Per link**, against a rubric with the three outcomes above. This gives the annotated theory of change.
 - **Overall**, against a rubric that states in advance how the links combine, how the rival explanations are weighed against the programme's account, and what would have to be true for the story to fail.
 
-The artefact the workflow must produce, beyond either judgement, is the graph: the theory of change drawn with each link carrying what the evidence said, something distinct for a contradicted link, and something distinct again for a link nobody addressed. That last is the one an evaluator cannot get any other way and the one most easily lost in a picture. How Rubicon draws it is in [[008 Theory-based evaluation ((theory-based))]].
+Besides the two judgements, the workflow has to produce a graph. It draws the theory of change with each link marked by what the evidence said about it, with one mark for a contradicted link and a different one for a link nobody addressed. That last mark is the easiest to lose in a picture. [[008 Theory-based evaluation ((theory-based))]] describes how Rubicon draws it.
 
 ## Two runs on a select committee's evidence
 
-The material is the evidence to a select committee inquiry into a proposed UK research funding agency: 114 written submissions and transcripts of oral sessions, published under the Open Parliament Licence. The theory of change had six links, running from a gap in the existing funding system, through the agency's budget and its freedom from the usual controls, to breakthroughs the existing system would not produce. Three whole-outcome rivals were written down before any reading.
+We used the evidence given to a select committee inquiry into a proposed UK research funding agency: 114 written submissions and transcripts of oral sessions, published under the Open Parliament Licence. The theory of change had six links. They led from a gap in the existing funding system, through the agency's budget and its freedom from the usual controls, to breakthroughs the existing system would not produce. Three rivals to the whole outcome were written down before any reading.
 
-**The first run, on 5 September 2026, failed.** Ruby, Rubicon's assistant, proposed the right workflow on her second turn and raised two objections this paper makes elsewhere: the sixth link cannot be evidenced from an inquiry held before the agency existed, and whether a point was volunteered or prompted cannot be coded for written submissions, which have no questions in them. The coding then read the material, returned 285 rows and kept none. Every row was refused by the columns the step had declared, 97 of them because the model labelled a proposition `L1: existing system gap` where the column declared `L1`. The run cost $2.90, and 26 further turns of conversation, costing $2.87, never produced a workflow that would run. None of that is about contribution analysis. The app was right to refuse rows labelled in a vocabulary nobody had agreed, and a conversation that keeps proposing the same repair has stopped learning from the refusals.
+**The first run, on 5 September 2026, failed.** Ruby, Rubicon's assistant, proposed the right workflow on her second turn. She also raised two objections we make elsewhere in this paper: the sixth link cannot be evidenced from an inquiry held before the agency existed, and written submissions do not contain any questions, so nobody can code whether a point in one was volunteered or prompted. The coding step then read the material and returned 285 rows. Rubicon kept none. Every row failed the columns the step had declared, 97 of them because the model labelled a proposition `L1: existing system gap` where the column declared `L1`. The run cost $2.90. A further 26 turns of conversation, costing $2.87, never produced a workflow that would run. None of this was a problem with contribution analysis. The app was right to refuse rows labelled in a vocabulary nobody had agreed. Through the conversation that followed, the same repair kept being proposed, whatever the refusals said.
 
-**The second run, on 15 September 2026, read 14 of the 114 documents** and produced the annotated theory of change. Five links came back well supported and one partially: that freedom from the usual peer review and reporting requirements is necessary for the agency to work. Twelve of the fourteen documents bore on the first link, that the existing system does not fund high-risk research well; twelve supported it with at least moderate bearing, six contradicted it, and eight of the supporting documents came from people who were not advocating for the agency.
+**The second run, on 15 September 2026, covered 14 of the 114 documents** and produced the annotated theory of change. Five links came back well supported, and one only partially: that freedom from the usual peer review and reporting requirements is necessary for the agency to work. Twelve of the fourteen documents were relevant to the first link, that the existing system does not fund high-risk research well. Twelve supported it with at least moderate bearing and six contradicted it. Eight of the supporting documents came from people who were not advocating for the agency.
 
-The sixth link is the one to read carefully. It says research funded this way produces breakthroughs the existing system would not, and it came back well supported. The passages behind it cite what DARPA delivered in the United States (the internet, stealth aircraft, GPS) and a witness's account of a British venture that had to look abroad for backing. That is argument by analogy and by anecdote about an agency that did not yet exist, which is what Ruby had warned of before the first run. Nothing in the rubric told evidence about this agency apart from argument about agencies like it, so a link no corpus of this kind could settle looks as settled as the first. The repair belongs in the rubric, as a criterion asking what kind of evidence a link rests on, and it is the most useful thing the run taught.
+Read the sixth link with care. It states that research funded this way produces breakthroughs the existing system would not. It came back well supported. The passages behind it are about what DARPA delivered in the United States (the internet, stealth aircraft, GPS), plus a witness's account of a British venture that had to look abroad for backing. That is argument by analogy, and by anecdote, about an agency that did not yet exist. Ruby had warned of exactly this before the first run. Our rubric did not include any criterion to separate evidence about this agency from argument about agencies like it. So a link that no corpus of this kind could settle came out looking as settled as the first. The fix is a criterion in the rubric asking what kind of evidence supports a link. That was the most useful lesson of the run.
 
-**A blind check of the write-up.** A reviewer who had not seen the run read all 114 documents and tested every sentence of the write-up that states something about the evidence. Of 24 such sentences, 18 held. Six were wrong: speakers were merged or swapped, one witness was written up as several, a risk somebody raised was written as a conclusion, and two details appeared that the documents do not contain. Four of the six faults arose in the writing alone. The other two began in the coding, where a question from an MP and a proponent's remark were filed as evidence against a link, and a passage was filed as supporting a rival. Because every sentence cites the passages behind it, each fault could be traced to the step where it arose.
+**A blind check of the write-up.** A reviewer who had not seen the run read all 114 documents and tested every sentence of the write-up that states something about the evidence. Of 24 such sentences, 18 were correct. Six were wrong: speakers were merged or swapped, one witness was written up as several, a risk somebody raised was written as a conclusion, and two details appeared that the documents do not contain. Four of the six faults came in at the writing stage. The other two started in the coding: a question from an MP and a proponent's remark were filed as evidence against a link, and a passage was filed as supporting a rival. Each sentence cites the passages behind it, so each fault could be traced back to the step where it began.
 
-## Where the people go
+## Where people take part
 
-Contribution analysis is participatory in its own literature, and a machine-assisted version must not drop that without saying so.
+The literature on contribution analysis treats it as a participatory method. A machine-assisted version must not drop that without saying so.
 
-- **Agreeing the theory of change** is the first and most consequential participatory step. A theory of change nobody outside the evaluation team recognises produces a link-by-link map of somebody's imagination.
-- **Naming the rival explanations.** These are best drawn from people with a reason to doubt the programme, and an evaluation team on its own reliably writes rivals it can defeat.
-- **Reading the weak-link map together**, which is where this method earns its keep. The map is designed for a room rather than for a report, and the useful conversation is about the links nobody mentioned.
-- **Going back for more evidence**, Mayne's fifth step. A run over an existing corpus stops before it, so the thin links become the questions for the next round of fieldwork rather than a finding.
+- **Agreeing the theory of change** is the first participatory step and has the most consequences. If nobody outside the evaluation team recognises the theory of change, testing it link by link only maps somebody's imagination.
+- **Naming the rival explanations.** The rivals are best collected from people with a reason to doubt the programme. An evaluation team left to itself will write rivals it can defeat.
+- **Reading the weak-link map together.** The method is most use here. We designed the map to be discussed in a room. The conversation worth having there is about the links nobody mentioned.
+- **Going back for more evidence**, which is Mayne's fifth step. A run over an existing corpus ends before it, so the thin links go forward as questions for the next round of fieldwork, and are not reported as findings.
 
-The combination rule has to be fixed in advance, and the pull to revise it arrives exactly when a link comes back empty. Revising it is allowed as long as the revision is dated and the reader can see it came after the numbers; how that is recorded is on the [[003 An open format for reconstructible reporting ((open-format))|open format page]], under pre-registering the workflow.
+We fix the combination rule in advance. It may still be revised, provided the revision is dated and the reader can see that it came after the numbers; the [[003 An open format for reconstructible reporting ((open-format))|open format page]] explains how, under pre-registering the workflow.
 
 ## What this cannot do
 
 - **No attribution fraction**, ever. See above.
-- **No counterfactual.** The rival pass asks what else could explain the outcome and reads what people say about it. That is weaker than a comparison group and stronger than not asking.
-- **A corpus gathered before the theory of change existed cannot have had the theory put to it.** Where an evaluation is still running, the better use of this is to produce the weak-link map first and take the thin links into the next round of fieldwork as the questions to ask.
-- **Rubicon counts documents rather than people.** Contribution is claimed about a programme and evidence arrives per person, so a figure is only as good as the match between the two.
+- **No counterfactual.** The rival pass records what people say about other explanations of the outcome. That is weaker than a comparison group. It is still better than not asking.
+- **A corpus gathered before the theory of change existed cannot have had the theory put to it.** While an evaluation is still under way, it is better to produce the weak-link map first and take the thin links into the next round of fieldwork as the questions to ask.
+- **Rubicon counts documents.** Contribution is claimed for a programme, while evidence comes person by person, so a figure is only as good as the match between documents and people.
 
 ## Next steps
 
-- Add a rubric criterion asking what kind of evidence each link rests on: about this programme, by analogy with others, or prediction. The sixth link's verdict would then say what it is.
-- Settle the combination rule for a real theory of change, in writing, before any run. Which links form a chain and which form substitutable branches is a judgement about the programme, and it belongs to the people who know it.
-- Test the whole thing on a live evaluation rather than an archive, so that Mayne's fifth step exists. If you have one, we would like to hear from you.
+- Add a rubric criterion asking what kind of evidence supports each link: evidence about this programme, analogy with others, or prediction. The verdict on the sixth link would then say which kind it had.
+- Settle the combination rule for a real theory of change, in writing, before any run. Deciding which links form a chain and which form substitutable branches is a judgement about the programme, and the people who know the programme should make it.
+- Test the method on a live evaluation, where Mayne's fifth step can actually happen. If you have one, we would like to hear from you.
+
+*This page was drafted with the assistance of Claude, an AI model from Anthropic; the arguments and judgements are our own.*
