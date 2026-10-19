@@ -179,7 +179,7 @@ This is the Bayesian requirement without the Bayesian arithmetic. The likelihood
 
 ## Measuring discrimination instead of asserting it
 
-The general idea, running a workflow over synthetic documents that should score well and badly before it meets the real material, is on the [Rubicon open format page](https://rubicon.causalmap.app/open-format) under validating the workflow. For this study it does more. Write a synthetic interview in which one theory is true by construction, do it for each of the five, run all the tests over all five sets, and read the matrix.
+The general idea, running a workflow over synthetic documents that should score well and badly before it meets the real material, is on the [[003 An open format for reconstructible reporting ((open-format))|open format page]] under validating the workflow. For this study it does more. Write a synthetic interview in which one theory is true by construction, do it for each of the five, run all the tests over all five sets, and read the matrix.
 
 - A test firing only against its own theory's set is discriminating, and the matrix says how strongly.
 - A test firing against all five is measuring something every account of loneliness implies, and should be dropped before the real run.
@@ -277,7 +277,7 @@ Not a league table. The outputs, in order of how much we would trust them:
 - **Reading the first test plan** before it runs. Somebody who knows the material should say which tests ask for evidence nobody would ever produce in an interview.
 - **Reading the grid together** rather than being handed a verdict. The grid is the artefact precisely so that a group can argue with it.
 
-The design half exists to be iterated on, and that freedom is bought by the held-out half. How revising a registered plan is recorded is on the [Rubicon open format page](https://rubicon.causalmap.app/open-format), under pre-registering the workflow.
+The design half exists to be iterated on, and that freedom is bought by the held-out half. How revising a registered plan is recorded is on the [[003 An open format for reconstructible reporting ((open-format))|open format page]], under pre-registering the workflow.
 
 ## Next steps
 

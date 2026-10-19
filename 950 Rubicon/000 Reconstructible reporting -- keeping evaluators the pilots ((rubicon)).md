@@ -5,11 +5,29 @@ theme: theory-of-change
 ---
 ![Rubicon, evaluative workflows](950 Rubicon/img/b5aa2529126993bd8f784d99a1855f4e_MD5.jpg)
 
-Rubicon is an experimental app from Causal Map Ltd for evaluators who use AI on interviews and reports. You break an evaluation question into steps somebody else could check (which documents to read, what to mark, how to count, and what standard turns a count into a verdict), argue them out with an assistant before any analysis runs, and every figure it reports leads back to a passage somebody can read.
+*For evaluators, commissioners and anyone else working out what evaluation analysis should look like now that AI can do much of it.*
 
-What Rubicon is, how a piece of work goes and how it compares with other tools are on [rubicon.causalmap.app](https://rubicon.causalmap.app). The case for an open reporting format, from which anyone can rebuild an analysis and run it again, is on its [open format page](https://rubicon.causalmap.app/open-format). What is too long for that site is here: the principles in full, a survey of existing standards, and working papers that put Rubicon to particular evaluation methods, some with runs to report.
+Give a frontier model such as Claude Opus 5.5 the terms of reference and the documents from an evaluation, and in our experience it can now answer the desk-based part of most evaluation questions about as well and as accurately as a competent evaluator, in minutes. The models get better every month. So how do evaluators, and the people they work with, stay the pilots rather than the passengers? Who chooses the method, whose standard decides what counts as good, and how can anybody else check what was done? The politics and ethics of that matter, and so do guidelines, but this chapter is about things that run.
 
-> **Work in progress.** Rubicon is in beta and has not yet been used on a live evaluation. The papers here are drafts, published early so people can argue with them.
+> **Work in progress.** None of what follows has yet been used on a live evaluation. The pages are drafts, published early so people can argue with them.
+
+What we have so far comes in four parts, each up for discussion.
+
+## A principle: reconstructible reporting
+
+Any evaluation report based on an analysis of text could come with a bundle holding the data and the instructions somebody else would need to rebuild the analysis and reach comparable, though probably not identical, results. The principle is a familiar one. It takes on new life now, because a frontier AI can carry out that kind of rebuild with little effort, so a commissioner no longer has to take the method on trust. It applies to analysis done by people, or by people working with AI, as much as to analysis done by AI alone. In its present form the principle says too little about the participatory stages of an evaluation, and about the versions of a report that go back and forth with stakeholders.
+
+## An open format for the bundle
+
+[[003 An open format for reconstructible reporting ((open-format))]] proposes a published specification for that bundle, with a small set of auditable steps from which an analysis is built, whether people or AI carry them out: choose documents, mark passages, group them into themes, count, judge against a rubric, write. Fuller approaches such as contribution analysis can be put together from them. The format is at version 0.3. Nobody needs to agree on one format, and we expect several overlapping ones to appear and to keep changing. [[007 Is there already a standard qq ((rubicon-standards))|Is there already a standard?]] reports what we found when we looked for an existing one.
+
+## Rubicon for Claude: a free, open-source plugin
+
+A plugin that makes your own Claude work to a more explicit method that somebody else can rebuild. Claude is left to reason however it likes, then has to write down the workflow it followed, and the report is rebuilt from that workflow: every count is made by code, every quotation is found word for word in its document, and a zip goes with the report from which somebody else can recreate it. The aim is a Claude as adaptable as the plain one, but more accurate and open to audit; in our tests so far it is more accurate than plain Claude. It costs nothing beyond a Claude subscription, and the code is on [GitHub](https://github.com/stevepowell99/causalmap-plugins) under the MIT licence. An MCP server offering the same tools to other assistants is in development. Installation and example reports are on [rubicon.causalmap.app](https://rubicon.causalmap.app).
+
+## The Rubicon app
+
+A web app for the same job, still in development, with more support for the evaluator. You bring a question about a project's documents to Ruby, the app's assistant, who settles the question with you and proposes a plan in plain words, with its cost, before any analysis runs. On your go she carries it out, and every figure in the result leads back to a passage somebody can read. The app reads Causal Map projects and uses the Causal Map login. It is not finished, not priced and not yet generally available.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'fontFamily':'Helvetica, Arial, sans-serif','fontSize':'15px'}}}%%
@@ -37,10 +55,12 @@ flowchart TD
 
 The walk back is the test. If it breaks anywhere, nothing else about the run counts.
 
-## In this chapter
+[[005 Rubicon principles ((rubicon-principles))]] sets out in full the principles the plugin and the app both work to: who declares what counts as good, why every claim points at a quote, what a finding is compared against, what to say about what was not read, and what Rubicon refuses to do.
 
-- [[005 Rubicon principles ((rubicon-principles))]]: the principles Rubicon works to, in full. Who declares what counts as good, why every claim points at a quote, what a finding is compared against, what to say about what was not read, and what it refuses.
-- [[007 Is there already a standard qq ((rubicon-standards))|Is there already a standard?]]: what we found when we looked for an existing standard for AI text analysis in evaluation.
+## Worked examples
+
+Working papers that put Rubicon to particular evaluation methods, some with runs to report.
+
 - [[008 Theory-based evaluation ((theory-based))]]: what commissioners want when they ask for a theory-based evaluation, and a run that hangs the evidence on each link of a theory of change.
 - [[030 Contribution analysis ((contribution))]]: a programme's own theory of change put link by link to a select committee's evidence, with a blind check of what the write-up got wrong.
 - [[010 Testing rival theories ((theory-fit))|Testing rival theories over a corpus]]: five published explanations of loneliness, and a design for asking which of them fifty interviews support.
@@ -69,3 +89,5 @@ Rubicon is not causal mapping and does not replace it. How the two products rela
 - **Quality of evidence rubrics** are Thomas Aston and Marina Apgar's.
 
 **We would like to work with people on this.** If any of the above is your field and the argument looks wrong, or looks right and worth building on, we would rather hear it now than after we have published a result. Steve Powell, Causal Map Ltd, Bath: hello@causalmap.app.
+
+*This page was drafted with the assistance of Claude, an AI model from Anthropic; the arguments and judgements are our own.*

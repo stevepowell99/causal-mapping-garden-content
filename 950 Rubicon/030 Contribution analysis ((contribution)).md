@@ -19,7 +19,7 @@ Start from the theory of change the programme already wrote down, and ask what t
 - **What it refuses.** No attribution fraction, ever. No counterfactual: the rival pass asks what else could explain the outcome and reads what people say about it, which is weaker than a comparison group and stronger than not asking.
 - **What the second run showed.** Five of six links came back well supported, including the one that most deserved doubt. A reviewer who read all 114 documents found 18 of the write-up's 24 checkable sentences sound and six wrong.
 
-See also: [[000 Rubicon ((rubicon))]]; [[008 Theory-based evaluation ((theory-based))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[203 Task 3 -- Analysing data, Answering questions ((task3-analysing))]].
+See also: [[000 Reconstructible reporting -- keeping evaluators the pilots ((rubicon))]]; [[008 Theory-based evaluation ((theory-based))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[203 Task 3 -- Analysing data, Answering questions ((task3-analysing))]].
 
 **Intended audience:** evaluators who have been asked to show that a programme contributed to a change, who have interviews and reports rather than a counterfactual, and who have to satisfy a reader entitled to be sceptical.
 
@@ -215,7 +215,7 @@ Contribution analysis is participatory in its own literature, and a machine-assi
 - **Reading the weak-link map together**, which is where this method earns its keep. The map is designed for a room rather than for a report, and the useful conversation is about the links nobody mentioned.
 - **Going back for more evidence**, Mayne's fifth step. A run over an existing corpus stops before it, so the thin links become the questions for the next round of fieldwork rather than a finding.
 
-The combination rule has to be fixed in advance, and the pull to revise it arrives exactly when a link comes back empty. Revising it is allowed as long as the revision is dated and the reader can see it came after the numbers; how that is recorded is on the [open format page](https://rubicon.causalmap.app/open-format), under pre-registering the workflow.
+The combination rule has to be fixed in advance, and the pull to revise it arrives exactly when a link comes back empty. Revising it is allowed as long as the revision is dated and the reader can see it came after the numbers; how that is recorded is on the [[003 An open format for reconstructible reporting ((open-format))|open format page]], under pre-registering the workflow.
 
 ## What this cannot do
 

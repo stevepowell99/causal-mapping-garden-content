@@ -17,7 +17,7 @@ An evaluator who wrote a theory of change as a diagram wants the answer back as 
 - **The run.** Eight links, nineteen household interviews, 590 coded passages, and two branches of the theory converging on wellbeing, which the table could not show.
 - **What it does not do.** There is no held-out half here and no synthetic contrast set, and a per-link verdict appears only where a rubric criterion was named after a link.
 
-See also: [[000 Rubicon ((rubicon))]]; [[005 Rubicon principles ((rubicon-principles))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
+See also: [[000 Reconstructible reporting -- keeping evaluators the pilots ((rubicon))]]; [[005 Rubicon principles ((rubicon-principles))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]].
 
 **Intended audience:** evaluators who have been asked for a theory-based evaluation without being told which one, who have a theory of change and a pile of documents, and who must show the result to the people who drew the theory.
 
