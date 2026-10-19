@@ -3,7 +3,7 @@ tags: paper
 date: 2026-09-05
 theme: theory-of-change
 ---
-![Rubicon, evaluative workflows](950 Rubicon/img/b5aa2529126993bd8f784d99a1855f4e_MD5.jpg)
+![Rubicon, evaluative workflows](<950 Rubicon/img/b5aa2529126993bd8f784d99a1855f4e_MD5.jpg>)
 
 *For evaluators, commissioners and anyone else working out what evaluation analysis should look like now that AI can do much of it.*
 
@@ -23,7 +23,7 @@ Any evaluation report based on an analysis of text could come with a bundle hold
 
 ## Rubicon for Claude: a free, open-source plugin
 
-A plugin that makes your own Claude work to a more explicit method that somebody else can rebuild. Claude is left to reason however it likes, then has to write down the workflow it followed, and the report is rebuilt from that workflow: every count is made by code, every quotation is found word for word in its document, and a zip goes with the report from which somebody else can recreate it. The aim is a Claude as adaptable as the plain one, but more accurate and open to audit; in our tests so far it is more accurate than plain Claude. It costs nothing beyond a Claude subscription, and the code is on [GitHub](https://github.com/stevepowell99/causalmap-plugins) under the MIT licence. An MCP server offering the same tools to other assistants is in development. Installation and example reports are on [rubicon.causalmap.app](https://rubicon.causalmap.app).
+[Rubicon for Claude](https://rubicon.causalmap.app/plugin) is a plugin that makes your own Claude work to a more explicit method that somebody else can rebuild. Claude is left to reason however it likes, then has to write down the workflow it followed, and the report is rebuilt from that workflow: every count is made by code, every quotation is found word for word in its document, and a zip goes with the report from which somebody else can recreate it. The aim is a Claude as adaptable as the plain one, but more accurate and open to audit; in our tests so far it is more accurate than plain Claude. It costs nothing beyond a Claude subscription, and the code is on [GitHub](https://github.com/stevepowell99/causalmap-plugins) under the MIT licence. An MCP server offering the same tools to other assistants is in development. How to install it, and example reports, are on the [Get page](https://rubicon.causalmap.app/plugin).
 
 ## The Rubicon app
 
