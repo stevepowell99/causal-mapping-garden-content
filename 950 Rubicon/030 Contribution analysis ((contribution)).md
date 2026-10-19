@@ -19,7 +19,7 @@ Start from the theory of change the programme already wrote down, and ask what t
 - **What it refuses.** No attribution fraction, ever. No counterfactual: the rival pass asks what else could explain the outcome and reads what people say about it, which is weaker than a comparison group and stronger than not asking.
 - **What the second run showed.** Five of six links came back well supported, including the one that most deserved doubt. A reviewer who read all 114 documents found 18 of the write-up's 24 checkable sentences sound and six wrong.
 
-See also: [[000 Reconstructible reporting -- keeping evaluators the pilots ((rubicon))]]; [[008 Theory-based evaluation ((theory-based))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[203 Task 3 -- Analysing data, Answering questions ((task3-analysing))]].
+See also: [[000 Pilots, not passengers -- reconstructible reporting in evaluation ((rubicon))]]; [[008 Theory-based evaluation ((theory-based))]]; [[900 A simple measure of the goodness of fit of a causal theory to a text corpus ((goodness-of-fit))]]; [[203 Task 3 -- Analysing data, Answering questions ((task3-analysing))]].
 
 **Intended audience:** evaluators who have been asked to show that a programme contributed to a change, who have interviews and reports rather than a counterfactual, and who have to satisfy a reader entitled to be sceptical.
 

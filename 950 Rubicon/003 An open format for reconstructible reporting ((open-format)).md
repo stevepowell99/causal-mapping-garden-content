@@ -78,6 +78,6 @@ An appendix can be read. It cannot be run. Reading somebody's prompts tells you 
 - Develop the workflow on a subset and run the settled version over the rest.
 - Run one instruction twice over the same ten sources to see the run-to-run variation, and two wordings to see how sensitive the instruction is.
 
-See also: [[000 Reconstructible reporting -- keeping evaluators the pilots ((rubicon))]]; [[005 Rubicon principles ((rubicon-principles))]].
+See also: [[000 Pilots, not passengers -- reconstructible reporting in evaluation ((rubicon))]]; [[005 Rubicon principles ((rubicon-principles))]].
 
 *This page was drafted with the assistance of Claude, an AI model from Anthropic; the arguments and judgements are our own.*
