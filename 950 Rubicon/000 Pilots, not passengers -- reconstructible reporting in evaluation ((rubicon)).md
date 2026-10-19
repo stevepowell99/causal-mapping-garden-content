@@ -3,7 +3,6 @@ tags: paper
 date: 2026-09-05
 theme: theory-of-change
 ---
-![Rubicon, evaluative workflows](<950 Rubicon/img/b5aa2529126993bd8f784d99a1855f4e_MD5.jpg>)
 
 *For evaluators, commissioners and anyone else working out what evaluation analysis should look like now that AI can do much of it.*
 
@@ -24,6 +23,8 @@ Any evaluation report based on an analysis of text could come with a bundle hold
 In [[003 An open format for reconstructible reporting ((open-format))]] we propose a published specification for that bundle. An analysis is built from a few steps that anyone can audit, whether people or AI carry them out: choose documents, mark passages, group them into themes, count, judge against a rubric, write. Fuller approaches such as contribution analysis can be put together from the same steps. The format is at version 0.3. Nobody needs to agree on one format, and we expect several overlapping ones to appear and change. In [[007 Is there already a standard qq ((rubicon-standards))|Is there already a standard?]] we report what we found when we looked for an existing one.
 
 ## Rubicon for Claude: a free, open-source plugin
+
+![Rubicon, evaluative workflows](<950 Rubicon/img/b5aa2529126993bd8f784d99a1855f4e_MD5.jpg>){width=40%}
 
 [Rubicon for Claude](https://rubicon.causalmap.app/plugin) is a plugin that makes your own Claude work to a more explicit method that somebody else can rebuild. Claude is left to reason however it likes, then has to write down the workflow it followed, and the report is rebuilt from that workflow: every count is made by code, every quotation is found word for word in its document, and a zip goes with the report from which somebody else can recreate it. The aim is a Claude as adaptable as the plain one, but more accurate and open to audit; in our tests so far it is more accurate than plain Claude. It costs nothing beyond a Claude subscription. Your documents and what Claude writes about them stay on your computer, apart from going through Anthropic as usual, and never reach us; the plugin does send us usage telemetry, which you can opt out of. The code is on [GitHub](https://github.com/stevepowell99/causalmap-plugins) under the MIT licence. An MCP server offering the same tools to other assistants is in development. How to install it, and example reports, are on the [Get page](https://rubicon.causalmap.app/plugin).
 
